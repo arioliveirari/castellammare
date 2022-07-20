@@ -1,0 +1,11 @@
+$junior: #407cc9;
+$juniorBorder: #1863c5;
+
+$senior: #fdd429;
+$seniorBorder: #fdd429;
+
+$appBarHeight: 60px;
+$sizeOfHeader: 50px;
+$footerBarHeight: 50px;
+
+$contentSize: calc(100% - calc(#{$appBarHeight} + calc(#{$footerBarHeight} + #{$footerBarHeight})));
