@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import { usb, usc } from '../../utils/helpers';
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 import styles from '../../styles/headers.module.scss';
 
 const Header = ({ children }: any) => (
@@ -10,7 +9,6 @@ const Header = ({ children }: any) => (
       <title>Baires navega!</title>
       <meta name="description" content="Baires navega" />
       <link rel="icon" href="/favicon.ico" />
-      <script src="https://kit.fontawesome.com/78b8c96f09.js" crossOrigin="anonymous"></script>
     </Head>
     <p className={usc(styles, ["logo"])}>
       Baires Navega
