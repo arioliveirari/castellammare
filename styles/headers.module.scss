@@ -1,4 +1,18 @@
 @import "variables.module.scss";
+@font-face {
+  font-family: open-sans;
+  src: url(../public/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: DMSans;
+  font-weight: 400;
+  src: url(../public/fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: DMSans;
+  font-weight: 700;
+  src: url(../public/fonts/DMSans-Bold.ttf);
+}
 .Header {
   height: 50px;
   width: 100%;
@@ -8,17 +22,47 @@
   align-items: center;
   color: $beige;
   justify-content: space-between;
-  .logo {
-    margin: 0%;
-    font-weight: 100;
-    cursor: default;
-  }
+  padding: 10px 0px;
   a {
     color: $beige;
     text-decoration: none;
   }
-  .contentLinks {
-    margin: auto;
+
+  .header-desktop {
+    text-align: center;
+    align-items: center;
+    .logo {
+      margin: 0;
+      font-family: 'open-sans';
+      width: min-content;
+      text-align: start;
+      font-weight: 400;
+    }
+    .links {
+      a {
+        font-family: DMSans;
+        font-weight: 400;
+      }
+      .reserva {
+        font-family: DMSans;
+        font-weight: 700;
+        background-color: $orange;
+        border-radius: 22px;
+        padding: 10px 32px;
+        color: $darkBlue;
+        font-weight: bold;
+      }
+    }
+    div {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        padding: 20px;
+        display: inline-block;
+      }
+    }
   }
   @media screen and (max-width: 768px) {
     .header-desktop {

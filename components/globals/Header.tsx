@@ -11,18 +11,19 @@ const Header = ({ children }: any) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <div className={usb(["container"])}>
+      <div className={usb(["row"])}>
+        <div className={usb(["col-l-12"])}>
+          {/*Header Desktop */}
+          <div className={usc(styles, ["header-desktop"])}>
+            <Logo />
+            <Links />
+          </div>
 
-      {/*Header Desktop */}
-      <div className={usc(styles, ["header-desktop"])}>
-        <Logo />
-        <Links />
-        <Icons />
-      </div>
-
-      {/*Header Mobile */}
-      <div className={usc(styles, ["header-mobile"])}>
-        <Logo />
-        <Icons />
+          {/*Header Mobile */}
+          <div className={usc(styles, ["header-mobile"])}>
+            <Logo />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -32,9 +33,14 @@ export default Header;
 
 const Links = () => (
   <div className={usc(styles, ["links"])} >
+    <a href="#" className={usc(styles, ["reserva"])} >Reservar</a>
     <a href="#">Sobre nosotros</a>
     <a href="#">Servicios</a>
-    <a href="#">Reservar</a>
+    <div className={usc(styles, ["icons"])}>
+      <a href="#">whatsapp</a>
+      <a href="#">Instagram</a>
+      <a href="#">Email</a>
+    </div>
   </div>
 )
 
@@ -44,10 +50,3 @@ const Logo = () => (
   </p>
 );
 
-const Icons = () => (
-  <div className={usc(styles, ["icons"])}>
-    <a href="#">whatsapp</a>
-    <a href="#">Instagram</a>
-    <a href="#">Email</a>
-  </div>
-)

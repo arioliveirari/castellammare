@@ -1,21 +1,30 @@
 @import "variables.module.scss";
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@font-face {
+  font-family: roboto;
+  font-weight: 400;
+  src: url(../public/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: roboto;
+  font-weight: 700;
+  src: url(../public/fonts/Roboto-Bold.ttf);
+}
 
 .OverTheFold {
   height: 70vh;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   width: 100%;
-}
-
-.conteinerOver {
   background-image: url(../public/images/background.jpg);
   background-size: cover;
   background-position: bottom;
+}
+
+.conteinerOver {
   height: 70vh;
-  padding: 150px 100px;
   color: $beige;
+  padding: 230px 0px;
   .textOver {
-    cursor:default;
+    cursor: default;
     max-width: 1024px;
     position: relative;
     display: flex;
@@ -23,13 +32,14 @@
   }
   .tittleOver {
     max-width: 1024px;
-    font-size: 70px;
-    font-weight: 600;
+    font-size: 80px;
+    font-family: roboto;
+    font-weight: 700;
     padding: 0px 0px;
-
   }
   .paragraphOver {
     p {
+      font-family: roboto;
       max-width: 1024px;
       font-weight: 400;
       word-break: break-all;
@@ -56,7 +66,9 @@
   color: $beige;
   font-size: 25px;
   margin-top: 20px;
-  font-weight: 500;
+  border-radius: 35px;
+  font-family: roboto;
+  font-weight: 700;
   transition: all ease-in-out 0.2s;
 }
 @media (max-width: 768px) {
@@ -65,7 +77,8 @@
   }
   .textOver {
     align-items: center;
-    text-align: center;
+    text-align:center;
+    justify-content: center;
   }
   .tittleOver {
     font-size: 30px;
