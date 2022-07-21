@@ -1,5 +1,4 @@
 @import "variables.module.scss";
-@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 .Header {
   height: 50px;
   width: 100%;
@@ -20,5 +19,27 @@
   }
   .contentLinks {
     margin: auto;
+  }
+  @media screen and (max-width: 768px) {
+    .header-desktop {
+      display: none;
+    }
+
+    .header-mobile {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .header-desktop {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .header-mobile {
+      display: none;
+    }
   }
 }
