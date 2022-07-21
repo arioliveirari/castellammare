@@ -1,9 +1,9 @@
 @import "variables.module.scss";
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 .OverTheFold {
   height: 70vh;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   width: 100%;
 }
 
@@ -11,21 +11,11 @@
   background-image: url(../public/images/background.jpg);
   background-size: cover;
   background-position: bottom;
-  min-height: 80vh;
-  position: relative;
+  height: 70vh;
   padding: 150px 100px;
   color: $beige;
-  &::before {
-    content: "";
-    top: 0%;
-    background-color: rgb(0, 0, 0, 0.4);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-  }
   .textOver {
-    cursor: default;
+    cursor:default;
     max-width: 1024px;
     position: relative;
     display: flex;
@@ -36,19 +26,27 @@
     font-size: 70px;
     font-weight: 600;
     padding: 0px 0px;
+
   }
   .paragraphOver {
-    width: 50%;
     p {
       max-width: 1024px;
       font-weight: 400;
-      word-break: normal;
+      word-break: break-all;
       white-space: normal;
       text-align: justify;
     }
   }
 }
 
+.OverTheFold::before {
+  content: "";
+  background-color: rgb(91, 125, 168, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  left: 0;
+}
 .buttonOver {
   width: 250px;
   padding: 10px 20px;

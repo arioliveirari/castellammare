@@ -6,11 +6,11 @@ import { usc } from '../utils/helpers';
 //import { connect } from "react-redux";
 
 const Index = (props: any) => {
-  
+
   return (
     <div className={usc(styles, ['main'])} >
-        <Header/>
-        <OverTheFold />
+      <Header />
+      <OverTheFold />
     </div>
   )
 }

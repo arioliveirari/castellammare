@@ -13,32 +13,16 @@ const Header = ({ children }: any) => (
     <p className={usc(styles, ["logo"])}>
       Baires Navega
     </p>
-    <div className={usc(styles, ["links"])}>
-      <div className={usc(styles, ["contentLinks"])}>
-        <a href="#">Sobre nosotros</a>
-        <a href="#">Servicios</a>
-        <a href="#">Reservar</a>
-      </div>
+    <div className={usc(styles,["links"])} >
+      <a href="#">Sobre nosotros</a>
+      <a href="#">Servicios</a>
+      <a href="#">Reservar</a>
     </div>
 
     <div className={usc(styles, ["icons"])}>
-      <div>
-        <a href="#">
-          {/* <i className={usc(styles, ["fa-brands fa-whatsapp"])}>
-        </i> */}
-          whatsapp
-        </a>
-        <a href="#">
-          {/* <i className={usc(styles, ["fa-brands fa-instagram"])}>
-        </i> */}
-          instagram
-        </a>
-        <a href="#">
-          {/* <i className={usc(styles, ["fa-brands fa-envelope"])}>
-        </i> */}
-          email
-        </a>
-      </div>
+      <a href="#">whatsapp</a>
+      <a href="#">Instagram</a>
+      <a href="#">Email</a>
     </div>
   </div>
 );
