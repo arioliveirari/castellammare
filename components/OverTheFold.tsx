@@ -13,7 +13,7 @@ const OverTheFold = ({ children }: any) => (
           <div className={usc(styles, ["paragraphOver"])}>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever  since the 1500s,
+              Lorem Ipsum has been the standard dummy text ever  since the 1500s,
               when an unknown printer took
             </p>
           </div>
