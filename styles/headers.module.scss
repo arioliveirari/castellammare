@@ -1,8 +1,29 @@
-@import 'variables.module.scss';
-
+@import "variables.module.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 .Header {
-  background: $junior;
   height: 50px;
   width: 100%;
-  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  background-color: $darkBlue;
+  font-family: "Lora", serif;
+  color: $beige;
+  .logo {
+    margin: 0%;
+    font-weight: 100;
+    width: min-content;
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+  }
+  a {
+    color: $beige;
+    text-decoration: none;
+  }
+  .contentLinks {
+    margin: auto;
+  }
 }
