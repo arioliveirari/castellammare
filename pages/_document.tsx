@@ -38,17 +38,16 @@ class MyDocument extends Document {
             <style
               dangerouslySetInnerHTML={{
                 __html: `
-                                        #__next *,
-                                        #__next *:before,
-                                        #__next *:after {
-                                           // transition-duration: 0s !important;
-                                        }
+                    #__next *,
+                    #__next *:before,
+                    #__next *:after {
+                        // transition-duration: 0s !important;
+                    }
 
-                                        body {
-                                            overflow: hidden !important;
-                                            height: 100% !important;
-                                        }
-                                    `,
+                    body {
+                        height: 100% !important;
+                    }
+                `,
               }}
             />
           </div>
