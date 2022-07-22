@@ -22,7 +22,7 @@
   align-items: center;
   color: $beige;
   justify-content: space-between;
-  padding: 10px 0px;
+
   a {
     color: $beige;
     text-decoration: none;
@@ -51,6 +51,10 @@
         padding: 10px 32px;
         color: $darkBlue;
         font-weight: bold;
+        transition: all ease-in-out 0.2s;
+        &:hover{
+          color: $beige;
+        }
       }
     }
     div {

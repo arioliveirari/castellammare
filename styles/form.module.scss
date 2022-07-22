@@ -1,0 +1,44 @@
+@import "variables.module.scss";
+
+.formComponent {
+    display: flex;
+    flex-direction: row;
+    background-color: $ligthBlue;
+    min-height: 80vh;
+    .left,
+    .rigth {
+        height: 80vh;
+    }
+
+    .content {
+   
+        display: flex;
+        justify-content: space-between;
+      
+        .left {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            grid-gap: 15px;
+            .kiwi,
+            .mango {
+                height: 300px;
+                width: 400px;
+            }
+            .kiwi {
+                background-image: url(../public/images/kiwi.jpg);
+                background-position: center;
+                background-size: cover;
+                width: 50%;
+            }
+            .mango {
+                background-image: url(../public/images/mango.jpg);
+                background-position: center;
+                background-size: cover;
+                width: 50%;
+            }
+        }
+    }
+}
+
+// mediaQueries
