@@ -53,14 +53,12 @@ const Form = ({ children }: any) => (
                     </div>
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-20"])} >
-                    <span className='icon-check'>kiwi</span>
-                    <span className='icon-un-check'>mango</span>
+                    <span className='icon-check'>Kiwi</span>
+                    <span className='icon-un-check'>Mango</span>
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-20", "space-bot-52"])} >
                     <div className={usc(styles, ["formInputContant"])} >
-                      <p>
-                        <span className='icon-clock' ></span>  Mañana/tarde/noche
-                      </p>
+                      <span className='icon-clock' ></span>  Mañana/Tarde/Noche
                     </div>
                   </div>
                   <p className={usc(styles, ["space-bot-52"])}>
