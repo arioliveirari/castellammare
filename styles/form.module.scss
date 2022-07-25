@@ -8,12 +8,24 @@
   display: flex;
   padding-top: 120px;
   background-color: $ligthBlue;
+  font-family: roboto;
+  margin-bottom: 40PX;
   .picWrapper {
     width: 100%;
     display: flex;
     height: 100%;
-    flex-direction:  column;
+    flex-direction: column;
     justify-content: center;
+    .picText {
+      color: $beige;
+      p {
+        font-size: 25px;
+      }
+      .picTittle {
+        font-size: 55px;
+        font-weight: 700;
+      }
+    }
   }
   .picContainer {
     display: flex;
@@ -21,6 +33,7 @@
     height: fit-content;
     align-items: center;
     justify-content: start;
+    margin-bottom: 20px;
     .kiwi {
       background-image: url(../public/images/kiwi.jpg);
     }
@@ -39,7 +52,7 @@
   }
   .form {
     background: $beige;
-    width: 90%;
+    width: 80%;
     justify-content: center;
     margin: auto;
 
@@ -75,7 +88,16 @@
       width: 100%;
       background-color: #fff;
       height: 56px;
+      align-items: center;
       border-radius: 8px;
+      justify-content: start;
+      align-items: center;
+     padding: 15px;
+      .inputContent {
+        justify-content: space-around;
+        background-color: aliceblue;
+        width: 100%;
+      }
     }
     .formText {
       text-align: center;
@@ -91,7 +113,29 @@
         font-size: 40px;
       }
     }
+    .reserva {
+      font-family: DMSans;
+      font-weight: 700;
+      background-color: $orange;
+      border-radius: 8px;
+      padding: 10px 32px;
+      width: 50%;
+      text-align: center;
+      text-decoration: none;
+      justify-content: center;
+      cursor: pointer;
+      color: $beige;
+      font-weight: bold;
+      transition: all ease-in-out 0.2s;
+      margin-bottom: 52px;
+    }
   }
 }
 
 // mediaQueries
+
+@media screen and (max-width: 769px) {
+  .reserva {
+    width: 100%;
+  }
+}

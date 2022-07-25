@@ -18,9 +18,13 @@ const Form = ({ children }: any) => (
                 </div>
 
                 <div className={usc(styles, ["picText"])} >
-                  <p>asdasdsad</p>
-                  <p>asdasdsad</p>
-                  <p>asdasdsad</p>
+                  <p>Velero</p>
+                  <p className={usc(styles, ["picTittle"])} >KIWI</p>
+                  <p className={usc(styles, ["picParagraph"])} >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dola aliqua.
+                    Ut enim ad minim venim, quis nostud exercitation ullamco.
+                  </p>
                 </div>
               </div>
             </div>
@@ -39,17 +43,32 @@ const Form = ({ children }: any) => (
 
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-52"])} >
-                    aaa
+
+                    - 2 +
+
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-20"])} >
-                    aaa
+
+                    <input type="radio" />kiwi <input type="radio" />mango
+
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-20", "space-bot-52"])} >
-                    aaa
+
+                    <p>
+                      Mañana/tarde/noche
+                    </p>
+
                   </div>
-                  <p className={usc(styles, ["space-bot-52"])} >
+                  <p className={usc(styles, ["space-bot-52"])}>
+                    <input type="checkbox" className={usc(styles, ["formCheckbox"])}></input>
                     Lorem Ipsum dolor sit amet consecteur?
                   </p>
+
+                  <a className={usc(styles, ["reserva", "space-top-52"])} href="#">
+                    reservar
+                  </a>
+
+
 
                 </div>
               </div>

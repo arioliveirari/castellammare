@@ -49,14 +49,12 @@
         font-family: DMSans;
         font-weight: 700;
         background-color: $orange;
-        border-radius: 22px;
+        border-radius: 8px;
         padding: 10px 32px;
-        color: $darkBlue;
+        color: $beige;
         font-weight: bold;
         transition: all ease-in-out 0.2s;
-        &:hover{
-          color: $beige;
-        }
+      
       }
     }
     div {
@@ -70,7 +68,7 @@
       }
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .header-desktop {
       display: none;
     }
@@ -81,7 +79,7 @@
       justify-content: space-between;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .header-desktop {
       display: flex;
       width: 100%;
