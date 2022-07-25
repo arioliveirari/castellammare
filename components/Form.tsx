@@ -34,44 +34,41 @@ const Form = ({ children }: any) => (
                 <div className={usc(styles, ["form-content", "padding-top-52"])}>
 
                   <div className={usc(styles, ["formText"])}>
+
                     <div className={usc(styles, ["formTittle"])} >
                       vivi una experiencia
                     </div>
                     <div className={usc(styles, ["formParagraph"])} >
-                      <span className="icon-instagram" /> 
-                      <span className="icon-mail" /> 
-                      <span className="icon-whatsapp" /> 
+                      UNICA
                     </div>
 
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-52"])} >
-
-                    - 2 +
-
+                    <div className={usc(styles, ["formInputContant"])} >
+                      - 2 +
+                    </div>
+                    <div className={usc(styles, ["formInputContant"])} >
+                      <span className='icon-person' ></span>
+                      <span className='icon-person' ></span>
+                    </div>
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-20"])} >
-
-                    <input type="radio" />kiwi <input type="radio" />mango
-
+                    <span className='icon-check'>kiwi</span>
+                    <span className='icon-un-check'>mango</span>
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-20", "space-bot-52"])} >
-
-                    <p>
-                      Mañana/tarde/noche
-                    </p>
-
+                    <div className={usc(styles, ["formInputContant"])} >
+                      <p>
+                        <span className='icon-clock' ></span>  Mañana/tarde/noche
+                      </p>
+                    </div>
                   </div>
                   <p className={usc(styles, ["space-bot-52"])}>
-                    <input type="checkbox" className={usc(styles, ["formCheckbox"])}></input>
-                    Lorem Ipsum dolor sit amet consecteur?
+                    <span className='icon-check' ></span> Lorem Ipsum dolor sit amet consecteur?
                   </p>
-
-                  <a className={usc(styles, ["reserva", "space-top-52"])} href="#">
+                  <a className={usc(styles, ["reserva", "space-top-20"])} href="#">
                     reservar
                   </a>
-
-
-
                 </div>
               </div>
             </div>

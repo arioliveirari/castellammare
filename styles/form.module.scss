@@ -9,7 +9,7 @@
   padding-top: 120px;
   background-color: $ligthBlue;
   font-family: roboto;
-  margin-bottom: 40PX;
+  margin-bottom: 40px;
   .picWrapper {
     width: 100%;
     display: flex;
@@ -88,15 +88,15 @@
       width: 100%;
       background-color: #fff;
       height: 56px;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
       align-items: center;
-      border-radius: 8px;
-      justify-content: start;
-      align-items: center;
-     padding: 15px;
-      .inputContent {
-        justify-content: space-around;
-        background-color: aliceblue;
-        width: 100%;
+      justify-content: space-between;
+      span{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
       }
     }
     .formText {
@@ -119,7 +119,7 @@
       background-color: $orange;
       border-radius: 8px;
       padding: 10px 32px;
-      width: 50%;
+      width: 100%;
       text-align: center;
       text-decoration: none;
       justify-content: center;
@@ -137,5 +137,12 @@
 @media screen and (max-width: 769px) {
   .reserva {
     width: 100%;
+  }
+  .picContainer {
+    flex-direction: column;
+  }
+  .picText {
+    justify-content: center;
+    text-align: center;
   }
 }

@@ -72,12 +72,26 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-instagram:before {
+.icon-check:before {
   content: "\e900";
 }
-.icon-mail:before {
+.icon-clock:before {
   content: "\e901";
 }
-.icon-whatsapp:before {
+.icon-instagram:before {
   content: "\e902";
 }
+.icon-mail:before {
+  content: "\e903";
+}
+.icon-person:before {
+  content: "\e904";
+}
+.icon-un-check:before {
+  content: "\e905";
+}
+.icon-wpp:before {
+  content: "\e906";
+}
+
+

@@ -35,7 +35,7 @@
     align-items: center;
     .logo {
       margin: 0;
-      font-family: 'open-sans';
+      font-family: "open-sans";
       width: min-content;
       text-align: start;
       font-weight: 400;
@@ -54,7 +54,6 @@
         color: $beige;
         font-weight: bold;
         transition: all ease-in-out 0.2s;
-      
       }
     }
     div {
@@ -68,9 +67,26 @@
       }
     }
   }
+
+  .icons {
+    span {
+      position: relative;
+      color: $darkBlue;
+      margin: 0px 20px;
+      font-size: 24px;
+      z-index: 100;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 50%;
+      background-color: $beige;
+      background-size:contain;
+
+    }
+  }
   @media screen and (max-width: 769px) {
     .header-desktop {
       display: none;
+      cursor: pointer;
     }
 
     .header-mobile {
