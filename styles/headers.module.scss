@@ -21,6 +21,8 @@
   text-align: center;
   align-items: center;
   color: $beige;
+  position: fixed;
+  z-index: 10;
   justify-content: space-between;
 
   a {

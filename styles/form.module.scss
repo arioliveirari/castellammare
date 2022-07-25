@@ -1,43 +1,81 @@
 @import "variables.module.scss";
 
-.formComponent {
-    display: flex;
-    flex-direction: row;
-    background-color: $ligthBlue;
-    min-height: 80vh;
-    .left,
-    .rigth {
-        height: 80vh;
-    }
+@font-face {
+    font-family: roboto;
+    font-weight: 400;
+    src: url(../public/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto;
+    font-weight: 700;
+    src: url(../public/fonts/Roboto-Bold.ttf);
+}
 
-    .content {
-   
+.formComponent {
+    background-color: $ligthBlue;
+}
+
+.content {
+    display: flex;
+    padding-top: 120px;
+    background-color: $ligthBlue;
+    
+
+    .picContainer {
         display: flex;
+        padding-top: 65px;
+        height: 80vh;
+        grid-gap: 20px;
+        .kiwi {
+            background-image: url(../public/images/kiwi.jpg);
+            width: 330px;
+            height: 416px;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+        }
+        .mango {
+            background-image: url(../public/images/mango.jpg);
+            width: 330px;
+            height: 416px;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .form {
+        background: $beige;
+        width: 537px;
+        height: 800;
+        margin-bottom: 20px;
+        padding: 55px;
+        flex-direction: column;
         justify-content: space-between;
-      
-        .left {
-            width: 50%;
-            display: flex;
-            justify-content: space-between;
-            grid-gap: 15px;
-            .kiwi,
-            .mango {
-                height: 300px;
-                width: 400px;
+        
+        border-radius: 8px;
+        .formInput {
+            width: 100%;
+            background-color: #fff;
+            height: 55px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        .formText{
+            text-align: center;
+            justify-content: center;
+            .formTittle{
+                font-family: roboto;
+                font-weight: 400;
+                font-size: 30px;
             }
-            .kiwi {
-                background-image: url(../public/images/kiwi.jpg);
-                background-position: center;
-                background-size: cover;
-                width: 50%;
-            }
-            .mango {
-                background-image: url(../public/images/mango.jpg);
-                background-position: center;
-                background-size: cover;
-                width: 50%;
+            .formParagraph{
+                font-family: roboto;
+                font-weight: 700;
+                font-size: 40px;
+                margin-bottom: 50px;
             }
         }
+       
     }
 }
 
