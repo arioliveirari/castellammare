@@ -36,6 +36,18 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: roboto;
+  font-weight: 400;
+  src: url("/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: roboto;
+  font-weight: 700;
+  src: url("/fonts/Roboto-Bold.ttf");
+}
+
 
 /* ICONOS */
 @font-face {

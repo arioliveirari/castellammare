@@ -1,82 +1,97 @@
 @import "variables.module.scss";
 
-@font-face {
-    font-family: roboto;
-    font-weight: 400;
-    src: url(../public/fonts/Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: roboto;
-    font-weight: 700;
-    src: url(../public/fonts/Roboto-Bold.ttf);
-}
-
 .formComponent {
-    background-color: $ligthBlue;
+  background-color: $ligthBlue;
 }
 
 .content {
+  display: flex;
+  padding-top: 120px;
+  background-color: $ligthBlue;
+  .picWrapper {
+    width: 100%;
     display: flex;
-    padding-top: 120px;
-    background-color: $ligthBlue;
-    
+    height: 100%;
+    flex-direction:  column;
+    justify-content: center;
+  }
+  .picContainer {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: start;
+    .kiwi {
+      background-image: url(../public/images/kiwi.jpg);
+    }
+    .mango {
+      background-image: url(../public/images/mango.jpg);
+    }
+    .sailImage {
+      width: 40%;
+      height: auto;
+      aspect-ratio: 1/1.2;
+      border-radius: 8px;
+      background-size: cover;
+      background-position: center;
+      margin-right: 15px;
+    }
+  }
+  .form {
+    background: $beige;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
 
-    .picContainer {
-        display: flex;
-        padding-top: 65px;
-        height: 80vh;
-        grid-gap: 20px;
-        .kiwi {
-            background-image: url(../public/images/kiwi.jpg);
-            width: 330px;
-            height: 416px;
-            border-radius: 8px;
-            background-size: cover;
-            background-position: center;
-        }
-        .mango {
-            background-image: url(../public/images/mango.jpg);
-            width: 330px;
-            height: 416px;
-            border-radius: 8px;
-            background-size: cover;
-            background-position: center;
-        }
+    border-radius: 8px;
+    .space-top-20 {
+      margin-top: 20px;
     }
-    .form {
-        background: $beige;
-        width: 537px;
-        height: 800;
-        margin-bottom: 20px;
-        padding: 55px;
-        flex-direction: column;
-        justify-content: space-between;
-        
-        border-radius: 8px;
-        .formInput {
-            width: 100%;
-            background-color: #fff;
-            height: 55px;
-            margin-top: 30px;
-            border-radius: 8px;
-        }
-        .formText{
-            text-align: center;
-            justify-content: center;
-            .formTittle{
-                font-family: roboto;
-                font-weight: 400;
-                font-size: 30px;
-            }
-            .formParagraph{
-                font-family: roboto;
-                font-weight: 700;
-                font-size: 40px;
-                margin-bottom: 50px;
-            }
-        }
-       
+    .space-top-52 {
+      margin-top: 52px;
     }
+    .space-bot-52 {
+      margin-bottom: 52px;
+    }
+    .padding-top-20 {
+      padding-top: 20px;
+    }
+    .padding-top-52 {
+      padding-top: 52px;
+    }
+    .padding-bot-52 {
+      padding-bottom: 52px;
+    }
+    .form-content {
+      max-width: 80%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .formInput {
+      width: 100%;
+      background-color: #fff;
+      height: 56px;
+      border-radius: 8px;
+    }
+    .formText {
+      text-align: center;
+      justify-content: center;
+      .formTittle {
+        font-family: roboto;
+        font-weight: 400;
+        font-size: 30px;
+      }
+      .formParagraph {
+        font-family: roboto;
+        font-weight: 700;
+        font-size: 40px;
+      }
+    }
+  }
 }
 
 // mediaQueries
