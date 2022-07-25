@@ -58,22 +58,6 @@
   font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -88,37 +72,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-Vector:before {
-  content: "\e90a";
-}
-.icon-clock:before {
-  content: "\e909";
-}
-.icon-play:before {
-  content: "\e906";
-}
-.icon-icono_consigna:before {
-  content: "\e907";
-}
-.icon-icono_pista:before {
-  content: "\e908";
-}
-.icon-status:before {
+.icon-instagram:before {
   content: "\e900";
 }
-.icon-status1:before {
-  content: "\e904";
-}
-.icon-check:before {
-  content: "\e905";
-}
-.icon-sparks:before {
+.icon-mail:before {
   content: "\e901";
 }
-.icon-face:before {
+.icon-whatsapp:before {
   content: "\e902";
-}
-.icon-thunder:before {
-  content: "\e903";
 }

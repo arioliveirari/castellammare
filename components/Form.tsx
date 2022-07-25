@@ -38,7 +38,9 @@ const Form = ({ children }: any) => (
                       vivi una experiencia
                     </div>
                     <div className={usc(styles, ["formParagraph"])} >
-                      unica
+                      <span className="icon-instagram" /> 
+                      <span className="icon-mail" /> 
+                      <span className="icon-whatsapp" /> 
                     </div>
 
                   </div>
