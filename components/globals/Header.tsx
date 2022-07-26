@@ -33,21 +33,28 @@ export default Header;
 
 const Links = () => (
   <div className={usc(styles, ["links"])} >
+
     <a href="#" className={usc(styles, ["reserva"])} >Reservar</a>
     <a href="#">Sobre nosotros</a>
     <a href="#">Servicios</a>
     <div className={usc(styles, ["icons"])}>
-      <span className="icon-instagram" />
-      <span className="icon-mail" />
-      <span className="icon-wpp" />
+      <span className="icon-instagram icon" />
+      <span className="icon-mail icon" />
+      <span className="icon-wpp icon" />
     </div>
 
   </div>
 )
 
 const Logo = () => (
-  <p className={usc(styles, ["logo"])}>
-    Baires Navega
-  </p>
+  <div className={usc(styles, ["logo"])}>
+    <img src="/images/logo.svg" alt='' className={usc(styles, ["logoPic"])} />
+
+    <div className={usc(styles, ["logoText"])}>
+      Baires
+      <br />
+      navega
+    </div>
+  </div>
 );
 

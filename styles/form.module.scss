@@ -2,27 +2,29 @@
 
 .formComponent {
   background-color: $ligthBlue;
-
+  align-items: center;
+  justify-content: center;
+  padding-top: 110px;
 }
 
 .content {
   display: flex;
-  padding-top: 120px;
   background-color: $ligthBlue;
   font-family: roboto;
   margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
   .picWrapper {
     width: 100%;
     display: flex;
-    height: 100%;
     flex-direction: column;
-    height: fit-content;
+    height: min-content;
     align-items: center;
     justify-content: center;
     .picText {
       color: $beige;
       p {
-        font-size: 25px;
+        font-size: 13px;
       }
       .picTittle {
         font-size: 55px;
@@ -59,7 +61,6 @@
     width: 80%;
     justify-content: center;
     margin: auto;
-
     border-radius: 8px;
     .space-top-20 {
       margin-top: 20px;
@@ -98,22 +99,33 @@
       align-items: center;
       justify-content: space-between;
       text-align: center;
+      font-family: roboto;
+      font-weight: 400;
       span {
         align-items: center;
         text-align: center;
         justify-content: center;
+        .icon-person {
+          font-size: 100px;
+        }
       }
     }
     .formText {
       text-align: center;
       justify-content: center;
+      font-family: roboto;
+      text-transform: uppercase;
+      .formPic {
+        width: 60px;
+        height: auto;
+        aspect-ratio: 1/1;
+        margin-bottom: 30px;
+      }
       .formTittle {
-        font-family: roboto;
-        font-weight: 400;
+        font-weight: 700;
         font-size: 30px;
       }
       .formParagraph {
-        font-family: roboto;
         font-weight: 700;
         font-size: 40px;
       }
@@ -123,8 +135,9 @@
       font-weight: 700;
       background-color: $orange;
       border-radius: 8px;
-      padding: 10px 32px;
-      width: 100%;
+      padding: 10px 30px;
+      width: 150px;
+      height: auto;
       text-align: center;
       text-decoration: none;
       justify-content: center;

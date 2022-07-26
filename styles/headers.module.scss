@@ -1,20 +1,7 @@
 @import "variables.module.scss";
-@font-face {
-  font-family: open-sans;
-  src: url(../public/fonts/OpenSans-Regular.ttf);
-}
-@font-face {
-  font-family: DMSans;
-  font-weight: 400;
-  src: url(../public/fonts/DMSans-Regular.ttf);
-}
-@font-face {
-  font-family: DMSans;
-  font-weight: 700;
-  src: url(../public/fonts/DMSans-Bold.ttf);
-}
+
 .Header {
-  height: 50px;
+  height: 60px;
   width: 100%;
   display: flex;
   background-color: $darkBlue;
@@ -24,6 +11,21 @@
   position: fixed;
   z-index: 10;
   justify-content: space-between;
+  .logo {
+    .logoPic {
+      width: 45px;
+      height: auto;
+      aspect-ratio: 1/1;
+      order: 1;
+      float: left;
+    }
+    .logoText {
+      order: 2;
+      text-align: left;
+      font-family: open-sans;
+      font-weight: 400;
+    }
+  }
 
   a {
     color: $beige;
@@ -33,15 +35,9 @@
   .header-desktop {
     text-align: center;
     align-items: center;
-    .logo {
-      margin: 0;
-      font-family: "open-sans";
-      width: min-content;
-      text-align: start;
-      font-weight: 400;
-    }
     .links {
       a {
+        vertical-align: middle;
         font-family: DMSans;
         font-weight: 400;
       }
@@ -50,7 +46,7 @@
         font-weight: 700;
         background-color: $orange;
         border-radius: 8px;
-        padding: 10px 32px;
+        padding: 9px 30px;
         color: $beige;
         font-weight: bold;
         transition: all ease-in-out 0.2s;
@@ -70,17 +66,25 @@
 
   .icons {
     span {
-      position: relative;
       color: $darkBlue;
       margin: 0px 20px;
       font-size: 24px;
       z-index: 100;
       cursor: pointer;
-      padding: 5px;
       border-radius: 100%;
       background-color: $beige;
-      background-size:contain;
-
+      background-size: contain;
+      background-position: center;
+      display: inline;
+      width: auto;
+      height: 40px;
+      aspect-ratio: 1/1;
+      &::before {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+      }
     }
   }
   @media screen and (max-width: 769px) {

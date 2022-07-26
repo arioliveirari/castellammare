@@ -2,12 +2,35 @@
   font-family: "DMSans";
   font-weight: 400;
 }
+
 .f-Mark-medium {
   font-family: "DMSans";
   font-weight: 500;
 }
+
 .f-DMSans-bold {
   font-family: "DMSans";
+  font-weight: 700;
+}
+
+.f-openSans {
+  font-family: openSans;
+  font-weight: 400;
+}
+
+.f-openSans-bold {
+  font-family: openSans;
+  font-weight: 700;
+}
+
+
+.f-openSans {
+  font-family: openSans;
+  font-weight: 400;
+}
+
+.f-roboto-bold {
+  font-family: roboto;
   font-weight: 700;
 }
 
@@ -37,6 +60,22 @@
 }
 
 @font-face {
+  font-family: "openSans";
+  src: url("/fonts/openSans-regular.ttf?ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "openSans";
+  src: url("/fonts/openSans-bold.ttf?ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
   font-family: roboto;
   font-weight: 400;
   src: url("/fonts/Roboto-Regular.ttf");
@@ -44,8 +83,10 @@
 
 @font-face {
   font-family: roboto;
-  font-weight: 700;
   src: url("/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
 }
 
 
@@ -72,26 +113,31 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-check:before {
   content: "\e900";
 }
+
 .icon-clock:before {
   content: "\e901";
 }
+
 .icon-instagram:before {
   content: "\e902";
 }
+
 .icon-mail:before {
   content: "\e903";
 }
+
 .icon-person:before {
   content: "\e904";
 }
+
 .icon-un-check:before {
   content: "\e905";
 }
+
 .icon-wpp:before {
   content: "\e906";
 }
-
-
