@@ -1,16 +1,43 @@
 @import "variables.module.scss";
 
+@font-face {
+  font-family: "dmsans";
+  src: url("/fonts/DMSans-Regular.ttf?ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "dmsans";
+  src: url("/fonts/DMSans-Medium.ttf?ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url("/fonts/openSans-regular.ttf?ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
 .Header {
   height: 60px;
   width: 100%;
   display: flex;
-  background-color: $darkBlue;
+  background-color: transparent;
   text-align: center;
   align-items: center;
   color: $beige;
   position: fixed;
   z-index: 10;
   justify-content: space-between;
+  &.active{
+    background-color: $darkBlue;
+  }
   .logo {
     .logoPic {
       width: 45px;
@@ -21,9 +48,12 @@
     }
     .logoText {
       order: 2;
-      text-align: left;
-      font-family: open-sans;
+      font-family: opensans;
       font-weight: 400;
+      font-size: 15px;
+      justify-content: center;
+      text-align: left;
+      text-transform: uppercase;
     }
   }
 
@@ -36,14 +66,16 @@
     text-align: center;
     align-items: center;
     .links {
+      text-transform: capitalize;
+      font-size: 20px;
       a {
         vertical-align: middle;
-        font-family: DMSans;
+        font-family: dmsans;
         font-weight: 400;
       }
       .reserva {
-        font-family: DMSans;
-        font-weight: 700;
+        font-family: dmsans;
+        font-weight: 500;
         background-color: $orange;
         border-radius: 8px;
         padding: 9px 30px;
@@ -68,22 +100,20 @@
     span {
       color: $darkBlue;
       margin: 0px 20px;
-      font-size: 24px;
-      z-index: 100;
-      cursor: pointer;
-      border-radius: 100%;
-      background-color: $beige;
-      background-size: contain;
-      background-position: center;
-      display: inline;
-      width: auto;
-      height: 40px;
+      width: 20px;
+      line-height: 20px;
+      height: auto;
       aspect-ratio: 1/1;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
       &::before {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        vertical-align: middle;
+        width: 20px;
+        height: auto;
+        aspect-ratio: 1/1;
+        background-color: $beige;
+        padding: 10px;
+        border-radius: 100%;
       }
     }
   }
@@ -97,6 +127,9 @@
       display: flex;
       width: 100%;
       justify-content: space-between;
+    }
+    .logoPic{
+      display: none;
     }
   }
   @media screen and (min-width: 769px) {

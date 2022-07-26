@@ -14,7 +14,7 @@ const OverTheFold = ({ children }: any) => (
                   Baires Navega
                 </span>
                 <div className={usb(["row"])}>
-                  <div className={usb(["col-6"])}>
+                  <div className={usb(["col-md-8", "col-sm-12"])}>
                     <div className={usc(styles, ["paragraphOver"])} >
                       <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  has been the industry standard dummy text ever  since the 1500s, when an unknown printer took

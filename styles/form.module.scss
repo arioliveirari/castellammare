@@ -1,5 +1,21 @@
 @import "variables.module.scss";
 
+@font-face {
+  font-family: "roboto";
+  font-weight: 400;
+  src: url("/fonts/Roboto-Regular.ttf");
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
 .formComponent {
   background-color: $ligthBlue;
   align-items: center;
@@ -99,12 +115,14 @@
       align-items: center;
       justify-content: space-between;
       text-align: center;
-      font-family: roboto;
-      font-weight: 400;
+      
       span {
+        font-family: roboto;
+        font-weight: 400;
         align-items: center;
         text-align: center;
-        justify-content: center;
+    margin: 0px 10px;
+        
         .icon-person {
           font-size: 100px;
         }

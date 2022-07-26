@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import { usb, usc, usw } from '../../utils/helpers';
 import styles from '../../styles/headers.module.scss';
 
+
 const Header = ({ children }: any) => (
-  <div className={usw(styles, ['Header'], ['container-fluid'])}>
+  < div className={usw(styles, ['Header'], ['container-fluid'])} >
     <Head>
       <title>Baires navega!</title>
       <meta name="description" content="Baires navega" />
@@ -26,7 +27,7 @@ const Header = ({ children }: any) => (
         </div>
       </div>
     </div>
-  </div>
+  </div >
 );
 
 export default Header;

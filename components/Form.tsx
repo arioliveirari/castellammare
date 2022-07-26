@@ -20,14 +20,22 @@ const Form = ({ children }: any) => (
                 </div>
 
                 <div className={usc(styles, ["picText"])} >
-                  <p>Velero</p>
-                  <p className={usc(styles, ["picTittle"])} >KIWI</p>
-                  <p className={usc(styles, ["picParagraph"])} >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dola aliqua.
-                    Ut enim ad minim venim, quis nostud exercitation ullamco.
-                    Ut enim ad minim venim, quis nostud ut labore et dola aliqua.
-                  </p>
+                  <div className={usb(["row"])} >
+                    <div className={usb(["col-l-6", "col-md-12"])} >
+
+                      <p className={usc(styles, ["picTittle"])} >KIWI</p>
+                    </div>
+                  </div>
+                  <div className={usb(["row"])} >
+                    <div className={usb(["col-md-9", "col-sm-12"])} >
+                      <p className={usc(styles, ["picParagraph"])} >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dola aliqua.
+                        Ut enim ad minim venim, quis nostud exercitation ullamco.
+                        Ut enim ad minim venim, quis nostud ut labore et dola aliqua.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -52,21 +60,23 @@ const Form = ({ children }: any) => (
                       - 2 +
                     </div>
                     <div className={usc(styles, ["formInputContent"])} >
-                      <span className='icon-person icono' ></span>
-                      <span className='icon-person  icono' ></span>
+                      <span className='icon-person icono' />
+                      <span className='icon-person  icono' />
                     </div>
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-20"])} >
-                    <span className='icon-check icono'>Kiwi</span>
-                    <span className='icon-un-check'>Mango</span>
+                    <div>
+                      <span className='icon-radio-checked icono'>Kiwi</span>
+                      <span className='icon-radio-unchecked'>Mango</span>
+                    </div>
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-20", "space-bot-52"])} >
                     <div className={usc(styles, ["formInputContant"])} >
-                      <span className='icon-clock icono' ></span>  Mañana/Tarde/Noche
+                      <span className='icon-clock icono' />  Mañana/Tarde/Noche
                     </div>
                   </div>
                   <p className={usc(styles, ["space-bot-52"])}>
-                    <span className='icon-check icono' ></span> Lorem Ipsum dolor sit amet consecteur?
+                    <span className='icon-check icono' /> Lorem Ipsum dolor sit amet consecteur?
                   </p>
                   <a className={usc(styles, ["reserva", "space-top-20"])} href="#">
                     reservar
