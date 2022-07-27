@@ -1,0 +1,24 @@
+@import "variables.module.scss";
+
+.reservar {
+    font-family: DMSans;
+    font-weight: 700;
+    background-color: $orange;
+    border-radius: 8px;
+    padding: 10px 30px;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    cursor: pointer;
+    color: $beige;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+    margin-bottom: 52px;
+    font-size: 20px;
+    a {
+        text-decoration: none;
+        color: $beige;
+    }
+}

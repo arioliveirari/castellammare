@@ -1,21 +1,5 @@
 @import "variables.module.scss";
 
-@font-face {
-  font-family: "roboto";
-  font-weight: 400;
-  src: url("/fonts/Roboto-Regular.ttf");
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "roboto";
-  src: url("/fonts/Roboto-Bold.ttf");
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;
-}
-
 .formComponent {
   background-color: $ligthBlue;
   align-items: center;
@@ -53,7 +37,7 @@
     width: 100%;
     height: fit-content;
     align-items: center;
-    justify-content: center;
+
     text-align: center;
     margin-bottom: 20px;
     .kiwi {
@@ -99,8 +83,10 @@
     .form-content {
       max-width: 80%;
       display: flex;
-      justify-content: center;
+
       flex-direction: column;
+      justify-content: center;
+      text-align: center;
       align-items: center;
       margin-left: auto;
       margin-right: auto;
@@ -109,62 +95,65 @@
       width: 100%;
       background-color: #fff;
       height: 56px;
-      border-radius: 10px;
-      padding: 20px;
+      border-radius: 8px;
       display: flex;
-      align-items: center;
+      padding: 0px 20px;
       justify-content: space-between;
+      align-items: center;
       text-align: center;
-      
-      span {
-        font-family: roboto;
-        font-weight: 400;
-        align-items: center;
-        text-align: center;
-    margin: 0px 10px;
-        
-        .icon-person {
-          font-size: 100px;
+      .counter {
+        span {
+          margin: 10px;
         }
       }
-    }
-    .formText {
-      text-align: center;
-      justify-content: center;
-      font-family: roboto;
-      text-transform: uppercase;
-      .formPic {
-        width: 60px;
-        height: auto;
-        aspect-ratio: 1/1;
-        margin-bottom: 30px;
-      }
-      .formTittle {
-        font-weight: 700;
-        font-size: 30px;
-      }
-      .formParagraph {
-        font-weight: 700;
+      .persons {
         font-size: 40px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      .radioButtons {
+        justify-content: center;
       }
     }
-    .reserva {
-      font-family: DMSans;
-      font-weight: 700;
-      background-color: $orange;
-      border-radius: 8px;
-      padding: 10px 30px;
-      width: 150px;
+  }
+  .formText {
+    text-align: center;
+    justify-content: center;
+    font-family: roboto;
+    text-transform: uppercase;
+    .formPic {
+      width: 60px;
       height: auto;
-      text-align: center;
-      text-decoration: none;
-      justify-content: center;
-      cursor: pointer;
-      color: $beige;
-      font-weight: bold;
-      transition: all ease-in-out 0.2s;
-      margin-bottom: 52px;
+      aspect-ratio: 1/1;
+      margin-bottom: 30px;
     }
+    .formTittle {
+      font-weight: 700;
+      font-size: 30px;
+    }
+    .formParagraph {
+      font-weight: 700;
+      font-size: 40px;
+    }
+  }
+  .reserva {
+    font-family: DMSans;
+    font-weight: 700;
+    background-color: $orange;
+    border-radius: 8px;
+    padding: 10px 30px;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    cursor: pointer;
+    color: $beige;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+    margin-bottom: 52px;
+    font-size: 20px;
   }
 }
 

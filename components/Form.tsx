@@ -1,7 +1,7 @@
 import React from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
-
+import Button from './Button';
 
 
 const Form = ({ children }: any) => (
@@ -56,31 +56,32 @@ const Form = ({ children }: any) => (
 
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-52"])} >
-                    <div className={usc(styles, ["formInputContant"])} >
-                      - 2 +
+                    <div className={usc(styles, ["counter"])}>
+                      <span className='icon-minus' />2<span className='icon-plus' />
                     </div>
-                    <div className={usc(styles, ["formInputContent"])} >
-                      <span className='icon-person icono' />
-                      <span className='icon-person  icono' />
+                    <div className={usc(styles, ["persons"])} >
+                      <span className='icon-person' />
+                      <span className='icon-person' />
                     </div>
                   </div>
-                  <div className={usc(styles, ["formInput", "space-top-20"])} >
-                    <div>
-                      <span className='icon-radio-checked icono'>Kiwi</span>
-                      <span className='icon-radio-unchecked'>Mango</span>
+                  <div className={usc(styles, ["formInput", "radioButtons", "space-top-20"])} >
+                    <div className={usc(styles, ["checked"])}>
+                      <span className='icon-radio-checked' />Kiwi
+                    </div>
+                    <div className={usc(styles, ["unchecked"])}>
+                      <span className='icon-radio-unchecked' />Mango
                     </div>
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-20", "space-bot-52"])} >
-                    <div className={usc(styles, ["formInputContant"])} >
-                      <span className='icon-clock icono' />  Mañana/Tarde/Noche
+                    <div className={usc(styles, ["clock"])}>
+                      <span className='icon-radio-checked' />Mañana/Tarde/Noche
                     </div>
+
                   </div>
                   <p className={usc(styles, ["space-bot-52"])}>
-                    <span className='icon-check icono' /> Lorem Ipsum dolor sit amet consecteur?
+                    <span className='icon-check' /> Lorem Ipsum dolor sit amet consecteur?
                   </p>
-                  <a className={usc(styles, ["reserva", "space-top-20"])} href="#">
-                    reservar
-                  </a>
+                  <Button></Button>
                 </div>
               </div>
             </div>

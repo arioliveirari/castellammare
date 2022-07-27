@@ -1,41 +1,19 @@
 @import "variables.module.scss";
 
-@font-face {
-  font-family: "dmsans";
-  src: url("/fonts/DMSans-Regular.ttf?ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "dmsans";
-  src: url("/fonts/DMSans-Medium.ttf?ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "opensans";
-  src: url("/fonts/openSans-regular.ttf?ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-
 .Header {
   height: 60px;
   width: 100%;
   display: flex;
-  background-color: transparent;
   text-align: center;
   align-items: center;
   color: $beige;
+  background-color: transparent;
   position: fixed;
   z-index: 10;
   justify-content: space-between;
-  &.active{
+
+  transition: all ease-in-out 0.3s;
+  &.active {
     background-color: $darkBlue;
   }
   .logo {
@@ -49,11 +27,12 @@
     .logoText {
       order: 2;
       font-family: opensans;
-      font-weight: 400;
+      font-weight: 100;
       font-size: 15px;
       justify-content: center;
       text-align: left;
       text-transform: uppercase;
+      letter-spacing: 2px;
     }
   }
 
@@ -68,11 +47,7 @@
     .links {
       text-transform: capitalize;
       font-size: 20px;
-      a {
-        vertical-align: middle;
-        font-family: dmsans;
-        font-weight: 400;
-      }
+
       .reserva {
         font-family: dmsans;
         font-weight: 500;
@@ -81,7 +56,7 @@
         padding: 9px 30px;
         color: $beige;
         font-weight: bold;
-        transition: all ease-in-out 0.2s;
+        transition: all ease-in-out 50ms;
       }
     }
     div {
@@ -128,7 +103,7 @@
       width: 100%;
       justify-content: space-between;
     }
-    .logoPic{
+    .logoPic {
       display: none;
     }
   }
