@@ -43,7 +43,6 @@ const Form = ({ children }: any) => (
             <div className={usb(["col-md-6", "col-12"])}>
               <div className={usc(styles, ["form"])}>
                 <div className={usc(styles, ["form-content", "padding-top-52"])}>
-
                   <div className={usc(styles, ["formText"])}>
                     <img src="/images/barco.svg" alt='' className={usc(styles, ["formPic"])} />
                     <div className={usc(styles, ["formTittle"])} >
@@ -56,7 +55,7 @@ const Form = ({ children }: any) => (
                   <div className={usc(styles, ["formInput", "space-top-52", "inputCounter"])} >
                     <div className={usc(styles, ["counter"])}>
                       <div>
-                        <span className='icon-minus'></span>
+                        <span className='icon-menos'></span>
                         <p>2</p>
                         <span className='icon-plus' ></span>
                       </div>
@@ -74,7 +73,7 @@ const Form = ({ children }: any) => (
                       <span className='icon-radio-unchecked' /> Mango
                     </div>
                   </div>
-                  <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "space-bot-52"])} >
+                  <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                     <div className={usc(styles, ["clock"])}>
                       <span className='icon-radio-checked' />
                       <p>
@@ -82,12 +81,17 @@ const Form = ({ children }: any) => (
                       </p>
                     </div>
                   </div>
-                  <div className={usc(styles, ["formCheck",])} >
-                    <div>
-                      <span className='icon-check' />Lorem Ipsum dolor sit g amet consecteur?
+                  <div className={usc(styles, ["formInput", "timeInput", "space-top-20"  ])} >
+                    <div className={usc(styles, ["clock"])}>
+                      <p>
+                        $ total
+                      </p>
                     </div>
                   </div>
-                  <div className={usc(styles, ["formCheck", "space-bot-52"])} >
+                  <div className={usc(styles, ["formInput", "formPayment", "space-top-20" ])} >
+                  </div>
+                  <div className={usc(styles, ["formCheck", "space-bot-52"])}>
+                      <span className='icon-check'/><p>Quiero recibir avisos de promociones</p>
                   </div>
                   <Button></Button>
                 </div>

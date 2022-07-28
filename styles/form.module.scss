@@ -24,7 +24,7 @@
       color: $beige;
       font-family: caslon;
       p {
-        font-size: 13px;
+        font-size: 18px;
       }
       .picTittle {
         font-size: 60px;
@@ -45,6 +45,7 @@
       background-image: url(../public/images/kiwi.jpg);
       top: 0px;
       left: 0px;
+      z-index: 100;
     }
     .mango {
       background-image: url(../public/images/mango.jpg);
@@ -52,7 +53,7 @@
       right: 0px;
     }
     .sailImage {
-      transition: all 0.2s ease;
+      transition: all 0.3s ease;
       box-shadow: 0px 0px 10px grey;
       position: absolute;
       width: 55%;
@@ -61,9 +62,9 @@
       border-radius: 8px;
       background-size: cover;
       background-position: center;
-      filter: grayscale(1);
+      filter: grayscale(1) blur(2px);
       &:hover {
-        filter: grayscale(0);
+        filter: grayscale(0) blur(0px);
       }
     }
   }
@@ -110,15 +111,15 @@
     .radioButtons {
       justify-content: flex-start;
       padding: 0px 20px;
-      .checked{
+      .checked {
         margin-right: 30%;
       }
     }
-    .timeInput{
+    .timeInput {
       justify-content: flex-start;
       padding: 0px 20px;
-      span{
-        margin-right: 3px ;
+      span {
+        margin-right: 3px;
       }
     }
 
@@ -155,12 +156,24 @@
         }
       }
     }
+    .formPayment{
+      height: 100px;
+      background-color: transparent;
+      background-image: url(../public/images/payments.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
   .formCheck {
-    width: 100%;
+    display: flex;
+    align-items: center;
     span {
-      float: left;
+      display: inline-block;
       font-family: roboto;
+    }
+    p {
+      margin: 0%;
     }
   }
   .formText {
@@ -212,7 +225,6 @@
     }
   }
 }
-
 @media screen and (max-width: 1440px) {
   .content {
     .picContainer {
@@ -220,7 +232,6 @@
     }
   }
 }
-
 @media screen and (max-width: 1200px) {
   .content {
     .picContainer {
@@ -228,7 +239,6 @@
     }
   }
 }
-
 @media screen and (max-width: 992px) {
   .content {
     .picContainer {
@@ -236,23 +246,20 @@
     }
   }
 }
-
-@media screen and (max-width: 767px) {
-  .content {
-    .picContainer {
-      height: 40vh;
-    }
-  }
-}
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .content {
     .picContainer {
       height: 30vh;
     }
   }
 }
-
+@media screen and (max-width: 375px) {
+  .content {
+    .picContainer {
+      height: 25vh;
+    }
+  }
+}
 @media screen and (max-width: 1200px) {
   .content {
     .form {
@@ -264,6 +271,9 @@
   .content {
     .form {
       width: 80%;
+      .formInput{
+        padding: 0px 10px;
+      }
     }
     .picWrapper {
       .picTittle {

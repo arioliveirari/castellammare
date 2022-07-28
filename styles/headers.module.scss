@@ -12,6 +12,7 @@
   z-index: 10;
   justify-content: space-between;
   transition: all ease-in-out 0.3s;
+  z-index: 111;
   &.active {
     background-color: $darkBlue;
   }
@@ -68,7 +69,8 @@
         font-weight: 500;
         background-color: $orange;
         border-radius: 8px;
-        padding: 5px 30px;
+        width: 110px;
+        height: auto;
         color: $beige;
         font-weight: bold;
         transition: all ease-in-out 50ms;
