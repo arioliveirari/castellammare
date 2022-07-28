@@ -11,7 +11,6 @@
   position: fixed;
   z-index: 10;
   justify-content: space-between;
-
   transition: all ease-in-out 0.3s;
   &.active {
     background-color: $darkBlue;
@@ -59,26 +58,23 @@
     .links {
       text-transform: capitalize;
       font-size: 20px;
-
-      .reserva {
-        font-family: dmsans;
-        font-weight: 500;
-        background-color: $orange;
-        border-radius: 8px;
-        padding: 9px 30px;
-        color: $beige;
-        font-weight: bold;
-        transition: all ease-in-out 50ms;
-      }
-    }
-    
-    .links {
       width: 50%;
       display: flex;
       text-align: center;
       align-items: center;
       justify-content: space-between;
+      .reserva {
+        font-family: dmsans;
+        font-weight: 500;
+        background-color: $orange;
+        border-radius: 8px;
+        padding: 5px 30px;
+        color: $beige;
+        font-weight: bold;
+        transition: all ease-in-out 50ms;
+      }
     }
+
     .icons {
       width: 120px;
       display: flex;
@@ -92,11 +88,16 @@
           filter: brightness(0.8);
         }
       }
-      
     }
   }
 
-  
+  @media screen and (max-width: 1200px) {
+    .header-desktop {
+      .links {
+        width: 80%;
+      }
+    }
+  }
   @media screen and (max-width: 769px) {
     .header-desktop {
       display: none;
@@ -115,7 +116,7 @@
   @media screen and (min-width: 769px) {
     .header-desktop {
       display: flex;
-      width: 100%;
+
       justify-content: space-between;
     }
 

@@ -23,7 +23,7 @@ const Form = ({ children }: any) => (
                   <div className={usb(["row"])} >
                     <div className={usb(["col-l-6", "col-md-12"])} >
 
-                      <p className={usc(styles, ["picTittle"])} >KIWI</p>
+                      <p className={usc(styles, ["picTittle"])} >Kiwi</p>
                     </div>
                   </div>
                   <div className={usb(["row"])} >
@@ -53,7 +53,7 @@ const Form = ({ children }: any) => (
                       UNICA
                     </div>
                   </div>
-                  <div className={usc(styles, ["formInput", "space-top-52"])} >
+                  <div className={usc(styles, ["formInput", "space-top-52", "inputCounter"])} >
                     <div className={usc(styles, ["counter"])}>
                       <div>
                         <span className='icon-minus'></span>
@@ -74,7 +74,7 @@ const Form = ({ children }: any) => (
                       <span className='icon-radio-unchecked' /> Mango
                     </div>
                   </div>
-                  <div className={usc(styles, ["formInput", "space-top-20", "space-bot-52"])} >
+                  <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "space-bot-52"])} >
                     <div className={usc(styles, ["clock"])}>
                       <span className='icon-radio-checked' />
                       <p>
@@ -84,7 +84,7 @@ const Form = ({ children }: any) => (
                   </div>
                   <div className={usc(styles, ["formCheck",])} >
                     <div>
-                      <span className='icon-check' /> Lorem Ipsum dolor sit g amet consecteur?
+                      <span className='icon-check' />Lorem Ipsum dolor sit g amet consecteur?
                     </div>
                   </div>
                   <div className={usc(styles, ["formCheck", "space-bot-52"])} >

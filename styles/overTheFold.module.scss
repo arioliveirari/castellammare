@@ -28,13 +28,14 @@
 .containerOver {
   height: 70vh;
   color: $beige;
-  padding: 230px 0px;
   .textOver {
     cursor: default;
     max-width: 1024px;
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 80vh;
   }
   .tittleOver {
     max-width: 1024px;
@@ -72,17 +73,6 @@
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
-  .conteinerOver {
-    padding: 30px 5px;
-  }
-  .textOver {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  .tittleOver {
-    font-size: 30px;
-  }
   .buttonOver {
     display: none;
   }

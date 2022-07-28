@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+ import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { usb, usc, usw } from '../../utils/helpers';
 import Button from '../Button';

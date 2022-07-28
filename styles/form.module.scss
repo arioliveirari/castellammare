@@ -10,7 +10,6 @@
 .content {
   display: flex;
   background-color: $ligthBlue;
-  font-family: caslon;
   margin-bottom: 40px;
   align-items: center;
   justify-content: center;
@@ -23,6 +22,7 @@
     justify-content: center;
     .picText {
       color: $beige;
+      font-family: caslon;
       p {
         font-size: 13px;
       }
@@ -64,7 +64,6 @@
       filter: grayscale(1);
       &:hover {
         filter: grayscale(0);
-
       }
     }
   }
@@ -93,7 +92,7 @@
       padding-bottom: 52px;
     }
     .form-content {
-      max-width: 80%;
+      width: 80%;
       display: flex;
       font-family: roboto;
       flex-direction: column;
@@ -103,14 +102,32 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    .inputCounter {
+      justify-content: space-between;
+      padding: 0px 20px;
+    }
+    .radioButtons {
+      justify-content: flex-start;
+      padding: 0px 20px;
+      .checked{
+        margin-right: 30%;
+      }
+    }
+    .timeInput{
+      justify-content: flex-start;
+      padding: 0px 20px;
+      span{
+        margin-right: 3px ;
+      }
+    }
+
     .formInput {
       width: 100%;
       background-color: #fff;
       height: 56px;
       border-radius: 8px;
       display: flex;
-    
-      justify-content: space-around;
       align-items: center;
       text-align: center;
       .counter {
@@ -129,11 +146,11 @@
         justify-content: center;
         align-items: center;
       }
-      .clock{
+      .clock {
         display: flex;
         text-align: center;
         align-items: center;
-        p{
+        p {
           margin: 0%;
         }
       }
@@ -188,19 +205,74 @@
 }
 
 // mediaQueries
+@media screen and (min-width: 2560px) {
+  .content {
+    .picContainer {
+      height: 25vh;
+    }
+  }
+}
 
-@media screen and (max-width: 769px) {
-  .reserva {
-    width: 100%;
+@media screen and (max-width: 1440px) {
+  .content {
+    .picContainer {
+      height: 50vh;
+    }
   }
-  .picContainer {
-    flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    .picContainer {
+      height: 40vh;
+    }
   }
-  .sailImage {
-    margin: 0%;
+}
+
+@media screen and (max-width: 992px) {
+  .content {
+    .picContainer {
+      height: 30vh;
+    }
   }
-  .picText {
-    justify-content: center;
-    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    .picContainer {
+      height: 40vh;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    .picContainer {
+      height: 30vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    .form {
+      width: 110%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .content {
+    .form {
+      width: 80%;
+    }
+    .picWrapper {
+      .picTittle {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
   }
 }
