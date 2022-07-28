@@ -33,27 +33,39 @@
     }
   }
   .picContainer {
+    position: relative;
     display: flex;
     width: 100%;
     height: fit-content;
     align-items: center;
-
     text-align: center;
     margin-bottom: 20px;
+    height: 60vh;
     .kiwi {
       background-image: url(../public/images/kiwi.jpg);
+      top: 0px;
+      left: 0px;
     }
     .mango {
       background-image: url(../public/images/mango.jpg);
+      bottom: 0px;
+      right: 0px;
     }
     .sailImage {
-      width: 45%;
+      transition: all 0.2s ease;
+      box-shadow: 0px 0px 10px grey;
+      position: absolute;
+      width: 55%;
       height: auto;
-      aspect-ratio: 1/1.2;
+      aspect-ratio: 1/1;
       border-radius: 8px;
       background-size: cover;
       background-position: center;
-      margin-right: 15px;
+      filter: grayscale(1);
+      &:hover {
+        filter: grayscale(0);
+
+      }
     }
   }
   .form {

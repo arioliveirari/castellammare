@@ -68,9 +68,15 @@ const Links = () => (
     <a href="#">Sobre nosotros</a>
     <a href="#">Servicios</a>
     <div className={usc(styles, ["icons"])}>
-      <span className="icon-instagram icon" />
-      <span className="icon-mail icon" />
-      <span className="icon-wpp icon" />
+      <div className={usc(styles, ["linkBtn"])}>
+        <span className="icon-instagram" />
+      </div>
+      <div className={usc(styles, ["linkBtn"])}>
+        <span className="icon-mail" />
+      </div>
+      <div className={usc(styles, ["linkBtn"])}>
+        <span className="icon-wpp" />
+      </div>
     </div>
 
   </div>
