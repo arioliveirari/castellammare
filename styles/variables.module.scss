@@ -8,6 +8,8 @@ $beige: #f1e6d0;
     font-family: "roboto";
     font-weight: 400;
     src: url("/fonts/Roboto-Regular.ttf");
+    font-style: normal;
+    font-display: block;
 }
 
 @font-face {
@@ -37,6 +39,14 @@ $beige: #f1e6d0;
 @font-face {
     font-family: "opensans";
     src: url("/fonts/openSans-regular.ttf?ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "caslon";
+    src: url("/fonts/adobeCaslonProRegunlar.ttf?ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: block;

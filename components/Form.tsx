@@ -46,18 +46,20 @@ const Form = ({ children }: any) => (
 
                   <div className={usc(styles, ["formText"])}>
                     <img src="/images/barco.svg" alt='' className={usc(styles, ["formPic"])} />
-
                     <div className={usc(styles, ["formTittle"])} >
                       viví una experiencia
                     </div>
                     <div className={usc(styles, ["formParagraph"])} >
                       UNICA
                     </div>
-
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-52"])} >
                     <div className={usc(styles, ["counter"])}>
-                      <span className='icon-minus' />2<span className='icon-plus' />
+                      <div>
+                        <span className='icon-minus'></span>
+                        <p>2</p>
+                        <span className='icon-plus' ></span>
+                      </div>
                     </div>
                     <div className={usc(styles, ["persons"])} >
                       <span className='icon-person' />
@@ -66,21 +68,27 @@ const Form = ({ children }: any) => (
                   </div>
                   <div className={usc(styles, ["formInput", "radioButtons", "space-top-20"])} >
                     <div className={usc(styles, ["checked"])}>
-                      <span className='icon-radio-checked' />Kiwi
+                      <span className='icon-radio-checked' /> Kiwi
                     </div>
                     <div className={usc(styles, ["unchecked"])}>
-                      <span className='icon-radio-unchecked' />Mango
+                      <span className='icon-radio-unchecked' /> Mango
                     </div>
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-20", "space-bot-52"])} >
                     <div className={usc(styles, ["clock"])}>
-                      <span className='icon-radio-checked' />Mañana/Tarde/Noche
+                      <span className='icon-radio-checked' />
+                      <p>
+                        mañana/tarde/noche
+                      </p>
                     </div>
-
                   </div>
-                  <p className={usc(styles, ["space-bot-52"])}>
-                    <span className='icon-check' /> Lorem Ipsum dolor sit amet consecteur?
-                  </p>
+                  <div className={usc(styles, ["formCheck",])} >
+                    <div>
+                      <span className='icon-check' /> Lorem Ipsum dolor sit g amet consecteur?
+                    </div>
+                  </div>
+                  <div className={usc(styles, ["formCheck", "space-bot-52"])} >
+                  </div>
                   <Button></Button>
                 </div>
               </div>

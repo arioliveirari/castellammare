@@ -10,7 +10,7 @@
 .content {
   display: flex;
   background-color: $ligthBlue;
-  font-family: roboto;
+  font-family: caslon;
   margin-bottom: 40px;
   align-items: center;
   justify-content: center;
@@ -27,8 +27,8 @@
         font-size: 13px;
       }
       .picTittle {
-        font-size: 55px;
-        font-weight: 700;
+        font-size: 60px;
+        font-weight: 400;
       }
     }
   }
@@ -83,7 +83,7 @@
     .form-content {
       max-width: 80%;
       display: flex;
-
+      font-family: roboto;
       flex-direction: column;
       justify-content: center;
       text-align: center;
@@ -97,13 +97,18 @@
       height: 56px;
       border-radius: 8px;
       display: flex;
-      padding: 0px 20px;
-      justify-content: space-between;
+    
+      justify-content: space-around;
       align-items: center;
       text-align: center;
       .counter {
-        span {
-          margin: 10px;
+        div {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          p {
+            margin: 0px 10px;
+          }
         }
       }
       .persons {
@@ -112,9 +117,21 @@
         justify-content: center;
         align-items: center;
       }
-      .radioButtons {
-        justify-content: center;
+      .clock{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        p{
+          margin: 0%;
+        }
       }
+    }
+  }
+  .formCheck {
+    width: 100%;
+    span {
+      float: left;
+      font-family: roboto;
     }
   }
   .formText {
@@ -129,7 +146,8 @@
       margin-bottom: 30px;
     }
     .formTittle {
-      font-weight: 700;
+      font-family: caslon;
+      font-weight: 400;
       font-size: 30px;
     }
     .formParagraph {
