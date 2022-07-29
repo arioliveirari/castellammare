@@ -9,7 +9,6 @@
   color: $beige;
   background-color: transparent;
   position: fixed;
-  z-index: 10;
   justify-content: space-between;
   transition: all ease-in-out 0.3s;
   z-index: 111;
@@ -58,7 +57,7 @@
     align-items: center;
     .links {
       text-transform: capitalize;
-      font-size: 20px;
+      font-size: 17px;
       width: 50%;
       display: flex;
       text-align: center;

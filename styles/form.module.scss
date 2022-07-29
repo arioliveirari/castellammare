@@ -1,5 +1,7 @@
 @import "variables.module.scss";
 
+
+
 .formComponent {
   background-color: $ligthBlue;
   align-items: center;
@@ -10,7 +12,7 @@
 .content {
   display: flex;
   background-color: $ligthBlue;
-  margin-bottom: 40px;
+  
   align-items: center;
   justify-content: center;
   .picWrapper {
@@ -24,10 +26,10 @@
       color: $beige;
       font-family: caslon;
       p {
-        font-size: 18px;
+        font-size: 16px;
       }
       .picTittle {
-        font-size: 60px;
+        font-size: 58px;
         font-weight: 400;
       }
     }
@@ -40,7 +42,7 @@
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
-    height: 50vh;
+    height: 25vw;
     .kiwi {
       background-image: url(../public/images/kiwi.jpg);
       top: 0px;
@@ -74,6 +76,7 @@
     justify-content: center;
     margin: auto;
     border-radius: 8px;
+    color: $darkBlue;
     .space-top-20 {
       margin-top: 20px;
     }
@@ -142,7 +145,7 @@
         }
       }
       .persons {
-        font-size: 40px;
+        font-size: 38px;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -212,7 +215,7 @@
     font-weight: bold;
     transition: all ease-in-out 0.2s;
     margin-bottom: 52px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -220,45 +223,64 @@
 @media screen and (min-width: 2560px) {
   .content {
     .picContainer {
-      height: 25vh;
+      height: 20vw;
     }
   }
 }
 @media screen and (max-width: 1440px) {
   .content {
     .picContainer {
-      height: 50vh;
+      height: 30vw;
     }
   }
 }
 @media screen and (max-width: 1200px) {
   .content {
     .picContainer {
-      height: 40vh;
+      height: 40vw;
     }
   }
 }
 @media screen and (max-width: 992px) {
   .content {
     .picContainer {
-      height: 30vh;
+      height: 30vw;
     }
   }
 }
 @media screen and (max-width: 768px) {
   .content {
     .picContainer {
-      height: 30vh;
+      height: 35vw;
     }
   }
 }
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width:767px) {
   .content {
     .picContainer {
-      height: 25vh;
+      height: 50vw;
     }
   }
 }
+
+
+@media screen and (max-width: 425px) {
+  .content {
+    .picContainer {
+      height: 70vw;
+    }
+  }
+}
+@media screen and (max-width:540px) and (min-width:540px) {
+  .content {
+    .picContainer {
+      height: 70vw;
+    }
+  }
+  
+}
+
 @media screen and (max-width: 1200px) {
   .content {
     .form {
