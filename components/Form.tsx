@@ -59,7 +59,7 @@ const Form = ({ children }: any) => (
                         <div>
                           <span className='icon-menos'></span>
                           <p>2</p>
-                          <span className='icon-plus' ></span>
+                          <span className='icon-mas' ></span>
                         </div>
                       </div>
                       <div className={usc(styles, ["persons"])} >
@@ -69,15 +69,15 @@ const Form = ({ children }: any) => (
                     </div>
                     <div className={usc(styles, ["formInput", "radioButtons", "space-top-20"])} >
                       <div className={usc(styles, ["checked"])}>
-                        <span className='icon-radio-checked' /> Kiwi
+                        <span className='icon-check' /> Kiwi
                       </div>
                       <div className={usc(styles, ["unchecked"])}>
-                        <span className='icon-radio-unchecked' /> Mango
+                        <span className='icon-un-check' /> Mango
                       </div>
                     </div>
                     <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                       <div className={usc(styles, ["clock"])}>
-                        <span className='icon-radio-checked' />
+                        <span className='icon-clock' />
                         <p>
                           mañana/tarde/noche
                         </p>

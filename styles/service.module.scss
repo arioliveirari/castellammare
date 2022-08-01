@@ -6,6 +6,12 @@
     flex-direction: row;
     margin-bottom: 30px;
 }
+.flex-direction-reverse{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+}
 
 
 .tittle{
@@ -21,13 +27,21 @@
     color: $darkBlue;
 }
 
-.image{
+.service1,.service2,.service3{
     width: 100%;
     height: 100%;
     border-radius: 8px;
     background-position: center;
     background-size: cover;
+}
+.service1{
     background-image: url(../public/images/service1.jpg);
+}
+.service2{
+    background-image: url(../public/images/service2.jpg);
+}
+.service3{
+    background-image: url(../public/images/service3.jpg);
 }
 @media screen and (max-width:768px) {
     .serviceContainer{

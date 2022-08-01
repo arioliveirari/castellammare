@@ -64,9 +64,9 @@
       border-radius: 8px;
       background-size: cover;
       background-position: center;
-      filter: grayscale(1) blur(2px);
+      filter: grayscale(1) brightness(0.5);
       &:hover {
-        filter: grayscale(0) blur(0px);
+        filter: grayscale(0) ;
       }
     }
   }
