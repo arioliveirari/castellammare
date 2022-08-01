@@ -13,6 +13,7 @@ const Index = (props: any) => {
     <div className={usc(styles, ['main'])}>
       <Header />
       <OverTheFold />
+      <Wales />
       <Form />
       <Services />
     </div>
@@ -20,3 +21,11 @@ const Index = (props: any) => {
 }
 
 export default Index;
+
+
+export const Wales = () => {
+  return (
+    <div className={usc(styles, ["wales"])}>
+    </div>
+  )
+}
