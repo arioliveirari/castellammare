@@ -10,7 +10,7 @@ const Captains = () => {
 
             <Tittles tittle='Capitanes' />
             <div className={usw(styles, ["captains"], ["container-fluid"])} >
-                <div className={usb(["container"])}>
+                <div className={usb(["container", "m-auto"])}>
                     <div className={usb(["row"])}>
                         <div className={usb(["col-md-11", "col-12"])}>
                             <div className={usb(["row"])}>
