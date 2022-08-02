@@ -1,67 +1,73 @@
 @import "variables.module.scss";
-.captains{
-    justify-content: center;
-    align-items: center;
-}
-
-.left,.rigth {
+.captains {
     display: flex;
-    justify-content: flex-end;
+    .captainsContainer {
+        display: flex;
+        .colContainer {
+            display: flex;
+            margin-bottom: 30px;
+        }
+    }
+}
+.content {
     width: 100%;
     height: 100%;
- 
-    .nameContainer {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        height: 50%;
-        flex-direction: column;
-       
-        .name {
+    .textContainer {
+        .tittle {
             font-size: 30px;
+            margin: 0%;
         }
-    }
-    .image {
-        background-image: url(../public/images/person1.jpg);
-        width: 30%;
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        border-radius: 8px;
-        margin: 10px;
     }
     .dataContainer {
+        width: 100%;
         display: flex;
-        padding: 5px;
-        width: 100%;        
-        justify-content: space-between;
-    }
-}
-.left{
-    align-items:center;
-    justify-content: flex-start;
-    .textContainer{
-        width:70%;
-    }
-}
-.rigth{
-    align-items:center;
-    justify-content: flex-start;
-    .textContainer{
-        .name{
-            width: 100%;
-            justify-content: flex-end;
-            text-align: end;
+        justify-content: start;
+        text-align: center;
+
+        .data {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 15px;
+            text-align: center;
         }
-        width:70%;
+    }
+}
+.picContainer {
+    background-image: url(../public/images/person1.jpg);
+    width: 60%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+.rigth {
+    .textContainer {
+        text-align: end;
+    }
+    .dataContainer {
+        width: 100%;
+        justify-content: end;
+        .data {
+            margin: 20px 15px;
+        }
+    }
+    .colContainer {
+        text-align: end;
     }
 }
 
-.rigth{
-    .image{
-        background-image: url(../public/images/person2.jpg);
+@media screen and (max-width:768px) {
+
+    .captains {
+    display: flex;
+    .captainsContainer {
+        display: flex;
+        .colContainer {
+            display: flex;
+        }
     }
-    .nameSubtittle{
-        text-align: end;
+    .picContainer{
+        width: 100%;
     }
+}
 }
