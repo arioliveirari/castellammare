@@ -4,6 +4,7 @@ import OverTheFold from '../components/OverTheFold';
 import Form from '../components/Form';
 import Footer from '../components/Footer'
 import Services from '../components/Services';
+import Captains from '../components/captains';
 import styles from '../styles/globals.module.scss';
 import { usc } from '../utils/helpers';
 //import { connect } from "react-redux";
@@ -16,6 +17,7 @@ const Index = (props: any) => {
       <OverTheFold />
       <Wales />
       <Form />
+      <Captains />
       <Services />
       <Wales />
       <Footer />
