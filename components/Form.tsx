@@ -1,7 +1,6 @@
 import React from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
-import Tittles from './Tittles';
 import Button from './Button';
 
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/globals/Header';
 import OverTheFold from '../components/OverTheFold';
 import Form from '../components/Form';
+import Footer from '../components/Footer'
 import Services from '../components/Services';
 import styles from '../styles/globals.module.scss';
 import { usc } from '../utils/helpers';
@@ -16,6 +17,8 @@ const Index = (props: any) => {
       <Wales />
       <Form />
       <Services />
+      <Wales />
+      <Footer />
     </div>
   )
 }

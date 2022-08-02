@@ -1,0 +1,91 @@
+@import "variables.module.scss";
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: $darkBlue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0px;
+    .footerContainer {
+        width: 100%;
+        display: flex;
+       
+        .content {
+            font-family: roboto;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-between;
+            p{
+                font-size: 12px;
+                margin:0% ;
+                color: $beige;
+            }
+            .logo {
+                display: flex;
+                align-items: center;
+                color: $beige;
+                .logoPic {
+                    width: 45px;
+                    height: auto;
+                    aspect-ratio: 1/1;
+                }
+            }
+
+            li {
+                list-style: none;
+                color: $beige;
+                text-align: center;
+                word-break: keep-all;
+            }
+            a {
+                text-decoration: none;
+            }
+            .logoContainer{
+                display: flex;
+                flex-direction: row;
+            }
+            .iconContainer {
+                height: 100%;
+                align-items: center;
+                .icons {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    .linkBtn{
+                        width: 36px;
+                        height: 36px;
+                        background: $beige;
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $darkBlue;
+                        margin: 10px;
+                    }
+                }
+            }
+            
+        }
+        .middle {
+            background-color: blue;
+        }
+        .rigth {
+            background-color: green;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .footerContainer,.content{
+        flex-direction: column;
+    }
+    
+}

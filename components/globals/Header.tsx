@@ -40,7 +40,6 @@ const Header = ({ children }: any) => {
             {/*Header Desktop */}
             <div className={usc(styles, ["header-desktop"])}>
               <Logo />
-             
               <Links />
             </div>
 

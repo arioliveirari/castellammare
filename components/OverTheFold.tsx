@@ -27,7 +27,6 @@ const OverTheFold = ({ children }: any) => (
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
