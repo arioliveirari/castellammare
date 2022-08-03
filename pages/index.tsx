@@ -7,6 +7,7 @@ import Services from '../components/Services';
 import Captains from '../components/captains';
 import styles from '../styles/globals.module.scss';
 import { usc } from '../utils/helpers';
+import Gallery from '../components/Gallery';
 //import { connect } from "react-redux";
 
 const Index = (props: any) => {
@@ -19,6 +20,7 @@ const Index = (props: any) => {
       <Form />
       <Captains />
       <Services />
+      <Gallery/>
       <Wales />
       <Footer />
     </div>

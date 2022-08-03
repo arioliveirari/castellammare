@@ -23,7 +23,7 @@ const Captains = () => {
                                     </p>
                                 </div>
                                 <div className={usc(styles, ["dataContainer"])}>
-                                    <p className={usc(styles, ["data"])}> 50 <br /> viajes </p>
+                                    <p className={usc(styles, ["data","noMarginLeft"])}> 50 <br /> viajes </p>
                                     <p className={usc(styles, ["data"])}> 12 <br /> años navegando </p>
                                     <p className={usc(styles, ["data"])}> 14 <br /> viajes </p>
                                 </div>
@@ -34,6 +34,7 @@ const Captains = () => {
                                 </div>
                             </div>
                         </div>
+                       
                         <div className={usw(styles,["colContainer", "rigth"],["col-md-6", "col-12"])} >
                             <div className={usc(styles, ["picContainer"])}>
                                 <div className={usc(styles,["pic"])}>
@@ -52,7 +53,7 @@ const Captains = () => {
                                 <div className={usc(styles, ["dataContainer"])}>
                                     <p className={usc(styles, ["data"])}> 50 <br /> viajes </p>
                                     <p className={usc(styles, ["data"])}> 12 <br /> años navegando </p>
-                                    <p className={usc(styles, ["data"])}> 14 <br /> viajes </p>
+                                    <p className={usc(styles, ["data", "noMarginRigth"])}> 14 <br /> viajes </p>
                                 </div>
                             </div>
                         </div>
