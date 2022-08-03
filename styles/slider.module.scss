@@ -1,0 +1,17 @@
+@import "variables.module.scss";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+.sliderContainer {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    .sliderList {
+        display: flex;
+        min-width: 100%;
+        flex-direction: row;
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+    }
+}

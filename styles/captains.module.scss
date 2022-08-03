@@ -1,90 +1,148 @@
 @import "variables.module.scss";
-.captains {
-    display: flex;
-    background-color: $beige;
-    padding: 0%;
-    width: 100vw;
-    overflow: hidden;
-    .captainsContainer {
-        display: flex;
-        .colContainer {
-            display: flex;
-            flex-direction: row;
-        }
-    }
-}
-.content {
-    width: 100%;
-    height: 100%;
-    .textContainer {
-        .tittle {
-            font-size: 30px;
-            margin: 0%;
-        }
-    }
-    .dataContainer {
-        width: 100%;
-        display: flex;
-        justify-content: start;
-        text-align: center;
 
-        .data {
-            display: flex;
-            flex-direction: column;
-            margin: 20px 15px;
-            text-align: center;
+.captainsModule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $beige;
+    .container {
+        display: flex;
+        padding: 20px;
+    }
+    .left,
+    .rigth {
+        display: flex;
+        justify-content: center;
+        .person {
+            width: 50%;
+            height: 100%;
+            .personalInfo{
+                padding: 10px;
+                .name{
+                    font-size: 30px;
+                    text-transform: capitalize;
+                }
+                .tittle{
+                    text-transform: capitalize;
+                    font-size: 20px;
+                }
+            }
+            .data {
+                padding: 10px ;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                font-size: 20px;
+            }
         }
-        .noMarginLeft {
-            margin-left: 0%;
+        .pic {
+            border-radius: 8px;
+            width: 30%;
+            background-image: url(../public/images/person1.jpg);
+            background-position: center;
+            background-size: cover;
         }
     }
 }
-.picContainer {
-    background-image: url(../public/images/person1.jpg);
-    width: 50%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    border-radius: 8px;
-}
-.rigth {
-    .textContainer {
-        width: 100%;
+.rigth{
+
+    .personalInfo{
         text-align: end;
-    }
-    .dataContainer {
-        width: 100%;
-        justify-content: end;
-        .data {
-            margin: 20px 15px;
-        }
-        .noMarginRigth {
-            margin-right: 0%;
-        }
-    }
-    .colContainer {
-        text-align: end;
-    }
-    .picContainer {
-        background-image: url(../public/images/person2.jpg);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .captains {
-        display: flex;
-        .captainsContainer {
-            display: flex;
-            .colContainer {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-        .picContainer {
-            width: 100%;
-        }
-        .left {
-            margin-bottom: 30px;
-        }
+    .container{
+        flex-direction: column;
     }
 }
+
+// .captains {
+//     display: flex;
+//     background-color: $beige;
+//     padding: 0%;
+//     width: 100vw;
+//     overflow: hidden;
+//     .captainsContainer {
+//         display: flex;
+//         .colContainer {
+//             display: flex;
+//             flex-direction: row;
+//         }
+//     }
+// }
+// .content {
+//     width: 100%;
+//     height: 100%;
+//     .textContainer {
+//         .tittle {
+//             font-size: 30px;
+//             margin: 0%;
+//         }
+//     }
+//     .dataContainer {
+//         width: 100%;
+//         display: flex;
+//         justify-content: start;
+//         text-align: center;
+
+//         .data {
+//             display: flex;
+//             flex-direction: column;
+//             margin: 20px 15px;
+//             text-align: center;
+//         }
+//         .noMarginLeft {
+//             margin-left: 0%;
+//         }
+//     }
+// }
+// .picContainer {
+//     background-image: url(../public/images/person1.jpg);
+//     width: 50%;
+//     height: 100%;
+//     background-position: center;
+//     background-size: cover;
+//     border-radius: 8px;
+// }
+// .rigth {
+//     .textContainer {
+//         width: 100%;
+//         text-align: end;
+//     }
+//     .dataContainer {
+//         width: 100%;
+//         justify-content: end;
+//         .data {
+//             margin: 20px 15px;
+//         }
+//         .noMarginRigth {
+//             margin-right: 0%;
+//         }
+//     }
+//     .colContainer {
+//         text-align: end;
+//     }
+//     .picContainer {
+//         background-image: url(../public/images/person2.jpg);
+//     }
+// }
+
+// @media screen and (max-width: 768px) {
+//     .captains {
+//         display: flex;
+//         .captainsContainer {
+//             display: flex;
+//             .colContainer {
+//                 display: flex;
+//                 flex-direction: column;
+//             }
+//         }
+//         .picContainer {
+//             width: 100%;
+//         }
+//         .left {
+//             margin-bottom: 30px;
+//         }
+//     }
+// }

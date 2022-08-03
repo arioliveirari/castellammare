@@ -8,13 +8,14 @@ import Captains from '../components/captains';
 import styles from '../styles/globals.module.scss';
 import { usc } from '../utils/helpers';
 import Gallery from '../components/Gallery';
+import Slider from '../components/Slider';
 //import { connect } from "react-redux";
 
 const Index = (props: any) => {
 
   return (
     <div className={usc(styles, ['main'])}>
-      <Header />
+      {/* <Header />
       <OverTheFold />
       <Wales />
       <Form />
@@ -22,7 +23,8 @@ const Index = (props: any) => {
       <Services />
       <Gallery/>
       <Wales />
-      <Footer />
+      <Footer /> */}
+      <Slider/>
     </div>
   )
 }

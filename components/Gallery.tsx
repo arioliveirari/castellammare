@@ -12,6 +12,7 @@ const Gallery = () => {
             <div className={usb(["container"])}>
                 <div className={usb(["row"])}>
                     <div className={usb(["col-12"])}>
+
                         <ResponsiveMasonry
                             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                         >
@@ -32,7 +33,7 @@ const Gallery = () => {
                                 <img src="/images/gallery/13.jpg" alt="pic goes here" />
                                 <img src="/images/gallery/14.jpg" alt="pic goes here" />
                                 <img src="/images/gallery/15.jpg" alt="pic goes here" />
-
+                               
                             </Masonry>
                         </ResponsiveMasonry>
                     </div>
