@@ -72,10 +72,10 @@ const Links = () => (
         <span className="icon-instagram" />
       </div>
       <div className={usc(styles, ["linkBtn"])}>
-        <span className="icon-mail" />
+        <span className="icon-wpp" />
       </div>
       <div className={usc(styles, ["linkBtn"])}>
-        <span className="icon-wpp" />
+        <span className="icon-mail" />
       </div>
     </div>
 

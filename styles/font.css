@@ -165,6 +165,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .icon-instagram:before {
   content: "\e900";
 }
@@ -186,9 +187,6 @@
 .icon-clock:before {
   content: "\e90f";
 }
-.icon-mail:before {
-  content: "\e932";
-}
 .icon-minus:before {
   content: "\e94a";
 }
@@ -200,4 +198,7 @@
 }
 .icon-wpp:before {
   content: "\e930";
+}
+.icon-mail:before {
+  content: "\e903";
 }
