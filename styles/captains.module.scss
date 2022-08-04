@@ -3,14 +3,17 @@
 .captainsModule {
     align-items: center;
     justify-content: center;
+    background-color: $beige;
     // define direction
     .colContainer {
         display: flex;
         justify-content: center;
         align-items: center;
+
         //define direction
         .textContainer {
             width: 50%;
+            text-align: center;
             p {
                 margin-bottom: 0%;
             }
@@ -18,19 +21,19 @@
                 font-size: 30px;
             }
             .tittle {
-              
                 font-size: 20px;
             }
             .dataContainer {
                 display: flex;
                 justify-content: space-between;
+                flex-direction: column;
                 text-align: center;
             }
         }
-        .rigthText{
+        .rigthText {
             text-align: end;
         }
-        .rigthData{
+        .rigthData {
             flex-direction: row-reverse;
         }
         .picContainer {
@@ -40,6 +43,19 @@
             background-position: center;
             height: 290px;
             border-radius: 8px;
+        }
+    }
+}
+// media queries
+@media screen and (max-width: 76px) {
+    .cptainsModule {
+        .colContainer {
+            .textContainer {
+                text-align: center;
+                .dataContainer {
+                    flex-direction: column;
+                }
+            }
         }
     }
 }
