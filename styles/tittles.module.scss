@@ -4,17 +4,16 @@
     display: flex;
     color: #002848;
     justify-content: flex-end;
-    background-color:transparent;
+    background-color: transparent;
     border-bottom: 3px solid #002848;
     font-size: 68px;
-    margin-bottom: 50PX;
+    margin-bottom: 50px;
     font-family: calson;
     font-weight: 400;
 }
 
-@media screen and (max-width:768px) {
-    .container{
+@media screen and (max-width: 768px) {
+    .container {
         width: 70%;
     }
-    
 }

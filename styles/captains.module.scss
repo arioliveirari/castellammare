@@ -4,30 +4,41 @@
     align-items: center;
     justify-content: center;
     background-color: $beige;
-    // define direction
+    padding-bottom: 30px;
     .colContainer {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        //define direction
         .textContainer {
             width: 50%;
-            text-align: center;
+
             p {
                 margin-bottom: 0%;
             }
             .name {
                 font-size: 30px;
+                font-family: roboto;
+                font-weight: 500;
+                text-transform: capitalize;
             }
             .tittle {
                 font-size: 20px;
+                font-family: roboto;
+                font-weight: 400;
             }
             .dataContainer {
                 display: flex;
                 justify-content: space-between;
-                flex-direction: column;
+                padding-right: 15px;
+                padding-top: 15px;
                 text-align: center;
+                font-family: roboto;
+                .dataNumber {
+                    font-weight: 700;
+                }
+                .datatext{
+                    font-weight: 400;
+                }
             }
         }
         .rigthText {
@@ -35,176 +46,20 @@
         }
         .rigthData {
             flex-direction: row-reverse;
+            padding-right: 0%;
+            padding-left: 15px;
         }
         .picContainer {
             width: 50%;
-            background-image: url(../public/images/person1.jpg);
-            background-size: cover;
+            background-image: url(../public/images/captain1.png);
+            background-size: contain;
             background-position: center;
-            height: 290px;
+            background-repeat: no-repeat;
+            height: 296px;
             border-radius: 8px;
         }
-    }
-}
-// media queries
-@media screen and (max-width: 76px) {
-    .cptainsModule {
-        .colContainer {
-            .textContainer {
-                text-align: center;
-                .dataContainer {
-                    flex-direction: column;
-                }
-            }
+        .rigthPicContainer{
+            background-image: url(../public/images/captain2.png);
         }
     }
 }
-
-// version 1
-// .captains {
-//     display: flex;
-//     background-color: $beige;
-//     padding: 0%;
-//     width: 100vw;
-//     overflow: hidden;
-//     .captainsContainer {
-//         display: flex;
-//         .colContainer {
-//             display: flex;
-//             flex-direction: row;
-//         }
-//     }
-// }
-// .content {
-//     width: 100%;
-//     height: 100%;
-//     .textContainer {
-//         .tittle {
-//             font-size: 30px;
-//             margin: 0%;
-//         }
-//     }
-//     .dataContainer {
-//         width: 100%;
-//         display: flex;
-//         justify-content: start;
-//         text-align: center;
-
-//         .data {
-//             display: flex;
-//             flex-direction: column;
-//             margin: 20px 15px;
-//             text-align: center;
-//         }
-//         .noMarginLeft {
-//             margin-left: 0%;
-//         }
-//     }
-// }
-// .picContainer {
-//     background-image: url(../public/images/person1.jpg);
-//     width: 50%;
-//     height: 100%;
-//     background-position: center;
-//     background-size: cover;
-//     border-radius: 8px;
-// }
-// .rigth {
-//     .textContainer {
-//         width: 100%;
-//         text-align: end;
-//     }
-//     .dataContainer {
-//         width: 100%;
-//         justify-content: end;
-//         .data {
-//             margin: 20px 15px;
-//         }
-//         .noMarginRigth {
-//             margin-right: 0%;
-//         }
-//     }
-//     .colContainer {
-//         text-align: end;
-//     }
-//     .picContainer {
-//         background-image: url(../public/images/person2.jpg);
-//     }
-// }
-
-// @media screen and (max-width: 768px) {
-//     .captains {
-//         display: flex;
-//         .captainsContainer {
-//             display: flex;
-//             .colContainer {
-//                 display: flex;
-//                 flex-direction: column;
-//             }
-//         }
-//         .picContainer {
-//             width: 100%;
-//         }
-//         .left {
-//             margin-bottom: 30px;
-//         }
-//     }
-// }
-
-// version 2
-// .captainsModule {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     background-color: $beige;
-//     .container {
-//         display: flex;
-//         padding: 20px;
-//     }
-//     .left,
-//     .rigth {
-//         display: flex;
-//         justify-content: center;
-//         .person {
-//             width: 50%;
-//             height: 100%;
-//             .personalInfo{
-//                 padding: 10px;
-//                 .name{
-//                     font-size: 30px;
-//                     text-transform: capitalize;
-//                 }
-//                 .tittle{
-//                     text-transform: capitalize;
-//                     font-size: 20px;
-//                 }
-//             }
-//             .data {
-//                 padding: 10px ;
-//                 display: flex;
-//                 justify-content: space-between;
-//                 text-align: center;
-//                 font-size: 20px;
-//             }
-//         }
-//         .pic {
-//             border-radius: 8px;
-//             width: 30%;
-//             background-image: url(../public/images/person1.jpg);
-//             background-position: center;
-//             background-size: cover;
-//         }
-//     }
-// }
-// .rigth{
-
-//     .personalInfo{
-//         text-align: end;
-//     }
-// }
-
-// @media screen and (max-width: 768px) {
-//     .container{
-//         flex-direction: column;
-//     }
-// }

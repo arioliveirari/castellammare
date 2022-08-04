@@ -6,8 +6,8 @@ import Tittles from './Tittles';
 const Captains = () => {
     return (
         <>
-            <Tittles tittle='Capitanes' />
             <div className={usw(styles, ["captainsModule"], ["container-fluid"])}>
+            <Tittles tittle='Capitanes' />
                 <div className={usb(["container", "m-auto"])} >
                     <div className={usb(["row"])}>
                         <div className={usb(["col-12"])}>
@@ -22,16 +22,16 @@ const Captains = () => {
                                         </p>
                                         <div className={usc(styles, ["dataContainer"])}>
                                             <div className={usc(styles, ["data"])}>
-                                                <p>50</p>
-                                                <p>viajes</p>
+                                                <p className={usc(styles,["dataNumber"])}>50</p>
+                                                <p className={usc(styles,["dataText"])}>viajes</p>
                                             </div>
                                             <div className={usc(styles, ["data"])}>
-                                                <p>12</p>
-                                                <p>años navegando</p>
+                                                <p className={usc(styles,["dataNumber"])}>12</p>
+                                                <p className={usc(styles,["dataText"])}>años navegando</p>
                                             </div>
                                             <div className={usc(styles, ["data"])}>
-                                                <p>14</p>
-                                                <p>viajes</p>
+                                                <p className={usc(styles,["dataNumber"])}>14</p>
+                                                <p className={usc(styles,["dataText"])}>viajes</p>
                                             </div>
                                         </div>
                                     </div>
@@ -41,7 +41,7 @@ const Captains = () => {
                                     </div>
                                 </div>
                                 <div className={usw(styles, ["colContainer"], ["col-md-6", "col-12"])} >
-                                    <div className={usc(styles, ["picContainer"])} />
+                                    <div className={usc(styles, ["picContainer", "rigthPicContainer"])} />
                                     <div className={usc(styles, ["textContainer","rigthText"])}>
                                         <p className={usc(styles, ["name"])}>
                                             joaquina gonzalez
@@ -51,16 +51,16 @@ const Captains = () => {
                                         </p>
                                         <div className={usc(styles, ["dataContainer","rigthData"])}>
                                             <div className={usc(styles, ["data"])}>
-                                                <p>50</p>
-                                                <p>viajes</p>
+                                                <p className={usc(styles,["dataNumber"])}>50</p>
+                                                <p className={usc(styles,["dataText"])}>viajes</p>
                                             </div>
                                             <div className={usc(styles, ["data"])}>
-                                                <p>12</p>
-                                                <p>años navegando</p>
+                                                <p className={usc(styles,["dataNumber"])}>12</p>
+                                                <p className={usc(styles,["dataText"])}>años navegando</p>
                                             </div>
                                             <div className={usc(styles, ["data"])}>
-                                                <p>14</p>
-                                                <p>viajes</p>
+                                                <p className={usc(styles,["dataNumber"])}>14</p>
+                                                <p className={usc(styles,["dataText"])}>viajes</p>
                                             </div>
                                         </div>
                                     </div>
@@ -76,125 +76,3 @@ const Captains = () => {
     )
 }
 export default Captains
-
-
-{/* 
-version 1
-<div className={usw(styles, ["captains"], ["container-fluid"])} >
-                <div className={usb(["container"])} >
-                    <div className={usw(styles, ['captainsContainer'], ["row"])}>
-                        <div className={usw(styles,["colContainer", "left"],["col-md-6", "col-12"])} >
-                            <div className={usc(styles, ["content"])}>
-                                <div className={usc(styles, ["textContainer"])}>
-                                    <p className={usc(styles, ["tittle"])}>
-                                        Joaquina gonzalez
-                                    </p>
-                                    <p className={usc(styles, ["paragraph"])}>
-                                        Creadora de contenido
-                                    </p>
-                                </div>
-                                <div className={usc(styles, ["dataContainer"])}>
-                                    <p className={usc(styles, ["data","noMarginLeft"])}> 50 <br /> viajes </p>
-                                    <p className={usc(styles, ["data"])}> 12 <br /> años navegando </p>
-                                    <p className={usc(styles, ["data"])}> 14 <br /> viajes </p>
-                                </div>
-                            </div>
-                            <div className={usc(styles, ["picContainer"])}>
-                                <div className={usc(styles,["pic"])}>
-
-                                </div>
-                            </div>
-                        </div>
-                       
-                        <div className={usw(styles,["colContainer", "rigth"],["col-md-6", "col-12"])} >
-                            <div className={usc(styles, ["picContainer"])}>
-                                <div className={usc(styles,["pic"])}>
-
-                                </div>
-                            </div>
-                            <div className={usc(styles, ["content"])}>
-                                <div className={usc(styles, ["textContainer"])}>
-                                    <p className={usc(styles, ["tittle"])}>
-                                        Joaquina gonzalez
-                                    </p>
-                                    <p className={usc(styles, ["paragraph"])}>
-                                        Creadora de contenido
-                                    </p>
-                                </div>
-                                <div className={usc(styles, ["dataContainer"])}>
-                                    <p className={usc(styles, ["data"])}> 50 <br /> viajes </p>
-                                    <p className={usc(styles, ["data"])}> 12 <br /> años navegando </p>
-                                    <p className={usc(styles, ["data", "noMarginRigth"])}> 14 <br /> viajes </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        
-        version 2
-                    {/* <div className={usw(styles, ["captainsModule"], ["container-fluid"])}>
-                <div className={usb(["container"])}>
-                    <div className={usb(["row"])}>
-                        <div className={usw(styles, ["container"], ["col-12"])}>
-                            <div className={usb(["col-md-6", "col-12"])}>
-                                <div className={usc(styles, ["left"])}>
-                                    <div className={usc(styles, ["person"])}>
-                                        <div className={usc(styles, ["personalInfo"])}>
-                                            <p className={usc(styles, ["name"])}>
-                                                joaquina gonzalez
-                                            </p>
-                                            <p className={usc(styles, ["tittle"])}>
-                                                creadora de contenido
-                                            </p>
-                                        </div>
-                                        <div className={usc(styles, ["data"])}>
-                                            <p>
-                                                50 <br /> viajes
-                                            </p>
-                                            <p>
-                                                12 <br /> años navegando
-                                            </p>
-                                            <p>
-                                                14 <br /> viajes
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className={usc(styles, ["pic"])}>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className={usb(["col-md-6", "col-12"])}>
-                                <div className={usc(styles, ["rigth"])}>
-                                    <div className={usc(styles, ["pic"])}>
-                                    </div>
-                                    <div className={usc(styles, ["person"])}>
-                                        <div className={usc(styles, ["personalInfo"])}>
-                                            <p className={usc(styles, ["name"])}>
-                                                joaquina gonzalez
-                                            </p>
-                                            <p className={usc(styles, ["tittle"])}>
-                                                creadora de contenido
-                                            </p>
-                                        </div>
-                                        <div className={usc(styles, ["data"])}>
-                                            <p>
-                                                50 <br /> viajes
-                                            </p>
-                                            <p>
-                                                12 <br /> años navegando
-                                            </p>
-                                            <p>
-                                                14 <br /> viajes
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
