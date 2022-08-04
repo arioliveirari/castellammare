@@ -1,13 +1,35 @@
 import React from 'react';
+import { useState } from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
 import Button from './Button';
 
 
-const Form = ({ children }: any) => (
+const Form = ({ children }: any) => {
+  const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
+  const [checkedMango, setCheckedMango] = useState<boolean>(false);
+  const [tittle, setTittle] = useState("")
+  const [iconkiwi, setIconKiwi] = useState("icon-un-check")
+  const [iconMango, setIconMango] = useState("icon-un-check")
 
-  <>
-    <div className={usw(styles, ['formComponent'], ["container-fluid"])}>
+  const kiwi = () => {
+    setCheckedKiwi(true)
+    setCheckedMango(false)
+    setTittle("kiwi")
+    setIconKiwi("icon-check")
+    setIconMango("icon-un-check")
+  }
+  const mango = () => {
+    setCheckedKiwi(false)
+    setCheckedMango(true)
+    setTittle("mango")
+    setIconMango("icon-check")
+    setIconKiwi("icon-un-check")
+  }
+  return (
+
+
+    <div className={usw(styles, ['formComponent'], ["container-fluid"])} >
       <div className={usb(['container'])}>
         <div className={usb(["row"])}>
           <div className={usb(["col-lg-11", "col-12", "m-auto"])}>
@@ -17,15 +39,14 @@ const Form = ({ children }: any) => (
 
                 <div className={usc(styles, ["picWrapper"])} >
                   <div className={usc(styles, ["picContainer"])} >
-                    <div className={usc(styles, ["kiwi", "sailImage"])}></div>
-                    <div className={usc(styles, ["mango", "sailImage"])}></div>
+                    <div className={usc(styles, [(checkedKiwi) ? "kiwi" : "kiwi", "blured"])}></div>
+                    <div className={usc(styles, [(checkedMango) ? "mango" : "mango", "blured"])}></div>
                   </div>
 
                   <div className={usc(styles, ["picText"])} >
                     <div className={usb(["row"])} >
                       <div className={usb(["col-l-6", "col-md-12"])} >
-
-                        <p className={usc(styles, ["picTittle"])} >Kiwi</p>
+                        <p className={usc(styles, ["picTittle"])} >{tittle}</p>
                       </div>
                     </div>
                     <div className={usb(["row"])} >
@@ -68,10 +89,16 @@ const Form = ({ children }: any) => (
                     </div>
                     <div className={usc(styles, ["formInput", "radioButtons", "space-top-20"])} >
                       <div className={usc(styles, ["checked"])}>
-                        <span className='icon-check' /> Kiwi
+                        <input type={"checkbox"} onClick={kiwi} className={usc(styles, ["checker  "])}></input>
+                        <label htmlFor="checker">
+                          <span className={iconkiwi} /> Kiwi
+                        </label>
                       </div>
                       <div className={usc(styles, ["unchecked"])}>
-                        <span className='icon-un-check' /> Mango
+                        <input type={"checkbox"} onClick={mango} className={usc(styles, ["checker  "])}></input>
+                        <label htmlFor="checker">
+                          <span className={iconMango} /> mango
+                        </label>
                       </div>
                     </div>
                     <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
@@ -89,10 +116,10 @@ const Form = ({ children }: any) => (
                         </p>
                       </div>
                     </div>
-                    <div className={usc(styles, ["formCheck", ])}>
+                    <div className={usc(styles, ["formCheck",])}>
                       <span className='icon-check' /><p>Quiero recibir avisos de promociones</p>
                     </div>
-                    <div className={usc(styles, ["formInput", "formPayment","space-bot-52" ])} >
+                    <div className={usc(styles, ["formInput", "formPayment", "space-bot-52"])} >
                     </div>
                     <Button></Button>
                   </div>
@@ -102,10 +129,11 @@ const Form = ({ children }: any) => (
           </div>
         </div>
       </div>
-    </div>
+    </div >
+  )
 
-  </>
 
 
-);
+
+};
 export default Form

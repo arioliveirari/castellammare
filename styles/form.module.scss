@@ -1,7 +1,5 @@
 @import "variables.module.scss";
 
-
-
 .formComponent {
   background-color: $ligthBlue;
   align-items: center;
@@ -12,7 +10,7 @@
 .content {
   display: flex;
   background-color: $ligthBlue;
-  
+
   align-items: center;
   justify-content: center;
   .picWrapper {
@@ -54,7 +52,19 @@
       bottom: 0px;
       right: 0px;
     }
-    .sailImage {
+    .kiwi,
+    .mango {
+      transition: all 0.3s ease;
+      box-shadow: 0px 0px 10px grey;
+      position: absolute;
+      width: 55%;
+      height: auto;
+      aspect-ratio: 1/1;
+      border-radius: 8px;
+      background-size: cover;
+      background-position: center;
+    }
+    .blured {
       transition: all 0.3s ease;
       box-shadow: 0px 0px 10px grey;
       position: absolute;
@@ -65,8 +75,8 @@
       background-size: cover;
       background-position: center;
       filter: grayscale(1) brightness(0.5);
-      &:hover {
-        filter: grayscale(0) ;
+      &:hover{
+        filter: brightness(1) grayscale(0);
       }
     }
   }
@@ -116,6 +126,9 @@
       padding: 0px 20px;
       .checked {
         margin-right: 30%;
+        .checker{
+          display: none;
+        }
       }
     }
     .timeInput {
@@ -159,7 +172,7 @@
         }
       }
     }
-    .formPayment{
+    .formPayment {
       height: 100px;
       background-color: transparent;
       background-image: url(../public/images/payments.png);
@@ -256,14 +269,13 @@
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .content {
     .picContainer {
       height: 50vw;
     }
   }
 }
-
 
 @media screen and (max-width: 425px) {
   .content {
@@ -272,13 +284,12 @@
     }
   }
 }
-@media screen and (max-width:540px) and (min-width:540px) {
+@media screen and (max-width: 540px) and (min-width: 540px) {
   .content {
     .picContainer {
       height: 70vw;
     }
   }
-  
 }
 
 @media screen and (max-width: 1200px) {
@@ -292,7 +303,7 @@
   .content {
     .form {
       width: 80%;
-      .formInput{
+      .formInput {
         padding: 0px 10px;
       }
     }

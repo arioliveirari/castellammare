@@ -7,6 +7,7 @@ import Services from '../components/Services';
 import Captains from '../components/captains';
 import styles from '../styles/globals.module.scss';
 import { usc } from '../utils/helpers';
+import Waves from '../components/waves';
 import Gallery from '../components/Gallery';
 import Slider from '../components/Slider';
 //import { connect } from "react-redux";
@@ -17,12 +18,12 @@ const Index = (props: any) => {
     <div className={usc(styles, ['main'])}>
       <Header />
       <OverTheFold />
-      <Wales />
+      <Waves />
       <Form />
       <Captains />
       <Services />
       <Gallery/>
-      <Wales />
+      <Waves />
       <Footer />
       <Slider/>
     </div>
@@ -32,9 +33,3 @@ const Index = (props: any) => {
 export default Index;
 
 
-export const Wales = () => {
-  return (
-    <div className={usc(styles, ["wales"])}>
-    </div>
-  )
-}
