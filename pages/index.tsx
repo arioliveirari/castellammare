@@ -10,7 +10,7 @@ import { usc } from '../utils/helpers';
 import Waves from '../components/waves';
 import Gallery from '../components/Gallery';
 import Slider from '../components/Slider';
-import Slide from '../components/slide';
+import Slide from '../components/Slide';
 //import { connect } from "react-redux";
 
 const Index = (props: any) => {
