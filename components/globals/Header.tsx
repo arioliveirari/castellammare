@@ -45,7 +45,7 @@ const Header = ({ children }: any) => {
 
             {/*Header Mobile */}
             <div className={usc(styles, ["header-mobile"])}>
-              <Logo />
+                <Logo />
             </div>
           </div>
         </div>

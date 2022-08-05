@@ -8,7 +8,7 @@ const Footer = () => {
             <div className={usb(["container", "m-auto"])}>
                 <div className={usw(styles, ["footerContainer"], ["row"])}>
                     <div className={usb(["col-12"])} >
-                        <div className={usc(styles, ["content"])} >
+                        <div className={usc(styles, ["desktopContent"])} >
                             <div className={usc(styles, ["logoContainer"])}>
                                 <Logo />
                                 <ul>
@@ -25,6 +25,17 @@ const Footer = () => {
                                     © Copyright 2020 by BairesNavega
                                 </p>
                             </div>
+                        </div>
+                        <div className={usc(styles, ["mobileContent"])} >
+                            <div className={usc(styles, ["iconContainer"])}>
+                                <Icons />
+                            </div>
+                            <div className={usc(styles, ["logoContainer"])}>
+                                <Logo />
+                            </div>
+                            <p className={usc(styles, ["copyrigth"])}>
+                                © Copyright 2020 by BairesNavega
+                            </p>
                         </div>
                     </div>
                 </div>

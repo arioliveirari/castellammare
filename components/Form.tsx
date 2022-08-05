@@ -89,15 +89,15 @@ const Form = ({ children }: any) => {
                     </div>
                     <div className={usc(styles, ["formInput", "radioButtons", "space-top-20"])} >
                       <div className={usc(styles, ["checked"])}>
-                        <input type={"checkbox"} onClick={kiwi} className={usc(styles, ["checker  "])}></input>
-                        <label htmlFor="checker">
-                          <span className={iconkiwi} /> Kiwi
+                        <input type={"checkbox"} onClick={kiwi} className={usc(styles, ["checker"])}></input>
+                        <label className={usc(styles, ["label"])} htmlFor="checker">
+                          <span className={iconkiwi} /> <p>Kiwi</p>
                         </label>
                       </div>
                       <div className={usc(styles, ["unchecked"])}>
-                        <input type={"checkbox"} onClick={mango} className={usc(styles, ["checker  "])}></input>
-                        <label htmlFor="checker">
-                          <span className={iconMango} /> mango
+                        <input type={"checkbox"} onClick={mango} className={usc(styles, ["checker"])}></input>
+                        <label className={usc(styles, ["label"])} htmlFor="checker">
+                          <span className={iconMango} /> <p>mango</p>
                         </label>
                       </div>
                     </div>
@@ -117,7 +117,7 @@ const Form = ({ children }: any) => {
                       </div>
                     </div>
                     <div className={usc(styles, ["formCheck",])}>
-                      <span className='icon-check' /><p>Quiero recibir avisos de promociones</p>
+                      <p>al reservar aceptas los <b>terminos y condiciones</b></p>
                     </div>
                     <div className={usc(styles, ["formInput", "formPayment", "space-bot-52"])} >
                     </div>

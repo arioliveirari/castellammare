@@ -10,7 +10,7 @@
 .content {
   display: flex;
   background-color: $ligthBlue;
-
+  margin-bottom: 40px;
   align-items: center;
   justify-content: center;
   .picWrapper {
@@ -75,7 +75,7 @@
       background-size: cover;
       background-position: center;
       filter: grayscale(1) brightness(0.5);
-      &:hover{
+      &:hover {
         filter: brightness(1) grayscale(0);
       }
     }
@@ -126,9 +126,6 @@
       padding: 0px 20px;
       .checked {
         margin-right: 30%;
-        .checker{
-          display: none;
-        }
       }
     }
     .timeInput {
@@ -147,6 +144,19 @@
       display: flex;
       align-items: center;
       text-align: center;
+      // .checker {
+      //   display: none;
+      // }
+      .checked,.unchecked{
+        display: flex;
+        .label{
+          display: flex;
+          align-items: center;
+          p{
+            margin: 0%;
+          }
+        }
+      }
       .counter {
         div {
           display: flex;

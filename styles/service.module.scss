@@ -33,21 +33,22 @@
 
 .service1,.service2,.service3{
     width: 100%;
-    height: 200px;
+    height: 470px;
     border-radius: 8px;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
 }
 .service1{
-    background-image: url(../public/images/service1.jpg);
+    background-image: url(../public/images/service1.png);
 }
 .service2{
-    background-image: url(../public/images/service2.jpg);
+    background-image: url(../public/images/service2.png);
 }
 .service3{
-    background-image: url(../public/images/service3.jpg);
+    background-image: url(../public/images/service3.png);
 }
 @media screen and (max-width:768px) {
     .serviceContainer,.flex-direction-reverse{
