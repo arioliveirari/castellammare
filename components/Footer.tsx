@@ -26,6 +26,7 @@ const Footer = () => {
                                 </p>
                             </div>
                         </div>
+                        
                         <div className={usc(styles, ["mobileContent"])} >
                             <div className={usc(styles, ["iconContainer"])}>
                                 <Icons />

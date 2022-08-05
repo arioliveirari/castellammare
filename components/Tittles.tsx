@@ -1,7 +1,5 @@
 import React from 'react';
 import { usc, usb, usw } from '../utils/helpers';
-import { title } from 'process';
-import { type } from 'os';
 import styles from '../styles/tittles.module.scss'
 
 

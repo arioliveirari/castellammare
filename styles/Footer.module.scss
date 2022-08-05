@@ -84,7 +84,7 @@
             align-items: center;
             text-align: justify;
             padding: 20px 0px;
-            p{
+            p {
                 color: $beige;
             }
             .iconContainer {
@@ -107,7 +107,7 @@
                     }
                 }
             }
-            .logoContainer{
+            .logoContainer {
                 display: flex;
                 flex-direction: row;
                 .logo {
@@ -116,9 +116,9 @@
                     color: $beige;
                     align-items: center;
                     justify-content: center;
-                
+
                     .logoPic {
-                     width: 100px;
+                        width: 100px;
                         height: auto;
                         aspect-ratio: 1/1;
                         align-items: center;
@@ -127,7 +127,6 @@
                     }
                 }
             }
-            
         }
     }
 }

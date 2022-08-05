@@ -10,6 +10,7 @@ import { usc } from '../utils/helpers';
 import Waves from '../components/waves';
 import Gallery from '../components/Gallery';
 import Slider from '../components/Slider';
+import Slide from '../components/slide';
 //import { connect } from "react-redux";
 
 const Index = (props: any) => {
@@ -22,10 +23,11 @@ const Index = (props: any) => {
       <Form />
       <Captains />
       <Services />
-      <Gallery/>
+      <Gallery />
       <Waves />
       <Footer />
-      <Slider/>
+     
+      <Slide />
     </div>
   )
 }

@@ -8,9 +8,15 @@ import Button from './Button';
 const Form = ({ children }: any) => {
   const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
   const [checkedMango, setCheckedMango] = useState<boolean>(false);
+  const [people, setPeople] = useState<number>(1)
+  const [boat, setBoat] = useState("")
   const [tittle, setTittle] = useState("")
   const [iconkiwi, setIconKiwi] = useState("icon-un-check")
   const [iconMango, setIconMango] = useState("icon-un-check")
+  const data = [
+    { "people": people },
+    { "boat": boat }
+  ]
 
   const kiwi = () => {
     setCheckedKiwi(true)
@@ -18,13 +24,17 @@ const Form = ({ children }: any) => {
     setTittle("kiwi")
     setIconKiwi("icon-check")
     setIconMango("icon-un-check")
+    setBoat("kiwi")
+    console.log(boat)
   }
   const mango = () => {
+    setBoat("mango")
     setCheckedKiwi(false)
     setCheckedMango(true)
     setTittle("mango")
     setIconMango("icon-check")
     setIconKiwi("icon-un-check")
+    console.log(boat)
   }
   return (
 
