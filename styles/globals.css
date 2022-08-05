@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
   z-index: 1;
 }
 
@@ -16,18 +16,46 @@ a {
   box-sizing: border-box;
 }
 
-.injectionDiv > svg:nth-child(1) { width: 100%; }
+.injectionDiv > svg:nth-child(1) {
+  width: 100%;
+}
 
 #blocklyPanel-practice .blocklyFlyout .blocklyFlyoutBackground + .blocklyWorkspace {
   transform: translateY(6px);
 }
 
 @keyframes boundUp {
-  0% { transform: scale(1) }
-  50% { transform: scale(0.9) }
-  80% { transform: scale(1.1) }
-  100% { transform: scale(1) }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .animated {
   animation: boundUp 0.3s ease forwards;
+}
+
+.glide__track {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.glide__slides {
+  padding-top: 36px !important;
+  padding-bottom: 36px !important;
+}
+.glide__slide {
+  transition: all 0.2s ease;
+  filter: grayscale(1);
+}
+.glide__slide--active {
+  filter: grayscale(0);
+
+  transform: translateY(-36px);
 }

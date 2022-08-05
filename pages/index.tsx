@@ -1,4 +1,5 @@
 import React from 'react';
+import "@glidejs/glide/dist/css/glide.core.min.css";
 import Header from '../components/globals/Header';
 import OverTheFold from '../components/OverTheFold';
 import Form from '../components/Form';
@@ -18,16 +19,17 @@ const Index = (props: any) => {
   return (
     <div className={usc(styles, ['main'])}>
       <Header />
+
       <OverTheFold />
       <Waves />
       <Form />
+      <Slider />
       <Captains />
       <Services />
       <Gallery />
       <Waves />
       <Footer />
      
-      <Slide />
     </div>
   )
 }
