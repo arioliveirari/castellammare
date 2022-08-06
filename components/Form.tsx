@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
@@ -9,15 +9,26 @@ const Form = ({ children }: any) => {
   const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
   const [checkedMango, setCheckedMango] = useState<boolean>(false);
   const [people, setPeople] = useState<number>(1)
+  const [time, setTime] = useState("")
   const [boat, setBoat] = useState("")
   const [tittle, setTittle] = useState("")
   const [iconkiwi, setIconKiwi] = useState("icon-un-check")
   const [iconMango, setIconMango] = useState("icon-un-check")
   const data = [
     { "people": people },
-    { "boat": boat }
+    { "boat": boat },
+    { "time": "" }
   ]
-
+  const plus = () => {
+    if (people < 5) {
+      setPeople(people + 1)
+    }
+  }
+  const minus = ()=>{
+    if (people >=1){
+      setPeople(people - 1)
+    }
+  }
   const kiwi = () => {
     setCheckedKiwi(true)
     setCheckedMango(false)
@@ -25,7 +36,6 @@ const Form = ({ children }: any) => {
     setIconKiwi("icon-check")
     setIconMango("icon-un-check")
     setBoat("kiwi")
-    console.log(boat)
   }
   const mango = () => {
     setBoat("mango")
@@ -34,11 +44,14 @@ const Form = ({ children }: any) => {
     setTittle("mango")
     setIconMango("icon-check")
     setIconKiwi("icon-un-check")
-    console.log(boat)
   }
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setTime(e.currentTarget.value)
+  }
+  useEffect(() => {
+    console.log(boat, people, time)
+  }, [boat, people, time])
   return (
-
-
     <div className={usw(styles, ['formComponent'], ["container-fluid"])} >
       <div className={usb(['container'])}>
         <div className={usb(["row"])}>
@@ -87,9 +100,9 @@ const Form = ({ children }: any) => {
                     <div className={usc(styles, ["formInput", "space-top-52", "inputCounter"])} >
                       <div className={usc(styles, ["counter"])}>
                         <div>
-                          <span className='icon-menos'></span>
-                          <p>2</p>
-                          <span className='icon-mas' ></span>
+                          <span className='icon-menos' onClick={minus}></span>
+                          <p>{people}</p>
+                          <span className='icon-mas' onClick={plus} ></span>
                         </div>
                       </div>
                       <div className={usc(styles, ["persons"])} >
@@ -107,16 +120,14 @@ const Form = ({ children }: any) => {
                       <div className={usc(styles, ["unchecked"])}>
                         <input type={"checkbox"} onClick={mango} className={usc(styles, ["checker"])}></input>
                         <label className={usc(styles, ["label"])} htmlFor="checker">
-                          <span className={iconMango} /> <p>mango</p>
+                          <span className={iconMango} /> <p>Mango</p>
                         </label>
                       </div>
                     </div>
                     <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                       <div className={usc(styles, ["clock"])}>
                         <span className='icon-clock' />
-                        <p>
-                          mañana/tarde/noche
-                        </p>
+                        <input type="text" onChange={handleInputChange} className={usc(styles, ["timeInput"])} placeholder="Mañana/Tarde/Noche" />
                       </div>
                     </div>
                     <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "space-bot-52"])} >
