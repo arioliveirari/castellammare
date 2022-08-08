@@ -1,43 +1,51 @@
 @import "variables.module.scss";
 
 .captainsModule {
-    align-items: center;
-    justify-content: center;
-    background-color: $beige;
-    padding-bottom: 30px;
+    background-color: transparent;
+    color: $darkBlue;
     .colContainer {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column-reverse;
         .textContainer {
             width: 50%;
-
+            text-align: center;
+            justify-content: center;
             p {
                 margin-bottom: 0%;
             }
             .name {
                 font-size: 30px;
                 font-family: roboto;
-                font-weight: 500;
+                font-weight: 700;
                 text-transform: capitalize;
+                text-align: center;
             }
             .tittle {
                 font-size: 20px;
                 font-family: roboto;
                 font-weight: 400;
+                margin-bottom: 30px;
+            }
+            .paragraph{
+                font-family: roboto;
+                font-size: 20px;
+                font-style: italic;
             }
             .dataContainer {
                 display: flex;
                 justify-content: space-between;
-                padding-right: 15px;
-                padding-top: 15px;
                 text-align: center;
                 font-family: roboto;
+                margin-top: 30px;
                 .dataNumber {
                     font-weight: 700;
+                    font-size: 30px;
                 }
-                .datatext{
+                .datatext {
                     font-weight: 400;
+                    font-size: 20px;
                 }
             }
         }
@@ -51,15 +59,14 @@
         }
         .picContainer {
             width: 50%;
-            background-image: url(../public/images/captain1.png);
+            background-image: url(../public/images/captain2.png);
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-            height: 296px;
+            height: 305px;
             border-radius: 8px;
+            margin-left: 15px;
         }
-        .rigthPicContainer{
-            background-image: url(../public/images/captain2.png);
-        }
+        
     }
 }

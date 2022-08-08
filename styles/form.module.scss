@@ -36,7 +36,7 @@
   .picContainer {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 80%;
     height: fit-content;
     align-items: center;
     text-align: center;
@@ -58,9 +58,8 @@
       transition: all 0.3s ease;
       box-shadow: 0px 0px 10px grey;
       position: absolute;
-      width: 55%;
-      height: auto;
-      aspect-ratio: 1/1;
+      width: 280px;
+      height: 280px;
       border-radius: 8px;
       background-size: cover;
       background-position: center;
@@ -69,7 +68,7 @@
       transition: all 0.3s ease;
       box-shadow: 0px 0px 10px grey;
       position: absolute;
-      width: 190px;
+      width: 280px;
       height: auto;
       aspect-ratio: 1/1;
       border-radius: 8px;
@@ -91,7 +90,7 @@
   }
   .form {
     background: $beige;
-    width: 80%;
+    width: 85%;
     justify-content: center;
     margin: auto;
     border-radius: 8px;
@@ -99,8 +98,8 @@
     .space-top-20 {
       margin-top: 20px;
     }
-    .space-top-52 {
-      margin-top: 52px;
+    .space-top-40 {
+      margin-top: 40px;
     }
     .space-bot-52 {
       margin-bottom: 52px;
@@ -194,8 +193,10 @@
           font-size: 38px;
           letter-spacing: -15px;
           transition: all 0.2s ease;
-          opacity: 0.6;
+          opacity: 0.5;
+          filter: grayscale(1);
           &.active {
+            filter: grayscale(0);
             opacity: 1;
           }
         }
@@ -216,16 +217,21 @@
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
+      margin-bottom: 16px;
     }
   }
   .formCheck {
     display: flex;
-    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 15px;
     span {
       display: inline-block;
       font-family: roboto;
     }
     p {
+      font-size: 15px;
       margin: 0%;
     }
   }
@@ -235,18 +241,19 @@
     font-family: roboto;
     text-transform: uppercase;
     .formPic {
+      color: $darkBlue;
       width: 60px;
       height: auto;
       aspect-ratio: 1/1;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
     }
     .formTittle {
-      font-size: 30px;
+      font-size: 23px;
       font-weight: 700;
     }
     .formParagraph {
       font-weight: 700;
-      font-size: 40px;
+      font-size: 30px;
     }
   }
   .reserva {
@@ -254,8 +261,8 @@
     font-weight: 700;
     background-color: $orange;
     border-radius: 8px;
-    padding: 10px 30px;
-    width: 150px;
+    padding: 15px 40px;
+    width: 160px;
     height: auto;
     text-align: center;
     text-decoration: none;
@@ -264,29 +271,34 @@
     color: $beige;
     font-weight: bold;
     transition: all ease-in-out 0.2s;
-    margin-bottom: 52px;
     font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 25px;
   }
 }
 
 // mediaQueries
-@media screen and (min-width: 2560px) {
+@media screen and (max-width: 1280px) and (min-width: 1280px) {
   .content {
     .picContainer {
-      height: 20vw;
-    }
-  }
-}
-@media screen and (max-width: 1440px) {
-  .content {
-    .picContainer {
+      width: 90%;
       height: 30vw;
     }
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and(max-width:1200px) {
   .content {
     .picContainer {
+      width: 100%;
+      height: 35vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    .picContainer {
+      width: 100%;
       height: 40vw;
     }
   }
@@ -294,51 +306,24 @@
 @media screen and (max-width: 992px) {
   .content {
     .picContainer {
+      width: 100%;
       height: 30vw;
+      .kiwi,
+      .mango.blured {
+        width: 220px;
+      }
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) and (min-width: 820px) {
   .content {
     .picContainer {
+      width: 100%;
       height: 35vw;
     }
-    .gliderContainer {
-      display: none;
-    }
   }
 }
 
-@media screen and (max-width: 767px) {
-  .content {
-    .picContainer {
-      height: 50vw;
-    }
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .content {
-    .picContainer {
-      height: 70vw;
-    }
-  }
-}
-@media screen and (max-width: 540px) and (min-width: 540px) {
-  .content {
-    .picContainer {
-      height: 70vw;
-    }
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .content {
-    .form {
-      width: 110%;
-    }
-  }
-}
 @media screen and (max-width: 769px) {
   .content {
     .form {

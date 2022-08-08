@@ -18,17 +18,15 @@ const Index = (props: any) => {
 
   return (
     <div className={usc(styles, ['main'])}>
-      <Header />
-
+      <Header/>
       <OverTheFold />
+      <Slider />
       <Waves />
       <Form />
-      <Captains />
       <Services />
       <Gallery />
       <Waves />
       <Footer />
-     
     </div>
   )
 }

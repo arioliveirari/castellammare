@@ -5,6 +5,7 @@ import styles from '../styles/form.module.scss';
 import Button from './Button';
 import Glide from '@glidejs/glide'
 import { RiveAnimation } from './RiveAnimation';
+import Captains from './captains';
 
 const Form = ({ children }: any) => {
   const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
@@ -32,22 +33,7 @@ const Form = ({ children }: any) => {
       setPeople(people - 1)
     }
   }
-  const kiwi = () => {
-    setCheckedKiwi(true)
-    setCheckedMango(false)
-    setTittle("kiwi")
-    setIconKiwi("icon-check")
-    setIconMango("icon-un-check")
-    setBoat("kiwi")
-  }
-  const mango = () => {
-    setBoat("mango")
-    setCheckedKiwi(false)
-    setCheckedMango(true)
-    setTittle("mango")
-    setIconMango("icon-check")
-    setIconKiwi("icon-un-check")
-  }
+ 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTime(e.currentTarget.value)
   }
@@ -88,29 +74,7 @@ const Form = ({ children }: any) => {
                     </div>
                   </div>
                 </div>
-                <div className={usc(styles, ["picWrapper"])} >
-                  <div className={usc(styles, ["picContainer"])} >
-                    <div className={usc(styles, [(checkedKiwi) ? "kiwi" : "kiwi", "blured"])}></div>
-                    <div className={usc(styles, [(checkedMango) ? "mango" : "mango", "blured"])}></div>
-                  </div>
-                  <div className={usc(styles, ["picText"])} >
-                    <div className={usb(["row"])} >
-                      <div className={usb(["col-l-6", "col-md-12"])} >
-                        <p className={usc(styles, ["picTittle"])} >{tittle}</p>
-                      </div>
-                    </div>
-                    <div className={usb(["row"])} >
-                      <div className={usb(["col-md-9", "col-sm-12"])} >
-                        <p className={usc(styles, ["picParagraph"])} >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor incididunt ut labore et dola aliqua.
-                          Ut enim ad minim venim, quis nostud exercitation ullamco.
-                          Ut enim ad minim venim, quis nostud ut labore et dola aliqua.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Captains/>
               </div>
               <div className={usb(["col-md-6", "col-12"])}>
                 <div className={usc(styles, ["form"])}>
@@ -124,7 +88,7 @@ const Form = ({ children }: any) => {
                         UNICA
                       </div>
                     </div>
-                    <div className={usc(styles, ["formInput", "space-top-52", "inputCounter"])} >
+                    <div className={usc(styles, ["formInput", "space-top-40", "inputCounter"])} >
                       <div className={usc(styles, ["counter"])}>
                         <div>
                           <span className='icon-menos' onClick={minus}></span>
@@ -143,19 +107,19 @@ const Form = ({ children }: any) => {
                         <input type="text" onChange={handleInputChange} className={usc(styles, ["timeInputer"])} placeholder="Mañana/Tarde/Noche" />
                       </div>
                     </div>
-                    <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "space-bot-52"])} >
+                    <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                       <div className={usc(styles, ["clock"])}>
                         <p>
                           $ total
                         </p>
                       </div>
                     </div>
-                    <div className={usc(styles, ["formCheck",])}>
-                      <p>al reservar aceptas los <b>terminos y condiciones</b></p>
-                    </div>
-                    <div className={usc(styles, ["formInput", "formPayment", "space-bot-52"])} >
+                    <div className={usc(styles, ["formCheck"])}>
+                      <p>al reservar estas aceptando los <b>terminos y <br /> condiciones</b></p>
                     </div>
                     <Button></Button>
+                    <div className={usc(styles, ["formInput", "formPayment"])} >
+                    </div>
                   </div>
                 </div>
               </div>

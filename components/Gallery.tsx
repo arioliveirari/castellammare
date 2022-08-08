@@ -14,7 +14,7 @@ const Gallery = () => {
     const glide = new Glide('.glide', {
       type: "slider",
       focusAt: 'center',
-      perView: 1,
+      perView: 3,
       startAt: 1,
     }).mount();
   }, [])

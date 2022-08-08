@@ -4,8 +4,8 @@ import styles from '../styles/slide.module.scss'
 
 
 export type SlideExampleType = {
-  title: string, 
-  person: string, 
+  title: string,
+  person: string,
   algo: string
 }
 
@@ -21,7 +21,6 @@ const Slide = ({ title, person, algo }: SlideExampleType) => {
                   <p>
                     <q>
                       {title}
-
                     </q>
                   </p>
                 </div>
@@ -30,8 +29,10 @@ const Slide = ({ title, person, algo }: SlideExampleType) => {
                 <div className={usc(styles, ["pic"])}></div>
                 <div>
                   <p className={usc(styles, ["name"])}>
-                   {person}
+                    {person}
                     <br />
+                  </p>
+                  <p className={usc(styles,["ocupation"])}>
                     {algo}
                   </p>
                 </div>

@@ -52,11 +52,11 @@ a {
 }
 .glide__slide {
   transition: all 0.2s ease;
-  filter: grayscale(1);
+ 
+  border-radius: 8px;
 }
 .glide__slide--active {
-  filter: grayscale(0);
-
+  
   transform: translateY(-36px);
 }
 @media screen and (max-width:768px) {
