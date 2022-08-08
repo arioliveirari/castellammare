@@ -4,7 +4,7 @@ import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
 import Button from './Button';
 import Glide from '@glidejs/glide'
-
+import { RiveAnimation } from './RiveAnimation';
 
 const Form = ({ children }: any) => {
   const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
@@ -68,7 +68,10 @@ const Form = ({ children }: any) => {
 
   return (
     <div className={usw(styles, ['formComponent'], ["container-fluid"])} >
-      <div className={usb(['container'])}>
+      <RiveAnimation bottom={0} left={0} animationName="water_2" extraClassName="rotationAnimation" />
+      <RiveAnimation top={-300} bottom={0} right={0} animationName="water_1"/>
+      <RiveAnimation top={0} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
+      <div className={usb(['container', 'position-relative'])}>
         <div className={usb(["row"])}>
           <div className={usb(["col-lg-11", "col-12", "m-auto"])}>
             {/*<div className={usc(styles, ["content"])}>*/}
@@ -175,4 +178,4 @@ const Form = ({ children }: any) => {
     </div >
   )
 };
-export default Form
+export default Form;

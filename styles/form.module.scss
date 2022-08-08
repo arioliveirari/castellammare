@@ -1,15 +1,16 @@
 @import "variables.module.scss";
 
 .formComponent {
+  position: relative;
   background-color: $ligthBlue;
   align-items: center;
   justify-content: center;
   padding-top: 110px;
+  overflow: hidden;
 }
 
 .content {
   display: flex;
-  background-color: $ligthBlue;
   margin-bottom: 40px;
   align-items: center;
   justify-content: center;
