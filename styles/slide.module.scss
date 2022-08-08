@@ -11,6 +11,7 @@
     border-radius: 8px;
     width: 100%;
     height: 250px;
+    
     p {
         margin: 0%;
     }
@@ -19,12 +20,12 @@
         height: 70%;
         background-color: #fff;
         justify-content: center;
-   
         align-items: center;
         border-radius: 8px 8px 0px 0px;
         font-family: roboto;
         font-style: italic;
         font-size: 18px;
+        padding: 10px;
         p {
             text-align: left;
             justify-content: center;
@@ -42,6 +43,7 @@
         text-align: center;
         align-items: center;
         border-radius: 0px 0px 8px 8px;
+        padding: 10px;
         .pic {
             background-image: url(../public/images/person1.jpg);
             background-position: center;
@@ -61,6 +63,31 @@
                 text-align: start;
                 justify-content: center;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .textContainer {
+        p {
+            font-size: 15px;
+        }
+    }
+    .personContainer {
+        p {
+            font-size: 10px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .textContainer {
+        p {
+            font-size: 10px;
+        }
+    }
+    .personContainer {
+        p {
+            font-size: 10px;
         }
     }
 }

@@ -1,6 +1,54 @@
-.gallery{
-    background-color: beige;
-    padding: 10px;
-    padding: 200px 0px;
+@import "variables.module.scss";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+.sliderContainer {
+    width: 100%;
+    max-width: 100%;
     overflow: hidden;
+    .sliderList {
+        display: flex;
+        min-width: 100%;
+        flex-direction: row;
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
+.gallery {
+    background-color: beige;
+    padding: 0px 0px 200px 0px;
+    overflow: hidden;
+    .sliderImage {
+        transition: all ease 0.4s;
+        height: 225px;
+        width: 100%;
+    }
+    .galleryContainer {
+        background-color: #fff;
+        padding: 15px;
+    }
+}
+
+.image {
+    filter: grayscale(0.8);
+    &:hover {
+        filter: grayscale(0);
+    }
+}
+.sliderContainer {
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .sliderContainer{
+        display: unset;
+    }
+    .galleryContainer{
+        display: none;
+    }
+
+    
 }

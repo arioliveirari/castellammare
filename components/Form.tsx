@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
 import Button from './Button';
+import Glide from '@glidejs/glide'
 
 
 const Form = ({ children }: any) => {
@@ -14,7 +15,7 @@ const Form = ({ children }: any) => {
   const [tittle, setTittle] = useState("")
   const [iconkiwi, setIconKiwi] = useState("icon-un-check")
   const [iconMango, setIconMango] = useState("icon-un-check")
-  const data = [
+  const travelData = [
     { "people": people },
     { "boat": boat },
     { "time": "" }
@@ -24,8 +25,8 @@ const Form = ({ children }: any) => {
       setPeople(people + 1)
     }
   }
-  const minus = ()=>{
-    if (people >=1){
+  const minus = () => {
+    if (people >= 1) {
       setPeople(people - 1)
     }
   }
@@ -51,6 +52,20 @@ const Form = ({ children }: any) => {
   useEffect(() => {
     console.log(boat, people, time)
   }, [boat, people, time])
+  React.useEffect(() => {
+    const glide = new Glide('.glide', {
+      type: "slider",
+      focusAt: 'center',
+      perView: 1,
+      startAt: 1,
+    }).mount();
+  }, [])
+
+  const items = [
+    "./images/kiwi.jpg",
+    "./images/mango.jpg",
+  ]
+
   return (
     <div className={usw(styles, ['formComponent'], ["container-fluid"])} >
       <div className={usb(['container'])}>
@@ -59,13 +74,20 @@ const Form = ({ children }: any) => {
             {/*<div className={usc(styles, ["content"])}>*/}
             <div className={usw(styles, ["content"], ["row"])}>
               <div className={usb(["col-md-6", "col-12"])}>
-
+                <div className={usc(styles, ["gliderContainer"])}>
+                  <div className="glide" id="options-type">
+                    <div className="glide__track" data-glide-el="track">
+                      <ul className="glide__slides">
+                        {items.map((i, index) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
                 <div className={usc(styles, ["picWrapper"])} >
                   <div className={usc(styles, ["picContainer"])} >
                     <div className={usc(styles, [(checkedKiwi) ? "kiwi" : "kiwi", "blured"])}></div>
                     <div className={usc(styles, [(checkedMango) ? "mango" : "mango", "blured"])}></div>
                   </div>
-
                   <div className={usc(styles, ["picText"])} >
                     <div className={usb(["row"])} >
                       <div className={usb(["col-l-6", "col-md-12"])} >
@@ -127,7 +149,7 @@ const Form = ({ children }: any) => {
                     <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                       <div className={usc(styles, ["clock"])}>
                         <span className='icon-clock' />
-                        <input type="text" onChange={handleInputChange} className={usc(styles, ["timeInput"])} placeholder="Mañana/Tarde/Noche" />
+                        <input type="text" onChange={handleInputChange} className={usc(styles, ["timeInputer"])} placeholder="Mañana/Tarde/Noche" />
                       </div>
                     </div>
                     <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "space-bot-52"])} >
@@ -152,9 +174,5 @@ const Form = ({ children }: any) => {
       </div>
     </div >
   )
-
-
-
-
 };
 export default Form

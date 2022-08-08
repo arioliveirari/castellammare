@@ -68,7 +68,7 @@
       transition: all 0.3s ease;
       box-shadow: 0px 0px 10px grey;
       position: absolute;
-      width: 55%;
+      width: 190px;
       height: auto;
       aspect-ratio: 1/1;
       border-radius: 8px;
@@ -78,6 +78,14 @@
       &:hover {
         filter: brightness(1) grayscale(0);
       }
+    }
+  }
+
+  .gliderContainer {
+    display: none;
+    .image {
+      border-radius: 8px;
+      height: 300px;
     }
   }
   .form {
@@ -126,6 +134,15 @@
       padding: 0px 20px;
       .checked {
         margin-right: 30%;
+      }
+    }
+    .timeInputer {
+      border: none;
+      width: 100%;
+      &::placeholder {
+        font-family: roboto;
+        font-size: 15px;
+        color: $darkBlue;
       }
     }
     .timeInput {
@@ -180,10 +197,6 @@
         align-items: center;
         p {
           margin: 0%;
-        }
-        .timeInput::placeholder {
-          font-family: roboto;
-          font-size: 15px;
         }
       }
     }
@@ -281,6 +294,9 @@
     .picContainer {
       height: 35vw;
     }
+    .gliderContainer {
+      display: none;
+    }
   }
 }
 
@@ -314,7 +330,7 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .content {
     .form {
       width: 80%;
@@ -329,6 +345,21 @@
 
       p {
         text-align: center;
+      }
+    }
+    .gliderContainer {
+      display: unset;
+    }
+    .picContainer {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .form {
+    .timeInputer {
+      &::placeholder {
+        font-size: 10px;
       }
     }
   }

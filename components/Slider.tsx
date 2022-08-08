@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { usb, usw, usc } from '../utils/helpers';
 import styles from '../styles/slider.module.scss';
 import Glide from '@glidejs/glide'
+
 import Slide from "./Slide";
 
 const Slider = () => {
@@ -13,18 +14,18 @@ const Slider = () => {
       startAt: 1,
     }).mount();
   }, [])
-  const items = [
-    { title: 'title', person: 'person', algo: 'algo' },
-    { title: 'title', person: 'person', algo: 'algo' },
-    { title: 'title', person: 'person', algo: 'algo' },
-    { title: 'title', person: 'person', algo: 'algo' },
-    { title: 'title', person: 'person', algo: 'algo' },
-    { title: 'title', person: 'person', algo: 'algo' },
-    { title: 'title', person: 'person', algo: 'algo' },
-    { title: 'title', person: 'person', algo: 'algo' },
-    { title: 'title', person: 'person', algo: 'algo' },
-    { title: 'title', person: 'person', algo: 'algo' },
-    { title: 'title', person: 'person', algo: 'algo' },
+  const sliderItems = [
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
+    { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', person: 'antonio gallegos', algo: 'comunicador social' },
   ]
   return (
     <>
@@ -35,7 +36,7 @@ const Slider = () => {
               <div className="glide" id="options-type">
                 <div className="glide__track" data-glide-el="track">
                   <ul className="glide__slides">
-                    {items.map((i, index) => <Slide key={`slideexample-${index}`} {...i} />)}
+                    {sliderItems.map((i, index) => <Slide key={`slideexample-${index}`} {...i} />)}
                   </ul>
                 </div>
               </div>

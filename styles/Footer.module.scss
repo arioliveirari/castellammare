@@ -94,6 +94,7 @@
                     align-items: center;
                     justify-content: center;
                     text-align: center;
+                    margin-bottom: 40px;
                     .linkBtn {
                         width: 36px;
                         height: 36px;
@@ -103,7 +104,7 @@
                         align-items: center;
                         justify-content: center;
                         color: $darkBlue;
-                        margin: 10px;
+                     margin-left: 15px;
                     }
                 }
             }
@@ -116,7 +117,6 @@
                     color: $beige;
                     align-items: center;
                     justify-content: center;
-
                     .logoPic {
                         width: 100px;
                         height: auto;
@@ -124,6 +124,10 @@
                         align-items: center;
                         justify-content: center;
                         text-align: center;
+                        margin-right: 15px;
+                    }
+                    .logoText{
+                        font-family: calson;
                     }
                 }
             }

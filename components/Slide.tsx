@@ -20,9 +20,7 @@ const Slide = ({ title, person, algo }: SlideExampleType) => {
                 <div>
                   <p>
                     <q>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                      {title}
 
                     </q>
                   </p>
@@ -32,9 +30,9 @@ const Slide = ({ title, person, algo }: SlideExampleType) => {
                 <div className={usc(styles, ["pic"])}></div>
                 <div>
                   <p className={usc(styles, ["name"])}>
-                    antonio gallegos
+                   {person}
                     <br />
-                    comunicador social
+                    {algo}
                   </p>
                 </div>
               </div>
