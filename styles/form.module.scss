@@ -187,10 +187,18 @@
         }
       }
       .persons {
-        font-size: 38px;
         text-align: center;
         justify-content: center;
         align-items: center;
+        .person {
+          font-size: 38px;
+          letter-spacing: -15px;
+          transition: all 0.2s ease;
+          opacity: 0.6;
+          &.active {
+            opacity: 1;
+          }
+        }
       }
       .clock {
         display: flex;

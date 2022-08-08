@@ -15,18 +15,20 @@ const Form = ({ children }: any) => {
   const [tittle, setTittle] = useState("")
   const [iconkiwi, setIconKiwi] = useState("icon-un-check")
   const [iconMango, setIconMango] = useState("icon-un-check")
+  const max = 5;
+  const min = 1;
   const travelData = [
     { "people": people },
     { "boat": boat },
     { "time": "" }
   ]
   const plus = () => {
-    if (people < 5) {
+    if (people < max) {
       setPeople(people + 1)
     }
   }
   const minus = () => {
-    if (people >= 1) {
+    if (people > min) {
       setPeople(people - 1)
     }
   }
@@ -69,7 +71,7 @@ const Form = ({ children }: any) => {
   return (
     <div className={usw(styles, ['formComponent'], ["container-fluid"])} >
       <RiveAnimation bottom={0} left={0} animationName="water_2" extraClassName="rotationAnimation" />
-      <RiveAnimation top={-300} bottom={0} right={0} animationName="water_1"/>
+      <RiveAnimation top={-300} bottom={0} right={0} animationName="water_1" />
       <RiveAnimation top={0} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
       <div className={usb(['container', 'position-relative'])}>
         <div className={usb(["row"])}>
@@ -131,24 +133,10 @@ const Form = ({ children }: any) => {
                         </div>
                       </div>
                       <div className={usc(styles, ["persons"])} >
-                        <span className='icon-person' />
-                        <span className='icon-person' />
+                        {new Array(max).fill({ active: false }).map((d, index) => ({ active: (index < people)})).reverse().map((d, index) => (<span key={`icon-${index}`} className={usc(styles, ["person", d.active ? 'active' : '']) + " icon-person"}  />))}
                       </div>
                     </div>
-                    <div className={usc(styles, ["formInput", "radioButtons", "space-top-20"])} >
-                      <div className={usc(styles, ["checked"])}>
-                        <input type={"checkbox"} onClick={kiwi} className={usc(styles, ["checker"])}></input>
-                        <label className={usc(styles, ["label"])} htmlFor="checker">
-                          <span className={iconkiwi} /> <p>Kiwi</p>
-                        </label>
-                      </div>
-                      <div className={usc(styles, ["unchecked"])}>
-                        <input type={"checkbox"} onClick={mango} className={usc(styles, ["checker"])}></input>
-                        <label className={usc(styles, ["label"])} htmlFor="checker">
-                          <span className={iconMango} /> <p>Mango</p>
-                        </label>
-                      </div>
-                    </div>
+
                     <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                       <div className={usc(styles, ["clock"])}>
                         <span className='icon-clock' />
