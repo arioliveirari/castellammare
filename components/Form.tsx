@@ -33,7 +33,7 @@ const Form = ({ children }: any) => {
       setPeople(people - 1)
     }
   }
- 
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTime(e.currentTarget.value)
   }
@@ -41,7 +41,7 @@ const Form = ({ children }: any) => {
     console.log(boat, people, time)
   }, [boat, people, time])
   React.useEffect(() => {
-    const glide = new Glide('.glide', {
+    const glide = new Glide('#options-type', {
       type: "slider",
       focusAt: 'center',
       perView: 1,
@@ -74,7 +74,7 @@ const Form = ({ children }: any) => {
                     </div>
                   </div>
                 </div>
-                <Captains/>
+                <Captains />
               </div>
               <div className={usb(["col-md-6", "col-12"])}>
                 <div className={usc(styles, ["form"])}>
@@ -97,7 +97,7 @@ const Form = ({ children }: any) => {
                         </div>
                       </div>
                       <div className={usc(styles, ["persons"])} >
-                        {new Array(max).fill({ active: false }).map((d, index) => ({ active: (index < people)})).reverse().map((d, index) => (<span key={`icon-${index}`} className={usc(styles, ["person", d.active ? 'active' : '']) + " icon-person"}  />))}
+                        {new Array(max).fill({ active: false }).map((d, index) => ({ active: (index < people) })).reverse().map((d, index) => (<span key={`icon-${index}`} className={usc(styles, ["person", d.active ? 'active' : '']) + " icon-person"} />))}
                       </div>
                     </div>
 

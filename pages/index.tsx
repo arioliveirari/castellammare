@@ -5,21 +5,21 @@ import OverTheFold from '../components/OverTheFold';
 import Form from '../components/Form';
 import Footer from '../components/Footer'
 import Services from '../components/Services';
-import styles from '../styles/globals.module.scss';
 import { usc } from '../utils/helpers';
 import Waves from '../components/waves';
 import Gallery from '../components/Gallery';
 import Slider from '../components/Slider';
-import Boats from '../components/boats'
+import Boats from '../components/Boats'
+import styles from '../styles/globals.module.scss';
 const Index = (props: any) => {
 
   return (
     <div className={usc(styles, ['main'])}>
       <Header/>
-      <Slider />
       <OverTheFold />
       <Waves />
       <Form />
+      <Slider />
       <Boats/>
       <Services />
       <Gallery />

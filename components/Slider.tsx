@@ -6,13 +6,12 @@ import Slide from "./Slide";
 
 const Slider = () => {
   React.useEffect(() => {
-    const glide = new Glide('.glide', {
+    const glide = new Glide('#options-type-2', {
       type: "slider",
       focusAt: 'center',
       perView: 3,
       startAt: 1,
       gap: 50,
-    
       breakpoints: {
         768: {
           perView: 1,
@@ -42,7 +41,7 @@ const Slider = () => {
         <div className={usb(["container"])}>
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
-              <div className="glide" id="options-type">
+              <div className="glide" id="options-type-2">
                 <div className="glide__track" data-glide-el="track">
                   <ul className="glide__slides">
                     {sliderItems.map((i, index) => <Slide key={`slideexample-${index}`} {...i} />)}
