@@ -5,7 +5,7 @@ import OverTheFold from '../components/OverTheFold';
 import Form from '../components/Form';
 import Footer from '../components/Footer'
 import Services from '../components/Services';
-import Captains from '../components/captains';
+import Boats from '../components/boats';
 import styles from '../styles/globals.module.scss';
 import { usc } from '../utils/helpers';
 import Waves from '../components/waves';
@@ -23,6 +23,7 @@ const Index = (props: any) => {
       <Slider />
       <Waves />
       <Form />
+      <Boats/>
       <Services />
       <Gallery />
       <Waves />

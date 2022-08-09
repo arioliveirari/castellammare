@@ -1,0 +1,45 @@
+@import "variables.module.scss";
+
+.content {
+    display: flex;
+    .pic {
+        background-image: url(../public/images/kiwi.jpg);
+        height: 440px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0px 221px 221px 221px;
+    }
+    .dataContainer {
+        height: 440px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .boatData {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            .boatNumber {
+                padding: 20px;
+                border-radius: 100%;
+                background-color: $ligthBlue;
+                color: #fff;
+                font-size: 25px;
+                font-weight: 700;
+                font-family: roboto;
+            }
+            .darkishBlue {
+                background-color: $darkishBlue;
+            }
+            .boatText {
+                padding: 5px 20px;
+                color: #fff;
+                background-color: $ligthBlue;
+                border-radius: 0px 211px 211px 0px;
+            }
+        }
+    }
+}
