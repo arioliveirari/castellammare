@@ -34,63 +34,6 @@
   font-weight: 700;
 }
 
-/*
-@font-face {
-  font-family: "DMSans";
-  src: url("/fonts/DMSans-Regular.ttf?ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "DMSans";
-  src: url("/fonts/DMSans-Medium.ttf?ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "DMSans";
-  src: url("/fonts/DMSans-Bold.ttf?ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "openSans";
-  src: url("/fonts/openSans-regular.ttf?ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "openSans";
-  src: url("/fonts/openSans-bold.ttf?ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "roboto";
-  font-weight: 400;
-  src: url("/fonts/Roboto-Regular.ttf");
-}
-
-@font-face {
-  font-family: "roboto";
-  src: url("/fonts/Roboto-Bold.ttf");
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;
-}
-*/
-
-
 @font-face {
   font-family: "roboto";
   font-weight: 400;
@@ -165,40 +108,98 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-barco:before {
+  content: "\e902";
+}
+
+.icon-check:before {
+  content: "\e904";
+}
+
+.icon-chevron_left:before {
+  content: "\e905";
+}
+
+.icon-chevron_right:before {
+  content: "\e906";
+}
+
+.icon-clock:before {
+  content: "\e907";
+}
 
 .icon-instagram:before {
+  content: "\e908";
+}
+
+.icon-mail:before {
+  content: "\e923";
+}
+
+.icon-mas:before {
+  content: "\e932";
+}
+
+.icon-menos:before {
+  content: "\e933";
+}
+
+.icon-person:before {
+  content: "\e934";
+}
+
+.icon-un-check:before {
+  content: "\e935";
+}
+
+.icon-wpp:before {
+  content: "\e936";
+}
+
+.icon-instagram1:before {
   content: "\e900";
 }
-.icon-mas:before {
+
+.icon-mas1:before {
   content: "\e92a";
 }
-.icon-menos:before {
+
+.icon-menos1:before {
   content: "\e92b";
 }
-.icon-person:before {
+
+.icon-person1:before {
   content: "\e92c";
 }
-.icon-barco:before {
+
+.icon-barco1:before {
   content: "\e901";
 }
-.icon-check:before {
+
+.icon-check1:before {
   content: "\e92d";
 }
-.icon-clock:before {
+
+.icon-clock1:before {
   content: "\e90f";
 }
+
 .icon-minus:before {
   content: "\e94a";
 }
-.icon-person1:before {
+
+.icon-person11:before {
   content: "\e94b";
 }
-.icon-un-check:before {
+
+.icon-un-check1:before {
   content: "\e92f";
 }
-.icon-wpp:before {
+
+.icon-wpp1:before {
   content: "\e930";
 }
-.icon-mail:before {
+
+.icon-mail1:before {
   content: "\e903";
 }

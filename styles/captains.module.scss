@@ -28,7 +28,7 @@
                 font-weight: 400;
                 margin-bottom: 30px;
             }
-            .paragraph{
+            .paragraph {
                 font-family: roboto;
                 font-size: 20px;
                 font-style: italic;
@@ -39,13 +39,42 @@
                 text-align: center;
                 font-family: roboto;
                 margin-top: 30px;
+                margin-bottom: 50px;
+                align-items: center;
+                .data {
+                    text-align: center;
+                    align-items: center;
+                    justify-content: space-between;
+                }
                 .dataNumber {
                     font-weight: 700;
                     font-size: 30px;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    p {
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+                        height: 50px;
+                        width: 50px;
+                    }
                 }
                 .datatext {
                     font-weight: 400;
                     font-size: 20px;
+                    align-items: center;
+                    text-align: center;
+                }
+                .dataBall {
+                    width: 50px;
+                    height: 50px;
+                    background-color: #fff;
+                    border-radius: 100%;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
                 }
             }
         }
@@ -67,6 +96,5 @@
             border-radius: 8px;
             margin-left: 15px;
         }
-        
     }
 }

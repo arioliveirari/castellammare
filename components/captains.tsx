@@ -15,33 +15,38 @@ const Captains = () => {
                                 <div className={usw(styles, ["colContainer"], ["col-12"])} >
                                     <div className={usc(styles, ["textContainer"])}>
                                         <p className={usc(styles, ["name"])}>
-                                          ignacio peralta
+                                            ignacio peralta
                                         </p>
                                         <p className={usc(styles, ["tittle"])}>
                                             capitan
                                         </p>
-                                        <p className={usc(styles,["paragraph"])}>
+                                        <p className={usc(styles, ["paragraph"])}>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                             sed do eiusmod tempor incididunt ut labore et dolore
                                             magna aliqua.
                                         </p>
                                         <div className={usc(styles, ["dataContainer"])}>
                                             <div className={usc(styles, ["data"])}>
-                                                <p className={usc(styles, ["dataNumber"])}>50</p>
+                                                <div className={usc(styles, ["dataBall"])}>
+                                                    <p className={usc(styles, ["dataNumber"])}>50</p>
+                                                </div>
                                                 <p className={usc(styles, ["dataText"])}>viajes</p>
                                             </div>
                                             <div className={usc(styles, ["data"])}>
-                                                <p className={usc(styles, ["dataNumber"])}>12</p>
+                                                <div className={usc(styles, ["dataBall"])}>
+                                                    <p className={usc(styles, ["dataNumber"])}>12</p>
+                                                </div>
                                                 <p className={usc(styles, ["dataText"])}>años navegando</p>
                                             </div>
                                             <div className={usc(styles, ["data"])}>
-                                                <p className={usc(styles, ["dataNumber"])}>14</p>
+                                                <div className={usc(styles, ["dataBall"])}>
+                                                    <p className={usc(styles, ["dataNumber"])}>14</p>
+                                                </div>
                                                 <p className={usc(styles, ["dataText"])}>viajes</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className={usc(styles, ["picContainer"])}>
-
                                     </div>
                                 </div>
                             </div>
