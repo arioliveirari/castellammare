@@ -5,15 +5,12 @@ import OverTheFold from '../components/OverTheFold';
 import Form from '../components/Form';
 import Footer from '../components/Footer'
 import Services from '../components/Services';
-import Boats from '../components/boats';
 import styles from '../styles/globals.module.scss';
 import { usc } from '../utils/helpers';
 import Waves from '../components/waves';
 import Gallery from '../components/Gallery';
 import Slider from '../components/Slider';
-import Slide from '../components/Slide';
-//import { connect } from "react-redux";
-
+import Boats from '../components/boats'
 const Index = (props: any) => {
 
   return (
