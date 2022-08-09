@@ -12,10 +12,14 @@ const Slider = () => {
       perView: 3,
       startAt: 1,
       gap: 50,
+    
       breakpoints: {
         768: {
           perView: 1,
-        }
+          gap: 50,
+          startAt: 1,
+          peek:90,
+        },
       }
     }).mount();
   }, [])
