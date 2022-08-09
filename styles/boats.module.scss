@@ -1,7 +1,8 @@
 @import "variables.module.scss";
 
-.content {
+.topContent {
     display: flex;
+    margin-bottom: 100px;
     .pic {
         background-image: url(../public/images/kiwi.jpg);
         height: 440px;
@@ -10,18 +11,27 @@
         background-position: center;
         border-radius: 0px 221px 221px 221px;
     }
+    .boatName{
+        font-family: roboto;
+        font-weight: 700;
+        font-size: 39px;
+        color: $darkBlue;
+        text-transform: capitalize;
+    }
     .dataContainer {
         height: 440px;
         width: 100%;
         align-items: center;
         justify-content: center;
         text-align: center;
+
         .boatData {
             display: flex;
             text-align: center;
             justify-content: center;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+           
             .boatNumber {
                 padding: 20px;
                 border-radius: 100%;
@@ -39,6 +49,60 @@
                 color: #fff;
                 background-color: $ligthBlue;
                 border-radius: 0px 211px 211px 0px;
+            }
+        }
+    }
+}
+.botContent {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+    .botPic {
+        background-image: url(../public/images/mango.jpg);
+        height: 440px;
+        width: 100%;
+        background-size: cover;
+        background-position: bottom;
+        border-radius: 221px 221px 0px 221px;
+    }
+    .boatName{
+        font-family: roboto;
+        font-weight: 700;
+        font-size: 39px;
+        color: $darkBlue;
+        text-transform: capitalize;
+        text-align: end;
+    }
+    .dataContainer {
+        height: 440px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .boatData {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:20px;
+            flex-direction: row-reverse;
+            .boatNumber {
+                padding: 20px;
+                border-radius: 100%;
+                background-color: $ligthBlue;
+                color: #fff;
+                font-size: 25px;
+                font-weight: 700;
+                font-family: roboto;
+            }
+            .darkishBlue {
+                background-color: $darkishBlue;
+            }
+            .boatText {
+                padding: 5px 20px;
+                color: #fff;
+                background-color: $ligthBlue;
+                border-radius: 211px 0px 0px 211px;
             }
         }
     }
