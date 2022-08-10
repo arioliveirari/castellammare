@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/boats.module.scss';
+import Tittles from './Tittles';
+import BoatsSlider from './boatsSlider';
 
 const Boats = () => {
     return (
         <>
             <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
+                <Tittles tittle='Nuestros Veleros' />
                 <div className={usb(["container", "m-auto"])}>
+                    <BoatsSlider />
+
+
+
+
                     <div className={usw(styles, ["topContent"], ["row"])}>
                         <div className={usb(["col-md-7", "col-12"])}>
-                            <div className={usc(styles, ["boatData"])}>
 
-                            </div>
                             <div className={usc(styles, ["pic"])}>
                             </div>
                         </div>

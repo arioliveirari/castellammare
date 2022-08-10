@@ -6,6 +6,8 @@ import Button from './Button';
 import Glide from '@glidejs/glide'
 import { RiveAnimation } from './RiveAnimation';
 import Captains from './captains';
+import Dropdown from './dropdown';
+
 
 const Form = ({ children }: any) => {
   const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
@@ -40,19 +42,9 @@ const Form = ({ children }: any) => {
   useEffect(() => {
     console.log(boat, people, time)
   }, [boat, people, time])
-  React.useEffect(() => {
-    const glide = new Glide('#options-type', {
-      type: "slider",
-      focusAt: 'center',
-      perView: 1,
-      startAt: 1,
-    }).mount();
-  }, [])
+ 
 
-  const items = [
-    "./images/kiwi.jpg",
-    "./images/mango.jpg",
-  ]
+ 
 
   return (
     <div className={usw(styles, ['formComponent'], ["container-fluid"])} >
@@ -65,15 +57,6 @@ const Form = ({ children }: any) => {
             {/*<div className={usc(styles, ["content"])}>*/}
             <div className={usw(styles, ["content"], ["row"])}>
               <div className={usb(["col-md-6", "col-12"])}>
-                <div className={usc(styles, ["gliderContainer"])}>
-                  <div className="glide" id="options-type">
-                    <div className="glide__track" data-glide-el="track">
-                      <ul className="glide__slides">
-                        {items.map((i, index) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
                 <Captains />
               </div>
               <div className={usb(["col-md-6", "col-12"])}>

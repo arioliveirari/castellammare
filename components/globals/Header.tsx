@@ -35,7 +35,7 @@ const Header = ({ children }: any) => {
       </Head>
       <div className={usb(["container"])}>
         <div className={usb(["row"])}>
-          <div className={usb(["col-l-12"])}>
+          <div className={usb(["col-l-6", "col-md-12"])}>
             {/*Header Desktop */}
             <div className={usc(styles, ["header-desktop"])}>
               <Logo />
@@ -44,7 +44,19 @@ const Header = ({ children }: any) => {
 
             {/*Header Mobile */}
             <div className={usc(styles, ["header-mobile"])}>
-                <Logo />
+              <Logo />
+              <a href="#" className={usc(styles, ["reserva"])}><p>Reservar</p></a>
+              <div className={usc(styles, ["icons"])}>
+                <div className={usc(styles, ["linkBtn"])}>
+                  <span className="icon-instagram" />
+                </div>
+                <div className={usc(styles, ["linkBtn"])}>
+                  <span className="icon-wpp" />
+                </div>
+                <div className={usc(styles, ["linkBtn"])}>
+                  <span className="icon-mail" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -77,9 +89,9 @@ const Links = () => (
         <span className="icon-mail" />
       </div>
     </div>
-
   </div>
 )
+
 
 const Logo = () => (
   <div className={usc(styles, ["logo"])}>

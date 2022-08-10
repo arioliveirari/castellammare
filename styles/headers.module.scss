@@ -72,7 +72,7 @@
         height: auto;
         color: $beige;
         font-weight: bold;
-        transition: all ease-in-out 50ms;
+        padding: px;
       }
     }
 
@@ -91,11 +91,60 @@
       }
     }
   }
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .reserva {
+      font-family: dmsans;
+      font-weight: 500;
+      background-color: $orange;
+      border-radius: 8px;
+      width: 95px;
+      height: 30px;
+      font-size: 16pt;
+      color: $beige;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .links {
+      display: flex;
+      .logoText {
+        width: 52px;
+        height: 33px;
+      }
+    }
+    .icons {
+      display: flex;
+      justify-content: space-between;
+      width: 27%;
+      .linkBtn {
+        width: 21px;
+        height: 21px;
+        background: #f1e6d0;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #002848;
+      }
+    }
+  }
 
   @media screen and (max-width: 1200px) {
     .header-desktop {
       .links {
-        width: 80%;
+        width: 60%;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .header-desktop {
+      .links {
+        width: 70%;
       }
     }
   }
@@ -113,7 +162,7 @@
       }
     }
   }
-  
+
   @media screen and (min-width: 768px) {
     .header-desktop {
       display: flex;
@@ -122,6 +171,45 @@
 
     .header-mobile {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    .header-mobile {
+      .logo {
+        .logoPic {
+          width: 30px;
+          height: auto;
+          aspect-ratio: 1/1;
+          order: 1;
+          float: left;
+        }
+        .logoText {
+          order: 2;
+          font-family: calson;
+          font-weight: 400;
+          font-size: 10px;
+          justify-content: center;
+          text-align: left;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+      }
+      .reserva {
+        font-family: dmsans;
+        font-weight: 400;
+        background-color: #e8a93f;
+        border-radius: 8px;
+        width: 98px;
+        height: 27px;
+        font-size: 17px;
+        color: #f1e6d0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
     }
   }
 }

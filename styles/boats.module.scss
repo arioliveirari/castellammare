@@ -1,10 +1,10 @@
 @import "variables.module.scss";
-.boatsModule{
-    background-color: #F3DDB4;
+.boatsModule {
+    background-color: #f3ddb4;
 }
 .topContent {
     display: flex;
-  
+
     .pic {
         background-image: url(../public/images/kiwi.jpg);
         height: 440px;
@@ -36,7 +36,7 @@
             align-items: center;
             margin-bottom: 30px;
             .boatNumber {
-                padding: 20px;
+                padding: 18px 20px;
                 border-radius: 100%;
                 background-color: $ligthBlue;
                 color: #fff;
@@ -46,6 +46,9 @@
                 height: 70px;
                 width: 70px;
                 position: relative;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
             }
             .darkishBlue {
                 background-color: $darkishBlue;
@@ -63,7 +66,9 @@
 .botContent {
     display: flex;
     flex-direction: row-reverse;
-   margin-top: 40px;
+    margin-top: 40px;
+    margin-top: 170px;
+
     .botPic {
         background-image: url(../public/images/mango.jpg);
         height: 440px;
@@ -71,6 +76,7 @@
         background-size: cover;
         background-position: bottom;
         border-radius: 221px 221px 0px 221px;
+        margin-bottom: 120px;
     }
     .boatName {
         font-family: roboto;
@@ -93,23 +99,23 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
-            p{
+            p {
                 margin: 0%;
             }
             .boatNumber {
-                padding: 20px;
+                padding: 18px 20px;
                 border-radius: 100%;
                 background-color: $ligthBlue;
                 color: #fff;
                 font-size: 25px;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
                 font-weight: 700;
                 font-family: roboto;
                 height: 70px;
                 width: 70px;
                 position: relative;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
             }
             .darkishBlue {
                 background-color: $darkishBlue;
