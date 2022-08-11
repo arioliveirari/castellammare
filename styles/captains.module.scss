@@ -9,18 +9,20 @@
         align-items: center;
         flex-direction: column-reverse;
         .textContainer {
-            width: 50%;
+            width: 100%;
             text-align: center;
             justify-content: center;
+            text-align: center;
             p {
                 margin-bottom: 0%;
             }
             .name {
-                font-size: 30px;
+                font-size: 21pt;
                 font-family: roboto;
                 font-weight: 700;
                 text-transform: capitalize;
                 text-align: center;
+
             }
             .tittle {
                 font-size: 20px;
@@ -48,7 +50,7 @@
                 }
                 .dataNumber {
                     font-weight: 700;
-                    font-size: 30px;
+                    font-size: 18px;
                     text-align: center;
                     align-items: center;
                     justify-content: center;
@@ -62,32 +64,26 @@
                 }
                 .datatext {
                     font-weight: 400;
-                    font-size: 20px;
+                    font-size: 14pt;
                     align-items: center;
                     text-align: center;
                 }
                 .dataBall {
-                    width: 50px;
-                    height: 50px;
+                    width: 35px;
+                    height: 35px;
                     background-color: #fff;
                     border-radius: 100%;
                     text-align: center;
                     align-items: center;
                     justify-content: center;
                     margin: auto;
+                    display: flex;
                 }
             }
         }
-        .rigthText {
-            text-align: end;
-        }
-        .rigthData {
-            flex-direction: row-reverse;
-            padding-right: 0%;
-            padding-left: 15px;
-        }
+        
         .picContainer {
-            width: 50%;
+            width: 100%;
             background-image: url(../public/images/captain2.png);
             background-size: contain;
             background-position: center;

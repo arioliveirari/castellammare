@@ -98,7 +98,7 @@ const Form = ({ children }: any) => {
                       </div>
                     </div>
                     <div className={usc(styles, ["formCheck"])}>
-                      <p>al reservar estas aceptando los <b>terminos y <br /> condiciones</b></p>
+                      <p>al reservar estas aceptando los <b>terminos y  condiciones</b></p>
                     </div>
                     <Button></Button>
                     <div className={usc(styles, ["formInput", "formPayment"])} >

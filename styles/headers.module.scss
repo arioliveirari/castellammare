@@ -51,6 +51,7 @@
     align-items: center;
     justify-content: center;
     color: $darkBlue;
+    display: flex;
   }
   .header-desktop {
     text-align: center;
@@ -87,6 +88,12 @@
         cursor: pointer;
         &:hover {
           filter: brightness(0.8);
+        }
+        span {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
@@ -130,6 +137,14 @@
         align-items: center;
         justify-content: center;
         color: #002848;
+        font-size: 18px;
+        span {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+        }
       }
     }
   }

@@ -90,7 +90,7 @@
   }
   .form {
     background: $beige;
-    width: 85%;
+    width: 100%;
     justify-content: center;
     margin: auto;
     border-radius: 8px;
@@ -240,6 +240,7 @@
     justify-content: center;
     font-family: roboto;
     text-transform: uppercase;
+    width: 100%;
     .formPic {
       color: $darkBlue;
       width: 60px;
@@ -278,6 +279,17 @@
 }
 
 // mediaQueries
+
+@media screen and (max-width: 375px) {
+  .formInput {
+    .persons {
+      .person {
+        font-size: 33px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1280px) and (min-width: 1280px) {
   .content {
     .picContainer {
@@ -327,7 +339,6 @@
 @media screen and (max-width: 769px) {
   .content {
     .form {
-      width: 80%;
       .formInput {
         padding: 0px 10px;
       }

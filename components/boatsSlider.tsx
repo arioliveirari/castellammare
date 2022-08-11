@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import styles from '../styles/form.module.scss';
+import styles from '../styles/boatSlider.module.scss';
 import { usc, usb, usw } from '../utils/helpers';
 import Glide from '@glidejs/glide'
 import BoatsSlide from './BoatSlide';
@@ -14,8 +14,6 @@ const BoatsSlider = () => {
             focusAt: 'center',
             perView: 1,
             startAt: 1,
-            gap: 20,
-            peek: 100
         })
         glide.on('run', () => {
             changeTexts

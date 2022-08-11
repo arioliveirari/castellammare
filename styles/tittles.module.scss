@@ -1,5 +1,5 @@
 .tittleContainer {
-    width: 100%;
+    width:100% ;
     height: 85px;
     display: flex;
     color: #002848;
@@ -10,12 +10,45 @@
     margin-bottom: 50px;
     font-family: calson;
     font-weight: 400;
+    p{
+        margin: 0%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .tittleContainer {
         font-size: 58px;
         text-align: center;
-        justify-content:center ;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .tittleContainer {
+        font-size: 60px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 992px) {
+    .tittleContainer {
+        font-size: 48px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 425px) {
+    .tittleContainer {
+        font-size: 43px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 375px) {
+    .tittleContainer {
+        font-size: 35px;
+        height: 55px;
+        text-align: center;
+        justify-content: center;
     }
 }

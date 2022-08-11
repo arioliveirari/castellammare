@@ -2,6 +2,7 @@ import React from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/BoatSlide.module.scss'
 
+
 export type props = {
     src: string,
 }

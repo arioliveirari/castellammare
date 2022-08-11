@@ -1,4 +1,5 @@
 @import "variables.module.scss";
+
 .boatsModule {
     background-color: #f3ddb4;
 }
@@ -129,4 +130,11 @@
             }
         }
     }
+}
+
+@media screen and (max-width:768px) {
+    .topContent,.botContent{
+        display: none;
+    }
+    
 }
