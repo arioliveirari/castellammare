@@ -33,8 +33,7 @@ const Gallery = () => {
       focusAt: 'center',
       perView: 1,
       startAt: 1,
-      peek:70,
-      gap:20
+      peek:300,
     })
     glide.on('run', () => {
       // USE STATE

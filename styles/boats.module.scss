@@ -1,6 +1,6 @@
 @import "variables.module.scss";
-.boatsModule{
-    background-color: #F3DDB4;
+.boatsModule {
+    background-color: #f3ddb4;
 }
 .topContent {
     display: flex;
@@ -33,26 +33,25 @@
             text-align: center;
             justify-content: center;
             align-items: center;
-            vertical-align: middle;
-            margin-bottom: 15px;
-
+            margin-bottom: 20px;
+            p {
+                margin: 0%;
+            }
             .boatNumber {
-                padding: 18px 20px;
+                display: flex;
                 border-radius: 100%;
                 background-color: $ligthBlue;
                 color: #fff;
                 font-size: 25px;
                 font-weight: 700;
+                margin-right: -16px;
                 font-family: roboto;
-                height: 70px;
-                width: 70px;
+                height: 55px;
+                width: 55px;
                 position: relative;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-            }
-            .phantomdiv {
-                background-color: transparent;
             }
             .darkishBlue {
                 background-color: $darkishBlue;
@@ -61,7 +60,7 @@
                 padding: 5px 20px;
                 color: #fff;
                 background-color: $darkishBlue;
-                border-radius: 211px;
+                border-radius: 0px 211px 211px 0px;
             }
         }
     }
@@ -85,9 +84,11 @@
         font-size: 39px;
         color: $darkBlue;
         text-transform: capitalize;
-        text-align: left;
-        justify-content: left;
-        margin-bottom: 30px;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: fit-content;
+        height: fit-content;
     }
     .dataContainer {
         height: 440px;
@@ -103,15 +104,16 @@
                 margin: 0%;
             }
             .boatNumber {
-                padding: 18px 20px;
+                display: flex;
                 border-radius: 100%;
                 background-color: $ligthBlue;
                 color: #fff;
                 font-size: 25px;
                 font-weight: 700;
+                margin-left: -16px;
                 font-family: roboto;
-                height: 70px;
-                width: 70px;
+                height: 55px;
+                width: 55px;
                 position: relative;
                 align-items: center;
                 justify-content: center;
@@ -124,11 +126,13 @@
                 padding: 5px 20px;
                 color: #fff;
                 background-color: $darkishBlue;
-                border-radius: 211px;
-                margin-right: -15px;
+                border-radius: 211px 0px 0px 211px;
             }
         }
     }
+}
+@media screen and (max-width:992px){
+    
 }
 
 @media screen and (max-width: 768px) {

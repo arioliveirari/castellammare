@@ -90,3 +90,35 @@
         }
     }
 }
+@media screen and (max-width:992px) {
+    .slideContainer {
+        .textContainer {
+            font-size: 12px;
+            padding: 20px 15px;
+        }
+        .personContainer {
+            .name {
+                font-size: 13px;
+            }
+            .ocupation {
+                font-weight: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .slideContainer {
+        .textContainer {
+            font-size: 15px;
+            padding: 20px 15px;
+        }
+        .personContainer {
+            .name {
+                font-size: 18px;
+            }
+            .ocupation {
+                font-weight: 150px;
+            }
+        }
+    }
+}
