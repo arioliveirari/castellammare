@@ -129,11 +129,12 @@
     }
     .icons {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       width: 27%;
       .linkBtn {
-        width: 21px;
-        height: 21px;
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
         background: #f1e6d0;
         border-radius: 100%;
         display: flex;

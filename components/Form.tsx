@@ -6,20 +6,24 @@ import Button from './Button';
 import Glide from '@glidejs/glide'
 import { RiveAnimation } from './RiveAnimation';
 import Captains from './captains';
+import Coast from './Coast';
 
+const p = 2000;
+const max = 4;
+const min = 2;
 
 
 const Form = ({ children }: any) => {
+  const [people, setPeople] = useState<number>(min)
+  const [total, setTotal] = useState<number>(min * p)
+  /*
   const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
   const [checkedMango, setCheckedMango] = useState<boolean>(false);
-  const [people, setPeople] = useState<number>(1)
-  const [price, setPrice] = useState<number>(2000)
-  const [total, setTotal] = useState<number>(0)
   const [tittle, setTittle] = useState("")
   const [iconkiwi, setIconKiwi] = useState("icon-un-check")
   const [iconMango, setIconMango] = useState("icon-un-check")
-  const max = 5;
-  const min = 1;
+  */
+
   const travelData = [
     { "people": people },
     { "total": total },
@@ -27,19 +31,19 @@ const Form = ({ children }: any) => {
   ]
   const plus = () => {
     if (people < max) {
-      setPeople(people + 1)
-      setTotal(people * price + price)
+      const newPeople = people + 1;
+      setPeople(newPeople)
+      setTotal(newPeople * p)
     }
   }
   const minus = () => {
     if (people > min) {
-      setPeople(people - 1)
-      setTotal(people * price - price)
+      const newPeople = people - 1;
+      setPeople(newPeople)
+      setTotal(newPeople * p)
     }
   }
-  useEffect(() => {
-    console.log(total, people)
-  }, [total, people])
+  /*
   const morning = () => {
     setPrice(1550)
   }
@@ -49,14 +53,11 @@ const Form = ({ children }: any) => {
   const nigth = () => {
     setPrice(2000)
   }
-
-
-
-
+  */
   return (
-    <div className={usw(styles, ['formComponent'], ["container-fluid"])} >
-      <RiveAnimation bottom={0} left={0} animationName="water_2" extraClassName="rotationAnimation" />
-      <RiveAnimation top={-300} bottom={0} right={0} animationName="water_1" />
+    <div className={usw(styles, ['formComponent'], ["container-fluid", "p-0"])} >
+      <RiveAnimation bottom={800} left={0} animationName="water_2" extraClassName="rotationAnimation" />
+      <RiveAnimation top={50} right={0} animationName="water_1" />
       <RiveAnimation top={0} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
       <div className={usb(['container', 'position-relative'])}>
         <div className={usb(["row"])}>
@@ -107,7 +108,7 @@ const Form = ({ children }: any) => {
                     <div className={usc(styles, ["formCheck"])}>
                       <p>al reservar estas aceptando los <b>terminos y condiciones</b></p>
                     </div>
-                    <Button />
+                    <Button onClick={() => window.location.href = "https://mpago.la/2BxpUJA"} />
                     <div className={usc(styles, ["formInput", "formPayment"])} >
                     </div>
                   </div>
@@ -117,6 +118,7 @@ const Form = ({ children }: any) => {
           </div>
         </div>
       </div>
+      <Coast />
     </div >
   )
 };

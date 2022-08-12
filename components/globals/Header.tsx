@@ -53,9 +53,11 @@ const Header = ({ children }: any) => {
                 <div className={usc(styles, ["linkBtn"])}>
                   <span className="icon-wpp" />
                 </div>
+                {/*
                 <div className={usc(styles, ["linkBtn"])}>
                   <span className="icon-mail" />
                 </div>
+                */}
               </div>
             </div>
           </div>
@@ -85,9 +87,11 @@ const Links = () => (
       <div className={usc(styles, ["linkBtn"])}>
         <span className="icon-wpp" />
       </div>
+      {/*
       <div className={usc(styles, ["linkBtn"])}>
         <span className="icon-mail" />
       </div>
+      */}
     </div>
   </div>
 )

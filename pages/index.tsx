@@ -21,7 +21,7 @@ const Index = (props: any) => {
       <OverTheFold />
       <Waves />
       <Form />
-      <Coast />
+      {/*<Coast />*/}
       <Boats />
       <Slider />
       <Services />
