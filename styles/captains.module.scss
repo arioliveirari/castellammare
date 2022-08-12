@@ -28,16 +28,17 @@
                 font-size: 20px;
                 font-family: roboto;
                 font-weight: 400;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
             .paragraph {
                 font-family: roboto;
-                font-size: 20px;
+                font-size: 18px;
                 font-style: italic;
+                text-align: center;
             }
             .dataContainer {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 text-align: center;
                 font-family: roboto;
                 margin-top: 30px;

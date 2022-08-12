@@ -6,15 +6,15 @@ import Button from './Button';
 import Glide from '@glidejs/glide'
 import { RiveAnimation } from './RiveAnimation';
 import Captains from './captains';
-import Dropdown from './dropdown';
+
 
 
 const Form = ({ children }: any) => {
   const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
   const [checkedMango, setCheckedMango] = useState<boolean>(false);
   const [people, setPeople] = useState<number>(1)
-  const [time, setTime] = useState("")
-  const [boat, setBoat] = useState("")
+  const [price, setPrice] = useState<number>(2000)
+  const [total, setTotal] = useState<number>(0)
   const [tittle, setTittle] = useState("")
   const [iconkiwi, setIconKiwi] = useState("icon-un-check")
   const [iconMango, setIconMango] = useState("icon-un-check")
@@ -22,29 +22,36 @@ const Form = ({ children }: any) => {
   const min = 1;
   const travelData = [
     { "people": people },
-    { "boat": boat },
-    { "time": "" }
+    { "total": total },
+    { "price": "" }
   ]
   const plus = () => {
     if (people < max) {
       setPeople(people + 1)
+      setTotal(people * price + price)
     }
   }
   const minus = () => {
     if (people > min) {
       setPeople(people - 1)
+      setTotal(people * price - price)
     }
   }
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setTime(e.currentTarget.value)
-  }
   useEffect(() => {
-    console.log(boat, people, time)
-  }, [boat, people, time])
- 
+    console.log(total, people)
+  }, [total, people])
+  const morning = () => {
+    setPrice(1550)
+  }
+  const noon = () => {
+    setPrice(3000)
+  }
+  const nigth = () => {
+    setPrice(2000)
+  }
 
- 
+
+
 
   return (
     <div className={usw(styles, ['formComponent'], ["container-fluid"])} >
@@ -87,20 +94,20 @@ const Form = ({ children }: any) => {
                     <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                       <div className={usc(styles, ["clock"])}>
                         <span className='icon-clock' />
-                        <input type="text" onChange={handleInputChange} className={usc(styles, ["timeInputer"])} placeholder="Mañana/Tarde/Noche" />
+                        {/* <input type="text" className={usc(styles, ["timeInputer"])} placeholder="Mañana/Tarde/Noche" /> */}
                       </div>
                     </div>
                     <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                       <div className={usc(styles, ["clock"])}>
                         <p>
-                          $ total
+                          $ {total}
                         </p>
                       </div>
                     </div>
                     <div className={usc(styles, ["formCheck"])}>
-                      <p>al reservar estas aceptando los <b>terminos y  condiciones</b></p>
+                      <p>al reservar estas aceptando los <b>terminos y condiciones</b></p>
                     </div>
-                    <Button></Button>
+                    <Button />
                     <div className={usc(styles, ["formInput", "formPayment"])} >
                     </div>
                   </div>

@@ -13,12 +13,23 @@ const Slider = () => {
       startAt: 1,
       gap: 50,
       breakpoints: {
+        992: {
+          perView: 1,
+          gap: 50,
+          startAt: 1,
+          peek: 200
+        },
         768: {
           perView: 1,
           gap: 50,
           startAt: 1,
-          peek: 90,
+          peek: 100
         },
+        550: {
+          perView: 1,
+          gap: 50,
+          startAt: 1
+        }
       },
 
     }).mount();
@@ -49,17 +60,17 @@ const Slider = () => {
                   </ul>
                   <div className="controls" data-glide-el="controls[nav]">
                     <button className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></button>
-                    <button className="glide__bullet" data-glide-dir="=0"></button>
-                    <button className="glide__bullet" data-glide-dir="=1"></button>
-                    <button className="glide__bullet" data-glide-dir="=2"></button>
-                    <button className="glide__bullet" data-glide-dir="=3"></button>
-                    <button className="glide__bullet" data-glide-dir="=4"></button>
-                    <button className="glide__bullet" data-glide-dir="=5"></button>
-                    <button className="glide__bullet" data-glide-dir="=6"></button>
-                    <button className="glide__bullet" data-glide-dir="=7"></button>
-                    <button className="glide__bullet" data-glide-dir="=8"></button>
-                    <button className="glide__bullet" data-glide-dir="=9"></button>
-                    <button className="glide__bullet" data-glide-dir="=10"></button>
+                    <button className="glide__bullet" data-glide-dir="=0">0</button>
+                    <button className="glide__bullet" data-glide-dir="=1">0</button>
+                    <button className="glide__bullet" data-glide-dir="=2">0</button>
+                    <button className="glide__bullet" data-glide-dir="=3">0</button>
+                    <button className="glide__bullet" data-glide-dir="=4">0</button>
+                    <button className="glide__bullet" data-glide-dir="=5">0</button>
+                    <button className="glide__bullet" data-glide-dir="=6">0</button>
+                    <button className="glide__bullet" data-glide-dir="=7">0</button>
+                    <button className="glide__bullet" data-glide-dir="=8">0</button>
+                    <button className="glide__bullet" data-glide-dir="=9">0</button>
+                    <button className="glide__bullet" data-glide-dir="=10">0</button>
                     <button className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></button>
                   </div>
                 </div>

@@ -1,23 +1,22 @@
 @import "variables.module.scss";
-
-.boatsModule {
-    background-color: #f3ddb4;
+.boatsModule{
+    background-color: #F3DDB4;
 }
 .topContent {
     display: flex;
-
+    flex-direction: row;
     .pic {
-        background-image: url(../public/images/kiwi.jpg);
+        background-image: url(../public/images/mango.jpg);
         height: 440px;
         width: 100%;
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
         border-radius: 0px 221px 221px 221px;
     }
     .boatName {
+        font-size: 40px;
         font-family: roboto;
         font-weight: 700;
-        font-size: 39px;
         color: $darkBlue;
         text-transform: capitalize;
     }
@@ -27,15 +26,16 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin: 100px 0px;
         .boatData {
-            p {
-                margin: 0%;
-            }
             display: flex;
+            flex-direction: row;
             text-align: center;
             justify-content: center;
             align-items: center;
-            margin-bottom: 30px;
+            vertical-align: middle;
+            margin-bottom: 15px;
+
             .boatNumber {
                 padding: 18px 20px;
                 border-radius: 100%;
@@ -51,6 +51,9 @@
                 justify-content: center;
                 text-align: center;
             }
+            .phantomdiv {
+                background-color: transparent;
+            }
             .darkishBlue {
                 background-color: $darkishBlue;
             }
@@ -59,17 +62,14 @@
                 color: #fff;
                 background-color: $darkishBlue;
                 border-radius: 211px;
-                margin-left: -15px;
             }
         }
     }
 }
+
 .botContent {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 40px;
-    margin-top: 170px;
-
     .botPic {
         background-image: url(../public/images/mango.jpg);
         height: 440px;
@@ -85,14 +85,13 @@
         font-size: 39px;
         color: $darkBlue;
         text-transform: capitalize;
-        text-align: center;
+        text-align: left;
+        justify-content: left;
+        margin-bottom: 30px;
     }
     .dataContainer {
         height: 440px;
         width: 100%;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
         .boatData {
             display: flex;
             flex-direction: row-reverse;
@@ -132,9 +131,9 @@
     }
 }
 
-@media screen and (max-width:768px) {
-    .topContent,.botContent{
+@media screen and (max-width: 768px) {
+    .topContent,
+    .botContent {
         display: none;
     }
-    
 }

@@ -53,7 +53,7 @@
 @media screen and (max-width:768px) {
     .serviceContainer,.flex-direction-reverse{
         text-align: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .service1,.service2,.service3{
         height: 200px;

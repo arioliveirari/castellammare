@@ -21,9 +21,12 @@ const Captains = () => {
                                             capitan
                                         </p>
                                         <p className={usc(styles, ["paragraph"])}>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore
-                                            magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna
+                                            aliqua. Integer tempus, libero eget
+                                            auctor mattis, nisi orci dictum dui,
+                                            quis faucibus quam lacus.
                                         </p>
                                         <div className={usc(styles, ["dataContainer"])}>
                                             <div className={usc(styles, ["data"])}>

@@ -86,8 +86,15 @@ a {
   font-size: 20px;
 }
 
+#gallery-image-mobile{
+  display: none;
+}
+
 @media screen and (max-width:768px) {
   .glide__slide--active {
     transform: translateY(0px)
+  }
+  #gallery-image-mobile{
+    display: flex;
   }
 }

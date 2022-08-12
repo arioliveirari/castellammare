@@ -31,8 +31,10 @@ const Gallery = () => {
     const glide = new Glide('#gallery-image-mobile', {
       type: "slider",
       focusAt: 'center',
-      perView: 3,
+      perView: 1,
       startAt: 1,
+      peek:70,
+      gap:20
     })
     glide.on('run', () => {
       // USE STATE

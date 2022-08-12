@@ -64,16 +64,18 @@
       text-align: center;
       align-items: center;
       justify-content: space-between;
+      .headerLink {
+        font-size: 20px;
+      }
       .reserva {
         font-family: dmsans;
-        font-weight: 500;
-        background-color: $orange;
+        background-color: #e8a93f;
         border-radius: 8px;
         width: 110px;
-        height: auto;
-        color: $beige;
-        font-weight: bold;
-        padding: px;
+        height: 30px;
+        padding: 3px 0px;
+        color: #f1e6d0;
+        font-weight: 500;
       }
     }
 
@@ -108,8 +110,9 @@
       font-weight: 500;
       background-color: $orange;
       border-radius: 8px;
-      width: 95px;
+      width: 22%;
       height: 30px;
+      margin-left: 20px;
       font-size: 16pt;
       color: $beige;
       font-weight: bold;
@@ -174,6 +177,9 @@
         width: 100%;
         justify-content: space-between;
         flex-direction: row;
+        .icons {
+          width: 16px;
+        }
       }
     }
   }
@@ -225,6 +231,29 @@
         justify-content: center;
         text-align: center;
       }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .reserva {
+      font-family: dmsans;
+      font-weight: 500;
+      background-color: $orange;
+      border-radius: 8px;
+      width: 22%;
+      height: 30px;
+margin: 0%;
+      font-size: 16pt;
+      color: $beige;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
   }
 }

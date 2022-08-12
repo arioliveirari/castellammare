@@ -76,8 +76,8 @@ export default Header;
 const Links = () => (
   <div className={usc(styles, ["links"])} >
     <a href="#" className={usc(styles, ["reserva"])} >Reservar</a>
-    <a href="#">Sobre nosotros</a>
-    <a href="#">Servicios</a>
+    <a href="#" className={usc(styles, ["headerLink"])}>Sobre nosotros</a>
+    <a href="#" className={usc(styles, ["headerLink"])}>Servicios</a>
     <div className={usc(styles, ["icons"])}>
       <div className={usc(styles, ["linkBtn"])}>
         <span className="icon-instagram" />

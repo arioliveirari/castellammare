@@ -14,7 +14,6 @@
             font-family: roboto;
             font-weight: 400;
             text-transform: uppercase;
-            font-size: 20px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -35,12 +34,15 @@
                     aspect-ratio: 1/1;
                 }
             }
-
+            ul {
+                margin: 0%;
+            }
             li {
                 list-style: none;
                 color: $beige;
                 text-align: center;
                 word-break: keep-all;
+                margin: 0%;
             }
             a {
                 text-decoration: none;
@@ -84,6 +86,9 @@
             align-items: center;
             text-align: justify;
             padding: 20px 0px;
+            .copyrigth {
+                font-size: 13px;
+            }
             p {
                 color: $beige;
             }
@@ -104,7 +109,7 @@
                         align-items: center;
                         justify-content: center;
                         color: $darkBlue;
-                     margin-left: 15px;
+                        margin-left: 15px;
                     }
                 }
             }
@@ -126,8 +131,9 @@
                         text-align: center;
                         margin-right: 15px;
                     }
-                    .logoText{
+                    .logoText {
                         font-family: calson;
+                        font-size: 24px;
                     }
                 }
             }
@@ -135,14 +141,11 @@
     }
 }
 
-@media (max-width: 768px) {
-    .footer {
-        .footerContainer {
-            .desktopContent {
+@media screen and (max-width:768px) {
+    .footer{
+        .footerContainer{
+            .desktopContent{
                 display: none;
-            }
-            .mobileContent {
-                display: flex;
             }
         }
     }

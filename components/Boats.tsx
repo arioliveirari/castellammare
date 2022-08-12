@@ -16,16 +16,15 @@ const Boats = () => {
 
 
                     <div className={usw(styles, ["topContent"], ["row"])}>
-                        <div className={usb(["col-md-7", "col-12"])}>
-
+                        <div className={usb(["col-md-8", "col-12"])}>
+                            <p className={usc(styles, ["boatName"])}>
+                                Velero modelo gtx
+                            </p>
                             <div className={usc(styles, ["pic"])}>
                             </div>
                         </div>
-                        <div className={usb(["col-md-5", "col-12"])}>
+                        <div className={usb(["col-md-3", "col-12"])}>
                             <div className={usc(styles, ["dataContainer"])}>
-                                <p className={usc(styles, ["boatName"])}>
-                                    Velero modelo gtx
-                                </p>
                                 <div className={usc(styles, ["boatData"])}>
                                     <p className={usc(styles, ["boatNumber"])}>5</p>
                                     <p className={usc(styles, ["boatText"])}>Años Navegando</p>
@@ -35,8 +34,8 @@ const Boats = () => {
                                     <p className={usc(styles, ["boatText"])}>Viajes</p>
                                 </div>
                                 <div className={usc(styles, ["boatData"])}>
-                                    <p className={usc(styles, ["boatNumber"])}>5</p>
-                                    <p className={usc(styles, ["boatText"])}>tripualentes</p>
+                                    <p className={usc(styles, ["boatNumber"])}>80</p>
+                                    <p className={usc(styles, ["boatText"])}>Viajes</p>
                                 </div>
                                 <div className={usc(styles, ["boatData"])}>
                                     <p className={usc(styles, ["boatNumber"])}>5</p>
@@ -46,18 +45,17 @@ const Boats = () => {
                         </div>
                     </div>
                     <div className={usw(styles, ["botContent"], ["row"])}>
-                        <div className={usb(["col-md-7", "col-12"])}>
+                        <div className={usb(["col-md-8", "col-12"])}>
                             <div className={usc(styles, ["botPic"])}>
                             </div>
-                            <div className={usc(styles, ["boatData"])}>
 
-                            </div>
                         </div>
-                        <div className={usb(["col-md-5", "col-12"])}>
+                        <div className={usb(["col-md-4", "col-12"])}>
+
                             <div className={usc(styles, ["dataContainer"])}>
-                                <p className={usc(styles, ["boatName"])}>
-                                    Velero Modelo GTX
-                                </p>
+                            <p className={usc(styles, ["boatName"])}>
+                                modelo de velero gtx 2
+                            </p>
                                 <div className={usc(styles, ["boatData"])}>
                                     <p className={usc(styles, ["boatNumber"])}>5</p>
                                     <p className={usc(styles, ["boatText"])}>Años Navegando</p>
@@ -67,8 +65,8 @@ const Boats = () => {
                                     <p className={usc(styles, ["boatText"])}>Viajes</p>
                                 </div>
                                 <div className={usc(styles, ["boatData"])}>
-                                    <p className={usc(styles, ["boatNumber"])}>4</p>
-                                    <p className={usc(styles, ["boatText"])}>tripualentes</p>
+                                    <p className={usc(styles, ["boatNumber"])}>80</p>
+                                    <p className={usc(styles, ["boatText"])}>viajes</p>
                                 </div>
                                 <div className={usc(styles, ["boatData"])}>
                                     <p className={usc(styles, ["boatNumber"])}>5</p>

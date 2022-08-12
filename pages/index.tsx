@@ -6,24 +6,27 @@ import Form from '../components/Form';
 import Footer from '../components/Footer'
 import Services from '../components/Services';
 import { usc } from '../utils/helpers';
+import FooterWaves from '../components/FooterWaves';
 import Waves from '../components/waves';
 import Gallery from '../components/Gallery';
 import Slider from '../components/Slider';
 import Boats from '../components/Boats'
+import Coast from '../components/Coast';
 import styles from '../styles/globals.module.scss';
 const Index = (props: any) => {
 
   return (
     <div className={usc(styles, ['main'])}>
-      <Header/>
+      <Header />
       <OverTheFold />
       <Waves />
       <Form />
-      <Boats/>
+      <Coast />
+      <Boats />
       <Slider />
       <Services />
       <Gallery />
-      <Waves />
+      <FooterWaves />
       <Footer />
     </div>
   )
