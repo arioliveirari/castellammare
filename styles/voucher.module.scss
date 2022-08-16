@@ -1,1 +1,19 @@
 @import "variables.module.scss";
+.voucherContainer{
+    background-color: $beige;
+    .content{
+        border: 2px solid gray;
+        border-radius: 8px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: roboto;
+        font-weight: 500;
+        padding: 20px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        p{
+            margin: 0%;
+        }
+    }
+}

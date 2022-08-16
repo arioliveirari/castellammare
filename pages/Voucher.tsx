@@ -11,9 +11,11 @@ interface voucher {
 }
 
 const Voucher = () => {
+    const current = new Date()
+    const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
     const voucherInfo: Array<voucher> = [{
         name: "john does",
-        date: "30/02/2004",
+        date: date,
         id: 1
     }
     ]
@@ -26,7 +28,7 @@ const Voucher = () => {
                             {voucherInfo.map(i => (
                                 <div key={i.id}>
                                     <p>name:{i.name}</p>
-                                    <p>date of purchase:{i.date} please remember your purchase is only valid untill 30/02/2005 included</p>
+                                    <p>date of purchase:{i.date} please remember your purchase is only valid for the next 365</p>
                                 </div>
                             ))}
                         </div>
