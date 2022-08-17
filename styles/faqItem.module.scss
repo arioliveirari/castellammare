@@ -1,0 +1,57 @@
+@import "variables.module.scss";
+
+.faqComponent {
+    background-color: red;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    height: 400px;
+    p {
+        align-items: center;
+        margin: 0%;
+    }
+    .content {
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        .question {
+            background-color: aqua;
+            text-align: center;
+            .text {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+            .arrow {
+                background-image: url(../public/images/downArrow.svg.png);
+                height: 30px;
+                width: auto;
+                aspect-ratio: 1/1;
+                background-position: center;
+                background-size: cover;
+            }
+            .rotatedArrow{
+                background-image: url(../public/images/downArrow.svg.png);
+                height: 30px;
+                width: auto;
+                aspect-ratio: 1/1;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+        .answer {
+            padding: 10px;
+            background-color: green;
+            height: 0px;
+            font-size: 0px;
+            transition: all ease 0.3s;
+        }
+        .isDown {
+            height: 30px;
+            text-align: center;
+            background-color: green;
+            transition: all ease 0.3s;
+        }
+    }
+}

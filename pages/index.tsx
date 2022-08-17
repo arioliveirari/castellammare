@@ -12,6 +12,7 @@ import Gallery from '../components/Gallery';
 import Slider from '../components/Slider';
 import Boats from '../components/Boats'
 import Coast from '../components/Coast';
+import FaqItem from '../components/FaqItem';
 import styles from '../styles/globals.module.scss';
 const Index = (props: any) => {
 
@@ -20,12 +21,12 @@ const Index = (props: any) => {
       <Header />
       <OverTheFold />
       <Waves />
-     
       <Coast />
       <Boats />
       <Slider />
       <Services />
       <Gallery />
+      <FaqItem/>
       <FooterWaves />
       <Footer />
     </div>
