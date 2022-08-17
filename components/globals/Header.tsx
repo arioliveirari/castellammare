@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { usb, usc, usw } from '../../utils/helpers';
 import styles from '../../styles/headers.module.scss';
-import { ToolTip } from '../Button';
+import ToolTip from '../ToolTip';
 
 const Header = ({ children }: any) => {
   // bg change when scrolling
@@ -77,27 +77,23 @@ const Header = ({ children }: any) => {
 export default Header;
 
 const Links = () => {
-  const buttonRef1 = React.useRef<HTMLAnchorElement>(null)
-  const buttonRef2 = React.useRef<HTMLAnchorElement>(null)
-  const buttonRef3 = React.useRef<HTMLAnchorElement>(null)
+  const contactRef = React.useRef<HTMLAnchorElement>(null)
   return (
     <>
       <div className={usc(styles, ["links"])} >
-        <a href="#" ref={buttonRef1} className={usc(styles, ["reserva"])} >Reservar</a>
-        <a href="#" ref={buttonRef2} className={usc(styles, ["headerLink"])}>Sobre nosotros</a>
-        <a href="#" ref={buttonRef3} className={usc(styles, ["headerLink"])}>Servicios</a>
+        <a href="#" className={usc(styles, ["reserva"])} >Reservar</a>
+        <a href="#" className={usc(styles, ["headerLink"])}>Sobre nosotros</a>
+        <a href="#" className={usc(styles, ["headerLink"])}>Servicios</a>
         <div className={usc(styles, ["icons"])}>
-          <div className={usc(styles, ["linkBtn"])}>
-            <span className="icon-instagram" />
+          <div  className={usc(styles, ["linkBtn"])}>
+            <span ref={contactRef} className="icon-instagram" />
           </div>
           <div className={usc(styles, ["linkBtn"])}>
             <span className="icon-wpp" />
           </div>
         </div>
       </div>
-      <ToolTip divRef={buttonRef1}><p>esto es un 1</p></ToolTip>
-      <ToolTip divRef={buttonRef2}><p>esto es un 2</p></ToolTip>
-      <ToolTip divRef={buttonRef3}><p>esto es un 3</p></ToolTip>
+      <ToolTip divRef={contactRef}><p>contactanos para consultar disponibilidad</p></ToolTip>
     </>
   )
 }
