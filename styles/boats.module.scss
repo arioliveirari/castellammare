@@ -1,6 +1,6 @@
 @import "variables.module.scss";
 .boatsModule {
-  background-color: #f3ddb4;
+  background-color: $ligthBlue;
   position: relative;
   margin-top: -200px;
 }
@@ -42,8 +42,8 @@
       .boatNumber {
         display: flex;
         border-radius: 100%;
-        background-color: $ligthBlue;
-        color: #fff;
+        background-color: #fff;
+        color: #f40000;
         font-size: 25px;
         font-weight: 700;
         margin-right: -16px;
@@ -54,9 +54,6 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-      }
-      .darkishBlue {
-        background-color: $darkishBlue;
       }
       .boatText {
         padding: 5px 20px;

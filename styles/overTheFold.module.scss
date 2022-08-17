@@ -24,10 +24,16 @@
     }
   }
 }
-
+.rowContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 .containerOver {
   height: 70vh;
   color: $beige;
+  display: flex;
   .textOver {
     cursor: default;
     max-width: 1024px;
