@@ -5,7 +5,6 @@ import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
 import Button from './Button';
 
-import ReactTooltip from "react-tooltip";
 import { RiveAnimation } from './RiveAnimation';
 import Captains from './captains';
 import Coast from './Coast';
@@ -69,7 +68,7 @@ const Form = ({ children }: any) => {
                   <div className={usc(styles, ["formInput", "space-top-40", "inputCounter"])} >
                     <div className={usc(styles, ["counter"])}>
                       <div>
-                        <span className='icon-menos' data-tip data-for="formButton" onClick={minus}></span>
+                        <span className='icon-menos' onClick={minus}></span>
 
                         <p>{people}</p>
                         <span className='icon-mas' onClick={plus} ></span>
@@ -89,8 +88,7 @@ const Form = ({ children }: any) => {
                   <div className={usc(styles, ["formCheck"])}>
                     <p>al reservar estas aceptando los <b>terminos y condiciones</b></p>
                   </div>
-                  <Button data-tip="hello world" data-for='formButton' onClick={() => window.location.href = "https://mpago.la/2BxpUJA"} />
-                  <ReactTooltip id='formButton' >recorda contactarnos para consultar disponibilidad</ReactTooltip>
+                  <Button onClick={() => window.location.href = "https://mpago.la/2BxpUJA"} />
                   <div className={usc(styles, ["formInput", "formPayment"])} >
                   </div>
                 </div>
