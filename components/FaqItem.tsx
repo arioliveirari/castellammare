@@ -31,11 +31,11 @@ const FaqItem = () => {
                             {dropDownArray.map((i => (
                                 <div className={usc(styles, ["dropdownItem"])} key={i.id}>
                                     <div className={usc(styles, ["question"])}>
-                                        <p className={usc(styles, ["text"])}>
+                                        <div className={usc(styles, ["text"])}>
                                             {i.question}
-                                            <div onClick={handleClick} className={usc(styles, [(isDown ? "rotatedArrow": "arrow")])}>
-                                            </div>
-                                        </p>
+                                            <img src='../images/downArrow' onClick={handleClick} className={usc(styles, [(isDown ? "rotatedArrow": "arrow")])}>
+                                            </img>
+                                        </div>
                                     </div>
                                     <div className={usc(styles, [(isDown) ? "isDown" : "answer"])}>
                                         <p className={usc(styles, ["text"])}>
