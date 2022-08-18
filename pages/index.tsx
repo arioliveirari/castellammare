@@ -24,9 +24,9 @@ const Index = (props: any) => {
       <Boats />
       <Coast />
       <Slider />
+      <FaqItem/>
       <Services />
       <Gallery />
-      <FaqItem/>
       <FooterWaves />
       <Footer />
     </div>

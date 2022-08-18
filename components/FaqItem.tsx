@@ -15,40 +15,47 @@ const FaqItem = () => {
         setIsDown(!isDown)
     }
     const dropDownArray: Array<dropDownInfo> = [
-        { id: 1, question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut.", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut." },
-        { id: 2, question: "Lorem ipsum dolor sit amet, consectetur adipiscing . Praesent ut.", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut." },
-        { id: 3, question: "Lorem ipsum dolor sit amet,  adipiscing elit. Praesent ut.", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut." },
-        { id: 4, question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. .", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut." },
-        { id: 5, question: "Lorem sit amet, consectetur adipiscing elit. Praesent ut.", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut." }
+        { id: 1, question: "como reservo un tour con Tu experiencia", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae modi exercitationem, quasi veritatis repudiandae possimus alias minima." },
+        { id: 2, question: "que servicios incluye mi tour", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae modi exercitationem, quasi veritatis repudiandae possimus alias minima." },
+        { id: 3, question: "como reservo un tour com Tu experiencia", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae modi exercitationem, quasi veritatis repudiandae possimus alias minima." },
+        { id: 4, question: "que servicios incluye mi tour", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae modi exercitationem, quasi veritatis repudiandae possimus alias minima." },
+        { id: 5, question: "como me contacto por problemas con mi reserva", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae modi exercitationem, quasi veritatis repudiandae possimus alias minima." }
     ]
 
     return (
-        <div className={usw(styles, ["faqComponent"], ["container-fluid"])}>
-            <div className={usb(["container"])}>
-                <div className={usb(["row"])}>
-                    <div className={usb(["col-12"])}>
-                        <div className={usc(styles, ["content"])} >
-                            {dropDownArray.map((i => (
-                                <div className={usc(styles, ["dropdownItem"])} key={i.id}>
-                                    <div className={usc(styles, ["question"])}>
-                                        <div className={usc(styles, ["text"])}>
-                                            {i.question}
-                                            <img src='../images/downArrow' onClick={handleClick} className={usc(styles, [(isDown ? "rotatedArrow": "arrow")])}>
-                                            </img>
+        <>
+            <div className={usw(styles, ["faqComponent"], ["container-fluid"])}>
+                <Tittles tittle='Preguntas Frecuentes' />
+                <div className={usb(["container"])}>
+                    <div className={usb(["row"])}>
+                        <div className={usb(["col-12"])}>
+                            <div className={usc(styles, ["content"])} >
+                                {dropDownArray.map((i => (
+                                    <div className={usc(styles, ["dropdownItem"])} key={i.id}>
+                                        <div className={usc(styles, ["question"])}>
+                                            <div className={usc(styles, ["text"])}>
+                                                {i.question}
+                                                <div onClick={handleClick} className={usc(styles, [(isDown ? "arrowUp" : "arrowDown")])}>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className={usb(["row"])}>
+                                            <div className={usb(["col-md-7" ,"m-auto"])}>
+                                                <div className={usc(styles, [(isDown) ? "isDown" : "answer"])}>
+                                                    <p className={usc(styles, ["text"])}>
+                                                        {i.answer}
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className={usc(styles, [(isDown) ? "isDown" : "answer"])}>
-                                        <p className={usc(styles, ["text"])}>
-                                            {i.answer}
-                                        </p>
-                                    </div>
-                                </div>
-                            )))}
+                                )))}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div >
+            </div >
+        </>
     )
 }
 export default FaqItem
