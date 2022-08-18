@@ -14,14 +14,20 @@ const Slider = () => {
       startAt: 0,
       gap: 50,
       breakpoints: {
-        768: {
-          perView: 1,
-          startAt: 0,
+        1400:{
+          perView: 2.7
         },
-        550: {
-          perView: 1.2,
-          gap: 10,
-          startAt: 0
+        1200:{
+          perView: 2.3,
+          gap:40
+        },
+        992:{
+          perView:2,
+          gap:30
+        },
+        768:{
+          perView:1.2,
+          gap:10
         }
       },
 
