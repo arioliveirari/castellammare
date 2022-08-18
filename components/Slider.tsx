@@ -15,7 +15,7 @@ const Slider = () => {
       gap: 50,
       breakpoints: {
         1400:{
-          perView: 2.7
+          perView: 2.5
         },
         1200:{
           perView: 2.3,
