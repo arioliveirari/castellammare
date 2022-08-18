@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { usb, usw, usc } from '../utils/helpers';
+
 import styles from '../styles/slider.module.scss';
 import Glide from '@glidejs/glide'
 import Slide from "./Slide";
@@ -52,7 +53,7 @@ const Slider = () => {
                   </ul>
                   <div className="controls" data-glide-el="controls[nav]">
                     <button className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></button>
-                    {sliderItems.map((i, index) => (<button key={`${index}`} className="glide__bullet" data-glide-dir={`=${index}`}>{index}</button>))}
+                    {sliderItems.map((i, index) => (<button key={`${index}`} className="glide__bullet" data-glide-dir={`=${index}`}></button>))}
                     <button className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></button>
                   </div>
                 </div>

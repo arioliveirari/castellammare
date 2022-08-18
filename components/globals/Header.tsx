@@ -46,7 +46,7 @@ const Header = ({ children }: any) => {
             {/*Header Mobile */}
             <div className={usc(styles, ["header-mobile"])}>
               <Logo />
-              <a href="#" className={usc(styles, ["reserva"])}><p>Reservar</p></a>
+              <a href="#" className={usc(styles, ["reserva"])}><p>adquirir voucher</p></a>
               <div className={usc(styles, ["icons"])}>
                 <div className={usc(styles, ["linkBtn"])}>
                   <span className="icon-instagram" />
@@ -81,7 +81,7 @@ const Links = () => {
   return (
     <>
       <div className={usc(styles, ["links"])} >
-        <a href="#" className={usc(styles, ["reserva"])} >Reservar</a>
+        <a href="#" className={usc(styles, ["reserva"])} >adquirir voucher</a>
         <a href="#" className={usc(styles, ["headerLink"])}>Sobre nosotros</a>
         <a href="#" className={usc(styles, ["headerLink"])}>Servicios</a>
         <div className={usc(styles, ["icons"])}>

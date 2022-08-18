@@ -3,7 +3,7 @@ import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/button.module.scss';
 
 
-const ToolTip = ({ divRef, children }: { divRef: React.RefObject<any>, children: ReactElement }) => {
+const ToolTip = ({ divRef, children, style }: { divRef: React.RefObject<any>, style: React.CSSProperties , children: ReactElement }) => {
     const [active, setActive] = React.useState(false);
     React.useEffect(() => {
         if (divRef && divRef.current) {
@@ -20,14 +20,14 @@ const ToolTip = ({ divRef, children }: { divRef: React.RefObject<any>, children:
         if (active && divRef && divRef.current) {
             return {
                 top: divRef.current.getBoundingClientRect().top + 50,
-                left: divRef.current.getBoundingClientRect().left + ((divRef.current.getBoundingClientRect().right - divRef.current.getBoundingClientRect().left) / 2)
+                left: divRef.current.getBoundingClientRect().left + ((divRef.current.getBoundingClientRect().right - divRef.current.getBoundingClientRect().left) / 2),
+                style
             }
         } else {
             return {
             }
         }
     }
-
     return (
         <div className={usc(styles, ["ToolTip", active ? "shown" : 'hide'])} style={buildPosition()} >
             {children}

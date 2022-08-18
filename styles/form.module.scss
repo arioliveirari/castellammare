@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-top: 60px;
 }
 
 .content {
@@ -298,6 +297,13 @@
       &::placeholder {
         font-size: 10px;
       }
+    }
+  }
+}
+@media screen and (max-width:1200px) {
+  .content{
+    .form{
+      width: 100%;
     }
   }
 }

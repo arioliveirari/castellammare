@@ -1,14 +1,8 @@
 import React, { useEffect } from 'react';
-import { ReactDOM } from 'react';
 import { useState } from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
 import Button from './Button';
-
-import { RiveAnimation } from './RiveAnimation';
-import Captains from './captains';
-import Coast from './Coast';
-
 const p = 2000;
 const max = 4;
 const min = 2;
@@ -46,9 +40,7 @@ const Form = ({ children }: any) => {
   }
   return (
     <div className={usw(styles, ['formComponent'], ["p-0"])} >
-      {/* <RiveAnimation bottom={800} left={0} animationName="water_2" extraClassName="rotationAnimation" />
-      <RiveAnimation top={50} right={0} animationName="water_1" />
-      <RiveAnimation top={0} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" /> */}
+     
       <div className={usb(['container', 'position-relative'])}>
         <div className={usb(["row"])}>
           <div className={usb(["col-md-12", "m-auto"])}>

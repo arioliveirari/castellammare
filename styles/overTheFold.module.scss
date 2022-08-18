@@ -1,17 +1,17 @@
 @import "variables.module.scss";
 
 .OverTheFold {
+  align-items: center;
+  justify-items: center;
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  height: 80vh;
+  height: 90vh;
   font-family: "Ubuntu", sans-serif;
   width: 100%;
   background-image: url(../public/images/background.jpg);
   background-size: cover;
   background-position: center;
-  align-items: center;
-  justify-content: center;
   .mask {
     background-color: rgba($color: #000, $alpha: 0.6);
     width: 100%;
@@ -19,17 +19,24 @@
     background-position: center;
     background-size: cover;
     transition: all ease-in-out 0.2s;
+    justify-content: center;
+    align-items: center;
     &:hover {
       background-color: rgba($color: #000, $alpha: 0.3);
     }
   }
 }
-.rowContainer{
+.rowContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
+
+.formContainer {
+  align-items: center;
+  justify-content: center;
+}
+
 .containerOver {
   height: 70vh;
   color: $beige;
@@ -64,7 +71,7 @@
 }
 
 .buttonOver {
-  width: 190px;
+  width: fit-content;
   height: auto;
   padding: 15px 20px;
   text-align: center;
