@@ -149,6 +149,17 @@
       background-repeat: no-repeat;
       margin-bottom: 16px;
     }
+    .contactContainer {
+      display: flex;
+      .contactInput {
+        width: 100%;
+        border: none;
+        color: $darkBlue;
+        &::placeholder {
+          color: $darkBlue;
+        }
+      }
+    }
   }
   .formCheck {
     display: flex;
@@ -300,9 +311,9 @@
     }
   }
 }
-@media screen and (max-width:1200px) {
-  .content{
-    .form{
+@media screen and (max-width: 1200px) {
+  .content {
+    .form {
       width: 100%;
     }
   }

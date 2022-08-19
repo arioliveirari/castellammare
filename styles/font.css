@@ -107,99 +107,81 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-arrow-right:before {
+  content: "\e909";
+}
+.icon-bubbles:before {
+  content: "\e90a";
+}
 .icon-barco:before {
   content: "\e902";
 }
-
 .icon-check:before {
   content: "\e904";
 }
-
 .icon-chevron_left:before {
   content: "\e905";
 }
-
 .icon-chevron_right:before {
   content: "\e906";
 }
-
 .icon-clock:before {
   content: "\e907";
 }
-
 .icon-instagram:before {
   content: "\e908";
 }
-
 .icon-mail:before {
   content: "\e923";
 }
-
 .icon-mas:before {
   content: "\e932";
 }
-
 .icon-menos:before {
   content: "\e933";
 }
-
 .icon-person:before {
   content: "\e934";
 }
-
 .icon-un-check:before {
   content: "\e935";
 }
-
 .icon-wpp:before {
   content: "\e936";
 }
-
 .icon-instagram1:before {
   content: "\e900";
 }
-
 .icon-mas1:before {
   content: "\e92a";
 }
-
 .icon-menos1:before {
   content: "\e92b";
 }
-
 .icon-person1:before {
   content: "\e92c";
 }
-
 .icon-barco1:before {
   content: "\e901";
 }
-
 .icon-check1:before {
   content: "\e92d";
 }
-
 .icon-clock1:before {
   content: "\e90f";
 }
-
 .icon-minus:before {
   content: "\e94a";
 }
-
 .icon-person11:before {
   content: "\e94b";
 }
-
 .icon-un-check1:before {
   content: "\e92f";
 }
-
 .icon-wpp1:before {
   content: "\e930";
 }
-
 .icon-mail1:before {
   content: "\e903";
 }

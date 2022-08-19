@@ -18,11 +18,11 @@ const Slider = () => {
           perView: 2.5
         },
         1200:{
-          perView: 2.3,
+          perView: 2.2,
           gap:40
         },
         992:{
-          perView:2,
+          perView:1.8,
           gap:30
         },
         768:{
@@ -59,7 +59,7 @@ const Slider = () => {
                   </ul>
                   <div className="controls" data-glide-el="controls[nav]">
                     <button className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></button>
-                    {sliderItems.map((i, index) => (<button key={`${index}`} className="glide__bullet" data-glide-dir={`=${index}`}></button>))}
+                    {sliderItems.map((i, index) => (<button key={`${index}`} className="glide__bullet" style={{width: "10px" ,height:"10px", marginRight:"5px", background:"white" ,borderRadius:"100%" }} data-glide-dir={`=${index}`}></button>))}
                     <button className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></button>
                   </div>
                 </div>

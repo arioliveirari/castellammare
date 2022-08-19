@@ -12,7 +12,7 @@
     width: 100%;
     background-size: cover;
     background-position: center;
-    border-radius: 16px;
+    border-radius: 0px 211px 211px 211px;
     position: relative;
     box-shadow: 0px 0px 5px #000;
   }
@@ -79,13 +79,11 @@
 
   &.botContent-reverse {
     .botPic {
-
       height: 440px;
       width: 100%;
       background-size: cover;
       background-position: bottom;
-      border-radius: 16px;
-      
+      border-radius: 211px 0px 211px 211px;
     }
     .boatData {
       .boatNumber {
@@ -111,7 +109,7 @@
     width: 100%;
     background-size: cover;
     background-position: bottom;
-    border-radius: 16px;
+    border-radius: 211px 0px 0px 211px;
     position: relative;
     box-shadow: 0px 0px 5px #000;
   }
@@ -124,7 +122,6 @@
     text-align: end;
     justify-content: center;
     margin-bottom: 20px;
-    width: 640px;
     height: fit-content;
   }
   .dataContainer {
@@ -185,7 +182,7 @@
       width: 100%;
       background-size: cover;
       background-position: bottom;
-      border-radius: 16px;
+      border-radius: 211px 0px 211px 211px;
     }
     .boatData {
       .boatNumber {

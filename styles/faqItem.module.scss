@@ -15,6 +15,7 @@
         .question {
             text-align: left;
             margin-top: 30px;
+            text-transform: capitalize;
             .text {
                 font-family: roboto;
                 font-size: 30px;
@@ -43,19 +44,21 @@
             height: 0px;
             font-size: 24px;
             text-align: left;
-            transition: all ease 0.2s;
+            transition: all ease 0.4s;
             
         }
         .isDown {
             width: 100%;
             font-size: 24px;
-            height: 30px;
+            height: fit-content;
             font-weight: 300;
             justify-content: left;
             text-align: left;
             align-items: center;
-            transition: all ease 0.2s;
-            margin-bottom: 60px;
+            transition: all ease 0.4s;
+            margin-left: 55px;
+            border-bottom: 0.5px solid $darkBlue;
+          
         }
     }
 }

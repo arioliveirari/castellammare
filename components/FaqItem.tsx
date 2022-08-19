@@ -34,13 +34,13 @@ const FaqItem = () => {
                                     <div className={usc(styles, ["dropdownItem"])} key={i.id}>
                                         <div className={usc(styles, ["question"])}>
                                             <div className={usc(styles, ["text"])}>
+                                                <span onClick={handleClick} className={(isDown)? "icon-chevron_right rotatedArrow" : "icon-chevron_right" }>
+                                                </span>
                                                 {i.question}
-                                                <div onClick={handleClick} className={usc(styles, [(isDown ? "arrowUp" : "arrowDown")])}>
-                                                </div>
                                             </div>
                                         </div>
                                         <div className={usb(["row"])}>
-                                            <div className={usb(["col-md-8"])}>
+                                            <div className={usb(["col-md-9"])}>
                                                 <div className={usc(styles, [(isDown) ? "isDown" : "answer"])}>
                                                     <p className={usc(styles, ["text"])}>
                                                         {i.answer}

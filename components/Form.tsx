@@ -11,6 +11,7 @@ const min = 2;
 const Form = ({ children }: any) => {
   const [people, setPeople] = useState<number>(min)
   const [total, setTotal] = useState<number>(min * p)
+  const [contact, setContact] = useState("")
   /*
   const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
   const [checkedMango, setCheckedMango] = useState<boolean>(false);
@@ -18,12 +19,13 @@ const Form = ({ children }: any) => {
   const [iconkiwi, setIconKiwi] = useState("icon-un-check")
   const [iconMango, setIconMango] = useState("icon-un-check")
   */
-
   const travelData = [
     { "people": people },
     { "total": total },
+    { "contact": contact },
     { "price": "" }
   ]
+
   const plus = () => {
     if (people < max) {
       const newPeople = people + 1;
@@ -38,9 +40,15 @@ const Form = ({ children }: any) => {
       setTotal(newPeople * p)
     }
   }
+  const handleChange = () => {
+    setContact((event?.target as HTMLInputElement).value)
+  }
+
+
+
   return (
     <div className={usw(styles, ['formComponent'], ["p-0"])} >
-     
+
       <div className={usb(['container', 'position-relative'])}>
         <div className={usb(["row"])}>
           <div className={usb(["col-md-12", "m-auto"])}>
@@ -69,6 +77,10 @@ const Form = ({ children }: any) => {
                     <div className={usc(styles, ["persons"])} >
                       {new Array(max).fill({ active: false }).map((d, index) => ({ active: (index < people) })).reverse().map((d, index) => (<span key={`icon-${index}`} className={usc(styles, ["person", d.active ? 'active' : '']) + " icon-person"} />))}
                     </div>
+                  </div>
+                  <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "contactContainer"])} >
+                  <span className='icon-bubbles'></span>
+                    <input type="text" className={usc(styles, ["contactInput"])} onChange={handleChange} placeholder={"Mail/telefono de contacto"} />
                   </div>
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                     <div className={usc(styles, ["clock"])}>

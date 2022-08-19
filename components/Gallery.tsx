@@ -64,7 +64,6 @@ const Gallery = () => {
                   </Masonry>
                 </ResponsiveMasonry>
               </div>
-              {activeItem}
               <div className="glide" id="gallery-image-mobile">
                 <div className="glide__track" data-glide-el="track">
                   <ul className="glide__slides">

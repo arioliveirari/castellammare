@@ -14,7 +14,7 @@ const Tittles = (props: TittleProp) => {
                 <div className={usb(["row"])} >
                     <div className={usb(["col-md-8", "col-xs-12"])} >
                         <div className={usc(styles, ["tittleContainer"])}>
-                            <div className={usc(styles, ["contentent"])} >
+                            <div className={usc(styles, ["content"])} >
                                 <p>
                                     {props.tittle}
                                 </p>
