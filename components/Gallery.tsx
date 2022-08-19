@@ -32,8 +32,8 @@ const Gallery = () => {
       type: "slider",
       focusAt: 'center',
       perView: 1,
-      startAt: 1,
-      peek:300,
+      startAt: 0,
+      peek: 0,
     })
     glide.on('run', () => {
       // USE STATE
@@ -64,11 +64,17 @@ const Gallery = () => {
                   </Masonry>
                 </ResponsiveMasonry>
               </div>
-              <div className="glide" id="gallery-image-mobile">
-                <div className="glide__track" data-glide-el="track">
-                  <ul className="glide__slides">
-                    {items.map((i, index) => (<img src={i} key={`image-${i}`} className={usc(styles, ["sliderImage"])} alt="pic goes here" />))}
-                  </ul>
+              <div className={usc(styles, ["galleryContainerMobile"])}>
+                <div className="glide" id="gallery-image-mobile">
+                  <div className="glide__track" data-glide-el="track">
+                    <ul className="glide__slides">
+                      {items.map((i, index) => (
+                        <div className="glide__slide" key={`image-${i}`}>
+                          <img src={i} className={usc(styles, ["sliderImage"])} height="100" alt="pic goes here" />
+                        </div>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
