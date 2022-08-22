@@ -9,6 +9,10 @@
     p {
         margin: 0%;
     }
+    span{
+        height: 40px;
+    }
+    
     .content {
         align-items: center;
         text-align: left;
@@ -21,22 +25,6 @@
                 font-size: 30px;
                 display: flex;
                 text-align: left;
-            }
-            .arrowUp {
-                background-image: url(../public/images/downArrow.svg.png);
-                height: 30px;
-                width: auto;
-                aspect-ratio: 1/1;
-                background-position: center;
-                background-size: cover;
-            }
-            .arrowDown{
-                background-image: url(../public/images/downArrow.svg.png);
-                height: 30px;
-                width: auto;
-                aspect-ratio: 1/1;
-                background-position: center;
-                background-size: cover;
             }
         }
         .answer {

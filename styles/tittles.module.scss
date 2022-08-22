@@ -1,7 +1,11 @@
+.exterior {
+    width: 100%;
+}
 .tittleContainer {
-    width:fit-content ;
+    width: fit-content;
     height: fit-content;
     display: flex;
+    position: relative;
     color: #002848;
     justify-content: right;
     background-color: transparent;
@@ -10,35 +14,18 @@
     font-family: calson;
     font-weight: 400;
     margin-bottom: 20px;
-    p{
+    p {
         margin: 0%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .tittleContainer {
-        font-size: 58px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .tittleContainer {
-        font-size: 60px;
-    }
-}
-@media screen and (max-width: 992px) {
-    .tittleContainer {
-        font-size: 48px;
-    }
-}
-@media screen and (max-width: 425px) {
-    .tittleContainer {
-        font-size: 40px;
-    }
-}
-@media screen and (max-width: 375px) {
-    .tittleContainer {
-        font-size: 35px;
-        height: 55px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 30pt;
+        font-weight: 400;
     }
 }

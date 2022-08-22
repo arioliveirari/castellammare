@@ -152,9 +152,13 @@
     .contactContainer {
       display: flex;
       .contactInput {
+        cursor: pointer;
         width: 100%;
         border: none;
         color: $darkBlue;
+        &:focus{
+          border: none;
+        }
         &::placeholder {
           color: $darkBlue;
         }

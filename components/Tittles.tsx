@@ -11,8 +11,8 @@ const Tittles = (props: TittleProp) => {
     return (
         <div className={usw(styles,["exterior"],["container-fluid"])}>
             <div className={usb(["container"])} >
-                <div className={usb(["row"])} >
-                    <div className={usb(["col-md-8", "col-xs-12"])} >
+                <div className={usb(["row", "p-0"])} >
+                    <div className={usb(["col-md-8", "col-xs-12", "p-0"])} >
                         <div className={usc(styles, ["tittleContainer"])}>
                             <div className={usc(styles, ["content"])} >
                                 <p>
