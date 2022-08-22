@@ -1,15 +1,15 @@
 .tittleContainer {
     width:fit-content ;
-    padding-right: 20px;
     height: fit-content;
     display: flex;
     color: #002848;
-    justify-content: left;
+    justify-content: right;
     background-color: transparent;
     border-bottom: 3px solid #002848;
     font-size: 68px;
     font-family: calson;
     font-weight: 400;
+    margin-bottom: 20px;
     p{
         margin: 0%;
     }
@@ -18,37 +18,27 @@
 @media screen and (max-width: 768px) {
     .tittleContainer {
         font-size: 58px;
-        text-align: center;
-        justify-content: center;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .tittleContainer {
         font-size: 60px;
-        text-align: center;
-        justify-content: center;
     }
 }
 @media screen and (max-width: 992px) {
     .tittleContainer {
         font-size: 48px;
-        text-align: center;
-        justify-content: center;
     }
 }
 @media screen and (max-width: 425px) {
     .tittleContainer {
-        font-size: 43px;
-        text-align: center;
-        justify-content: center;
+        font-size: 40px;
     }
 }
 @media screen and (max-width: 375px) {
     .tittleContainer {
         font-size: 35px;
         height: 55px;
-        text-align: center;
-        justify-content: center;
     }
 }

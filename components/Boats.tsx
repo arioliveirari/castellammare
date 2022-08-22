@@ -2,9 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/boats.module.scss';
 import Tittles from './Tittles';
+import BoatsMobile from '../components/BoatsMobile';
 import BoatsSlider from './boatsSlider';
 
 import { RiveAnimation } from './RiveAnimation';
+const boatsData = [
+  { id: 1, years: 5, travels: 80, reversedDrop: false, passanger: 5 },
+  { id: 2, years: 5, travels: 80, reversedDrop: true, passanger: 4 }
+]
 
 const Boats = () => {
   return (
@@ -15,8 +20,6 @@ const Boats = () => {
         <RiveAnimation top={0} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
         <Tittles tittle='Nuestros Veleros' />
         <div className={usb(["container", "m-auto"])}>
-          <BoatsSlider />
-
           <div className={usw(styles, ["topContent"], ["row", "pb-5"])}>
             <div className={usb(["col-12"])}>
               <p className={usw(styles, ["boatName"], [""])}>
@@ -98,12 +101,16 @@ const Boats = () => {
                   <div className={usc(styles, ["botPic"])}>
                   </div>
                 </div>
-
               </div>
             </div>
-
           </div>
-
+        </div>
+        <div className={usc(styles,["mobile"])}>
+          {
+            boatsData.map((i) => (
+              <BoatsMobile key={i.id} reversedDrop={i.reversedDrop} years={i.years} travels={i.travels} passangers={i.passanger} />
+            ))
+          }
         </div>
       </div>
 

@@ -35,6 +35,8 @@
 .formContainer {
   align-items: center;
   justify-content: center;
+  margin-top: 15vh;
+  z-index: 99;
 }
 
 .containerOver {
@@ -65,11 +67,26 @@
       word-break: keep-all;
       white-space: normal;
       text-align: justify;
-      margin-bottom: 40px;
     }
   }
 }
 
+.arrowButton{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: none;
+  width: 1px;
+  margin: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  transform: rotate(90deg);
+  height: auto;
+  aspect-ratio: 1/1;
+}
 .buttonOver {
   width: fit-content;
   height: auto;
@@ -86,22 +103,28 @@
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
+  .formContainer{
+    margin-top: 0%;
+    display: none;
+  }
   .containerOver {
     justify-content: flex-start;
     padding-top: 70px;
+    height: 60vh;
     .textOver {
       justify-content: flex-start;
 
       .tittleOver {
         font-family: roboto;
-        margin-top: 60px;
-        margin-bottom: 35px;
+        margin-bottom: 10px;
         font-weight: 700;
-        font-size: 53px;
+        font-size: 40pt;
+        text-align: center;
       }
       .paragraphOver {
         p {
-          font-size: 15px;
+          font-size: 15pt;
+          text-align: center;
         }
       }
     }
@@ -109,5 +132,9 @@
   .buttonOver {
     font-size: 20px;
     padding: 10px 15px;
+    display: none;
+  }
+  .arrowButton{
+    display: unset;
   }
 }

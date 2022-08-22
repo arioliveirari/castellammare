@@ -13,6 +13,7 @@ import Slider from '../components/Slider';
 import Boats from '../components/Boats'
 import Coast from '../components/Coast';
 import FaqItem from '../components/FaqItem';
+
 import styles from '../styles/globals.module.scss';
 const Index = (props: any) => {
 

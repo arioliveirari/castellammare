@@ -15,7 +15,7 @@ const OverTheFold = ({ children }: any) => (
                   Baires Navega
                 </span>
                 <div className={usb(["row"])}>
-                  <div className={usb(["col-md-12", "col-12"])}>
+                  <div className={usb(["col-md-12", "col-9", "m-auto"])}>
                     <div className={usc(styles, ["paragraphOver"])} >
                       <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  has been the industry standard dummy text ever  since the 1500s, when an unknown printer took
@@ -23,11 +23,14 @@ const OverTheFold = ({ children }: any) => (
                     </div>
                   </div>
                 </div>
-                <a href='#' className={usc(styles, ["buttonOver"])} >Adquirir voucher</a>
+                <a className={usc(styles, ["buttonOver"])} >Adquirir voucher</a>
+                <a href='#form' className={usc(styles, ["arrowButton"])}>
+                  <span className='icon-arrow-right'></span>
+                </a>
               </div>
             </div>
           </div>
-          <div className={usw(styles, ["formContainer"], ["col-md-5", "col-12"])} >
+          <div id='form' className={usw(styles, ["formContainer"], ["col-md-5", "col-12"])} >
             <Form />
           </div>
         </div>

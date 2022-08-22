@@ -198,6 +198,9 @@
     }
   }
 }
+.mobile{
+  display: none;
+}
 @media screen and (max-width: 992px) {
 }
 
@@ -205,5 +208,8 @@
   .topContent,
   .botContent {
     display: none;
+  }
+  .mobile{
+    display: unset;
   }
 }
