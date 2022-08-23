@@ -24,6 +24,7 @@
 .rotationAnimation {
   animation: rotationAnim 100s ease infinite;
   height: 100%;
+  transform: rotate(255deg);
 }
 
 .sailing {

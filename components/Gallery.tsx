@@ -31,7 +31,7 @@ const Gallery = () => {
     const glide = new Glide('#gallery-image-mobile', {
       type: "slider",
       focusAt: 'center',
-      perView: 1,
+      perView: 1.5,
       startAt: 0,
       peek: 0,
     })
@@ -57,7 +57,7 @@ const Gallery = () => {
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
               <div className={usc(styles, ["galleryContainer"])}>
-                <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+                <ResponsiveMasonry>
                   <Masonry columnsCount={3}
                     gutter={"10px"}>
                     {items.map((i) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
@@ -74,6 +74,13 @@ const Gallery = () => {
                         </div>
                       ))}
                     </ul>
+                    <div className="controls" data-glide-el="controls[nav]">
+                      <button className="controlButton" ><span data-glide-dir="<" className="icon-chevron_left"></span></button>
+                      {items.map((i, index)=>(
+                        <button key={`${index}`} className="glide__bullet"  data-glide-dir={`=${index}`}></button>
+                      ))}
+                      <button className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></button>
+                    </div>
                   </div>
                 </div>
               </div>

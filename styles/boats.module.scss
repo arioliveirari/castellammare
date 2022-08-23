@@ -24,6 +24,7 @@
     text-transform: capitalize;
     text-align: center;
     justify-content: center;
+    position: relative;
     margin-bottom: 20px;
     width: fit-content;
     height: fit-content;
@@ -37,6 +38,7 @@
     width: 100%;
     .text {
       color: #fff;
+      position: relative;
     }
     .boatData {
       display: flex;
@@ -121,6 +123,7 @@
     text-transform: capitalize;
     text-align: end;
     justify-content: center;
+    position: relative;
     margin-bottom: 20px;
     height: fit-content;
   }
