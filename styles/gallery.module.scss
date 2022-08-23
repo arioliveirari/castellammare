@@ -1,4 +1,3 @@
-
 @import "variables.module.scss";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
@@ -23,7 +22,7 @@
   overflow: hidden;
   .sliderImage {
     transition: all ease 0.4s;
-height: 300px;
+    height: 200px;
     width: 100%;
   }
   .galleryContainer {
@@ -44,7 +43,7 @@ height: 300px;
 .sliderContainer {
   display: none;
   .sliderImage {
-    height: 3000px;
+    height: 300px;
     width: 50%;
     aspect-ratio: 1/1;
   }

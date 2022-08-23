@@ -65,7 +65,8 @@
       align-items: center;
       justify-content: space-between;
       .headerLink {
-        font-size: 20px;
+        font-size: 18px;
+        margin: 5px;
       }
       .reserva {
         width: fit-content;
@@ -74,7 +75,7 @@
         background-color: #e8a93f;
         text-decoration: none;
         color: #f1e6d0;
-        font-size: 15px;
+        font-size: 13px;
         border-radius: 8px;
         font-family: roboto;
         font-weight: 500;
@@ -109,7 +110,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    .noDisplay {
+      display: none;
+      transition: all ease 0.4s;
+    }
     .reserva {
       font-family: dmsans;
       font-weight: 400;
@@ -119,13 +123,14 @@
       height: fit-content;
       margin-left: 20px;
       font-size: 15px;
-      padding: 5px 10px ;
+      padding: 5px 10px;
       color: $beige;
       font-weight: bold;
       align-items: center;
       justify-content: center;
       text-align: center;
-      p{
+      transition: all ease 0.4s;
+      p {
         margin: 0%;
       }
     }
@@ -228,7 +233,6 @@
           letter-spacing: 2px;
         }
       }
-      
     }
   }
 }
