@@ -24,6 +24,7 @@
     "react-in-viewport": "^1.0.0-alpha.28",
     "react-redux": "^8.0.2",
     "react-responsive-masonry": "^2.1.5",
+    "react-to-print": "^2.14.7",
     "react-tooltip": "^4.2.21",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.1",

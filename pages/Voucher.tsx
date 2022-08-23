@@ -18,6 +18,7 @@ interface voucher {
 const Voucher = () => {
     const current = new Date()
     const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
+    const validDate = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear() + 1}`
     const voucherInfo: Array<voucher> = [{
         date: date,
         id: 1,
@@ -26,83 +27,72 @@ const Voucher = () => {
         people: 2,
         total: 6000,
         code: "123456",
-        validTill: "23 / 8 / 2023"
+        validTill: validDate
     }
     ]
     return (
         <div className={usw(styles, ["voucherContainer"], ["container-fluid"])}>
             <div className={usb(["container"])}>
                 <div className={usb(["row"])}>
-                    <div className={usb(["col-8", "m-auto"])}>
-                        <div className={usc(styles, ["content"])}>
-                            <div className={usc(styles, ["tittleContainer"])}>
-                                <div className={usc(styles, ["tittlePic"])}>
+                    <div className={usb(["col-9", "m-auto"])}>
+                        <div className={usc(styles, ["content"])} >
+                            <div id="bannerContainer" className={usc(styles, ["bannerContainer"])}>
+                                <span className="icon-barco"></span>
+                                <div className={usc(styles, ["titleContainer"])}>
+                                    <p>felicitaciones!</p>
                                 </div>
-                                <div className={usc(styles, ["tittle"])}>
-                                    Felicitaciones!
-                                </div>
-                                <div className={usc(styles, ["tittleText"])} >
-                                    Ya tenes tu voucher para vivir una experiencia unica
+                                <div className={usc(styles, ["bannerTextContainer"])}>
+                                    <p>ya tenes tu voucher para vivir una experiencia unica!</p>
                                 </div>
                             </div>
-                            {voucherInfo.map((i) => (
-                                <div key={i.id} className={usc(styles, ["purchaseDataContainer"])}>
-                                    <div className={usb(["row"])} >
-                                        <div className={usb(["col-8", "m-auto", "p-0"])} >
-                                            <div className={usc(styles, ["purchaseData"])}>
-                                                <div className={usc(styles, ["leftData"])} >
-                                                    <p>
-                                                        fecha:
-                                                    </p>
-                                                    <p>
-                                                        estado:
-                                                    </p>
-                                                    <p>
-                                                        reserva a nombre de:
-                                                    </p>
-                                                    <p>
-                                                        cantidad de personas:
-                                                    </p>
-                                                    <p>
-                                                        total:
-                                                    </p>
-                                                    <p>
-                                                        codigo de verificacion:
-                                                    </p>
-                                                    <p>
-                                                        voucher valido hasta:
-                                                    </p>
-                                                </div>
-                                                <div className={usc(styles, ["rightData"])}>
-                                                    <p>
-                                                        {date}
-                                                    </p>
-                                                    <p>
-                                                        {i.state}
-                                                    </p>
-                                                    <p>
-                                                        {i.mail}
-                                                    </p>
-                                                    <p>
-                                                        {i.people}
-                                                    </p>
-                                                    <p>
-                                                        {i.total}
-                                                    </p>
-                                                    <p>
-                                                        {i.code}
-                                                    </p>
-                                                    <p>
-                                                        {i.validTill}
-                                                    </p>
+                            <div className={usc(styles, ["purchaseData"])}>
+                                <div className={usb(["row"])} >
+                                    <div className={usb(["col-6", "m-auto"])} >
+                                        {voucherInfo.map((i) => (
+                                            <div key={i.id} className={usc(styles, ["purchaseContent"])}>
+                                                <div className={usb(["row"])} >
+                                                    <div className={usw(styles, ["dataContent"], ["col-6"])} >
+                                                        {voucherInfo.map((i) => (
+                                                            <div key={i.id}>
+                                                                <div className={usc(styles, ["data"])}>
+                                                                    <p className={usc(styles, ["left"])} >fecha</p>
+                                                                    <p>{i.date}</p>
+                                                                </div>
+                                                                <div className={usc(styles, ["data"])}>
+                                                                    <p className={usc(styles, ["left"])} >estado:</p>
+                                                                    <p>{i.state}</p>
+                                                                </div>
+                                                                <div className={usc(styles, ["data"])}>
+                                                                    <p className={usc(styles, ["left"])} >reserva a nombre de:</p>
+                                                                    <p>{i.mail}</p>
+                                                                </div>
+                                                                <div className={usc(styles, ["data"])}>
+                                                                    <p className={usc(styles, ["left"])} >cantidad de personas:</p>
+                                                                    <p>{i.people}</p>
+                                                                </div>
+                                                                <div className={usc(styles, ["data"])}>
+                                                                    <p className={usc(styles, ["left"])} >total:</p>
+                                                                    <p>{i.total}</p>
+                                                                </div>
+                                                                <div className={usc(styles, ["data"])}>
+                                                                    <p className={usc(styles, ["left"])} >codigo de verificación:</p>
+                                                                    <p>{i.code}</p>
+                                                                </div>
+                                                                <div className={usc(styles, ["data"])}>
+                                                                    <p className={usc(styles, ["left"])} >valido hasta:</p>
+                                                                    <p>{i.validTill}</p>
+                                                                </div>
+                                                            </div>
+                                                        ))}
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        ))}
                                     </div>
                                 </div>
-                            ))}
-                            <div className={usc(styles, ["buttonRow"])} >
-                                <button className={usc(styles,["print"])} >imprimir</button>
+                            </div>
+                            <div className={usc(styles, ["buttonRow"])}>
+                                <button> imprimir </button>
                             </div>
                         </div>
                     </div>

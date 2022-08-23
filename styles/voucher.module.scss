@@ -1,72 +1,108 @@
 @import "variables.module.scss";
 .voucherContainer {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     .content {
         width: 100%;
-        height: 100%;
-        .tittlePic {
-            width: 45px;
-            height: 45px;
-            margin: auto;
-            background-image: url(../public/images/barco.svg);
-            background-position: center;
-            background-size: cover;
-        }
-        .tittleContainer {
-            width: 100%;
-
-            font-family: roboto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        .bannerContainer {
             background-color: #28b171;
-            padding: 10px 90px;
+            padding: 35px 0px;
             border-radius: 8px 8px 0px 0px;
+            width: 100%;
             color: $beige;
-            font-size: 40px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             text-transform: uppercase;
-            .tittle {
+            .titleContainer {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                font-size: 40px;
                 font-weight: 600;
+                text-transform: uppercase;
+                font-family: roboto;
+                p {
+                    margin: 0%;
+                }
             }
-            .tittleText {
+            .bannerTextContainer {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
                 font-size: 23px;
                 font-weight: 600;
+                text-transform: uppercase;
+                font-family: roboto;
             }
         }
-        .purchaseDataContainer {
-            width: 100%;
-            padding: 10px 0px;
+        .purchaseData {
             background-color: $beige;
-            color: #7a7a7a;
-            font-family: roboto;
-            font-size: 17px;
-            text-transform: capitalize;
-            .purchaseData {
+            width: 100%;
+            .dataContent {
                 width: 100%;
-                display: flex;
-                justify-content: space-around;
-            }
-            .leftData {
-                text-align: left;
-            }
-            .rightData {
-                text-align: right;
+                .data {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .left {
+                        text-align: left;
+                    }
+                }
             }
         }
         .buttonRow {
-            width: 100%;
-            height: 100%;
             background-color: $beige;
             border-radius: 0px 0px 8px 8px;
-            .print {
-                height: 50px;
-                background-color: $darkishBlue;
+            button {
+                font-size: 16px;
+                text-transform: uppercase;
+                font-family: roboto;
+                font-weight: bold;
                 color: #fff;
+                background-color: $ligthBlue;
+                padding: 15px 30px;
+                text-align: center;
                 border: none;
                 border-radius: 8px;
-                font-size: 16px;
-                padding: 15px 20px 15px 20px;
-                margin-bottom: 45px;
-                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .voucherContainer {
+        .content {
+            .bannerContainer {
+                .titleContainer {
+                    font-size: 30px;
+                }
+            }
+            .purchaseData {
+                .dataContent {
+                    .data {
+                        flex-direction: column;
+                        .left, p{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .voucherContainer {
+        .content {
+            .bannerContainer {
+                .titleContainer {
+                    font-size: 20px;
+                }
             }
         }
     }

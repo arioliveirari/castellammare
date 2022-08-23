@@ -76,11 +76,15 @@ a {
 }
 
 .options-type-2.glide__bullet {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   color: #fff;
   align-items: center;
   border-radius: 100%;
+}
+
+#bannerContainer .icon-barco {
+  font-size: 35px;
 }
 
 .icon-chevron_left,
@@ -119,13 +123,6 @@ a {
   }
 }
 
-#options-type-2.glide .glide__bullet {
-  width: 10px;
-  height: 10px;
-  margin-Right: 5px;
-  background: red;
-  border-radius: 100%;
-}
 
 #options-type-2.glide .controls {
   display: flex;
@@ -149,9 +146,10 @@ a {
   width: 10px;
   height: 10px;
   margin-Right: 5px;
-background-color: aqua;
+  background-color: aqua;
   border-radius: 100%;
 }
+
 #gallery-image-mobile.glide .controls {
   display: flex;
   align-items: center;
