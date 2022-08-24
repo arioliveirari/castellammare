@@ -51,7 +51,7 @@ const Form = ({ children }: any) => {
 
       <div className={usb(['container', 'position-relative'])}>
         <div className={usb(["row"])}>
-          <div className={usb(["col-md-12", "m-auto"])}>
+          <div className={usb(["col-lg-12", "m-auto"])}>
             {/*<div className={usc(styles, ["content"])}>*/}
             <div className={usc(styles, ["content"])}>
               <div className={usc(styles, ["form"])}>

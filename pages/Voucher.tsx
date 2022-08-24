@@ -34,7 +34,7 @@ const Voucher = () => {
         <div className={usw(styles, ["voucherContainer"], ["container-fluid"])}>
             <div className={usb(["container"])}>
                 <div className={usb(["row"])}>
-                    <div className={usb(["col-9", "m-auto"])}>
+                    <div className={usb(["col-lg-10" ,"m-auto"])}>
                         <div className={usc(styles, ["content"])} >
                             <div id="bannerContainer" className={usc(styles, ["bannerContainer"])}>
                                 <span className="icon-barco"></span>
@@ -51,7 +51,7 @@ const Voucher = () => {
                                         {voucherInfo.map((i) => (
                                             <div key={i.id} className={usc(styles, ["purchaseContent"])}>
                                                 <div className={usb(["row"])} >
-                                                    <div className={usw(styles, ["dataContent"], ["col-6"])} >
+                                                    <div className={usw(styles, ["dataContent"], ["col-12"])} >
                                                         {voucherInfo.map((i) => (
                                                             <div key={i.id}>
                                                                 <div className={usc(styles, ["data"])}>

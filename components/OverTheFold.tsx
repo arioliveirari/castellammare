@@ -30,7 +30,7 @@ const OverTheFold = ({ children }: any) => (
               </div>
             </div>
           </div>
-          <div id='form' className={usw(styles, ["formContainer"], ["col-md-5", "col-12"])} >
+          <div id='form' className={usw(styles, ["formContainer"], ["col-md-7", "col-lg-5" ,"col-12"])} >
             <Form />
           </div>
         </div>

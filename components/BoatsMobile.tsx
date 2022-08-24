@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { CSSProperties, useEffect, useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/boatsMobile.module.scss';
 import Tittles from './Tittles';
+import { url } from 'inspector';
 
 type Prop = {
     years: number,
     travels: number,
     passangers: number,
+    imageUrl: string,
     reversedDrop: boolean
 }
 
-const BoatsMobile = ({ years, travels, passangers }: Prop) => {
+const BoatsMobile = ({ years, travels, passangers, reversedDrop, imageUrl }: Prop) => {
     return (
         <div className={usw(styles, ["boatsMobileModule"], ["container-fluid", "p-0"])} >
             <div className={usb(["row"])}>
                 <div className={usb(["col-12"])}>
-                    <div className={usc(styles, ["picContainer"])}>
+                    <div style={{ backgroundImage: imageUrl }} className={usc(styles, [(reversedDrop) ? "picContainer" : "reversedPic"])}>
                         <div className={usc(styles, ["pic"])}>
                         </div>
                     </div>
@@ -45,7 +47,7 @@ const BoatsMobile = ({ years, travels, passangers }: Prop) => {
                             </div>
                         </div>
                         <div className={usb(["row"])}>
-                            <div className={usb(["col-8", "m-auto"])}>
+                            <div className={usb(["col-12", "m-auto"])}>
                                 <div className={usc(styles, ["text"])}>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui arcu, elementum tortor ut, fringilla finibus ex.

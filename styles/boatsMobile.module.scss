@@ -1,5 +1,5 @@
 @import "variables.module.scss";
-.picContainer{
+.picContainer {
     width: 100%;
     height: 245px;
     justify-content: center;
@@ -8,6 +8,18 @@
     background-position: center;
     background-size: cover;
     border-radius: 0px 211px 211px 211px;
+    margin-top: 20px;
+    position: relative;
+}
+.reversedPic {
+    width: 100%;
+    height: 245px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../public/images/kiwi.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 211px 0px 211px 211px;
     margin-top: 20px;
     position: relative;
 }
@@ -21,9 +33,9 @@
     p {
         margin: 0%;
     }
-   
+
     .dataNumber {
-        background-color: $ligthBlue;
+        background-color: #64A5BF;
         width: 30px;
         height: 30px;
         border-radius: 100%;
@@ -52,7 +64,7 @@
     .topData {
         text-align: center;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         display: flex;
     }
     .data {
@@ -62,7 +74,8 @@
         display: flex;
     }
 }
-.text{
+.text {
     text-align: center;
     color: #fff;
+    margin-bottom: 40px;
 }

@@ -71,7 +71,7 @@
   }
 }
 
-.arrowButton{
+.arrowButton {
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -86,6 +86,9 @@
   transform: rotate(90deg);
   height: auto;
   aspect-ratio: 1/1;
+  &:active {
+    color: #fff;
+  }
 }
 .buttonOver {
   width: fit-content;
@@ -103,9 +106,9 @@
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
-  .formContainer{
+  .formContainer {
     margin-top: 0%;
-   position: relative;
+    display: none;
   }
   .containerOver {
     justify-content: flex-start;
@@ -134,7 +137,7 @@
     padding: 10px 15px;
     display: none;
   }
-  .arrowButton{
+  .arrowButton {
     display: unset;
   }
 }

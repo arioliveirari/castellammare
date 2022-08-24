@@ -3,21 +3,28 @@ import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/boats.module.scss';
 import Tittles from './Tittles';
 import BoatsMobile from '../components/BoatsMobile';
-import BoatsSlider from './boatsSlider';
-
 import { RiveAnimation } from './RiveAnimation';
+
 const boatsData = [
-  { id: 1, years: 5, travels: 80, reversedDrop: false, passanger: 5 },
-  { id: 2, years: 5, travels: 80, reversedDrop: true, passanger: 4 }
+  { id: 1, years: 5, travels: 80, reversedDrop: true, passanger: 5, imageUrl: "../public/images/kiwi.jpg" },
+  { id: 2, years: 5, travels: 80, reversedDrop: false, passanger: 4, imageUrl: "../public/images/mango.jpg" }
 ]
+
 
 const Boats = () => {
   return (
     <>
       <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
-        <RiveAnimation bottom={400} right={100} animationName="water_2" extraClassName="rotationAnimation water2" />
-        <RiveAnimation top={0} left={0} animationName="water_1" />
-        <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
+        <div className={usc(styles,["desktopAnimations"])} >
+          <RiveAnimation bottom={400} right={100} animationName="water_2" extraClassName="rotationAnimation water2" />
+          <RiveAnimation top={0} left={0} animationName="water_1" />
+          <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
+        </div>
+        <div className={usc(styles,["mobileAnimations"])} >
+          <RiveAnimation bottom={350} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
+          <RiveAnimation top={0} left={-70} animationName="water_1" />
+          <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
+        </div>
         <Tittles tittle='Nuestros Veleros' />
         <div className={usb(["container", "m-auto"])}>
           <div className={usw(styles, ["topContent"], ["row", "pb-5"])}>
@@ -105,10 +112,10 @@ const Boats = () => {
             </div>
           </div>
         </div>
-        <div className={usc(styles,["mobile"])}>
+        <div className={usc(styles, ["mobile"])}>
           {
             boatsData.map((i) => (
-              <BoatsMobile key={i.id} reversedDrop={i.reversedDrop} years={i.years} travels={i.travels} passangers={i.passanger} />
+              <BoatsMobile key={i.id} imageUrl={i.imageUrl} reversedDrop={i.reversedDrop} years={i.years} travels={i.travels} passangers={i.passanger} />
             ))
           }
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/service.module.scss';
-// import { text } from 'stream/consumers';
+
 
 type Prop = {
     paragraph: string;

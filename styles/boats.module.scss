@@ -201,9 +201,19 @@
     }
   }
 }
+
+.mobileAnimations{
+  display: none;
+}
+
 .mobile{
   display: none;
 }
+
+
+
+
+
 @media screen and (max-width: 992px) {
 }
 
@@ -214,5 +224,11 @@
   }
   .mobile{
     display: unset;
+  }
+  .mobileAnimations{
+    display: unset;
+  }
+  .desktopAnimations{
+    display: none;
   }
 }

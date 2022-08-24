@@ -5,6 +5,7 @@
         text-align: center;
         justify-content: center;
         align-items: center;
+        text-transform: capitalize;
         .bannerContainer {
             background-color: #28b171;
             padding: 35px 0px;
@@ -42,12 +43,16 @@
         .purchaseData {
             background-color: $beige;
             width: 100%;
+
             .dataContent {
                 width: 100%;
+
                 .data {
+                    color: $darkBlue;
+                    opacity: 90%;
                     width: 100%;
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
                     justify-content: space-between;
                     .left {
                         text-align: left;
@@ -87,7 +92,11 @@
                 .dataContent {
                     .data {
                         flex-direction: column;
-                        .left, p{
+                        margin-bottom: 15px;
+                        border-bottom: 1px $ligthBlue solid;
+                        .left,
+                        p {
+                            margin: 0%;
                             text-align: center;
                         }
                     }
