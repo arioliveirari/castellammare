@@ -121,7 +121,6 @@
       border-radius: 8px;
       width: fit-content;
       height: fit-content;
-      margin-left: 20px;
       font-size: 15px;
       padding: 5px 10px;
       color: $beige;
@@ -242,4 +241,17 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+@media screen and (max-width:320px) {
+  .Header{
+    .header-mobile{
+      reserva{
+        padding: 0px;
+      }
+    }
+
+
+  }
+  
 }

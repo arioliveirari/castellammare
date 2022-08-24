@@ -73,6 +73,11 @@
             word-spacing: 0px;
             line-height: 1.7;
         }
+        .personContainer{
+            .name{
+                font-size: 25px;
+            }
+        }
     }
     
 }
@@ -90,14 +95,19 @@
             align-items: center;
             text-align: center;
             word-break: keep-all;
-            padding: 15px 5px;
-            font-size: 18px;
+            padding: 15px 20px;
+            font-size: 15px;
             font-weight: 400;
             font-style: italic;
-            line-height: 2;
+            line-height: 2.3;
             word-spacing: 5px;
             color: #002848;
             border-radius: 16px 16px 0px 0px;
+        }
+        .personContainer{
+            .name{
+                font-size: 20px;
+            }
         }
     }
     
