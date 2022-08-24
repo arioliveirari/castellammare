@@ -36,6 +36,9 @@
     justify-content: center;
     height: 440px;
     width: 100%;
+    .firstData{
+      margin-left: -35px;
+    }
     .text {
       color: #fff;
       position: relative;
@@ -51,6 +54,7 @@
       p {
         margin: 0%;
       }
+
       .boatNumber {
         display: flex;
         border-radius: 100%;
@@ -135,6 +139,9 @@
     text-align: end;
     height: 550px;
     width: 100%;
+    .firstData{
+      margin-right: -35px;
+    }
     .text {
       color: #fff;
       position: relative;

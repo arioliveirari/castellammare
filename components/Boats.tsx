@@ -15,12 +15,12 @@ const Boats = () => {
   return (
     <>
       <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
-        <div className={usc(styles,["desktopAnimations"])} >
+        <div className={usc(styles, ["desktopAnimations"])} >
           <RiveAnimation bottom={400} right={100} animationName="water_2" extraClassName="rotationAnimation water2" />
           <RiveAnimation top={0} left={0} animationName="water_1" />
           <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
         </div>
-        <div className={usc(styles,["mobileAnimations"])} >
+        <div className={usc(styles, ["mobileAnimations"])} >
           <RiveAnimation bottom={350} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
           <RiveAnimation top={0} left={-70} animationName="water_1" />
           <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
@@ -42,7 +42,7 @@ const Boats = () => {
                 </div>
                 <div className={usb(["col-md-4", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
-                    <div className={usc(styles, ["boatData"])}>
+                    <div className={usc(styles, ["boatData", "firstData"])}>
                       <p className={usc(styles, ["boatText"])}>Años Navegando</p>
                       <p className={usc(styles, ["boatNumber"])}>5</p>
                     </div>
@@ -79,7 +79,7 @@ const Boats = () => {
               <div className={usb(["row"])}>
                 <div className={usb(["col-md-4", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
-                    <div className={usc(styles, ["boatData"])}>
+                    <div className={usc(styles, ["boatData", "firstData"])}>
                       <p className={usc(styles, ["boatNumber"])}>5</p>
                       <p className={usc(styles, ["boatText"])}>Años Navegando</p>
                     </div>

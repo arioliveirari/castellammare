@@ -143,7 +143,6 @@
     .icons {
       display: flex;
       justify-content: flex-end;
-      width: 27%;
       .linkBtn {
         margin-left: 10px;
         width: 30px;
@@ -155,6 +154,7 @@
         justify-content: center;
         color: #002848;
         font-size: 18px;
+       
         span {
           display: flex;
           text-align: center;
@@ -166,20 +166,7 @@
     }
   }
 
-  @media screen and (max-width: 1200px) {
-    .header-desktop {
-      .links {
-        width: 60%;
-      }
-    }
-  }
-  @media screen and (max-width: 992px) {
-    .header-desktop {
-      .links {
-        width: 70%;
-      }
-    }
-  }
+  
   @media screen and (max-width: 768px) {
     .header-desktop {
       display: none;
@@ -243,7 +230,7 @@
   }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:375px) {
   .Header{
     .header-mobile{
       reserva{

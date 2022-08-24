@@ -1,5 +1,6 @@
 import { type } from "os";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import { useReactToPrint } from "react-to-print";
 import styles from '../styles/voucher.module.scss';
 import { usb, usc, usw } from "../utils/helpers";
 
@@ -15,7 +16,16 @@ interface voucher {
     state: string
 }
 
+
+
 const Voucher = () => {
+    const voucherRef = useRef<HTMLInputElement>(null);
+    const handlePrint = useReactToPrint({
+        content: () => voucherRef.current,
+        documentTitle: "Voucher Baires Navega",
+        onAfterPrint: () => alert("felicitaciones, ya estas listo para una experiencia unica")
+    })
+  
     const current = new Date()
     const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
     const validDate = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear() + 1}`
@@ -31,10 +41,10 @@ const Voucher = () => {
     }
     ]
     return (
-        <div className={usw(styles, ["voucherContainer"], ["container-fluid"])}>
+        <div ref={voucherRef}  className={usw(styles, ["voucherContainer"], ["container-fluid"])}>
             <div className={usb(["container"])}>
                 <div className={usb(["row"])}>
-                    <div className={usb(["col-lg-10" ,"m-auto"])}>
+                    <div className={usb(["col-lg-10", "m-auto"])}>
                         <div className={usc(styles, ["content"])} >
                             <div id="bannerContainer" className={usc(styles, ["bannerContainer"])}>
                                 <span className="icon-barco"></span>
@@ -92,7 +102,7 @@ const Voucher = () => {
                                 </div>
                             </div>
                             <div className={usc(styles, ["buttonRow"])}>
-                                <button> imprimir </button>
+                                <button onClick={handlePrint} > imprimir </button>
                             </div>
                         </div>
                     </div>
