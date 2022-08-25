@@ -1,5 +1,4 @@
-
-.exterior{
+.exterior {
     padding-bottom: 20px;
     padding-right: 25px;
 }
@@ -18,19 +17,18 @@
     font-weight: 600;
     p {
         margin: 0%;
-        
     }
 }
 
 @media screen and (max-width: 768px) {
-    .exterior{
+    .exterior {
         padding: 0%;
     }
     .tittleContainer {
         text-align: end;
         align-items: center;
         font-weight: bold;
-min-width: 70%;
+        min-width: 70%;
         width: fit-content;
         font-size: 25pt;
         font-weight: 600;

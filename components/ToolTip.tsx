@@ -1,9 +1,9 @@
-import React, { ReactElement } from "react";
+import React, { CSSProperties, ReactElement } from "react";
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/button.module.scss';
 
 
-const ToolTip = ({ divRef, children}: { divRef: React.RefObject<any>, children: ReactElement }) => {
+const ToolTip = ({ divRef, children }: { divRef: React.RefObject<any>, children: ReactElement }) => {
     const [active, setActive] = React.useState(false);
     React.useEffect(() => {
         if (divRef && divRef.current) {

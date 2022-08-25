@@ -5,7 +5,7 @@ import styles from '../styles/tittles.module.scss'
 
 type TittleProp = {
     tittle: string,
-    background: React.CSSProperties
+    background?: React.CSSProperties
 }
 
 const Tittles = ({ tittle, background }: TittleProp) => {
