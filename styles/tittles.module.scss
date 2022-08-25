@@ -1,8 +1,11 @@
-.exterior {
-    width: 100%;
+
+.exterior{
+    padding-bottom: 20px;
+    padding-right: 25px;
 }
 .tittleContainer {
-    width: fit-content;
+    text-transform: capitalize;
+    width: 45%;
     height: fit-content;
     display: flex;
     position: relative;
@@ -12,20 +15,24 @@
     border-bottom: 3px solid #002848;
     font-size: 68px;
     font-family: calson;
-    font-weight: 400;
-    margin-bottom: 20px;
+    font-weight: 600;
     p {
         margin: 0%;
+        
     }
 }
 
 @media screen and (max-width: 768px) {
+    .exterior{
+        padding: 0%;
+    }
     .tittleContainer {
-        text-align: center;
+        text-align: end;
         align-items: center;
-        justify-content: center;
-        width: 100%;
-        font-size: 30pt;
-        font-weight: 400;
+        font-weight: bold;
+min-width: 70%;
+        width: fit-content;
+        font-size: 25pt;
+        font-weight: 600;
     }
 }

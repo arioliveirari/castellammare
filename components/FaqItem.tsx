@@ -24,8 +24,8 @@ const FaqItem = () => {
 
     return (
         <>
+            <Tittles background={{ backgroundColor: "#f1e6d0"}} tittle='Preguntas Frecuentes' />
             <div className={usw(styles, ["faqComponent"], ["container-fluid"])}>
-                <Tittles tittle='Preguntas Frecuentes' />
                 <div className={usb(["container"])}>
                     <div className={usb(["row"])}>
                         <div className={usb(["col-12"])}>
@@ -34,7 +34,7 @@ const FaqItem = () => {
                                     <div className={usc(styles, ["dropdownItem"])} key={i.id}>
                                         <div className={usc(styles, ["question"])}>
                                             <div className={usc(styles, ["text"])}>
-                                                <span onClick={handleClick} className={(isDown)? "icon-chevron_right rotatedArrow" : "icon-chevron_right" }>
+                                                <span onClick={handleClick} className={(isDown) ? "icon-chevron_right rotatedArrow" : "icon-chevron_right"}>
                                                 </span>
                                                 {i.question}
                                             </div>

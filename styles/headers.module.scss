@@ -154,7 +154,7 @@
         justify-content: center;
         color: #002848;
         font-size: 18px;
-       
+
         span {
           display: flex;
           text-align: center;
@@ -166,7 +166,6 @@
     }
   }
 
-  
   @media screen and (max-width: 768px) {
     .header-desktop {
       display: none;
@@ -230,15 +229,30 @@
   }
 }
 
-@media screen and (max-width:375px) {
-  .Header{
-    .header-mobile{
-      reserva{
+@media screen and (max-width: 375px) {
+  .Header {
+    .header-mobile {
+      reserva {
         padding: 0px;
       }
     }
-
-
   }
-  
+}
+
+@media screen and(max-width:992px) {
+  .Header {
+    .header-desktop {
+      text-align: center;
+      align-items: center;
+      .links {
+        text-transform: capitalize;
+        font-size: 17px;
+        width: 70%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
 }

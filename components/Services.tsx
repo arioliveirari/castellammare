@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <>
 
-      <Tittles tittle='servicios' />
+      <Tittles background={ {backgroundColor: "#fff"}} tittle='servicios'/>
       <div className={usw(styles, ["servicios"], ["container-fluid"])}>
         <Service
           tittle='atardecer en el rio de la plata'

@@ -1,31 +1,24 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/tittles.module.scss'
 
 
 type TittleProp = {
-    tittle: string
-
+    tittle: string,
+    background: React.CSSProperties
 }
 
-const Tittles = (props: TittleProp) => {
+const Tittles = ({ tittle, background }: TittleProp) => {
     return (
-        <div className={usw(styles, ["exterior"], ["container-fluid" ])}>
-            <div className={usb(["container"])} >
-                <div className={usb(["row"])} >
-                    <div className={usb(["col-md-8", "col-xs-12"])} >
-                        <div className={usc(styles, ["tittleContainer"])}>
-                            <div className={usc(styles, ["content"])} >
-                                <p>
-                                    {props.tittle}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <div style={background} className={usc(styles, ["exterior"])}>
+            <div  className={usc(styles, ["tittleContainer"])}>
+                <div className={usc(styles, ["content"])} >
+                    <p>
+                        {tittle}
+                    </p>
                 </div>
             </div>
         </div>
-
     )
 
 }
