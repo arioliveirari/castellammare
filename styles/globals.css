@@ -75,12 +75,29 @@ a {
 
 }
 
-.options-type-2.glide__bullet {
+#options-type-2 .glide__bullet {
   width: 15px;
   height: 15px;
-  color: #fff;
+  background-color: #fff;
   align-items: center;
   border-radius: 100%;
+}
+#options-type-2 .glide__bullet:hover{
+  width: 15px;
+  height: 15px;
+  filter: brightness(0.9);
+}
+
+#options-type-2 .glide__bullet--active {
+  width: 15px;
+  height: 15px;
+  background-color: #E8A93F;
+  align-items: center;
+  border-radius: 100%;
+}
+
+#options-type-2 .controls {
+  font-size: 10px;
 }
 
 #bannerContainer .icon-barco {
@@ -118,9 +135,10 @@ a {
 
 
 @media screen and (max-width: 768px) {
-  #options-type-2.glide__slide--active {
-    transform: translateY(0px);
+  .glide__slide--active {
+    transform: translate(0px);
   }
+
 }
 
 
@@ -142,14 +160,36 @@ a {
   transform: scale(1.2);
 }
 
-#gallery-image-mobile.glide .glide__bullet {
-  width: 10px;
-  height: 10px;
-  background-color: aqua;
+#gallery-image-mobile .glide__bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  align-items: center;
+  border: none;
+  border-radius: 100%;
+  transition: all ease 0.2s;
+}
+
+#gallery-image-mobile .glide__bullet:hover {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0.9);
   border-radius: 100%;
 }
 
-#gallery-image-mobile.glide .controls {
+#gallery-image-mobile .glide__bullet--active {
+  width: 20px;
+  height: 20px;
+  background-color: #307692;
+}
+
+#gallery-image-mobile .controls {
   display: flex;
   align-items: center;
+}
+
+#gallery-image-mobile .controlButton {
+  background-color: transparent;
+  border: none;
+  width: 40px;
 }

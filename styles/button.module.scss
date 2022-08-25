@@ -25,6 +25,9 @@
     margin-bottom: 0px;
     pointer-events: none;
   }
+  &:hover{
+    background-color: #E6A029;
+  }
 }
 
 @keyframes shown {
