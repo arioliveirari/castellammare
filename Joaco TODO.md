@@ -11,9 +11,9 @@
 10) Bajar un poco el titulo de Nuestros veleros + bajar un poco mas ( separar ) el titulo de Modelo de velero GTX 2(done)
 11) Sacar boton ADQUIRI VOUCHER abajo del texto del over the fold (done)
 12) Pedir a flor la animacion del barco sin las lineas o con todas las lineas  + cambiar un poco el color para que no se 100% negro ( quizas dar un poquito de opacidad ) (done)
+13) Se rompe en mobile, el form queda arriba de los barcos (done)
 
 
-13) Se rompe en mobile, el form queda arriba de los barcos
 14) no tiene que haber scroll X en mobile. ( hay una barrita de scroll )
 15) achicar los titulos cuando width < 992
 16) Falta slider dentro de los veleros
