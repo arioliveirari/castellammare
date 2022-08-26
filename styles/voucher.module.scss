@@ -1,6 +1,10 @@
 @import "variables.module.scss";
 .voucherContainer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   .content {
+    margin-top: 150px;
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -83,6 +87,7 @@
 @media screen and (max-width: 768px) {
   .voucherContainer {
     .content {
+      margin-bottom: 100px;
       .bannerContainer {
         .titleContainer {
           font-size: 30px;

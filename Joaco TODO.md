@@ -12,10 +12,10 @@
 11) Sacar boton ADQUIRI VOUCHER abajo del texto del over the fold (done)
 12) Pedir a flor la animacion del barco sin las lineas o con todas las lineas  + cambiar un poco el color para que no se 100% negro ( quizas dar un poquito de opacidad ) (done)
 13) Se rompe en mobile, el form queda arriba de los barcos (done)
-
-
-14) no tiene que haber scroll X en mobile. ( hay una barrita de scroll )
+14) no tiene que haber scroll X en mobile. ( hay una barrita de scroll )(done)
 15) achicar los titulos cuando width < 992
+
+
 16) Falta slider dentro de los veleros
 17) Crear pantalla extra de voucher ( Fondo + componente )
 18) los textos de las secciones tienen que ser mas chicos que sus titulos (ver FAQ)

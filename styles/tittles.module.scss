@@ -4,7 +4,7 @@
 }
 .tittleContainer {
     text-transform: capitalize;
-    width: 45%;
+    width: fit-content;
     height: fit-content;
     display: flex;
     position: relative;
@@ -20,7 +20,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .exterior {
         padding: 0%;
     }
@@ -28,7 +28,7 @@
         text-align: end;
         align-items: center;
         font-weight: bold;
-        min-width: 70%;
+       min-width: 40%;
         width: fit-content;
         font-size: 25pt;
         font-weight: 600;

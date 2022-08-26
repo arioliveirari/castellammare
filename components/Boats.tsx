@@ -15,7 +15,7 @@ const Boats = () => {
   return (
     <>
       <div className={usc(styles,["mobileTitle"])} >  
-        <Tittles styling={{ paddingTop: "700px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
+        <Tittles styling={{ paddingTop: "650px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
       </div>
       <div className={usc(styles,["desktopTitle"])} >
         <Tittles styling={{ paddingTop: "40px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />

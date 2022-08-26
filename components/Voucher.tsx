@@ -1,4 +1,4 @@
-import { type } from "os";
+
 import React, { useRef, useState } from "react";
 import { useReactToPrint } from "react-to-print";
 import styles from '../styles/voucher.module.scss';
