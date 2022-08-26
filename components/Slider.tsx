@@ -11,23 +11,23 @@ const Slider = () => {
       type: "slider",
       focusAt: 'center',
       perView: 3,
-      startAt: 1,
+      startAt: 0,
       gap: 50,
       breakpoints: {
-        1400:{
+        1400: {
           perView: 2.5
         },
-        1200:{
+        1200: {
           perView: 2.2,
-          gap:40
+          gap: 40
         },
-        992:{
-          perView:1.8,
-          gap:30
+        992: {
+          perView: 1.8,
+          gap: 30
         },
-        768:{
-          perView:1.5,
-          gap:20
+        768: {
+          perView: 1.5,
+          gap: 20
         }
       },
 
@@ -57,10 +57,16 @@ const Slider = () => {
                   <ul className="glide__slides">
                     {sliderItems.map((i, index) => <Slide key={`slideexample-${index}`} {...i} />)}
                   </ul>
-                  <div className="controls" data-glide-el="controls[nav]">
-                    <button className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></button>
-                    {sliderItems.map((i, index) => (<button key={`${index}`} className="glide__bullet"  data-glide-dir={`=${index}`}></button>))}
-                    <button className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></button>
+                  <div className="controls">
+                    <div className="glide__arrows" data-glide-el="controls">
+                      <div className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></div>
+                    </div>
+                    <div className="glide__bullets" data-glide-el="controls[nav]">
+                      {sliderItems.map((i, index) => (<button key={`${index}`} className="glide__bullet" data-glide-dir={`=${index}`}></button>))}
+                    </div>
+                    <div className="glide__arrows" data-glide-el="controls">
+                      <div className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></div>
+                    </div>
                   </div>
                 </div>
               </div>

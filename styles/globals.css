@@ -147,18 +147,17 @@ a {
   align-items: center;
 }
 
-#options-type-2.glide .controls * {
+#options-type-2.glide .controls .glide__bullet { 
+  margin-left: 4px;
+  margin-right: 4px;
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
-#options-type-2.glide .controls *:hover {
+#options-type-2.glide .controls .glide__bullet:hover {
   transform: scale(1.2);
 }
 
-#options-type-2.glide .controls *:hover {
-  transform: scale(1.2);
-}
 
 #gallery-image-mobile .glide__bullet {
   width: 15px;
