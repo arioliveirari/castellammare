@@ -26,6 +26,7 @@
     justify-content: center;
     position: relative;
     margin-bottom: 20px;
+    margin-top: 40px;
     width: fit-content;
     height: fit-content;
   }
@@ -36,7 +37,7 @@
     justify-content: center;
     height: 440px;
     width: 100%;
-    .firstData{
+    .firstData {
       margin-left: -35px;
     }
     .text {
@@ -139,7 +140,7 @@
     text-align: end;
     height: 550px;
     width: 100%;
-    .firstData{
+    .firstData {
       margin-right: -35px;
     }
     .text {
@@ -209,33 +210,42 @@
   }
 }
 
-.mobileAnimations{
+.mobileAnimations {
   display: none;
 }
 
-.mobile{
+.mobile {
   display: none;
 }
 
-
-
-
+.mobileTitle {
+  display: none;
+}
+.desktopTitle {
+  display: unset;
+}
 
 @media screen and (max-width: 992px) {
 }
 
 @media screen and (max-width: 768px) {
+  .mobileTitle {
+    display: unset;
+  }
+  .desktopTitle{
+    display: none;
+  }
   .topContent,
   .botContent {
     display: none;
   }
-  .mobile{
+  .mobile {
     display: unset;
   }
-  .mobileAnimations{
+  .mobileAnimations {
     display: unset;
   }
-  .desktopAnimations{
+  .desktopAnimations {
     display: none;
   }
 }

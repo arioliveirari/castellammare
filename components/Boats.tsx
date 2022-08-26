@@ -14,7 +14,12 @@ const boatsData = [
 const Boats = () => {
   return (
     <>
-      <Tittles background={{ backgroundColor: "#86bed5"}} tittle='Nuestros Veleros' />
+      <div className={usc(styles,["mobileTitle"])} >  
+        <Tittles styling={{ paddingTop: "700px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
+      </div>
+      <div className={usc(styles,["desktopTitle"])} >
+        <Tittles styling={{ paddingTop: "40px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
+      </div>
       <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
         <div className={usc(styles, ["desktopAnimations"])} >
           <RiveAnimation bottom={400} right={100} animationName="water_2" extraClassName="rotationAnimation water2" />

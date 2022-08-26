@@ -5,12 +5,12 @@ import styles from '../styles/tittles.module.scss'
 
 type TittleProp = {
     tittle: string,
-    background?: React.CSSProperties
+    styling?: React.CSSProperties
 }
 
-const Tittles = ({ tittle, background }: TittleProp) => {
+const Tittles = ({ tittle, styling }: TittleProp) => {
     return (
-        <div style={background} className={usc(styles, ["exterior"])}>
+        <div style={styling} className={usc(styles, ["exterior"])}>
             <div  className={usc(styles, ["tittleContainer"])}>
                 <div className={usc(styles, ["content"])} >
                     <p>

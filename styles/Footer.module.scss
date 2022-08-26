@@ -3,7 +3,7 @@
 .footer {
     width: 100%;
     height: 100%;
-    background-color: $darkBlue;
+    background-color: #002347;
 
     .footerContainer {
         width: 100%;
@@ -11,7 +11,7 @@
         margin: 0%;
 
         .desktopContent {
-            font-family: roboto;
+            font-family: calson;
             font-weight: 400;
             text-transform: uppercase;
             display: flex;
@@ -36,11 +36,12 @@
             }
             ul {
                 margin: 0%;
+                text-align: left;
             }
             li {
                 list-style: none;
                 color: $beige;
-                text-align: center;
+                text-align: left;
                 word-break: keep-all;
                 margin: 0%;
             }
@@ -70,6 +71,9 @@
                         justify-content: center;
                         color: $darkBlue;
                         margin: 10px;
+                        &:hover{
+                            filter: brightness(0.8);
+                        }
                     }
                 }
             }

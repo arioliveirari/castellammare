@@ -3,7 +3,6 @@
 .faqComponent {
     background-color: $beige;
     text-align: left;
-    margin-bottom: 90px;
     color: $darkBlue;
     text-transform: capitalize;
     p {
@@ -16,10 +15,12 @@
     .content {
         align-items: center;
         text-align: left;
+        padding-bottom: 90px;
         .question {
             text-align: left;
             margin-top: 30px;
             text-transform: capitalize;
+            cursor: pointer;
             .text {
                 font-family: roboto;
                 font-size: 30px;
@@ -28,14 +29,19 @@
             }
         }
         .answer {
+            cursor: pointer;
             opacity: 0%;
             height: 0px;
-            font-size: 24px;
             text-align: left;
             transition: all ease 0.4s;
+            p{
+                
+                height: 0px;
+            }
             
         }
         .isDown {
+            cursor: pointer;
             font-size: 24px;
             height: fit-content;
             font-weight: 300;

@@ -23,7 +23,6 @@ const OverTheFold = ({ children }: any) => (
                     </div>
                   </div>
                 </div>
-                <a className={usc(styles, ["buttonOver"])} >Adquirir voucher</a>
                 <a href='#form' className={usc(styles, ["arrowButton"])}>
                   <span className='icon-arrow-right'></span>
                 </a>

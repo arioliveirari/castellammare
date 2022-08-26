@@ -1,9 +1,7 @@
 @import "variables.module.scss";
 
 .OverTheFold {
-  align-items: center;
-  justify-items: center;
-  margin: 0%;
+ margin-bottom: 20px;
   padding: 0%;
   box-sizing: border-box;
   height: 90vh;
@@ -35,9 +33,10 @@
 .formContainer {
   align-items: center;
   justify-content: center;
-  margin-top: 15vh;
+  margin-top: 20vh;
   z-index: 99;
 }
+
 
 .containerOver {
   height: 70vh;
@@ -49,7 +48,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 20vh;
     height: 80vh;
   }
   .tittleOver {
@@ -105,13 +104,13 @@
   transition: all ease-in-out 0.2s;
   color: #fff;
   text-transform: uppercase;
-  &:hover{
+  &:hover {
     color: #fff;
-    background-color: #E6A029;
+    background-color: #e6a029;
   }
 }
 @media (max-width: 768px) {
-  .rowContainer{
+  .rowContainer {
     flex-direction: column;
   }
   .containerOver {
@@ -146,9 +145,31 @@
   }
 }
 
-@media screen and (max-width:768px) and (min-width:768px) and (min-height:1024px) and (min-height:1024px) {
-  .formContainer{
+
+@media screen and (max-width: 768px) and (min-width: 768px) and (min-height: 1024px) and (min-height: 1024px) {
+  .formContainer {
     margin-top: 8vh;
   }
   
+}
+
+@media screen and (max-width:768px) {
+  .containerOver{
+    .textOver{
+      margin-top: 5vh;
+    }
+  } 
+  .formContainer{
+    margin-top: 20vh;
+  }
+}
+@media screen and (max-width:425px) {
+  .formContainer{
+    margin-top: 10vh;
+  }
+}
+@media screen and (max-width:375px) {
+  .formContainer{
+    margin-top: 25vh;
+  }
 }

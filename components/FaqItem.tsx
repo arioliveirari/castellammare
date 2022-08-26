@@ -29,15 +29,15 @@ const FaqItem = () => {
 
   return (
     <>
-      <Tittles background={{ backgroundColor: "#f1e6d0" }} tittle='Preguntas Frecuentes' />
+      <Tittles styling={{ backgroundColor: "#f1e6d0" }} tittle='Preguntas Frecuentes' />
       <div className={usw(styles, ["faqComponent"], ["container-fluid"])}>
         <div className={usb(["container"])}>
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
               <div className={usc(styles, ["content"])} >
                 {items.map((i, index) => (
-                  <div className={usc(styles, ["dropdownItem"])} key={i.id}>
-                    <div className={usc(styles, ["question"])} onClick={() => handleClick(index)}>
+                  <div className={usc(styles, ["dropdownItem"])} onClick={() => handleClick(index)} key={i.id}>
+                    <div className={usc(styles, ["question"])} >
                       <div className={usc(styles, ["text"])}>
                         <span className={(i.isDown) ? "icon-chevron_right rotatedArrow" : "icon-chevron_right"}>
                         </span>

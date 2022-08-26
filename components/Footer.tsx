@@ -26,7 +26,7 @@ const Footer = () => {
                                 </p>
                             </div>
                         </div>
-                        
+
                         <div className={usc(styles, ["mobileContent"])} >
                             <div className={usc(styles, ["iconContainer"])}>
                                 <Icons />
@@ -60,15 +60,21 @@ const Logo = () => (
 const Icons = () => (
     <div className={usc(styles, ["links"])} >
         <div className={usc(styles, ["icons"])}>
-            <div className={usc(styles, ["linkBtn"])}>
-                <span className="icon-instagram" />
-            </div>
-            <div className={usc(styles, ["linkBtn"])}>
-                <span className="icon-wpp" />
-            </div>
-            <div className={usc(styles, ["linkBtn"])}>
-                <span className="icon-mail" />
-            </div>
+            <a href="#">
+                <div className={usc(styles, ["linkBtn"])}>
+                    <span className="icon-instagram" />
+                </div>
+            </a>
+            <a href="">
+                <div className={usc(styles, ["linkBtn"])}>
+                    <span className="icon-wpp" />
+                </div>
+            </a>
+            <a href="">
+                <div className={usc(styles, ["linkBtn"])}>
+                    <span className="icon-mail" />
+                </div>
+            </a>
         </div>
 
     </div>
