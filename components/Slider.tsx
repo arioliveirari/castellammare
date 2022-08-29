@@ -10,15 +10,16 @@ const Slider = () => {
     const glide = new Glide('#options-type-2', {
       type: "slider",
       focusAt: 'center',
-      perView: 3.3,
+      perView: 3,
       startAt: 0,
-      gap: 100,
+      gap: 110,
       breakpoints: {
         1440: {
+          perView: 3,
           gap: 50
         },
         1024: {
-          perView: 2.6,
+          perView: 2.2,
           gap: 30
         },
         768: {
@@ -29,8 +30,9 @@ const Slider = () => {
           perView: 1.4,
           gap: 25
         },
-        320:{
-          perView:1.3,
+       
+        320: {
+          perView: 1.3,
           gap: 20
         }
       }

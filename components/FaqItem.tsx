@@ -10,7 +10,7 @@ interface dropDownInfo {
   isDown: boolean
 }
 const dropDownArray: Array<dropDownInfo> = [
-  { id: 1, isDown: false, question: "como reservo un tour con Tu experiencia", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae modi exercitationem, quasi veritatis repudiandae possimus alias minima." },
+  { id: 1, isDown: false, question: "como reservo un tour con Tu experiencia", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis cursus arcu. Donec mollis sagittis risus at sollicitudin. A fermentum urna pharetra eget. Quisque dictum, tortor eget commodo auctor, urna velit placerat dui, at convallis nunc libero id ipsum." },
   { id: 2, isDown: false, question: "que servicios incluye mi tour", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae modi exercitationem, quasi veritatis repudiandae possimus alias minima." },
   { id: 3, isDown: false, question: "como reservo un tour com Tu experiencia", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae modi exercitationem, quasi veritatis repudiandae possimus alias minima." },
   { id: 4, isDown: false, question: "que servicios incluye mi tour", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae modi exercitationem, quasi veritatis repudiandae possimus alias minima." },
@@ -47,7 +47,7 @@ const FaqItem = () => {
                       </div>
                     </div>
                     <div className={usb(["row"])}>
-                      <div className={usb(["col-md-9"])}>
+                      <div className={usb(["col-md-10"])}>
                         <div className={usc(styles, [(i.isDown) ? "isDown" : "answer"])}>
                           <p className={usc(styles, ["text"])}>
                             {i.answer}

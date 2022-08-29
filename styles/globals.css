@@ -66,12 +66,11 @@ a {
 .glide__slide {
   transition: all 0.4s ease;
   border-radius: 8px;
-  transform: translateY(30px);
 }
 
 .glide__slide--active {
   transition: all 0.3s ease;
-  transform: translateY(-30px);
+  transform: translateY(-35px);
 
 }
 
