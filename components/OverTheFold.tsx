@@ -14,7 +14,7 @@ const OverTheFold = ({ children }: any) => (
                 <span className={usc(styles, ["tittleOver"])}>
                   Baires Navega
                 </span>
-                <div className={usc(styles,["row"],["row"])}>
+                <div className={usw(styles,["row"],["row"])}>
                   <div className={usb(["col-md-12", "m-auto" ,"col-10"])}>
                     <div className={usc(styles, ["paragraphOver"])} >
                       <p>
