@@ -10,26 +10,30 @@ const Slider = () => {
     const glide = new Glide('#options-type-2', {
       type: "slider",
       focusAt: 'center',
-      perView: 3,
+      perView: 3.3,
       startAt: 0,
-      gap: 50,
+      gap: 100,
       breakpoints: {
-        1400: {
-          perView: 2.5
+        1440: {
+          gap: 50
         },
-        1200: {
-          perView: 2.2,
-          gap: 40
-        },
-        992: {
-          perView: 1.8,
+        1024: {
+          perView: 2.6,
           gap: 30
         },
         768: {
-          perView: 1.5,
+          perView: 2.2,
+          gap: 30
+        },
+        425: {
+          perView: 1.4,
+          gap: 25
+        },
+        320:{
+          perView:1.3,
           gap: 20
         }
-      },
+      }
 
     }).mount();
   }, [])
@@ -49,26 +53,21 @@ const Slider = () => {
   return (
     <>
       <div className={usw(styles, ["sliderModule"], ["container-fluid", "p-0"])}>
-        <div className={usb(["container"])}>
-          <div className={usb(["row"])}>
-            <div className={usb(["col-12", "p-0"])}>
-              <div className="glide" id="options-type-2">
-                <div className="glide__track" data-glide-el="track">
-                  <ul className="glide__slides">
-                    {sliderItems.map((i, index) => <Slide key={`slideexample-${index}`} {...i} />)}
-                  </ul>
-                  <div className="controls">
-                    <div className="glide__arrows" data-glide-el="controls">
-                      <div className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></div>
-                    </div>
-                    <div className="glide__bullets" data-glide-el="controls[nav]">
-                      {sliderItems.map((i, index) => (<button key={`${index}`} className="glide__bullet" data-glide-dir={`=${index}`}></button>))}
-                    </div>
-                    <div className="glide__arrows" data-glide-el="controls">
-                      <div className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></div>
-                    </div>
-                  </div>
-                </div>
+
+        <div className="glide" id="options-type-2">
+          <div className="glide__track" data-glide-el="track">
+            <ul className="glide__slides">
+              {sliderItems.map((i, index) => <Slide key={`slideexample-${index}`} {...i} />)}
+            </ul>
+            <div className="controls">
+              <div className="glide__arrows" data-glide-el="controls">
+                <div className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></div>
+              </div>
+              <div className="glide__bullets" data-glide-el="controls[nav]">
+                {sliderItems.map((i, index) => (<button key={`${index}`} className="glide__bullet" data-glide-dir={`=${index}`}></button>))}
+              </div>
+              <div className="glide__arrows" data-glide-el="controls">
+                <div className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></div>
               </div>
             </div>
           </div>

@@ -48,7 +48,6 @@ a {
 
 .controls {
   width: 100%;
-
   justify-content: center;
   text-align: center;
 }
@@ -67,30 +66,29 @@ a {
 .glide__slide {
   transition: all 0.4s ease;
   border-radius: 8px;
+  transform: translateY(30px);
 }
 
 .glide__slide--active {
   transition: all 0.3s ease;
-  transform: translateY(-36px);
+  transform: translateY(-30px);
 
 }
 
 #options-type-2 .glide__bullet {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: #fff;
   align-items: center;
   border-radius: 100%;
 }
 #options-type-2 .glide__bullet:hover{
-  width: 15px;
-  height: 15px;
   filter: brightness(0.9);
 }
 
 #options-type-2 .glide__bullet--active {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-color: #E8A93F;
   align-items: center;
   border-radius: 100%;
@@ -98,6 +96,7 @@ a {
 
 #options-type-2 .controls {
   font-size: 10px;
+
 }
 
 #bannerContainer .icon-barco {
@@ -110,6 +109,7 @@ a {
   align-items: center;
   text-align: center;
   justify-content: center;
+  color: #fff;
 }
 
 .icon-un-check {
@@ -138,6 +138,12 @@ a {
   .glide__slide--active {
     transform: translate(0px);
   }
+  
+#options-type-2 .controls {
+  font-size: 10px;
+  transform: translateY(  0px);
+}
+
 
 }
 
