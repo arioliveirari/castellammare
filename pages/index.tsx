@@ -19,8 +19,7 @@ const Index = (props: any) => {
 
   return (
     <div className={usc(styles, ['main'])}>
-      <BackgroundOnly />
-      {/* <Header />
+      <Header />
       <OverTheFold />
       <Waves />
       <Boats />
@@ -30,7 +29,7 @@ const Index = (props: any) => {
       <Services />
       <Gallery />
       <FooterWaves />
-      <Footer /> */}
+      <Footer />
     </div>
   )
 }

@@ -51,7 +51,19 @@
             transition: all ease 0.4s;
             margin-left: 55px;
             border-bottom: 0.5px solid $darkBlue;
+           
           
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .faqComponent{
+        .content{
+            .question{
+                .text{
+                    font-size: 25px;
+                }
+            }
         }
     }
 }

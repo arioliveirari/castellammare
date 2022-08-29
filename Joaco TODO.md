@@ -14,15 +14,16 @@
 13) Se rompe en mobile, el form queda arriba de los barcos (done)
 14) no tiene que haber scroll X en mobile. ( hay una barrita de scroll )(done)
 15) achicar los titulos cuando width < 992
+17) Crear pantalla extra de voucher ( Fondo + componente )(done)
+21) Crear componente voucher, y llamarlo en la pagina voucher, justo arriba del componente, llamas a <Header /> <backgroundOnly />(done)
+20) Crear un backgroundOnly componente que tenga el fondo del overthe fold ( sin texto ) y las olas abajo de todo (done)
+18) los textos de las secciones tienen que ser mas chicos que sus titulos (ver FAQ) (done)
 
 
-16) Falta slider dentro de los veleros
-17) Crear pantalla extra de voucher ( Fondo + componente )
-18) los textos de las secciones tienen que ser mas chicos que sus titulos (ver FAQ)
+16) Falta slider dentro de los veleros(pending)
 19) en Fq, tiene que estar marcado el basckground de la respuesta de la pregunta ( acordate como esta en survivewilds )
-20) Crear un backgroundOnly componente que tenga el fondo del overthe fold ( sin texto ) y las olas abajo de todo 
-21) Crear componente voucher, y llamarlo en la pagina voucher, justo arriba del componente, llamas a <Header /> <backgroundOnly />
-
+22) el underline debe estar alineado con el container de bootstrapt
+23) mobile del voucher
 
 VOUCHER DATA
 http://localhost:3000/voucher?

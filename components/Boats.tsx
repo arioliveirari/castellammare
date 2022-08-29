@@ -23,13 +23,13 @@ const Boats = () => {
       <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
         <div className={usc(styles, ["desktopAnimations"])} >
           <RiveAnimation bottom={400} right={100} animationName="water_2" extraClassName="rotationAnimation water2" />
-          <RiveAnimation top={0} left={0} animationName="water_1" />
+          <RiveAnimation bottom={850} left={0} animationName="water_1" />
           <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
         </div>
         <div className={usc(styles, ["mobileAnimations"])} >
-          <RiveAnimation bottom={350} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
+          <RiveAnimation bottom={-100} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
           <RiveAnimation top={0} left={-70} animationName="water_1" />
-          <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
+          <RiveAnimation top={390} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
         </div>
         <div className={usb(["container", "m-auto"])}>
           <div className={usw(styles, ["topContent"], ["row", "pb-5"])}>
