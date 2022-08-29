@@ -15,10 +15,12 @@ import Coast from '../components/Coast';
 import FaqItem from '../components/FaqItem';
 import BackgroundOnly from '../components/BackgroundOnly';
 import styles from '../styles/globals.module.scss';
+import MangoSlider from '../components/mangoSlider';
 const Index = (props: any) => {
 
   return (
     <div className={usc(styles, ['main'])}>
+      {/* <MangoSlider/> */}
       <Header />
       <OverTheFold />
       <Waves />

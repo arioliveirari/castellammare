@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { usb, usw, usc } from '../utils/helpers';
-
 import styles from '../styles/slider.module.scss';
 import Glide from '@glidejs/glide'
 import Slide from "./Slide";
@@ -10,12 +9,12 @@ const Slider = () => {
     const glide = new Glide('#options-type-2', {
       type: "slider",
       focusAt: 'center',
-      perView: 3,
+      perView: 3.2,
       startAt: 0,
-      gap: 110,
+      gap: 140,
       breakpoints: {
         1440: {
-          perView: 3,
+          perView: 3.2,
           gap: 50
         },
         1024: {
