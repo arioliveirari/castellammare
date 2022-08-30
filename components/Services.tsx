@@ -4,30 +4,21 @@ import Tittles from './Tittles';
 import Service from './Service';
 import styles from '../styles/services.module.scss';
 
+const serviceData = [
+  { inverted: false, title: "atardecer en el rio de la plata", paragraph: "una vez que te subis al barco todos los problemas se quedan en tierra, venia a navegar y conectate con la naturaleza", pic: "service1" },
+  { inverted: true, title: "Experiencia unica", paragraph: "Navegar y mirar juntos el atardecer, puede ser una experiencia hermosa para disfrutar en pareja.", pic: "service2" },
+  { inverted: false, title: "disfrutar de algo rico", paragraph: "Nada más lindo que disfrutar un día navegando y acompañarlo con algo rico.", pic: "service3" }
+]
+
 const Services = () => {
   return (
     <>
 
-      <Tittles styling={ {backgroundColor: "#fff"}} tittle='servicios'/>
+      <Tittles styling={{ backgroundColor: "#fff" }} tittle='servicios' />
       <div className={usw(styles, ["servicios"], ["container-fluid"])}>
-        <Service
-          tittle='atardecer en el rio de la plata'
-          paragraph='Una vez que subís al barco y salís al río, todos los problemas se quedan en tierra. Vení a navegar y conectate con la naturaleza.'
-          pic='service1'
-          inverted={false}
-        />
-        <Service
-          tittle='Experiencia única'
-          paragraph='Navegar y mirar juntos el atardecer, puede ser una experiencia hermosa para disfrutar en pareja.'
-          pic='service2'
-          inverted={true}
-        />
-        <Service
-          tittle='Disfrutar de algo g rico'
-          paragraph='Nada más lindo que disfrutar un día navegando y acompañarlo con algo rico.'
-          pic='service3'
-          inverted={false}
-        />
+        {serviceData.map((i,index)=>(
+          <Service key={index} tittle={i.title} paragraph={i.paragraph} pic={i.pic} inverted={i.inverted}></Service>
+        ))}
       </div>
     </>
   )

@@ -33,7 +33,7 @@ const Boats = () => {
           <RiveAnimation bottom={880} left={-70} animationName="water_1" />
           <RiveAnimation top={390} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
         </div>
-        <div className={usb(["container", "m-auto"])}>
+        <div className={usb(["container"])}>
           <div className={usw(styles, ["topContent"], ["row", "pb-5"])}>
             <div className={usb(["col-12"])}>
               <p className={usw(styles, ["boatName"], [""])}>
@@ -43,7 +43,7 @@ const Boats = () => {
 
             <div className={usb(["col-12"])}>
               <div className={usb(["row"])}>
-                <div className={usb(["col-md-7", "col-12"])}>
+                <div className={usb(["col-md-7", "col-12" ])}>
                   {/* <div className={usc(styles, ["botPic"])}>
                   </div> */}
                   <MangoSlider />

@@ -52,7 +52,7 @@ const Gallery = () => {
     <>
       <div className={usw(styles, ["gallery"], ["container-fluid"])}>
 
-        <Tittles tittle='galeria' />
+        <Tittles styling={{paddingBottom:"200px"}} tittle='galeria' />
         <div className={usw(styles, [], ["container"])}>
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>

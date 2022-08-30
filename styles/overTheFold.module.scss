@@ -44,6 +44,7 @@
   color: $beige;
   display: flex;
   .textOver {
+    align-items: center;
     cursor: default;
     max-width: 1024px;
     position: relative;
