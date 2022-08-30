@@ -13,10 +13,6 @@ const BackgroundOnly = ({ children }: any) => (
                 <Voucher />
             </div>
         </div>
-        <div className={usc(styles,["wavesContainer"])} >
-            <Waves />
-        </div>
-
     </>
 
 );

@@ -18,12 +18,13 @@
 21) Crear componente voucher, y llamarlo en la pagina voucher, justo arriba del componente, llamas a <Header /> <backgroundOnly />(done)
 20) Crear un backgroundOnly componente que tenga el fondo del overthe fold ( sin texto ) y las olas abajo de todo (done)
 18) los textos de las secciones tienen que ser mas chicos que sus titulos (ver FAQ) (done)
+16) Falta slider dentro de los veleros(png pending)
 
 
-16) Falta slider dentro de los veleros(pending)
 19) en Fq, tiene que estar marcado el basckground de la respuesta de la pregunta ( acordate como esta en survivewilds )
 22) el underline debe estar alineado con el container de bootstrapt
 23) mobile del voucher
+24) tooltip
 
 VOUCHER DATA
 http://localhost:3000/voucher?

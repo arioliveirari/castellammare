@@ -1,0 +1,115 @@
+@import "variables.module.scss";
+.Header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: $beige;
+    background-color: transparent;
+    position: fixed;
+    justify-content: space-between;
+    transition: all ease-in-out 0.3s;
+    z-index: 111;
+    &.active {
+        background-color: $darkBlue;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .logoPic {
+            width: 45px;
+            height: auto;
+            aspect-ratio: 1/1;
+            order: 1;
+            float: left;
+        }
+        .logoText {
+            order: 2;
+            font-family: calson;
+            font-weight: 300;
+            font-size: 15px;
+            justify-content: center;
+            text-align: left;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+    }
+
+    a {
+        color: $beige;
+        text-decoration: none;
+    }
+    .linkBtn {
+        width: 36px;
+        height: 36px;
+        background: $beige;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $darkBlue;
+        display: flex;
+    }
+}
+
+.header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .noDisplay {
+        display: none;
+        transition: all ease 0.4s;
+    }
+    .reserva {
+        font-family: dmsans;
+        font-weight: 400;
+        background-color: $orange;
+        border-radius: 8px;
+        width: fit-content;
+        height: fit-content;
+        font-size: 15px;
+        padding: 5px 10px;
+        color: $beige;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: all ease 0.4s;
+        p {
+            margin: 0%;
+        }
+    }
+    .links {
+        display: flex;
+        .logoText {
+            width: 52px;
+            height: 33px;
+        }
+    }
+    .icons {
+        display: flex;
+        justify-content: flex-end;
+        .linkBtn {
+            margin-left: 10px;
+            width: 30px;
+            height: 30px;
+            background: #f1e6d0;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #002848;
+            font-size: 18px;
+
+            span {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 15px;
+            }
+        }
+    }
+}

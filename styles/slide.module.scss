@@ -110,3 +110,36 @@
         }
     }
 }
+
+@media screen and (max-width: 410px) {
+    .slideContainer {
+        .textContainer {
+            line-height: 1.6;
+            padding: 18px 20px;
+            font-size: 14px;
+        }
+        .personContainer {
+            .name {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .slideContainer {
+        .textContainer {
+            line-height: 1.6;
+            padding: 20px 20px;
+            font-size: 13px;
+        }
+        .personContainer {
+            .name {
+                font-size: 18px;
+            }
+            .ocupation{
+                font-size: 14px;
+            }
+        }
+    }
+}

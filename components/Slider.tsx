@@ -29,7 +29,7 @@ const Slider = () => {
           perView: 1.4,
           gap: 25
         },
-       
+
         320: {
           perView: 1.3,
           gap: 20
@@ -39,12 +39,6 @@ const Slider = () => {
     }).mount();
   }, [])
   const sliderItems = [
-    { title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"', person: 'antonio gallegos', algo: 'comunicador social' },
-    { title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"', person: 'antonio gallegos', algo: 'comunicador social' },
-    { title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"', person: 'antonio gallegos', algo: 'comunicador social' },
-    { title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"', person: 'antonio gallegos', algo: 'comunicador social' },
-    { title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"', person: 'antonio gallegos', algo: 'comunicador social' },
-    { title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"', person: 'antonio gallegos', algo: 'comunicador social' },
     { title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"', person: 'antonio gallegos', algo: 'comunicador social' },
     { title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"', person: 'antonio gallegos', algo: 'comunicador social' },
     { title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"', person: 'antonio gallegos', algo: 'comunicador social' },

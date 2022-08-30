@@ -6,7 +6,6 @@ import Glide from '@glidejs/glide'
 const items = [
     "./images/kiwi.jpg",
     "./images/kiwi.jpg",
-    "./images/kiwi.jpg",
     "./images/kiwi.jpg"
 ]
 const KiwiSlider = () => {

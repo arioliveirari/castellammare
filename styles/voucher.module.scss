@@ -3,8 +3,9 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+
   .content {
-    margin-top: 150px;
+    margin-top: 7vh;
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -42,6 +43,9 @@
         font-weight: 600;
         text-transform: uppercase;
         font-family: roboto;
+        p{
+          margin: 0%;
+        }
       }
     }
     .purchaseData {
@@ -87,10 +91,13 @@
 @media screen and (max-width: 768px) {
   .voucherContainer {
     .content {
-      margin-bottom: 100px;
       .bannerContainer {
+        padding: 10px 0px;
         .titleContainer {
-          font-size: 30px;
+          font-size: 25px;
+        }
+        .bannerTextContainer {
+          font-size: 20px;
         }
       }
       .purchaseData {
@@ -110,6 +117,22 @@
     }
   }
 }
+
+@media screen and (max-width: 425px) {
+  .voucherContainer {
+    .content {
+      .bannerContainer {
+        .titleContainer {
+          font-size: 20px;
+        }
+        .bannerTextContainer{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 375px) {
   .voucherContainer {
     .content {

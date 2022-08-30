@@ -1,6 +1,8 @@
 import React, { CSSProperties, useEffect, useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/boatsMobile.module.scss';
+import KiwiSlider from './KiwiSlider';
+import MangoSlider from './KiwiSlider';
 import Tittles from './Tittles';
 import { url } from 'inspector';
 

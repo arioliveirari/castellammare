@@ -55,6 +55,7 @@
             .iconContainer {
                 height: 100%;
                 align-items: center;
+                padding-right: 4rem;
                 .icons {
                     display: flex;
                     flex-direction: row;
@@ -89,7 +90,7 @@
             flex-direction: column;
             align-items: center;
             text-align: justify;
-            padding: 20px 0px;
+          
             .copyrigth {
                 font-size: 13px;
             }
@@ -97,13 +98,18 @@
                 color: $beige;
             }
             .iconContainer {
+    
                 .icons {
+                 text-decoration: none;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: center;
                     text-align: center;
                     margin-bottom: 40px;
+                    a{
+                        text-decoration: none;
+                    }
                     .linkBtn {
                         width: 36px;
                         height: 36px;
@@ -114,6 +120,7 @@
                         justify-content: center;
                         color: $darkBlue;
                         margin-left: 15px;
+                        text-decoration: none;
                     }
                 }
             }

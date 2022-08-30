@@ -79,7 +79,7 @@ const Voucher = () => {
   }
   return (
     <div ref={voucherRef} className={usw(styles, ["voucherContainer"], ["container-fluid"])}>
-      <div className={usb(["container"])}>
+      <div className={usb(["container", "position-relative"])}>
         <div className={usb(["row"])}>
           <div className={usb(["col-lg-10", "m-auto"])}>
             <div className={usc(styles, ["content"])} >
