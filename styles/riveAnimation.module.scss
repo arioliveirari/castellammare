@@ -23,8 +23,7 @@
 
 .rotationAnimation {
   animation: rotationAnim 100s ease infinite;
-  height: 100%;
-  transform: rotate(255deg);
+  height: 10%;
 }
 
 .sailing {
@@ -36,5 +35,5 @@
 .sailingAnimation {
   // transform: rotate(-33deg);
   width: 100%;
-  height: calc(100% - 400px)
+  height: calc(100% - 400px);
 }

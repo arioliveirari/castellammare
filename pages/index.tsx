@@ -20,7 +20,7 @@ const Index = (props: any) => {
 
   return (
     <div className={usc(styles, ['main'])}>
-      {/* <MangoSlider/> */}
+      
       <Header />
       <OverTheFold />
       <Waves />

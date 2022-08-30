@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { usb, usw, usc } from '../utils/helpers';
-import styles from '../styles/mangoSlider.module.scss';
+import styles from '../styles/kiwiSlider.module.scss';
 import Glide from '@glidejs/glide'
 
 const items = [
-    "./images/mango.jpg",
-    "./images/mango.jpg",
-    "./images/mango.jpg",
-    "./images/mango.jpg"
+    "./images/kiwi.jpg",
+    "./images/kiwi.jpg",
+    "./images/kiwi.jpg",
+    "./images/kiwi.jpg"
 ]
-const MangoSlider = () => {
+const KiwiSlider = () => {
     React.useEffect(() => {
-        const glide = new Glide('#mango-slider', {
+        const glide = new Glide('#kiwi-slider', {
             type: "slider",
             focusAt: 'center',
             perView: 1,
@@ -25,7 +25,7 @@ const MangoSlider = () => {
     return (
         <div  className={usw(styles,["mangoSliderMocule"],["container-fluid"])}>
             <div>
-                <div className="glide" id="mango-slider">
+                <div className="glide" id="kiwi-slider">
                     <div className="glide__track" data-glide-el="track">
                         <ul className="glide__slides">
                             {items.map((i) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
@@ -47,4 +47,4 @@ const MangoSlider = () => {
         </div>
     )
 }
-export default MangoSlider
+export default KiwiSlider

@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import styles from '../styles/boatSlider.module.scss';

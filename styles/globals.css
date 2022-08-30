@@ -57,6 +57,7 @@ a {
   padding-bottom: 36px;
 }
 
+
 .glide__slides {
   padding-top: 36px !important;
   padding-bottom: 36px !important;
@@ -68,10 +69,14 @@ a {
   border-radius: 8px;
 }
 
-.glide__slide--active {
+#options-type-2 .glide__slide--active {
   transition: all 0.3s ease;
   transform: translateY(-35px);
 
+}
+
+#options-type-2 .controlButton {
+  margin: 25px;
 }
 
 #options-type-2 .glide__bullet {
@@ -81,7 +86,8 @@ a {
   align-items: center;
   border-radius: 100%;
 }
-#options-type-2 .glide__bullet:hover{
+
+#options-type-2 .glide__bullet:hover {
   filter: brightness(0.9);
 }
 
@@ -95,7 +101,43 @@ a {
 
 #options-type-2 .controls {
   font-size: 10px;
+  transform: translateY(-70px);
 
+}
+
+#mango-slider .controls {
+  display: flex;
+  transform: translateY(-90px);
+}
+
+#mango-slider .glide__bullet {
+  height: 10px;
+  width: 10px;
+  align-items: center;
+  border-radius: 100%;
+  margin: 15px 3px;
+}
+
+#mango-slider .glide__track {
+  padding: 0%;
+  padding-right: 15px;
+}
+
+#kiwi-slider .controls {
+  display: flex;
+  transform: translateY(-90px);
+}
+
+#kiwi-slider .glide__bullet {
+  height: 10px;
+  width: 10px;
+  align-items: center;
+  border-radius: 100%;
+  margin: 15px 3px;
+}
+#kiwi-slider .glide__track{
+  padding: 0%;
+  
 }
 
 #bannerContainer .icon-barco {
@@ -108,7 +150,7 @@ a {
   align-items: center;
   text-align: center;
   justify-content: center;
-  
+  color: #fff;
 }
 
 .icon-un-check {
@@ -131,17 +173,20 @@ a {
   transform: rotate(90deg);
 }
 
+.water2 {
+  transform: rotate(235deg);
+}
 
 
 @media screen and (max-width: 768px) {
-  .glide__slide--active {
+  #options-type-2 .glide__slide--active {
     transform: translate(0px);
   }
-  
-#options-type-2 .controls {
-  font-size: 10px;
-  transform: translateY(  0px);
-}
+
+  #options-type-2 .controls {
+    font-size: 10px;
+    transform: translateY(0px);
+  }
 
 
 }
@@ -152,7 +197,7 @@ a {
   align-items: center;
 }
 
-#options-type-2.glide .controls .glide__bullet { 
+#options-type-2.glide .controls .glide__bullet {
   margin-left: 4px;
   margin-right: 4px;
   transition: all 0.2s ease;
