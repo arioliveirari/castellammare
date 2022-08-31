@@ -15,7 +15,7 @@ const OverTheFold = ({ children }: any) => (
                   Baires Navega
                 </span>
                 <div className={usw(styles,["row"],["row"])}>
-                  <div className={usb(["col-md-12", "m-auto" ,"col-10"])}>
+                  <div className={usb(["col-md-10","m-auto" ,"col-12"])}>
                     <div className={usc(styles, ["paragraphOver"])} >
                       <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  has been the industry standard dummy text ever  since the 1500s, when an unknown printer took

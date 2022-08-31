@@ -133,6 +133,10 @@ a {
   border: none;
 }
 
+#gallery-image-mobile .icon-chevron_right{
+height: 43px;
+}
+
 #mango-slider .glide__bullet--active {
   width: 10px;
   height: 10px;

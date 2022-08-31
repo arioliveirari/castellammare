@@ -31,9 +31,21 @@ const Gallery = () => {
     const glide = new Glide('#gallery-image-mobile', {
       type: "slider",
       focusAt: 'center',
-      perView: 1.5,
+      perView: 1.8,
       startAt: 0,
       peek: 0,
+      gap: 15,
+      breakpoints: {
+        475: {
+          perView: 1.5
+        },
+        375: {
+          perView: 1.3
+        },
+        320:{
+          perView: 1.2
+        }
+      }
     })
     glide.on('run', () => {
       // USE STATE
@@ -52,7 +64,7 @@ const Gallery = () => {
     <>
       <div className={usw(styles, ["gallery"], ["container-fluid"])}>
 
-        <Tittles styling={{paddingBottom:"200px"}} tittle='galeria' />
+        <Tittles styling={{ paddingTop: "70px" }} tittle='galeria' />
         <div className={usw(styles, [], ["container"])}>
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
@@ -78,9 +90,7 @@ const Gallery = () => {
                       <div className="glide__arrows" data-glide-el="controls">
                         <div className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></div>
                       </div>
-                      <div className="glide__bullets" data-glide-el="controls[nav]">
-                        {items.map((i, index) => (<button key={`${index}`} className="glide__bullet" data-glide-dir={`=${index}`}></button>))}
-                      </div>
+
                       <div className="glide__arrows" data-glide-el="controls">
                         <div className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></div>
                       </div>

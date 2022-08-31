@@ -74,7 +74,7 @@ const Boats = () => {
 
           </div>
 
-          <div className={usw(styles, ["botContent", "botContent-reverse"], ["row", "pb-5"])}>
+          <div className={usw(styles, ["botContent", "botContent-reverse"], ["row"])}>
 
             <div className={usb(["col-md-12"])}>
 

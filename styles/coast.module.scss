@@ -1,7 +1,7 @@
 // @import "variables.module.scss";
 .coastContainer {
   width: 100%;
-  height: 200px;
+  height: 500px;
   justify-content: baseline;
   .coast {
     background-position: center;
@@ -10,30 +10,5 @@
     width: 100%;
     height: 100%;
     background-image: url(/images/arena_olas.png);
-  }
-}
-@media screen and (max-width: 768px) {
-  .coastContainer {
-    height: 415px;
-    .coast {
-      background-position: initial;
-    }
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .coastContainer {
-    height: 370px;
-    .coast {
-      background-position: initial;
-    }
-  }
-}
-@media screen and (max-width: 375px) {
-  .coastContainer {
-    height: 275px;
-    .coast {
-      background-position: initial;
-    }
   }
 }

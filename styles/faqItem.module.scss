@@ -8,10 +8,10 @@
     p {
         margin: 0%;
     }
-    span{
+    span {
         height: 40px;
     }
-    
+
     .content {
         align-items: center;
         text-align: left;
@@ -33,12 +33,13 @@
             opacity: 0%;
             height: 0px;
             text-align: left;
+            padding-left: 55px;
             transition: all ease 0.4s;
-            p{
-                
-                height: 0px;
+            margin-bottom: 5px;
+            p {
+                opacity: 0;
+                transition: all ease 0.1s;
             }
-            
         }
         .isDown {
             cursor: pointer;
@@ -48,21 +49,37 @@
             justify-content: left;
             text-align: left;
             align-items: center;
-            transition: all ease 0.4s;
-            margin-left: 55px;
+            transition: all ease 0.2s;
+            background-color: #eadec5;
+            padding-left:55px ;
             border-bottom: 0.5px solid $darkBlue;
-           
-          
         }
     }
 }
-@media screen and (max-width:768px) {
-    .faqComponent{
-        .content{
-            .question{
-                .text{
+@media screen and (max-width: 768px) {
+    .faqComponent {
+        .content {
+            .question {
+                .text {
                     font-size: 25px;
                 }
+            }
+            .isDown{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 475px) {
+    .faqComponent {
+        .content {
+            .question {
+                .text {
+                    font-size: 25px;
+                }
+            }
+            .isDown{
+                font-size: 20px;
             }
         }
     }
