@@ -26,7 +26,7 @@ const Boats = () => {
         <div className={usc(styles, ["desktopAnimations"])} >
           <RiveAnimation bottom={580} right={100} animationName="water_2" extraClassName="rotationAnimation water2" />
           <RiveAnimation bottom={850} left={0} animationName="water_1" />
-          <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
+          <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
         </div>
         <div className={usc(styles, ["mobileAnimations"])} >
           <RiveAnimation bottom={-100} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
@@ -44,9 +44,10 @@ const Boats = () => {
             <div className={usb(["col-12"])}>
               <div className={usb(["row"])}>
                 <div className={usb(["col-md-7", "col-12" ])}>
-                  {/* <div className={usc(styles, ["botPic"])}>
-                  </div> */}
-                  <MangoSlider />
+                  <div className={usc(styles, ["botPic"])}>
+                  </div>
+                <MangoSlider />
+               
                 </div>
                 <div className={usb(["col-md-4", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
