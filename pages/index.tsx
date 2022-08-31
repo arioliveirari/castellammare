@@ -20,7 +20,6 @@ const Index = (props: any) => {
 
   return (
     <div className={usc(styles, ['main'])}>
-      
       <Header />
       <OverTheFold />
       <Waves />
