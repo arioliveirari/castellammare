@@ -1,8 +1,5 @@
 @import "variables.module.scss";
 
-.toolTipText{
-  color: white;
-}
 
 .reservar {
   font-family: DMSans;
@@ -48,10 +45,12 @@
 .ToolTip {
   position: fixed;
   transform: translateX(-50%);
-  background: grey;
+  background: #FFFFFFA6;
   padding: 2px 8px;
   border-radius: 4px;
-  opacity: 0;
+  
+  text-align: left;
+  color: #002848;
   p {
     margin-bottom: 0px;
   }

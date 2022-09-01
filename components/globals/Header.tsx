@@ -93,7 +93,7 @@ const Links = () => {
           </div>
         </div>
       </div>
-      <ToolTip divRef={contactRef}><p className={usc(styles,["tootlTipText"])}>contactanos para consultar disponibilidad</p></ToolTip>
+      <ToolTip divRef={contactRef}><p className={usc(styles,["tootlTipText"])}>contactanos para consultar <br/> disponibilidad</p></ToolTip>
     </>
   )
 }
