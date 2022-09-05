@@ -15,7 +15,7 @@ import Coast from '../components/Coast';
 import FaqItem from '../components/FaqItem';
 import BackgroundOnly from '../components/BackgroundOnly';
 import styles from '../styles/globals.module.scss';
-import MangoSlider from '../components/mangoSlider';
+// import MangoSlider from '../components/MangoSlider';
 const Index = (props: any) => {
 
   return (
