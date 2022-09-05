@@ -1,3 +1,23 @@
+NEW TODO
+1) fav icon
+2) min-height 700px EN EL OverTheFold y no en el containerOver
+3) line-height: 60px (DESKTOP) en el titutlo del overthefold (PROBAR EN res 1100 x 626)
+* Despues hacer QA de mobile 
+4) El titulo del overthefold deberia ser un h1 ( ESTO ES PARA EL SEO DE GOOGLE )
+5) Texto(title y descripcion) overTheFOld estqan desalineados
+6) Mascaras en boats
+7) animacion mobile de barquito quedo la vieja
+8) Imagen que cambia entre agua y playa todavia esta estirada
+9) Slider de reviews, arreglar texto dentro de card, centrar dicho texto y  achicar line height a 23px
+10) Sacar la linea de abajo de todos los titulos, pero posicionar todos los titulso arriba a la izquierda 
+DENTRO de los containers de bootstrap
+11) Tooltip de boton adquirir voucher que este a la izquierda y no abajo
+-----------
+
+
+
+
+
 // TODO
 1) Aplicar fix de arrows y bullets en el slider de gallery como el fix que esta en el SLiders component(done)
 2) Achicar el alto de la transicion del agua a la tierra, y pedirle a Flor un pattern que arranque como termine para el repeat x
