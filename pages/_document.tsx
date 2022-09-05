@@ -15,7 +15,7 @@ class MyDocument extends Document {
     return (
       <Html lang={"ES"}>
         <Head>
-          <link rel="shortcut icon" href={'/images/favicon.ico'} />
+          <link rel="shortcut icon" href={'/images/logo.ico'} />
           {/* fonts */}
           <script
             async

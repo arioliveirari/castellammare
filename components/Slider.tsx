@@ -17,12 +17,17 @@ const Slider = () => {
           perView: 3.2,
           gap: 50
         },
+        1200:{
+          perView:2.8,
+          gap:50
+        },
         1024: {
-          perView: 2.2,
+          perView: 2,
+          peek:100,
           gap: 30
         },
         768: {
-          perView: 2.1,
+          perView: 1.5,
           gap: 30
         },
         425: {

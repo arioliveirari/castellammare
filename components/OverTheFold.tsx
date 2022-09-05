@@ -8,20 +8,16 @@ const OverTheFold = ({ children }: any) => (
     <div className={usc(styles, ["mask"])}>
       <div className={usb(['container', 'm-auto'])}>
         <div className={usw(styles, ["rowContainer"], ["row"])}>
-          <div className={usb(["col-md-5", "p-0","col-12"])}>
+          <div className={usb(["col-md-5", "p-0", "col-12"])}>
             <div className={usc(styles, ['containerOver'])}>
               <div className={usc(styles, ["textOver"])}>
-                <span className={usc(styles, ["tittleOver"])}>
+                <h1 className={usc(styles, ["tittleOver"])}>
                   Baires Navega
-                </span>
-                <div className={usw(styles,["row"],["row"])}>
-                  <div className={usb(["col-md-10","m-auto" ,"col-12"])}>
-                    <div className={usc(styles, ["paragraphOver"])} >
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  has been the industry standard dummy text ever  since the 1500s, when an unknown printer took
-                      </p>
-                    </div>
-                  </div>
+                </h1>
+                <div className={usc(styles, ["paragraphOver"])} >
+                  <h2>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  has been the industry standard dummy text ever  since the 1500s, when an unknown printer took
+                  </h2>
                 </div>
                 <a href='#form' className={usc(styles, ["arrowButton"])}>
                   <span className='icon-arrow-right'></span>

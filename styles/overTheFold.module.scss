@@ -2,6 +2,7 @@
 
 .OverTheFold {
   margin-bottom: 25px;
+  min-height: 700px;
   padding: 0%;
   box-sizing: border-box;
   height: 90vh;
@@ -53,19 +54,22 @@
     margin-top: 20vh;
     height: 80vh;
     min-height: 700px;
+    
   }
   .tittleOver {
     max-width: 1024px;
     font-size: 73px;
     font-family: caslon;
     font-weight: 100;
+    line-height: 60px;
+    margin-bottom: 20px;
   }
   .paragraphOver {
-    p {
+    h2 {
       font-family: roboto;
       font-weight: 400;
       font-size: 18px;
-      max-width: 1024px;
+      max-width: 425px;
       word-break: keep-all;
       white-space: normal;
       word-spacing: 1px;
