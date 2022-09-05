@@ -108,8 +108,8 @@ const Boats = () => {
                   <p className={usw(styles, ["boatName"], ["m-auto me-0"])}>
                     Velero modelo gtx
                   </p>
-                  {/* <div className={usc(styles, ["botPic"])}>
-                  </div> */}
+                  <div className={usc(styles, ["botPic"])}>
+                  </div>
                   <KiwiSlider />
                 </div>
               </div>

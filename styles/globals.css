@@ -224,10 +224,12 @@ height: 43px;
     font-size: 10px;
     transform: translateY(0px);
   }
-
-
 }
-
+@media screen and (max-width:768px){
+  .icon-instagram{
+    margin-left: 0%;
+  }
+}
 
 #options-type-2.glide .controls {
   display: flex;

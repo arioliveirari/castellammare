@@ -12,7 +12,7 @@ const Button = ({ onClick }: ButtonProps) => {
   return (
     <>
       <div ref={buttonRef} onClick={() => onClick()} className={usc(styles, ["reservar"])} >
-        <p>adquirir voucher</p>
+        <p>ADQUIRIR VOUCHER</p>
       </div>
       <ToolTip  divRef={buttonRef}><p className={usc(styles,["toolTipText"])} >contactanos para consultar <br /> disponibilidad</p></ToolTip>
     </>

@@ -19,12 +19,14 @@
   margin-bottom: 25px;
   margin-top: 20px;
   font-size: 16px;
+
   a,
   p {
     text-decoration: none;
     color: $beige;
     margin-bottom: 0px;
     pointer-events: none;
+    text-transform: capitalize;
   }
   &:hover{
     background-color: #E6A029;
