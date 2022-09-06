@@ -1,9 +1,18 @@
 import React, { CSSProperties, ReactElement } from "react";
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/button.module.scss';
+import { type } from "os";
 
 
-const ToolTip = ({ divRef, children }: { divRef: React.RefObject<any>, children: ReactElement }) => {
+
+export type Prop = {
+    top: number,
+    left: number
+}
+
+
+
+const ToolTip = ({ divRef, children, top, left }: { divRef: React.RefObject<any>, children: ReactElement, top: Prop, left: Prop }) => {
     const [active, setActive] = React.useState(false);
     React.useEffect(() => {
         if (divRef && divRef.current) {
@@ -19,8 +28,8 @@ const ToolTip = ({ divRef, children }: { divRef: React.RefObject<any>, children:
     const buildPosition = () => {
         if (active && divRef && divRef.current) {
             return {
-                top: divRef.current.getBoundingClientRect().top + 50,
-                left: divRef.current.getBoundingClientRect().left + ((divRef.current.getBoundingClientRect().right - divRef.current.getBoundingClientRect().left) / 2),
+                top: divRef.current.getBoundingClientRect().top + { top },
+                left: divRef.current.getBoundingClientRect().left + ((divRef.current.getBoundingClientRect().right - divRef.current.getBoundingClientRect().left) + { left }),
             }
         } else {
             return {
