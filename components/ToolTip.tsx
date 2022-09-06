@@ -5,14 +5,16 @@ import { type } from "os";
 
 
 
-export type Prop = {
-    top: number,
-    left: number
+interface Prop  {
+    top?: any,
+    left?: any
 }
 
 
 
-const ToolTip = ({ divRef, children, top, left }: { divRef: React.RefObject<any>, children: ReactElement, top: Prop, left: Prop }) => {
+
+
+const ToolTip = ({ divRef, children, top, left }: { divRef: React.RefObject<any>, children: ReactElement, top:Prop, left:Prop }) => {
     const [active, setActive] = React.useState(false);
     React.useEffect(() => {
         if (divRef && divRef.current) {

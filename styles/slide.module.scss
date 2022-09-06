@@ -72,6 +72,38 @@
         }
     }
 }
+@media screen and (max-width: 992px) {
+    .slideContainer {
+        .textContainer {
+            background-color: #fff;
+            word-wrap: break-word;
+            white-space: pre-line;
+            display: flex;
+            height: 60%;
+            justify-content: center;
+            align-items: center;
+            word-break: keep-all;
+            padding: 30px;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: roboto;
+            font-style: italic;
+            line-height: 23px;
+            word-spacing: 5px;
+            border-radius: 16px 16px 0px 0px;
+        }
+
+        .personContainer {
+            .name {
+                font-size: 20px;
+            }
+            .ocupation {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .slideContainer {
         .textContainer {
@@ -91,7 +123,6 @@
             line-height: 22px;
             word-spacing: 5px;
             border-radius: 16px 16px 0px 0px;
-        
         }
         .personContainer {
             .name {
