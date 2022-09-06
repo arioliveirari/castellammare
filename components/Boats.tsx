@@ -3,7 +3,7 @@ import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/boats.module.scss';
 import Tittles from './Tittles';
 import BoatsMobile from '../components/BoatsMobile';
-import MangoSlider from './mangoSlider';
+import MangoSlider from './MangoSlider';
 import KiwiSlider from './KiwiSlider';
 import { RiveAnimation } from './RiveAnimation';
 
