@@ -85,15 +85,15 @@ const Links = () => {
         <a href="#" className={usc(styles, ["headerLink"])}>Sobre nosotros</a>
         <a href="#" className={usc(styles, ["headerLink"])}>Servicios</a>
         <div className={usc(styles, ["icons"])}>
-          <div  className={usc(styles, ["linkBtn"])}>
-            <span ref={contactRef} className="icon-instagram" />
-          </div >
+          <div className={usc(styles, ["linkBtn"])}>
+            <span  ref={contactRef} className="icon-instagram" />
+          </div>
           <div className={usc(styles, ["linkBtn"])}>
             <span className="icon-wpp" />
           </div>
         </div>
       </div>
-      <ToolTip top={-5} left={90} divRef={contactRef}><p className={usc(styles,["tootlTipText"])}>contactanos para consultar <br/> disponibilidad</p></ToolTip>
+      <ToolTip topValue={50} leftValue={2} divRef={contactRef}><p className={usc(styles,["tootlTipText"])}>contactanos para consultar <br/> disponibilidad</p></ToolTip>
     </>
   )
 }

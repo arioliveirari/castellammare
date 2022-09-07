@@ -1,5 +1,27 @@
 .container {
     width: 100vw;
-    height: 600px;
-    background-color: black;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    .image {
+        background-image: url(/images/person1.jpg);
+        height: 100px;
+        width: 100px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 100%;
+        margin: auto;
+        transition: all ease 0.4s;
+        position: relative;
+        &:hover {
+            height: 120px;
+            width: 120px;
+        }
+    }
+}
+.image::before{
+    content: attr(data-tooltip);
+    color: aliceblue;
+    position: absolute;
 }

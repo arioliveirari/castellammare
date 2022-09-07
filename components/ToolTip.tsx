@@ -1,20 +1,15 @@
-import React, { CSSProperties, ReactElement } from "react";
+import React, { CSSProperties, ReactElement, useEffect, useState } from "react";
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/button.module.scss';
-import { type } from "os";
-
-
-
-interface Prop  {
-    top?: number,
-    left?: number
-}
 
 
 
 
+const ToolTip = ({ divRef, children, topValue, leftValue }: { divRef: React.RefObject<any>, children: ReactElement, topValue:number, leftValue:number }) => {
+   
 
-const ToolTip = ({ divRef, children, top, left }: { divRef: React.RefObject<any>, children: ReactElement, top:number, left:number }) => {
+const top = topValue
+const left = leftValue
     const [active, setActive] = React.useState(false);
     React.useEffect(() => {
         if (divRef && divRef.current) {
@@ -30,8 +25,8 @@ const ToolTip = ({ divRef, children, top, left }: { divRef: React.RefObject<any>
     const buildPosition = () => {
         if (active && divRef && divRef.current) {
             return {
-                top: divRef.current.getBoundingClientRect().top + { top },
-                left: divRef.current.getBoundingClientRect().left + ((divRef.current.getBoundingClientRect().right - divRef.current.getBoundingClientRect().left) )+ { left },
+                top: divRef.current.getBoundingClientRect().top + top,
+                left: divRef.current.getBoundingClientRect().left + ((divRef.current.getBoundingClientRect().right - divRef.current.getBoundingClientRect().left) / left ),
             }
         } else {
             return {
