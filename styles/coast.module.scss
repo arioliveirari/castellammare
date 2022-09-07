@@ -12,6 +12,11 @@
     background-image: url(/images/arena_olas.png);
   }
 }
+@media screen and (max-width:992px) {
+.coastContainer{
+  height: 630px;
+}  
+}
 
 @media screen and (max-width: 768px)  {
   .coastContainer {

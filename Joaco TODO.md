@@ -11,7 +11,7 @@ NEW TODO
 <!-- 9) Slider de reviews, arreglar texto dentro de card, centrar dicho texto y  achicar line height a 23px -->
 <!-- 10) Sacar la linea de abajo de todos los titulos, pero posicionar todos los titulso arriba a la izquierda 
 DENTRO de los containers de bootstrap -->
-11) Tooltip de boton adquirir voucher que este a la izquierda y no abajo
+<!-- 11) Tooltip de boton adquirir voucher que este a la izquierda y no abajo -->
 -----------
 
 
