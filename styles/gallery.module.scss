@@ -22,7 +22,7 @@
   overflow: hidden;
   .sliderImage {
     transition: all ease 0.4s;
-    height: 270px;
+    height: 380px;
     width: 100%;
   }
   .galleryContainer {
@@ -40,14 +40,7 @@
     filter: grayscale(0);
   }
 }
-.sliderContainer {
-  display: none;
-  .sliderImage {
-    height: 300px;
-    width: 50%;
-    aspect-ratio: 1/1;
-  }
-}
+
 
 @media screen and (max-width: 768px) {
   .galleryContainerMobile {

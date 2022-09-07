@@ -42,7 +42,7 @@ const Gallery = () => {
         375: {
           perView: 1.3
         },
-        320:{
+        320: {
           perView: 1.2
         }
       }
@@ -63,8 +63,31 @@ const Gallery = () => {
   return (
     <>
       <div className={usw(styles, ["gallery"], ["container-fluid"])}>
+      <Tittles styling={{ paddingTop: "70px" }} tittle='galeria' />
+        <div className={usb(["container-fluid"])} >
+          <div className={usc(styles, ["galleryContainerMobile"])}>
+            <div className="glide" id="gallery-image-mobile">
+              <div className="glide__track" data-glide-el="track">
+                <ul className="glide__slides">
+                  {items.map((i, index) => (
+                    <div className="glide__slide" key={`image-${i}`}>
+                      <img src={i} className={usc(styles, ["sliderImage"])} height="100" alt="pic goes here" />
+                    </div>
+                  ))}
+                </ul>
+                <div className="controls">
+                  <div className="glide__arrows" data-glide-el="controls">
+                    <div className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></div>
+                  </div>
 
-        <Tittles styling={{ paddingTop: "70px" }} tittle='galeria' />
+                  <div className="glide__arrows" data-glide-el="controls">
+                    <div className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={usw(styles, [], ["container"])}>
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
@@ -75,28 +98,6 @@ const Gallery = () => {
                     {items.map((i) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
                   </Masonry>
                 </ResponsiveMasonry>
-              </div>
-              <div className={usc(styles, ["galleryContainerMobile"])}>
-                <div className="glide" id="gallery-image-mobile">
-                  <div className="glide__track" data-glide-el="track">
-                    <ul className="glide__slides">
-                      {items.map((i, index) => (
-                        <div className="glide__slide" key={`image-${i}`}>
-                          <img src={i} className={usc(styles, ["sliderImage"])} height="100" alt="pic goes here" />
-                        </div>
-                      ))}
-                    </ul>
-                    <div className="controls">
-                      <div className="glide__arrows" data-glide-el="controls">
-                        <div className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></div>
-                      </div>
-
-                      <div className="glide__arrows" data-glide-el="controls">
-                        <div className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

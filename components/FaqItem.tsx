@@ -25,11 +25,16 @@ const FaqItem = () => {
     newItems[index].isDown = !newItems[index].isDown;
     setItems(newItems)
   }
-  
+
 
   return (
     <>
-      <Tittles styling={{ backgroundColor: "#f1e6d0" }} tittle='Preguntas Frecuentes' />
+      {/* <Tittles styling={{ backgroundColor: "#f1e6d0" }} tittle='Preguntas Frecuentes' /> */}
+      <div className={usc(styles, ["title"])} >
+        <p>
+          Preguntas Frecuentes
+        </p>
+      </div>
       <div className={usw(styles, ["faqComponent"], ["container-fluid"])}>
         <div className={usb(["container"])}>
           <div className={usb(["row"])}>

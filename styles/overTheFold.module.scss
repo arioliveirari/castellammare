@@ -45,6 +45,7 @@
   color: $beige;
   display: flex;
   min-height: 700px;
+  justify-content: center;
   .textOver {
     align-items: center;
     max-width: 1024px;
@@ -65,6 +66,8 @@
     margin-bottom: 20px;
   }
   .paragraphOver {
+    text-align: center;
+    justify-content: center;
     h2 {
       font-family: roboto;
       font-weight: 400;
@@ -121,12 +124,12 @@
     flex-direction: column;
   }
   .containerOver {
-    justify-content: flex-start;
+   
     padding-top: 50px;
     height: 50vh;
     min-height: unset;
     .textOver {
-      justify-content: flex-start;
+   
 
       .tittleOver {
         font-family: roboto;

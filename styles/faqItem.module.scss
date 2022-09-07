@@ -1,5 +1,46 @@
 @import "variables.module.scss";
 
+.title {
+    background-color: $beige;
+    height: fit-content;
+    p {
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        font-family: calson;
+        font-weight: 600;
+        font-size: 68px;
+        color: #002848;
+    }
+}
+@media screen and (max-width: 992px) {
+    .title {
+        p {
+            text-align: end;
+            align-items: center;
+            font-weight: bold;
+            min-width: 40%;
+            width: fit-content;
+            font-size: 40pt;
+            font-weight: 600;
+            position: relative;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .title {
+        p {
+            text-align: end;
+            align-items: center;
+            font-weight: bold;
+            min-width: 30%;
+            width: fit-content;
+            font-size: 30pt;
+            font-weight: 600;
+            position: relative;
+        }
+    }
+}
 .faqComponent {
     background-color: $beige;
     text-align: left;
@@ -51,7 +92,7 @@
             align-items: center;
             transition: all ease 0.2s;
             background-color: #eadec5;
-            padding-left:55px ;
+            padding-left: 55px;
             border-bottom: 0.5px solid $darkBlue;
         }
     }
@@ -64,7 +105,7 @@
                     font-size: 25px;
                 }
             }
-            .isDown{
+            .isDown {
                 font-size: 14px;
             }
         }
@@ -78,7 +119,7 @@
                     font-size: 25px;
                 }
             }
-            .isDown{
+            .isDown {
                 font-size: 20px;
             }
         }
