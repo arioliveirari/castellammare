@@ -3,6 +3,7 @@
   background-color: $ligthBlue;
   position: relative;
 margin-bottom: -300px;
+overflow: hidden;
 }
 .topContent {
   display: flex;
@@ -184,6 +185,7 @@ margin-bottom: -300px;
 
 .mobileAnimations {
   display: none;
+  overflow: hidden;
 }
 
 .mobile {
