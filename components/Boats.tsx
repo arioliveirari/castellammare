@@ -9,7 +9,7 @@ import { RiveAnimation } from './RiveAnimation';
 
 const boatsData = [
   { id: 1, years: 5, travels: 80, reversedDrop: true, passanger: 5, imageUrl: "/images/kiwi.jpg" },
-  { id: 2, years: 5, travels: 80, reversedDrop: false, passanger: 4, imageUrl: "/images/mango.jpg" }
+  { id: 2, years: 5, travels: 80, reversedDrop: false, passanger: 4, imageUrl: "coast /images/mango.jpg" }
 ]
 
 
@@ -29,7 +29,7 @@ const Boats = () => {
           <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
         </div>
         <div className={usc(styles, ["mobileAnimations"])} >
-          <RiveAnimation bottom={0} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
+          {/* <RiveAnimation bottom={0} right={0} animationName="water_2" extraClassName="rotationAnimation water2" /> */}
           <RiveAnimation bottom={880} left={-70} animationName="water_1" />
           <RiveAnimation top={390} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
         </div>
