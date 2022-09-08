@@ -8,8 +8,8 @@ import KiwiSlider from './KiwiSlider';
 import { RiveAnimation } from './RiveAnimation';
 
 const boatsData = [
-  { id: 1, years: 5, travels: 80, reversedDrop: true, passanger: 5, imageUrl: "../public/images/kiwi.jpg" },
-  { id: 2, years: 5, travels: 80, reversedDrop: false, passanger: 4, imageUrl: "../public/images/mango.jpg" }
+  { id: 1, years: 5, travels: 80, reversedDrop: true, passanger: 5, imageUrl: "/images/kiwi.jpg" },
+  { id: 2, years: 5, travels: 80, reversedDrop: false, passanger: 4, imageUrl: "/images/mango.jpg" }
 ]
 
 
@@ -24,12 +24,12 @@ const Boats = () => {
       </div>
       <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
         <div className={usc(styles, ["desktopAnimations"])} >
-          <RiveAnimation bottom={400} right={0}  animationName="water_2" extraClassName="rotationAnimation water2" />
+          <RiveAnimation bottom={400} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
           <RiveAnimation bottom={850} left={0} animationName="water_1" />
           <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
         </div>
         <div className={usc(styles, ["mobileAnimations"])} >
-          <RiveAnimation bottom={-100} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
+          <RiveAnimation bottom={0} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
           <RiveAnimation bottom={880} left={-70} animationName="water_1" />
           <RiveAnimation top={390} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
         </div>
@@ -43,11 +43,11 @@ const Boats = () => {
 
             <div className={usb(["col-12"])}>
               <div className={usb(["row"])}>
-                <div className={usb(["col-md-7", "p-0" ,"col-12" ])}>
+                <div className={usb(["col-md-7", "p-0", "col-12"])}>
                   <div className={usc(styles, ["botPic"])}>
                   </div>
-                <MangoSlider />
-               
+                  <MangoSlider />
+
                 </div>
                 <div className={usb(["col-md-4", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
@@ -65,7 +65,7 @@ const Boats = () => {
                     </div>
                     <div className={usc(styles, ["text"])}>
                       <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui arcu, elementum tortor ut, fringilla finibus ex.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui arcu, elementum tortor ut, fringilla finibus ex.
                       </p>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ const Boats = () => {
                     </div>
                     <div className={usc(styles, ["text"])}>
                       <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui arcu, elementum tortor ut, fringilla finibus ex.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui arcu, elementum tortor ut, fringilla finibus ex.
                       </p>
                     </div>
                   </div>

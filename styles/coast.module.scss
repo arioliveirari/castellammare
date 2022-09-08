@@ -14,12 +14,14 @@
 }
 @media screen and (max-width:992px) {
 .coastContainer{
-  height: 630px;
+  height: 760px;
 }  
 }
 
-@media screen and (max-width: 768px)  {
-  .coastContainer {
-    height: 315px;
+@media screen and (max-width:768px) {
+  .coastContainer{
+    .coast{
+      background-size: cover;
+    }
   }
 }
