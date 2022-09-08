@@ -30,8 +30,8 @@ const Boats = () => {
         </div>
         <div className={usc(styles, ["mobileAnimations"])} >
           <RiveAnimation bottom={0} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
-          <RiveAnimation bottom={880} left={-70} animationName="water_1" />
-          <RiveAnimation top={390} bottom={0} left={0} right={0} animationName="sailing" className="sailing" extraClassName="sailingAnimation" />
+          <RiveAnimation top={0} left={-70} animationName="water_1" />
+          <RiveAnimation top={390} bottom={0} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
         </div>
         <div className={usb(["container"])}>
           <div className={usw(styles, ["topContent"], ["row", "pb-5"])}>
