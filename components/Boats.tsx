@@ -117,11 +117,7 @@ const Boats = () => {
           </div>
         </div>
         <div className={usc(styles, ["mobile"])}>
-          {
-            boatsData.map((i) => (
-              <BoatsMobile key={i.id} imageUrl={i.imageUrl} reversedDrop={i.reversedDrop} years={i.years} travels={i.travels} passangers={i.passanger} />
-            ))
-          }
+          <BoatsMobile />
         </div>
       </div>
 
