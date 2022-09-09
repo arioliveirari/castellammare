@@ -144,6 +144,7 @@
         }
         font-size: 15pt;
         text-align: center;
+        padding: 0px 15px;
       }
     }
   }
@@ -179,6 +180,6 @@
 }
 @media screen and (max-width: 375px) {
   .formContainer {
-    margin-top: 25vh;
+    margin-top: 20vh;
   }
 }

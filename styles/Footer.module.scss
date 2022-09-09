@@ -72,7 +72,7 @@
                         justify-content: center;
                         color: $darkBlue;
                         margin: 10px;
-                        &:hover{
+                        &:hover {
                             filter: brightness(0.8);
                         }
                     }
@@ -86,11 +86,11 @@
             font-weight: 400;
             text-transform: uppercase;
             font-size: 20px;
-           
+
             flex-direction: column;
             align-items: center;
             text-align: justify;
-          
+
             .copyrigth {
                 font-size: 13px;
             }
@@ -98,16 +98,15 @@
                 color: $beige;
             }
             .iconContainer {
-    
                 .icons {
-                 text-decoration: none;
+                    text-decoration: none;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: center;
                     text-align: center;
                     margin-bottom: 40px;
-                    a{
+                    a {
                         text-decoration: none;
                     }
                     .linkBtn {
@@ -133,15 +132,19 @@
                     color: $beige;
                     align-items: center;
                     justify-content: center;
-                    .logoPic {
-                        width: 100px;
-                        height: auto;
-                        aspect-ratio: 1/1;
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;
-                        margin-right: 15px;
-                    }
+                        .logoPic {
+                            width: 95px;
+                            /* height: auto; */
+                            aspect-ratio: 1/1;
+                            order: 1;
+                            margin-top: -45px;
+                            float: left;
+                            background-image: url(/images/logo_texto.png);
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                    
                     .logoText {
                         font-family: calson;
                         font-size: 24px;
@@ -152,13 +155,13 @@
     }
 }
 
-@media screen and (max-width:768px) {
-    .footer{
-        .footerContainer{
-            .desktopContent{
+@media screen and (max-width: 768px) {
+    .footer {
+        .footerContainer {
+            .desktopContent {
                 display: none;
             }
-            .mobileContent{
+            .mobileContent {
                 display: flex;
             }
         }

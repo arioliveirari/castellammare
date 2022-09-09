@@ -49,14 +49,9 @@ export default Footer
 
 const Logo = () => (
     <div className={usc(styles, ["logo"])}>
-        <img src="/images/logo.svg" alt='' className={usc(styles, ["logoPic"])} />
-        <div className={usc(styles, ["logoText"])}>
-            Baires
-            <br />
-            navega
-        </div>
+      <div className={usc(styles, ["logoPic"])} > </div>
     </div>
-);
+  );
 const Icons = () => (
     <div className={usc(styles, ["links"])} >
         <div className={usc(styles, ["icons"])}>

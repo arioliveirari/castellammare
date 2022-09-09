@@ -14,7 +14,7 @@ const BoatsMobile = () => {
             <div className={usw(styles, ["boatsMobileModule"], ["container-fluid", "p-0"])} >
                 <div className={usb(["row"])}>
                     <div className={usb(["col-12"])}>
-                        <MangoSlider />
+                        <KiwiSlider />
                         <div className={usc(styles, ["dataContainer"])}>
                             <div className={usb(["row"])}>
                                 <div className={usb(["col-12"])}>
@@ -83,7 +83,7 @@ const BoatsMobile = () => {
                             </div>
                             <div className={usb(["row"])}>
                                 <div className={usb(["col-12", "m-auto"])}>
-                                    <div className={usc(styles, ["text"])}>
+                                    <div className={usc(styles, ["text", "botText"])}>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui arcu, elementum tortor ut, fringilla finibus ex.
                                         </p>
