@@ -35,13 +35,13 @@ const Boats = () => {
         </div>
         <div className={usb(["container"])}>
           <div className={usw(styles, ["topContent"], ["row", "pb-5"])}>
-            <div className={usb(["col-12"])}>
+            <div className={usb(["col-12", "p-0"])}>
               <p className={usw(styles, ["boatName"], [""])}>
                 modelo de velero gtx 2
               </p>
             </div>
 
-            <div className={usb(["col-12"])}>
+            <div className={usb(["col-12", "p-0"])}>
               <div className={usb(["row"])}>
                 <div className={usb(["col-md-7", "p-0", "col-12"])}>
                   <div className={usc(styles, ["botPic"])}>

@@ -5,17 +5,18 @@
 .tittleContainer {
     text-transform: capitalize;
     min-width: 40%;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     display: flex;
     position: relative;
     color: #002848;
-    justify-content: right;
+
     background-color: transparent;
     font-size: 68px;
     font-family: calson;
     font-weight: 600;
     z-index: 10;
+    text-align: left;
     p {
         margin: 0%;
     }
@@ -55,8 +56,3 @@
     }
 }
 
-@media screen and (max-width:375px) {
-    .tittleContainer{
-        font-size: 48pt;
-    }
-}
