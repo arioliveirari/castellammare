@@ -64,7 +64,7 @@ const Gallery = () => {
     <>
       <div className={usw(styles, ["gallery"], ["container-fluid"])}>
       <Tittles styling={{ paddingTop: "70px" }} tittle='galeria' />
-        <div className={usb(["container-fluid"])} >
+        <div className={usb(["container-fluid", "p-0"])} >
           <div className={usc(styles, ["galleryContainerMobile"])}>
             <div className="glide" id="gallery-image-mobile">
               <div className="glide__track" data-glide-el="track">

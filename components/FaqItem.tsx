@@ -29,7 +29,7 @@ const FaqItem = () => {
 
   return (
     <>
-      {/* <Tittles styling={{ backgroundColor: "#f1e6d0" }} tittle='Preguntas Frecuentes' /> */}
+        {/* <Tittles styling={{ paddingTop: "70px", backgroundColor: "#f1e6d0" }} tittle='Preguntas Frecuentes' /> */}
       <div className={usc(styles, ["title"])} >
         <p>
           Preguntas Frecuentes

@@ -20,11 +20,15 @@
     align-items: center;
     justify-content: flex-start;
     .logoPic {
-      width: 45px;
+      width: 110px;
       height: auto;
       aspect-ratio: 1/1;
       order: 1;
       float: left;
+      background-image: url(../public/images/logo_texto.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
     .logoText {
       order: 2;
@@ -207,7 +211,7 @@
     .header-mobile {
       .logo {
         .logoPic {
-          width: 30px;
+          width: 97px;
           height: auto;
           aspect-ratio: 1/1;
           order: 1;

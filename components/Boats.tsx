@@ -20,7 +20,7 @@ const Boats = () => {
         <Tittles styling={{ paddingTop: "600px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
       </div>
       <div className={usc(styles, ["desktopTitle"])} >
-        <Tittles styling={{ paddingTop: "40px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
+        <Tittles styling={{ paddingTop: "70px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
       </div>
       <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
         <div className={usc(styles, ["desktopAnimations"])} >

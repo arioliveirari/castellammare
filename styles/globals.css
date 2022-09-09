@@ -110,6 +110,10 @@ a {
 
 }
 
+#options-type-2 .glide__track{
+  margin-top: -140px;
+}
+
 #mango-slider .controls {
   display: flex;
   transform: translateY(-60px);
@@ -132,8 +136,11 @@ a {
   border-radius: 100%;
   margin: 15px 10px;
   border: none;
+  cursor: pointer;
 }
-
+#mango-slider .glide__arrows{
+  cursor: pointer;
+}
 #mango-slider.glide.glide--ltr.glide--slider.glide--swipeable {
   padding-top: 30px;
 }
@@ -190,8 +197,11 @@ a {
   border-radius: 100%;
   margin: 15px 10px;
   border: none;
+  cursor: pointer;
 }
-
+#kiwi-slider .glide__arrows{
+  cursor: pointer;
+}
 #kiwi-slider .glide__track {
   padding: 0%;
 }

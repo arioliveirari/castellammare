@@ -2,13 +2,12 @@
 .boatsModule {
   background-color: $ligthBlue;
   position: relative;
-margin-bottom: -300px;
-overflow: hidden;
+  margin-bottom: -300px;
+  overflow: hidden;
 }
 .topContent {
   display: flex;
   flex-direction: row-reverse;
- 
 
   .boatName {
     font-family: roboto;
@@ -97,7 +96,7 @@ overflow: hidden;
 .botContent {
   display: flex;
   flex-direction: row-reverse;
-  
+
   .boatName {
     font-family: roboto;
     font-weight: 700;
@@ -185,7 +184,6 @@ overflow: hidden;
 
 .mobileAnimations {
   display: none;
-  overflow: hidden;
 }
 
 .mobile {
@@ -197,6 +195,9 @@ overflow: hidden;
 }
 .desktopTitle {
   display: unset;
+  p {
+    padding: 0%;
+  }
 }
 
 @media screen and (max-width: 992px) {
