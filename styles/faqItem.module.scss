@@ -39,19 +39,13 @@
             font-weight: bold;
             min-width: 30%;
             width: fit-content;
-            font-size: 50pt;
+            font-size: 40pt;
             font-weight: 600;
             position: relative;
         }
     }
 }
-@media screen and (max-width:375px) {
-    .title{
-        p{
-            font-size: 40pt;
-        }
-    }
-}
+
 .faqComponent {
     background-color: $beige;
     text-align: left;
