@@ -74,6 +74,10 @@
       .headerLink {
         font-size: 18px;
         margin: 5px;
+        transition: all ease 0.2s;
+        &:hover{
+          filter: brightness(0.9);
+        }
       }
       .reserva {
         width: fit-content;
