@@ -168,16 +168,11 @@
     }
   }
   .formContainer {
-    margin-top: 20vh;
+    margin-top: 25vh;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .formContainer {
-    margin-top: 10vh;
-  }
-}
-@media screen and (max-width: 375px) {
-  .formContainer {
-    margin-top: 50vw;
+    margin-top: 90vh;
   }
 }
