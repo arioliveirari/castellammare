@@ -39,6 +39,7 @@
 }
 
 .image {
+  height: 100%;
   filter: grayscale(0.8);
   transition: all 0.2s ease;
   &:hover {

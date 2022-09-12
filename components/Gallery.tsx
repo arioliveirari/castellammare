@@ -6,25 +6,41 @@ import styles from '../styles/gallery.module.scss';
 import Glide from '@glidejs/glide'
 import Tittles from './Tittles';
 
-const items = [
-  "./images/gallery/8.jpg",
-  "./images/gallery/15.jpg",
-  "./images/gallery/7.jpg",
-  "./images/gallery/16.jpg",
-  "./images/gallery/2.jpg",
-  "./images/gallery/3.jpg",
-  "./images/gallery/4.jpg",
-  "./images/gallery/5.jpg",
-  "./images/gallery/11.jpg",
-  "./images/gallery/6.jpg",
-  "./images/gallery/9.jpg",
-  "./images/gallery/10.jpg",
-  "./images/gallery/1.jpg",
-  "./images/gallery/12.jpg",
-  "./images/gallery/13.jpg",
+const column1 = [
+  "https://dummyimage.com/401x600/000/fff",// "./images/gallery/8.jpg",
+  "https://dummyimage.com/404x400/000/fff",// "./images/gallery/16.jpg",
+  "https://dummyimage.com/407x600/000/fff",// "./images/gallery/4.jpg",
+  "https://dummyimage.com/410x400/000/fff",// "./images/gallery/6.jpg",
+  "https://dummyimage.com/413x800/000/fff",// "./images/gallery/1.jpg",
+]
+const column2 = [
+  "https://dummyimage.com/402x800/000/fff",// "./images/gallery/15.jpg",
+  "https://dummyimage.com/405x800/000/fff",// "./images/gallery/2.jpg",
+  "https://dummyimage.com/408x400/000/fff",// "./images/gallery/12.jpg",
+  "https://dummyimage.com/411x400/000/fff",// "./images/gallery/9.jpg",
+  "https://dummyimage.com/414x400/000/fff",// "./images/gallery/12.jpg",
+
+]
+const column3 = [
+  "https://dummyimage.com/403x400/000/fff",// "./images/gallery/7.jpg",
+  "https://dummyimage.com/406x400/000/fff",// "./images/gallery/7.jpg",
+  "https://dummyimage.com/409x600/000/fff",// "./images/gallery/3.jpg",
+  "https://dummyimage.com/412x800/000/fff",// "./images/gallery/11.jpg",
+  "https://dummyimage.com/415x600/000/fff",// "./images/gallery/10.jpg",
 ]
 
+const items: string[] = [];
+const items2Col: string[] = [];
+for (let index = 0; index < column1.length; index++) {
+  const element1 = column1[index];
+  const element2 = column2[index];
+  const element3 = column3[index];
+  items.push(element1)
+  items.push(element2)
+  items.push(element3)
+}
 
+console.log("items", items)
 const Gallery = () => {
   const [activeItem, setActiveItem] = React.useState(items[0]);
   React.useEffect(() => {
@@ -95,7 +111,7 @@ const Gallery = () => {
                 <ResponsiveMasonry>
                   <Masonry columnsCount={3}
                     gutter={"10px"}>
-                    {items.map((i) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
+                    {items2Col.map((i) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
                   </Masonry>
                 </ResponsiveMasonry>
               </div>
