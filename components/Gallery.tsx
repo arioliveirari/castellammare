@@ -79,7 +79,7 @@ const Gallery = () => {
   return (
     <>
       <div className={usw(styles, ["gallery"], ["container-fluid"])}>
-      <Tittles styling={{ paddingTop: "70px" }} tittle='galeria' />
+        <Tittles styling={{ paddingTop: "70px" }} tittle='galeria' />
         <div className={usb(["container-fluid", "p-0"])} >
           <div className={usc(styles, ["galleryContainerMobile"])}>
             <div className="glide" id="gallery-image-mobile">
@@ -108,12 +108,13 @@ const Gallery = () => {
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
               <div className={usc(styles, ["galleryContainer"])}>
-                <ResponsiveMasonry>
-                  <Masonry columnsCount={3}
-                    gutter={"10px"}>
-                    {items2Col.map((i) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
-                  </Masonry>
-                </ResponsiveMasonry>
+                <Masonry columnsCount={3}
+                  columnsCountBreakPoints={
+                    { 990: 3 }
+                  }
+                  gutter={"10px"}>
+                  {items.map((i) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
+                </Masonry>
               </div>
             </div>
           </div>
