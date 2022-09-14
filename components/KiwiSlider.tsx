@@ -4,9 +4,11 @@ import styles from '../styles/kiwiSlider.module.scss';
 import Glide from '@glidejs/glide'
 
 const items = [
-    "./images/kiwi.jpg",
-    "./images/kiwi.jpg",
-    "./images/kiwi.jpg"
+    "/images/barco_2_01.jpeg",
+    "/images/barco_2_02.jpeg",
+    "/images/barco_2_03.jpeg",
+    "/images/barco_2_04.jpeg",
+    "/images/barco_2_05.jpeg"
 ]
 const KiwiSlider = () => {
     React.useEffect(() => {

@@ -8,8 +8,8 @@ import KiwiSlider from './KiwiSlider';
 import { RiveAnimation } from './RiveAnimation';
 
 const boatsData = [
-  { id: 1, years: 5, travels: 80, reversedDrop: true, passanger: 5, imageUrl: "/images/kiwi.jpg" },
-  { id: 2, years: 5, travels: 80, reversedDrop: false, passanger: 4, imageUrl: "coast /images/mango.jpg" }
+  { id: 1, years: 5, travels: 80, reversedDrop: true, passanger: 5 },
+  { id: 2, years: 5, travels: 80, reversedDrop: false, passanger: 4 }
 ]
 
 
@@ -17,7 +17,7 @@ const Boats = () => {
   return (
     <>
       <div className={usc(styles, ["mobileTitle"])} >
-        <Tittles styling={{ paddingTop: "500px", backgroundColor: "#86bed5", paddingBottom:"20px" }} tittle='Nuestros Veleros' />
+        <Tittles styling={{ paddingTop: "500px", backgroundColor: "#86bed5", paddingBottom: "20px" }} tittle='Nuestros Veleros' />
       </div>
       <div className={usc(styles, ["desktopTitle"])} >
         <Tittles styling={{ paddingTop: "70px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
@@ -37,7 +37,7 @@ const Boats = () => {
           <div className={usw(styles, ["topContent"], ["row", "pb-5"])}>
             <div className={usb(["col-12", "p-0"])}>
               <p className={usw(styles, ["boatName"], [""])}>
-                modelo de velero gtx 2
+                Phantom 19
               </p>
             </div>
 
@@ -49,23 +49,19 @@ const Boats = () => {
                   <MangoSlider />
 
                 </div>
-                <div className={usb(["col-md-4", "col-12"])}>
+                <div className={usb(["col-md-5", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
                     <div className={usc(styles, ["boatData", "firstData"])}>
-                      <p className={usc(styles, ["boatText"])}>Años Navegando</p>
-                      <p className={usc(styles, ["boatNumber"])}>5</p>
+                      <p className={usc(styles, ["boatText"])}>mts de manga</p>
+                      <p className={usc(styles, ["boatNumber"])}>2,07</p>
                     </div>
                     <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatText"])}>tripulantes</p>
-                      <p className={usc(styles, ["boatNumber"])}>4</p>
-                    </div>
-                    <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatText"])}>Viajes</p>
-                      <p className={usc(styles, ["boatNumber"])}>80</p>
+                      <p className={usc(styles, ["boatText"])}>mts de eslora</p>
+                      <p className={usc(styles, ["boatNumber"])}>5,47</p>
                     </div>
                     <div className={usc(styles, ["text"])}>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui arcu, elementum tortor ut, fringilla finibus ex.
+                        Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja.
                       </p>
                     </div>
                   </div>
@@ -83,30 +79,26 @@ const Boats = () => {
 
             <div className={usb(["col-12"])}>
               <div className={usb(["row"])}>
-                <div className={usb(["col-md-4", "col-12"])}>
+                <div className={usb(["col-md-5", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
                     <div className={usc(styles, ["boatData", "firstData"])}>
-                      <p className={usc(styles, ["boatNumber"])}>5</p>
-                      <p className={usc(styles, ["boatText"])}>Años Navegando</p>
+                      <p className={usc(styles, ["boatNumber"])}>2,58</p>
+                      <p className={usc(styles, ["boatText"])}>Manga en mts</p>
                     </div>
                     <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatNumber"])}>5</p>
-                      <p className={usc(styles, ["boatText"])}>tripulantes</p>
-                    </div>
-                    <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatNumber"])}>80</p>
-                      <p className={usc(styles, ["boatText"])}>Viajes</p>
+                      <p className={usc(styles, ["boatNumber"])}>7,20</p>
+                      <p className={usc(styles, ["boatText"])}>Eslora en mts</p>
                     </div>
                     <div className={usc(styles, ["text"])}>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui arcu, elementum tortor ut, fringilla finibus ex.
+                        Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className={usb(["col-md-7", "col-12"])}>
-                  <p className={usw(styles, ["boatName"], ["m-auto me-0"])}>
-                    Velero modelo gtx
+                  <p className={usw(styles, ["boatName"], ["m-0"])}>
+                    D´angelo
                   </p>
                   <div className={usc(styles, ["botPic"])}>
                   </div>

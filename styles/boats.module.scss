@@ -18,7 +18,7 @@
     text-align: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 20px;
+    
     margin-top: 40px;
     width: fit-content;
     height: fit-content;
@@ -36,6 +36,7 @@
     .text {
       color: #fff;
       position: relative;
+     
     }
     .boatData {
       display: flex;
@@ -43,7 +44,7 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 80px;
       position: relative;
       p {
         margin: 0%;
@@ -54,7 +55,7 @@
         border-radius: 100%;
         background-color: #64a5bf;
         color: #fff;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 700;
         margin-right: -16px;
         font-family: roboto;
@@ -73,6 +74,7 @@
         color: #fff;
         background-color: $darkishBlue;
         border-radius: 0px 211px 211px 0px;
+        text-transform: uppercase;
       }
     }
   }
@@ -106,7 +108,7 @@
     text-align: end;
     justify-content: center;
     position: relative;
-    margin-bottom: 20px;
+   padding-right: 5px;
     height: fit-content;
   }
   .dataContainer {
@@ -130,7 +132,7 @@
       text-align: end;
       justify-content: center;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 80px;
       position: relative;
       p {
         margin: 0%;
@@ -140,7 +142,7 @@
         border-radius: 100%;
         background-color: #64a5bf;
         color: #fff;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 700;
         margin-right: -16px;
         font-family: roboto;
@@ -159,6 +161,7 @@
         color: #fff;
         background-color: $darkishBlue;
         border-radius: 0px 211px 211px 0px;
+        text-transform: uppercase;
       }
     }
   }

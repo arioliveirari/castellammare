@@ -24,7 +24,20 @@
     margin-top: 20px;
     position: relative;
 }
+.boatName {
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 39px;
+    color: $darkBlue;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+    position: relative;
 
+    margin-top: 40px;
+    width: 100%;
+    height: fit-content;
+}
 .dataContainer {
     width: 100%;
     text-align: center;
@@ -36,12 +49,12 @@
     }
 
     .dataNumber {
-        background-color: #64A5BF;
+        background-color: #64a5bf;
         width: 30px;
         height: 30px;
         border-radius: 100%;
         padding: 20px;
-        font-size: 15pt;
+        font-size: 10pt;
         font-family: roboto;
         font-weight: 700;
         color: #fff;
@@ -54,8 +67,8 @@
     .dataText {
         width: fit-content;
         height: fit-content;
-        padding: 5px 20px;
-        font-size: 12pt;
+        padding: 5px 15px;
+        font-size: 8pt;
         font-family: roboto;
         background-color: #529ab7;
         border-radius: 0pt 26pt 26pt 0pt;
@@ -78,5 +91,6 @@
 .text {
     text-align: center;
     color: #fff;
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    margin-top: 20px;
 }

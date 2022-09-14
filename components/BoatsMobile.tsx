@@ -12,6 +12,12 @@ const BoatsMobile = () => {
     return (
         <>
             <div className={usw(styles, ["boatsMobileModule"], ["container-fluid", "p-0"])} >
+                <div className={usb(["col-12", "p-0"])}>
+                    <p className={usw(styles, ["boatName"], [""])}>
+                        Phantom 19
+                    </p>
+                </div>
+
                 <div className={usb(["row"])}>
                     <div className={usb(["col-12"])}>
                         <KiwiSlider />
@@ -20,22 +26,12 @@ const BoatsMobile = () => {
                                 <div className={usb(["col-12"])}>
                                     <div className={usc(styles, ["topData"])}>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataNumber"])}>4</div>
-                                            <div className={usc(styles, ["dataText"])}>tripulantes</div>
+                                            <div className={usc(styles, ["dataNumber"])}>2,07</div>
+                                            <div className={usc(styles, ["dataText"])}>mts de Manga</div>
                                         </div>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataNumber"])}>80</div>
-                                            <div className={usc(styles, ["dataText"])}>viajes</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={usb(["row"])}>
-                                <div className={usb(["col-12"])}>
-                                    <div className={usc(styles, ["botData"])} >
-                                        <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataNumber"])}>5</div>
-                                            <div className={usc(styles, ["dataText"])}>años viajando</div>
+                                            <div className={usc(styles, ["dataNumber"])}>5,47</div>
+                                            <div className={usc(styles, ["dataText"])}>mts de Eslora</div>
                                         </div>
                                     </div>
                                 </div>
@@ -44,7 +40,7 @@ const BoatsMobile = () => {
                                 <div className={usb(["col-12", "m-auto"])}>
                                     <div className={usc(styles, ["text"])}>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui arcu, elementum tortor ut, fringilla finibus ex.
+                                        Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja.
                                         </p>
                                     </div>
                                 </div>
@@ -52,7 +48,11 @@ const BoatsMobile = () => {
                         </div>
                     </div>
                 </div>
-
+                <div className={usb(["col-12", "p-0"])}>
+                    <p className={usw(styles, ["boatName"], [""])}>
+                        D´angelo
+                    </p>
+                </div>
                 <div className={usb(["row"])}>
                     <div className={usb(["col-12"])}>
                         <MangoSlider />
@@ -61,31 +61,22 @@ const BoatsMobile = () => {
                                 <div className={usb(["col-12"])}>
                                     <div className={usc(styles, ["topData"])}>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataNumber"])}>4</div>
-                                            <div className={usc(styles, ["dataText"])}>tripulantes</div>
+                                            <div className={usc(styles, ["dataNumber"])}>2,58</div>
+                                            <div className={usc(styles, ["dataText"])}>mts de Manga</div>
                                         </div>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataNumber"])}>80</div>
-                                            <div className={usc(styles, ["dataText"])}>viajes</div>
+                                            <div className={usc(styles, ["dataNumber"])}>7,20</div>
+                                            <div className={usc(styles, ["dataText"])}>mts de Eslora</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className={usb(["row"])}>
-                                <div className={usb(["col-12"])}>
-                                    <div className={usc(styles, ["botData"])} >
-                                        <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataNumber"])}>5</div>
-                                            <div className={usc(styles, ["dataText"])}>años viajando</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div className={usb(["row"])}>
                                 <div className={usb(["col-12", "m-auto"])}>
                                     <div className={usc(styles, ["text", "botText"])}>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui arcu, elementum tortor ut, fringilla finibus ex.
+                                            Diseño del gran German Frers. Un 24 pies amplio, ágil, rápido y muy divertido para salir con amigos y amigas.
                                         </p>
                                     </div>
                                 </div>
