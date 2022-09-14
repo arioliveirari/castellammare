@@ -1,24 +1,24 @@
 @import "variables.module.scss";
 
 .OverTheFold {
-  margin-bottom: 25px;
+  
   min-height: 700px;
   padding: 0%;
   box-sizing: border-box;
   height: 90vh;
   font-family: "Ubuntu", sans-serif;
   width: 100%;
-  // background-image: url(../public/images/kiwi.jpg);
-  // background-position: center;
-  // background-size: cover;
+ 
   .video {
     object-fit: fill;
+    position: absolute;
   }
   .mask {
- display: none;
+position: relative;
     background-color: rgba($color: #245000, $alpha: 0.6);
     width: 100%;
     height: 100%;
+
     background-position: center;
     background-size: cover;
     transition: all ease-in-out 0.2s;

@@ -4,11 +4,11 @@ import styles from '../styles/mangoSlider.module.scss';
 import Glide from '@glidejs/glide'
 
 const items = [
-    "/images/barco 1_01.jpeg",
-    "/images/barco 1_02.jpeg",
-    "/images/barco 1_03.jpeg",
-    "/images/barco 1_04.jpeg",
-    "/images/barco 1_05.jpeg"
+    "/images/barco_1_01.jpeg",
+    "/images/barco_1_02.jpeg",
+    "/images/barco_1_03.jpeg",
+    "/images/barco_1_04.jpeg",
+    "/images/barco_1_05.jpeg"
 ]
 const MangoSlider = () => {
     React.useEffect(() => {

@@ -7,7 +7,7 @@ import styles from '../styles/overTheFold.module.scss';
 const OverTheFold = ({ children }: any) => (
   <div className={usw(styles, ['OverTheFold'], ["container-fluid"])}>
     <video className={usc(styles, ["video"])} height="100%" width="100%" autoPlay muted loop >
-      <source  src="./Video/bg.mp4" type="video/mp4" />
+      <source  src="/video/bg.mp4" type="video/mp4" />
     </video>
     <div className={usc(styles, ["mask"])}>
       <div className={usb(['container', 'm-auto'])}>

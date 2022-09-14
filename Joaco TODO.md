@@ -1,8 +1,14 @@
-TODO 12/9/22
-1 video
+TODO 14/9/22
+1 centrar faq
 2 boats slider en mobile
-<!-- 3 bloquear mansory en tres columnas -->
+3 solucionar gallery en produccion
+4 acomodar form y mask
+5 solucionar paths 
 
+
+TODO 12/9/22
+<!-- 1 video -->
+<!-- 3 bloquear mansory en tres columnas -->
 TODO 9/9/22
 <!-- 1)Aire de los títulos -->
 <!-- 2)Control del slider en boat -->
