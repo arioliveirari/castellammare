@@ -60,7 +60,7 @@
   .header-desktop {
     text-align: center;
     align-items: center;
-    .tootlTipText{
+    .tootlTipText {
       color: #002848;
     }
     .links {
@@ -75,7 +75,7 @@
         font-size: 18px;
         margin: 5px;
         transition: all ease 0.2s;
-        &:hover{
+        &:hover {
           filter: brightness(0.9);
         }
       }
@@ -87,14 +87,14 @@
         text-decoration: none;
         color: #f1e6d0;
         font-size: 13px;
-     
+        border-radius: 5px;
         font-family: roboto;
         font-weight: 700;
         font-family: dmsans;
         transition: all ease-in-out 0.2s;
         text-transform: uppercase;
-        &:hover{
-          background-color: #E6A029;
+        &:hover {
+          background-color: #e6a029;
         }
       }
     }
@@ -132,7 +132,7 @@
       font-family: dmsans;
       font-weight: 400;
       background-color: $orange;
-     
+
       width: fit-content;
       height: fit-content;
       font-size: 15px;
