@@ -8,17 +8,15 @@ import KiwiSlider from './KiwiSlider';
 import { RiveAnimation } from './RiveAnimation';
 
 const boatsData = [
-  { id: 1, years: 5, travels: 80, reversedDrop: true, passanger: 5 },
-  { id: 2, years: 5, travels: 80, reversedDrop: false, passanger: 4 }
+  { id: 1, years: 5, travels: 80, reversedDrop: true, passanger: 5, imageUrl: "/images/kiwi.jpg" },
+  { id: 2, years: 5, travels: 80, reversedDrop: false, passanger: 4, imageUrl: "coast /images/mango.jpg" }
 ]
 
 
 const Boats = () => {
   return (
     <>
-      <div className={usc(styles, ["mobileTitle"])} >
-        <Tittles styling={{ paddingTop: "500px", backgroundColor: "#86bed5", paddingBottom: "20px" }} tittle='Nuestros Veleros' />
-      </div>
+     
       <div className={usc(styles, ["desktopTitle"])} >
         <Tittles styling={{ paddingTop: "70px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
       </div>
@@ -28,16 +26,11 @@ const Boats = () => {
           <RiveAnimation top={0} left={0} animationName="water_1" />
           <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
         </div>
-        <div className={usc(styles, ["mobileAnimations"])} >
-          <RiveAnimation bottom={0} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
-          <RiveAnimation top={0} left={-70} animationName="water_1" />
-          <RiveAnimation top={390} bottom={0} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
-        </div>
         <div className={usb(["container"])}>
           <div className={usw(styles, ["topContent"], ["row", "pb-5"])}>
             <div className={usb(["col-12", "p-0"])}>
-              <p className={usw(styles, ["boatName"], [""])}>
-                Phantom 19
+              <p className={usw(styles, ["boatName"], ["m-0"])}>
+                kiwi
               </p>
             </div>
 
@@ -46,18 +39,21 @@ const Boats = () => {
                 <div className={usb(["col-md-7", "p-0", "col-12"])}>
                   <div className={usc(styles, ["botPic"])}>
                   </div>
-                  <MangoSlider />
-
+                
+                  <KiwiSlider />
                 </div>
                 <div className={usb(["col-md-5", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
                     <div className={usc(styles, ["boatData", "firstData"])}>
-                      <p className={usc(styles, ["boatText"])}>mts de manga</p>
+                      <p className={usc(styles, ["boatText"])}>Manga</p>
                       <p className={usc(styles, ["boatNumber"])}>2,07</p>
                     </div>
                     <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatText"])}>mts de eslora</p>
+                      <p className={usc(styles, ["boatText"])}>Eslora</p>
                       <p className={usc(styles, ["boatNumber"])}>5,47</p>
+                    </div>
+                    <div className={usc(styles, ["boatData"])}>
+                      <p className={usc(styles, ["boatText"])}> Modelo Phantom 19</p>
                     </div>
                     <div className={usc(styles, ["text"])}>
                       <p>
@@ -79,37 +75,37 @@ const Boats = () => {
 
             <div className={usb(["col-12"])}>
               <div className={usb(["row"])}>
-                <div className={usb(["col-md-5", "col-12"])}>
+                <div className={usb(["col-md-4", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
                     <div className={usc(styles, ["boatData", "firstData"])}>
                       <p className={usc(styles, ["boatNumber"])}>2,58</p>
-                      <p className={usc(styles, ["boatText"])}>Manga en mts</p>
+                      <p className={usc(styles, ["boatText"])}>Manga</p>
                     </div>
                     <div className={usc(styles, ["boatData"])}>
                       <p className={usc(styles, ["boatNumber"])}>7,20</p>
-                      <p className={usc(styles, ["boatText"])}>Eslora en mts</p>
+                      <p className={usc(styles, ["boatText"])}>Eslora</p>
+                    </div>
+                    <div className={usc(styles, ["boatData"])}>
+                      <p className={usc(styles, ["boatText"])}>Modelo D´angelo 24</p>
                     </div>
                     <div className={usc(styles, ["text"])}>
                       <p>
-                        Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja.
+                      Diseño del gran German Frers. Un 24 pies amplio, ágil, rápido y muy divertido para salir con amigos y amigas.
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className={usb(["col-md-7", "col-12"])}>
-                  <p className={usw(styles, ["boatName"], ["m-0"])}>
-                    D´angelo
+                <div className={usb(["col-md-7", "p-0","col-12"])}>
+                  <p className={usw(styles, ["boatName"], [" m-0"])}>
+                    mango
                   </p>
                   <div className={usc(styles, ["botPic"])}>
                   </div>
-                  <KiwiSlider />
+                  <MangoSlider />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className={usc(styles, ["mobile"])}>
-          <BoatsMobile />
         </div>
       </div>
 

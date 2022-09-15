@@ -82,7 +82,7 @@ const Links = () => {
     <>
       <div className={usc(styles, ["links"])} >
         <a href="#" className={usc(styles, ["reserva"])} >Adquierir Voucher</a>
-        <a href="#" className={usc(styles, ["headerLink"])}>Sobre nosotros</a>
+       
         <a href="#" className={usc(styles, ["headerLink"])}>Servicios</a>
         <div className={usc(styles, ["icons"])}>
           <div className={usc(styles, ["linkBtn"])}>

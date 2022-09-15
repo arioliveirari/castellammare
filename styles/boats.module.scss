@@ -18,7 +18,6 @@
     text-align: center;
     justify-content: center;
     position: relative;
-    
     margin-top: 40px;
     width: fit-content;
     height: fit-content;
@@ -28,15 +27,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 440px;
+    height: 450px;
     width: 100%;
     .firstData {
-      margin-left: -35px;
+      margin-left: -30px;
     }
     .text {
       color: #fff;
       position: relative;
-     
     }
     .boatData {
       display: flex;
@@ -44,7 +42,7 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      margin-bottom: 80px;
+      margin-bottom: 40px;
       position: relative;
       p {
         margin: 0%;
@@ -55,7 +53,7 @@
         border-radius: 100%;
         background-color: #64a5bf;
         color: #fff;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 700;
         margin-right: -16px;
         font-family: roboto;
@@ -73,7 +71,7 @@
         padding: 5px 20px;
         color: #fff;
         background-color: $darkishBlue;
-        border-radius: 0px 211px 211px 0px;
+        border-radius:211px ;
         text-transform: uppercase;
       }
     }
@@ -108,7 +106,7 @@
     text-align: end;
     justify-content: center;
     position: relative;
-   padding-right: 5px;
+    padding-right: 5px;
     height: fit-content;
   }
   .dataContainer {
@@ -132,7 +130,7 @@
       text-align: end;
       justify-content: center;
       align-items: center;
-      margin-bottom: 80px;
+      margin-bottom: 40px;
       position: relative;
       p {
         margin: 0%;
@@ -142,7 +140,7 @@
         border-radius: 100%;
         background-color: #64a5bf;
         color: #fff;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 700;
         margin-right: -16px;
         font-family: roboto;
@@ -160,9 +158,10 @@
         padding: 5px 20px;
         color: #fff;
         background-color: $darkishBlue;
-        border-radius: 0px 211px 211px 0px;
+        border-radius: 211px ;
         text-transform: uppercase;
       }
+      
     }
   }
 
@@ -173,13 +172,13 @@
     .boatData {
       .boatNumber {
         margin-right: 0px;
-        margin-left: -16px;
+        margin-left: -17px;
       }
       .boatText {
         padding: 5px 20px;
         color: #fff;
         background-color: $darkishBlue;
-        border-radius: 211px 0px 0px 211px;
+        border-radius: 211px ;
       }
     }
   }
@@ -206,24 +205,12 @@
 @media screen and (max-width: 992px) {
 }
 
-@media screen and (max-width: 768px) {
-  .mobileTitle {
-    display: unset;
-  }
-  .desktopTitle {
+
+@media screen and (max-width:768px) {
+  .boatsModule{
     display: none;
   }
-  .topContent,
-  .botContent {
-    display: none;
-  }
-  .mobile {
-    display: unset;
-  }
-  .mobileAnimations {
-    display: unset;
-  }
-  .desktopAnimations {
+  .desktopTitle{
     display: none;
   }
 }

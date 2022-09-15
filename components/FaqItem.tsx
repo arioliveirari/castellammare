@@ -51,7 +51,7 @@ const FaqItem = () => {
                         </p>
                       </div>
                     </div>
-                    <div className={usb(["row"])}>
+                    <div className={usw(styles,["answerRow"],["row"])}>
                       <div className={usb(["col-md-10"])}>
                         <div className={usc(styles, [(i.isDown) ? "isDown" : "answer"])}>
                           <p className={usc(styles, ["text"])}>

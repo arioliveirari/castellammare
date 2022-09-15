@@ -12,7 +12,7 @@ const Footer = () => {
                             <div className={usc(styles, ["logoContainer"])}>
                                 <Logo />
                                 <ul>
-                                    <a href="#"><li>sobre nosotros</li></a>
+                                 
                                     <a href="#"><li>servicios</li></a>
                                     <a href="#"><li>reservar</li></a>
                                 </ul>

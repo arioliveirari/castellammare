@@ -10,9 +10,9 @@ const items = [
     "/images/barco_2_04.jpeg",
     "/images/barco_2_05.jpeg"
 ]
-const MangoSlider = () => {
+const MobileMangoSlider = () => {
     React.useEffect(() => {
-        const glide = new Glide('#mango-slider', {
+        const glide = new Glide('#mobileMango-slider', {
             type: "slider",
             focusAt: 'center',
             perView: 1,
@@ -26,7 +26,7 @@ const MangoSlider = () => {
     return (
         <div  className={usw(styles,["mangoSliderMocule"],["container-fluid"])}>
             <div>
-                <div className="glide" id="mango-slider">
+                <div className="glide" id="mobileMango-slider">
                     <div className="glide__track" data-glide-el="track">
                         <ul className="glide__slides">
                             {items.map((i) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
@@ -48,4 +48,4 @@ const MangoSlider = () => {
         </div>
     )
 }
-export default MangoSlider
+export default MobileMangoSlider

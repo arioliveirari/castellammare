@@ -1,35 +1,35 @@
 import React, { useState } from "react";
 import { usb, usw, usc } from '../utils/helpers';
-import styles from '../styles/mangoSlider.module.scss';
+import styles from '../styles/kiwiSlider.module.scss';
 import Glide from '@glidejs/glide'
 
 const items = [
-    "/images/barco_2_01.jpeg",
-    "/images/barco_2_02.jpeg",
-    "/images/barco_2_03.jpeg",
-    "/images/barco_2_04.jpeg",
-    "/images/barco_2_05.jpeg"
+    { url: "/images/barco_1_01.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
+    { url: "/images/barco_1_02.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
+    { url: "/images/barco_1_03.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
+    { url: "/images/barco_1_04.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
+    { url: "/images/barco_1_05.jpeg", objectfit: "objectFit:cover", objectPosition: "center" }
 ]
-const MangoSlider = () => {
+const MobileKiwiSlider = () => {
     React.useEffect(() => {
-        const glide = new Glide('#mango-slider', {
+        const glide = new Glide('#mobileKiwi-slider', {
             type: "slider",
             focusAt: 'center',
             perView: 1,
             startAt: 0,
             gap: 0,
-           
+
 
         }).mount();
     }, [])
 
     return (
-        <div  className={usw(styles,["mangoSliderMocule"],["container-fluid"])}>
+        <div className={usw(styles, ["mangoSliderMocule"], ["container-fluid"])}>
             <div>
-                <div className="glide" id="mango-slider">
+                <div className="glide" id="mobileKiwi-slider">
                     <div className="glide__track" data-glide-el="track">
                         <ul className="glide__slides">
-                            {items.map((i) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
+                            {items.map((i) => (<img src={i.url} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
                         </ul>
                         <div className="controls">
                             <div className="glide__arrows" data-glide-el="controls">
@@ -48,4 +48,4 @@ const MangoSlider = () => {
         </div>
     )
 }
-export default MangoSlider
+export default MobileKiwiSlider

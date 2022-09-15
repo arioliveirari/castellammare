@@ -6,15 +6,14 @@ import Footer from '../components/Footer'
 import Services from '../components/Services';
 import { usc } from '../utils/helpers';
 import FooterWaves from '../components/FooterWaves';
-import voucherpage from './voucherpage';
 import Waves from '../components/waves';
 import Gallery from '../components/Gallery';
 import Slider from '../components/Slider';
 import Boats from '../components/Boats'
 import Coast from '../components/Coast';
 import FaqItem from '../components/FaqItem';
-import BackgroundOnly from '../components/BackgroundOnly';
 import styles from '../styles/globals.module.scss';
+import BoatsMobile from '../components/BoatsMobile';
 // import MangoSlider from '../components/MangoSlider';
 const Index = (props: any) => {
 
@@ -24,6 +23,7 @@ const Index = (props: any) => {
       <OverTheFold />
       <Waves />
       <Boats />
+      <BoatsMobile/>
       <Coast />
       <Slider />
       <FaqItem />

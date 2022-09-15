@@ -149,11 +149,12 @@ a {
 
 #mango-slider .glide__track {
   height: 350px;
-  border-radius: 0px 211px 211px 211px;
+  border-radius: 211px  0px 211px 211px;
 }
 
 #mango-slider .glide__slides {
   padding: 0% !important;
+  object-fit: contain!important;
 }
 
 #kiwi-slider.glide.glide--ltr.glide--slider.glide--swipeable {
@@ -162,7 +163,7 @@ a {
 
 #kiwi-slider .glide__track {
   height: 350px;
-  border-radius: 211px 0px 211px 211px;
+  border-radius: 0px 211px  211px  211px;
 }
 
 #kiwi-slider .glide__slides {

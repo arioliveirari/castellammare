@@ -3,6 +3,8 @@ import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/boatsMobile.module.scss';
 import KiwiSlider from './KiwiSlider';
 import MangoSlider from './KiwiSlider';
+import MobileKiwiSlider from './MobileKiwiSlider';
+import MobileMangoSlider from './MobileMangoSlider';
 import Tittles from './Tittles';
 import { url } from 'inspector';
 
@@ -11,27 +13,33 @@ import { url } from 'inspector';
 const BoatsMobile = () => {
     return (
         <>
-            <div className={usw(styles, ["boatsMobileModule"], ["container-fluid", "p-0"])} >
-                <div className={usb(["col-12", "p-0"])}>
+
+            <div className={usw(styles, ["boatsMobileModule"], ["container-fluid"])} >
+                <Tittles tittle='Nuestros Veleros' />
+                <div className={usb(["col-12"])}>
                     <p className={usw(styles, ["boatName"], [""])}>
-                        Phantom 19
+                        kiwi
                     </p>
                 </div>
-
                 <div className={usb(["row"])}>
                     <div className={usb(["col-12"])}>
-                        <KiwiSlider />
+                        <MobileKiwiSlider />
                         <div className={usc(styles, ["dataContainer"])}>
                             <div className={usb(["row"])}>
                                 <div className={usb(["col-12"])}>
                                     <div className={usc(styles, ["topData"])}>
                                         <div className={usc(styles, ["data"])}>
                                             <div className={usc(styles, ["dataNumber"])}>2,07</div>
-                                            <div className={usc(styles, ["dataText"])}>mts de Manga</div>
+                                            <div className={usc(styles, ["dataText"])}>Manga</div>
                                         </div>
                                         <div className={usc(styles, ["data"])}>
                                             <div className={usc(styles, ["dataNumber"])}>5,47</div>
-                                            <div className={usc(styles, ["dataText"])}>mts de Eslora</div>
+                                            <div className={usc(styles, ["dataText"])}>Eslora</div>
+                                        </div>
+                                    </div>
+                                    <div className={usc(styles, ["botData"])}>
+                                        <div className={usc(styles, ["data"])}>
+                                            <div className={usc(styles, ["dataText"])}>Modelo Phantom 19</div>
                                         </div>
                                     </div>
                                 </div>
@@ -40,7 +48,7 @@ const BoatsMobile = () => {
                                 <div className={usb(["col-12", "m-auto"])}>
                                     <div className={usc(styles, ["text"])}>
                                         <p>
-                                        Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja.
+                                            Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja.
                                         </p>
                                     </div>
                                 </div>
@@ -50,23 +58,28 @@ const BoatsMobile = () => {
                 </div>
                 <div className={usb(["col-12", "p-0"])}>
                     <p className={usw(styles, ["boatName"], [""])}>
-                        D´angelo
+                        Mango
                     </p>
                 </div>
                 <div className={usb(["row"])}>
                     <div className={usb(["col-12"])}>
-                        <MangoSlider />
+                        <MobileMangoSlider />
                         <div className={usc(styles, ["dataContainer"])}>
                             <div className={usb(["row"])}>
                                 <div className={usb(["col-12"])}>
                                     <div className={usc(styles, ["topData"])}>
                                         <div className={usc(styles, ["data"])}>
                                             <div className={usc(styles, ["dataNumber"])}>2,58</div>
-                                            <div className={usc(styles, ["dataText"])}>mts de Manga</div>
+                                            <div className={usc(styles, ["dataText"])}>Manga</div>
                                         </div>
                                         <div className={usc(styles, ["data"])}>
                                             <div className={usc(styles, ["dataNumber"])}>7,20</div>
-                                            <div className={usc(styles, ["dataText"])}>mts de Eslora</div>
+                                            <div className={usc(styles, ["dataText"])}>Eslora</div>
+                                        </div>
+                                    </div>
+                                    <div className={usc(styles, ["botData"])}>
+                                        <div className={usc(styles, ["data"])}>
+                                            <div className={usc(styles, ["dataText"])}>Modelo D´angelo 24</div>
                                         </div>
                                     </div>
                                 </div>

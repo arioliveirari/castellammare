@@ -1,5 +1,6 @@
 .image {
     height: 350px;
     transition: all ease 0.4s;
-    
+    object-fit: cover;
+    object-position: center;
 }

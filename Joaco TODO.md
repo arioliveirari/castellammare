@@ -1,9 +1,13 @@
 TODO 14/9/22
-1 centrar faq
+<!-- 1 centrar faq -->
 2 boats slider en mobile
 3 solucionar gallery en produccion
-4 acomodar form y mask
-5 solucionar paths 
+<!-- 4 acomodar form y mask -->
+<!-- 5 solucionar paths  -->
+<!-- 6 sacar sobre nosotros de footer y header -->
+<!-- 7 corregir titulos de veleros -->
+<!-- 8 corregir position slides de boats -->
+9 corregir fitment de fotos en slider boats
 
 
 TODO 12/9/22
@@ -13,11 +17,10 @@ TODO 9/9/22
 <!-- 1)Aire de los títulos -->
 <!-- 2)Control del slider en boat -->
 <!-- 3)Aire en comentarios -->
-4)La feature de gallery
 <!-- 5)Tamaños de los títulos en mobile y centrado
 6)Mayusc en atardecer -->
 <!-- 7)Disposición de tamaños en faq mobile -->
-8)animacion cortada por title
+<!-- 8)animacion cortada por title -->
 -----------------------------------------
 TODO
 <!-- 1) fav icon -->

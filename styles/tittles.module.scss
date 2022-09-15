@@ -53,3 +53,20 @@ line-height: 63px;
     }
 }
 
+@media screen and (max-height: 630px) {
+    .exterior {
+        padding: 0%;
+    }
+    .tittleContainer {
+        font-size: 35pt;
+        text-align: center;
+        align-items: center;
+        font-weight: bold;
+        min-width: 30%;
+        width: fit-content;
+        font-weight: 600;
+        position: relative;
+    }
+}
+
+
