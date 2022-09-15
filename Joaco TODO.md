@@ -1,6 +1,6 @@
 TODO 14/9/22
 <!-- 1 centrar faq -->
-2 boats slider en mobile
+<!-- 2 boats slider en mobile -->
 3 solucionar gallery en produccion
 <!-- 4 acomodar form y mask -->
 <!-- 5 solucionar paths  -->

@@ -35,9 +35,7 @@ const MobileKiwiSlider = () => {
                             <div className="glide__arrows" data-glide-el="controls">
                                 <div className="controlButton" data-glide-dir="<"><span className="icon-chevron_left"></span></div>
                             </div>
-                            <div className="glide__bullets" data-glide-el="controls[nav]">
-                                {items.map((i, index) => (<button key={`${index}`} className="glide__bullet" data-glide-dir={`=${index}`}></button>))}
-                            </div>
+                            
                             <div className="glide__arrows" data-glide-el="controls">
                                 <div className="controlButton" data-glide-dir=">"><span className="icon-chevron_right"></span></div>
                             </div>
