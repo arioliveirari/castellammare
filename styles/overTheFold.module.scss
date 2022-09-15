@@ -87,6 +87,7 @@
       word-break: keep-all;
       white-space: normal;
       word-spacing: 1px;
+      margin-bottom: 20vh;
     }
   }
 }
@@ -98,7 +99,7 @@
   display: none;
   width: 1px;
   margin: auto;
-  margin-top: 0%;
+margin-top: 0%;
   margin-bottom: 0%;
   text-decoration: none;
   color: #fff;
@@ -138,7 +139,7 @@
   .containerOver {
     padding-top: 50px;
     height: 50vh;
-    min-height: unset;
+min-height: unset;
     .textOver {
       text-align: center;
 
@@ -184,6 +185,7 @@
   .containerOver {
     .textOver {
       margin-top: 2vh;
+      
     }
   }
   .formContainer {
@@ -191,14 +193,12 @@
   }
 }
 
-@media screen and (max-height: 630px) {
+@media screen and (max-height: 630px) and (max-width:768px) {
   .formContainer {
     margin-top: 10vh;
   }
-}
-
-@media screen and (max-height: 400px) {
-  .formContainer {
-    margin-top: 20vh;
+  .containerOver{
+    margin-bottom: 100vh;
   }
 }
+
