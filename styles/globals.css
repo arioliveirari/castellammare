@@ -127,30 +127,29 @@ a {
 }
 
 #mobileMango-slider .glide__track {
-  height: 350px;
+  height: 450px;
   border-radius: 211px 0px 211px 211px;
   padding: 0%;
 }
 
 #mobileKiwi-slider .glide__track {
-  height: 350px;
+  height: 450px;
   padding: 0%;
   border-radius: 0px 211px 211px 211px;
 }
 
 #mobileKiwi-slider .glide__slides,
 #mobileMango-slider .glide__slides{
-  height: 350px;
   padding: 0%;
 }
 
 #mango-slider .glide__track {
-  height: 350px;
+  height: 400px;
   border-radius: 211px 0px 211px 211px;
 }
 
 #kiwi-slider .glide__track {
-  height: 350px;
+  height: 400px;
   border-radius: 0px 211px 211px 211px;
 }
 

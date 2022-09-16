@@ -1,15 +1,17 @@
+TODO 16/9/22
+1) centrar titulos
+2) re hacer gallery con otra dependencia
+
 TODO 14/9/22
 <!-- 1 centrar faq -->
 <!-- 2 boats slider en mobile -->
-3 solucionar gallery en produccion
+<!-- 3 solucionar gallery en produccion -->
 <!-- 4 acomodar form y mask -->
 <!-- 5 solucionar paths  -->
 <!-- 6 sacar sobre nosotros de footer y header -->
 <!-- 7 corregir titulos de veleros -->
 <!-- 8 corregir position slides de boats -->
-9 corregir fitment de fotos en slider boats
-
-
+<!-- 9 corregir fitment de fotos en slider boats -->
 TODO 12/9/22
 <!-- 1 video -->
 <!-- 3 bloquear mansory en tres columnas -->

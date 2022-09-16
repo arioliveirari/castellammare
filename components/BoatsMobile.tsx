@@ -14,7 +14,7 @@ const BoatsMobile = () => {
         <>
            
             <div className={usw(styles, ["boatsMobileModule"], ["container-fluid"])} >
-                <Tittles tittle='Nuestros Veleros' />
+                <Tittles  tittle='Nuestros Veleros' />
                 <div className={usb(["col-12"])}>
                     <p className={usw(styles, ["boatName"], [""])}>
                         kiwi

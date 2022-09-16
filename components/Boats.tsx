@@ -18,14 +18,14 @@ const Boats = () => {
     <>
 
       <div className={usc(styles, ["desktopTitle"])} >
-        <Tittles styling={{ paddingTop: "70px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
+        <Tittles styling={{ paddingTop: "135px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
       </div>
       <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
-        {/* <div className={usc(styles, ["desktopAnimations"])} >
+        <div className={usc(styles, ["desktopAnimations"])} >
           <RiveAnimation bottom={400} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
           <RiveAnimation top={0} left={0} animationName="water_1" />
           <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
-        </div> */}
+        </div>
         <div className={usc(styles, ["mobileAnimations"])} >
           <RiveAnimation bottom={0} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
           <RiveAnimation top={600} left={0} animationName="water_1" />
