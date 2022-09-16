@@ -205,12 +205,24 @@
 @media screen and (max-width: 992px) {
 }
 
-
-@media screen and (max-width:768px) {
-  .boatsModule{
+@media screen and (max-width: 768px) {
+  .mobileTitle {
+    display: unset;
+  }
+  .desktopTitle {
     display: none;
   }
-  .desktopTitle{
+  .topContent,
+  .botContent {
+    display: none;
+  }
+  .mobile {
+    display: unset;
+  }
+  .mobileAnimations {
+    display: unset;
+  }
+  .desktopAnimations {
     display: none;
   }
 }

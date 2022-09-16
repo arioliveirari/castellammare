@@ -1,6 +1,6 @@
 .exterior {
+    padding-top: 70px;
     padding-bottom: 20px;
-    padding-right: 25px;
 }
 .tittleContainer {
     text-transform: capitalize;
@@ -10,7 +10,7 @@
     display: flex;
     position: relative;
     color: #002848;
-line-height: 63px;
+    line-height: 63px;
     background-color: transparent;
     font-size: 68px;
     font-family: calson;
@@ -24,11 +24,10 @@ line-height: 63px;
 
 @media screen and (max-width: 992px) {
     .exterior {
-     justify-content: center;
+        justify-content: center;
         padding: 0%;
     }
     .tittleContainer {
-        
         font-weight: bold;
         min-width: 40%;
         width: fit-content;
@@ -68,5 +67,3 @@ line-height: 63px;
         position: relative;
     }
 }
-
-

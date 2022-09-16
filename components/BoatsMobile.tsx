@@ -1,19 +1,18 @@
 import React, { CSSProperties, useEffect, useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/boatsMobile.module.scss';
-import KiwiSlider from './KiwiSlider';
-import MangoSlider from './KiwiSlider';
+import { RiveAnimation } from './RiveAnimation';
 import MobileKiwiSlider from './MobileKiwiSlider';
 import MobileMangoSlider from './MobileMangoSlider';
 import Tittles from './Tittles';
-import { url } from 'inspector';
+
 
 
 
 const BoatsMobile = () => {
     return (
         <>
-
+           
             <div className={usw(styles, ["boatsMobileModule"], ["container-fluid"])} >
                 <Tittles tittle='Nuestros Veleros' />
                 <div className={usb(["col-12"])}>

@@ -23,7 +23,7 @@ const Index = (props: any) => {
       <OverTheFold />
       <Waves />
       <Boats />
-      <BoatsMobile/>
+      
       <Coast />
       <Slider />
       <FaqItem />

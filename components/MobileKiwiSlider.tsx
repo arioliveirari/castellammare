@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { usb, usw, usc } from '../utils/helpers';
-import styles from '../styles/kiwiSlider.module.scss';
+import styles from '../styles/mobileKiwiSlider.module.scss';
 import Glide from '@glidejs/glide'
 
 const items = [
@@ -24,7 +24,7 @@ const MobileKiwiSlider = () => {
     }, [])
 
     return (
-        <div className={usw(styles, ["mangoSliderMocule"], ["container-fluid"])}>
+        <div className={usw(styles, ["mangoSliderMocule"], ["container-fluid", "p-0"])}>
             <div>
                 <div className="glide" id="mobileKiwi-slider">
                     <div className="glide__track" data-glide-el="track">

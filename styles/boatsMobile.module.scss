@@ -1,8 +1,10 @@
 @import "variables.module.scss";
-.boatsMobileModule{
+.boatsMobileModule {
     background-color: $ligthBlue;
     padding-top: 600px;
+    // overflow: hidden;
 }
+
 
 .picContainer {
     width: 100%;
@@ -17,18 +19,7 @@
     position: relative;
 }
 
-.reversedPic {
-    width: 100%;
-    height: 245px;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../public/images/kiwi.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 211px 0px 211px 211px;
-    margin-top: 20px;
-    position: relative;
-}
+// 
 .boatName {
     font-family: roboto;
     font-weight: 700;
@@ -76,7 +67,7 @@
         font-size: 8pt;
         font-family: roboto;
         background-color: #529ab7;
-        border-radius:  26pt;
+        border-radius: 26pt;
         color: #fff;
         margin-left: -13px;
     }
@@ -101,8 +92,8 @@
     margin-top: 20px;
 }
 
-@media screen and (min-width:768px) {
-    .boatsMobileModule{
-        display: none;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .boatsMobileModule {
+//         display: none;
+//     }
+// }
