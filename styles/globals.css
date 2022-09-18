@@ -144,12 +144,12 @@ a {
 }
 
 #mango-slider .glide__track {
-  height: 400px;
+  height: 480px;
   border-radius: 211px 0px 211px 211px;
 }
 
 #kiwi-slider .glide__track {
-  height: 400px;
+  height: 480px;
   border-radius: 0px 211px 211px 211px;
 }
 

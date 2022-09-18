@@ -86,7 +86,8 @@
     .formInput {
       width: 100%;
       background-color: #fff;
-      height: 56px;
+      height: 60px;
+
       border-radius: 8px;
       display: flex;
       align-items: center;
@@ -94,6 +95,10 @@
       // .checker {
       //   display: none;
       // }
+      input {
+        padding-left: 8px;
+        outline: none;
+      }
       .checked,
       .unchecked {
         display: flex;
@@ -156,7 +161,7 @@
         width: 100%;
         border: none;
         color: $darkBlue;
-        &:focus{
+        &:focus {
           border: none;
         }
         &::placeholder {

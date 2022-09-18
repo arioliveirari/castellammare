@@ -37,7 +37,7 @@ const Voucher = () => {
   const handlePrint = useReactToPrint({
     content: () => voucherRef.current,
     documentTitle: "Voucher Baires Navega",
-    onAfterPrint: () => alert("felicitaciones, ya estas listo para una experiencia unica")
+    onAfterPrint: () => console.log("felicitaciones, ya estas listo para una experiencia unica")
   })
 
   const current = new Date()
@@ -97,7 +97,7 @@ const Voucher = () => {
                   <div className={usb(["col-6", "m-auto"])} >
                     <div key={voucherInfo.id} className={usc(styles, ["purchaseContent"])}>
                       <div className={usb(["row"])} >
-                        <div className={usw(styles, ["dataContent"], ["col-12"])} >
+                        <div className={usw(styles, ["dataContent"], ["col-12 mt-3"])} >
                           <div key={voucherInfo.id}>
                             <div className={usc(styles, ["data"])}>
                               <p className={usc(styles, ["left"])} >fecha</p>

@@ -85,7 +85,7 @@ const Form = ({ children }: any) => {
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                     <div className={usc(styles, ["clock"])}>
                       <p>
-                        $ {total}
+                        <span className={usb(["mx-2"])}>$</span> {total}
                       </p>
                     </div>
                   </div>
