@@ -11,7 +11,7 @@ const Slider = () => {
       focusAt: 'center',
       perView: 3.2,
       startAt: 0,
-      gap: 140,
+      gap: 90,
       breakpoints: {
         1440: {
           perView: 3.2,

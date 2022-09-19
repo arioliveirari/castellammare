@@ -69,14 +69,45 @@ a {
   border-radius: 8px;
 }
 
+
+
+.my-masonry-grid {
+
+  display: flex;
+  margin-left: -30px;
+  /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+
 #options-type-2 .glide__slide--active {
   transition: all 0.3s ease;
-  transform: translateY(-35px);
-
+transform: translatey(-35px);
+}
+#options-type-2 .glide__slides{
+  align-items: center;
+  height: 500px;
 }
 
 #options-type-2 .controlButton {
   margin: 25px;
+  transform: translateY(-70px);
 }
 
 #options-type-2 .glide__bullet {
@@ -88,6 +119,7 @@ a {
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 15px 10px;
+  transform: translateY(-70px);
 }
 
 
@@ -106,7 +138,7 @@ a {
 
 #options-type-2 .controls {
   font-size: 10px;
-  transform: translateY(-70px);
+
 
 }
 
@@ -114,11 +146,6 @@ a {
   margin-top: -140px;
 }
 
-#mango-slider .controls,
-#kiwi-slider .controls {
-  display: flex;
-  transform: translateY(-60px);
-}
 
 #mobileMango-slider .controls,
 #mobileKiwi-slider .controls {
@@ -139,8 +166,18 @@ a {
 }
 
 #mobileKiwi-slider .glide__slides,
-#mobileMango-slider .glide__slides{
+#mobileMango-slider .glide__slides {
   padding: 0%;
+}
+
+#mango-slider .controls,
+#kiwi-slider .controls {
+  display: flex;
+  transform: translateY(-60px);
+}
+
+#mango-slider .controls{
+  transform: translateY(-100px);
 }
 
 #mango-slider .glide__track {
@@ -211,7 +248,7 @@ a {
 #mobileMango-slider .controlButton .icon-chevron_left,
 #mobileMango-slider .controlButton .icon-chevron_right,
 #mobileKiwi-slider .controlButton .icon-chevron_left,
-#mobileKiwi-slider .controlButton .icon-chevron_right{
+#mobileKiwi-slider .controlButton .icon-chevron_right {
   color: #fff;
   cursor: pointer;
 }
