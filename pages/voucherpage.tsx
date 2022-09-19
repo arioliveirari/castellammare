@@ -13,7 +13,7 @@ const voucherpage = () => {
         <div className={usc(styles, ["wavesContainer"])} >
           <Waves />
         </div>
-      </div>
+      </div>  
     </>
   )
 }
