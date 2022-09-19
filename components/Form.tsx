@@ -58,12 +58,13 @@ const Form = ({ children }: any) => {
                 <div className={usc(styles, ["form-content", "padding-top-52"])}>
                   <div className={usc(styles, ["formText"])}>
                     <img src="/images/barco.svg" alt='' className={usc(styles, ["formPic"])} />
-                    <div className={usc(styles, ["formTittle"])} >
-                      viví una experiencia
-                    </div>
                     <div className={usc(styles, ["formParagraph"])} >
-                      UNICA
+                      Gift Voucher
                     </div>
+                    <div className={usc(styles, ["formTittle"])} >
+                      Regalá una experiencia unica
+                    </div>
+
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-40", "inputCounter"])} >
                     <div className={usc(styles, ["counter"])}>
@@ -79,7 +80,7 @@ const Form = ({ children }: any) => {
                     </div>
                   </div>
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "contactContainer"])} >
-                  <span className='icon-bubbles'></span>
+                    <span className='icon-bubbles'></span>
                     <input type="text" className={usc(styles, ["contactInput"])} onChange={handleChange} placeholder={"Mail/telefono de contacto"} />
                   </div>
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >

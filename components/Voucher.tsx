@@ -58,7 +58,7 @@ const Voucher = () => {
       site_id,
       processing_mode
     } = router.query;
-    
+
     setVoucherInfo({
       date: `${payment_id}`,
       id: `${payment_id}`,
@@ -72,9 +72,9 @@ const Voucher = () => {
   }, [router.query])
 
   const drawClassForStatus = (status: string) => {
-    if(status === "approved") return 'approved'
-    if(status === "canceled") return 'canceled'
-    if(status === "pending") return 'pending'
+    if (status === "approved") return 'approved'
+    if (status === "canceled") return 'canceled'
+    if (status === "pending") return 'pending'
     return ''
   }
   return (
@@ -89,7 +89,20 @@ const Voucher = () => {
                   <p>felicitaciones!</p>
                 </div>
                 <div className={usc(styles, ["bannerTextContainer"])}>
-                  <p>ya tenes tu voucher para vivir una experiencia unica!</p>
+                  <p>
+                    Tenes a dispocicion un paseo en velero por el rio de la plata! <br />
+                    Coordina la salida a traves de <br /></p>
+                    
+                  <div className={usc(styles, ["icons"])}>
+                    <div className={usc(styles, ["linkBtn"])}>
+                      <span className="icon-instagram" />
+                      @bairesnavega
+                    </div>
+                    <div className={usc(styles, ["linkBtn"])}>
+                      <span className="icon-wpp" />
+                      1121863402
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className={usc(styles, ["purchaseData"])}>
