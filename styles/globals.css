@@ -176,9 +176,7 @@ transform: translatey(-35px);
   transform: translateY(-60px);
 }
 
-#mango-slider .controls{
-  transform: translateY(-100px);
-}
+
 
 #mango-slider .glide__track {
   height: 480px;
