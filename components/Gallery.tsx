@@ -79,7 +79,7 @@ const Gallery = () => {
   return (
     <>
       <div className={usw(styles, ["gallery"], ["container-fluid"])}>
-        <Tittles styling={{ paddingTop: "70px" }} tittle='galeria' />
+        <Tittles styling={{ paddingTop: "70px", paddingLeft:"25px" }} tittle='galeria' />
         <div className={usb(["container-fluid", "p-0"])} >
           <div className={usc(styles, ["galleryContainerMobile"])}>
             <div className="glide" id="gallery-image-mobile">

@@ -28,7 +28,7 @@ const Header = ({ children }: any) => {
 
 
   return (
-    <div className={(transparent) ? usw(styles, ["Header", "active"], ["container-fluid"]) : usw(styles, ["Header"], ["container-fluid"])} >
+    <div className={(transparent) ? usw(styles, ["Header", "active"], ["container-fluid", "p-0"]) : usw(styles, ["Header"], ["container-fluid"])} >
       <Head>
         <title>Baires navega!</title>
         <meta name="description" content="Baires navega" />
@@ -36,7 +36,7 @@ const Header = ({ children }: any) => {
       </Head>
       <div className={usb(["container"])}>
         <div className={usb(["row"])}>
-          <div className={usb(["col-l-6", "col-md-12"])}>
+          <div className={usb(["col-l-6", "col-md-12", "p-0"])}>
             {/*Header Desktop */}
             <div className={usc(styles, ["header-desktop"])}>
               <Logo />

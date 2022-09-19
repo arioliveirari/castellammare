@@ -30,20 +30,7 @@
         }
     }
 }
-@media screen and (max-width: 768px) {
-    .title {
-        p {
-            text-align: center;
-            align-items: center;
-            font-weight: bold;
-            min-width: 30%;
-            width: fit-content;
-            font-size: 40pt;
-            font-weight: 600;
-            position: relative;
-        }
-    }
-}
+
 
 .faqComponent {
     background-color: $beige;
@@ -117,6 +104,19 @@
             }
             .isDown {
                 font-size: 14px;
+            }
+        }
+        .title {
+            p {
+                text-align: center;
+                align-items: center;
+                font-weight: bold;
+                min-width: 30%;
+                width: fit-content;
+                font-size: 40pt;
+                font-weight: 600;
+                position: relative;
+                padding-left: 50px;
             }
         }
     }
