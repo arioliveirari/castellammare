@@ -38,7 +38,7 @@ const BoatsMobile = () => {
                                     </div>
                                     <div className={usc(styles, ["botData"])}>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataText"])}>Modelo Phantom 19</div>
+                                            <div className={usc(styles, ["dataModel"])}>Modelo Phantom 19</div>
                                         </div>
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@ const BoatsMobile = () => {
                                     </div>
                                     <div className={usc(styles, ["botData"])}>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataText"])}>Modelo D´angelo 24</div>
+                                            <div className={usc(styles, ["dataModel"])}>Modelo D´angelo 24</div>
                                         </div>
                                     </div>
                                 </div>

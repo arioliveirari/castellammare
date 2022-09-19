@@ -5,6 +5,29 @@
   align-items: center;
 
   .content {
+    .icons {
+      text-align: left;
+      justify-content: left;
+      width: 100%;
+      background-color: #28b171;
+      padding-bottom: 0%;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: roboto;
+      color: $beige;
+      .linkBtn{
+        display: flex;
+        align-items: center;
+      }
+      p {
+        padding: 0%;
+        margin: 0%;
+      }
+      a{
+        color: $beige;
+        text-decoration: none;
+      }
+    }
     margin-top: 7vh;
     width: 100%;
     text-align: center;
@@ -34,6 +57,7 @@
           margin: 0%;
         }
       }
+
       .bannerTextContainer {
         align-items: center;
         justify-content: center;
@@ -43,7 +67,8 @@
         font-weight: 600;
         text-transform: uppercase;
         font-family: roboto;
-        p{
+
+        p {
           margin: 0%;
         }
       }
@@ -125,7 +150,7 @@
         .titleContainer {
           font-size: 20px;
         }
-        .bannerTextContainer{
+        .bannerTextContainer {
           font-size: 15px;
         }
       }

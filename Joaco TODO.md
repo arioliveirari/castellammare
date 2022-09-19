@@ -1,6 +1,12 @@
+TODO 19/9/22
+<!-- 1) agregar redes al voucher de compra -->
+2) form validation
+3) cambios esteticos(pensar e implementar)
+<!-- 4) data boats en mobile mas grande -->
+5) whatsapp web
 TODO 16/9/22
-1) centrar titulos
-2) re hacer gallery con otra dependencia
+<!-- 1) centrar titulos
+2) re hacer gallery con otra dependencia -->
 
 TODO 14/9/22
 <!-- 1 centrar faq -->

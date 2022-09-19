@@ -92,17 +92,26 @@ const Voucher = () => {
                   <p>
                     Tenes a dispocicion un paseo en velero por el rio de la plata! <br />
                     Coordina la salida a traves de <br /></p>
-                    
-                  <div className={usc(styles, ["icons"])}>
-                    <div className={usc(styles, ["linkBtn"])}>
-                      <span className="icon-instagram" />
+                </div>
+              </div>
+              <div className={usc(styles, ["icons"])}>
+                <a href="https://www.instagram.com/bairesnavega/" rel="noreferrer" target={"_blank"}>
+                  <div className={usc(styles, ["linkBtn"])}>
+
+                    <span className="icon-instagram" />
+
+                    <p>
+
                       @bairesnavega
-                    </div>
-                    <div className={usc(styles, ["linkBtn"])}>
-                      <span className="icon-wpp" />
-                      1121863402
-                    </div>
+                    </p>
                   </div>
+                </a>
+                <div className={usc(styles, ["linkBtn"])}>
+
+                  <span className="icon-wpp" />
+                  <p>
+                    1121863402
+                  </p>
                 </div>
               </div>
               <div className={usc(styles, ["purchaseData"])}>

@@ -41,10 +41,13 @@ const Form = ({ children }: any) => {
     }
   }
   const handleChange = () => {
-    setContact((event?.target as HTMLInputElement).value)
+    console.log((event?.target as HTMLInputElement).value)
   }
 
-
+  const [formValue,setFormValue] = useState()
+  const initialValue = {
+    mail: ""
+  }
 
   return (
     <div className={usw(styles, ['formComponent'], ["p-0"])} >
@@ -81,7 +84,7 @@ const Form = ({ children }: any) => {
                   </div>
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "contactContainer"])} >
                     <span className='icon-bubbles'></span>
-                    <input type="text" className={usc(styles, ["contactInput"])} onChange={handleChange} placeholder={"Mail/telefono de contacto"} />
+                    <input type="text" value={initialValue.mail} className={usc(styles, ["contactInput"])} onChange={handleChange} placeholder={"Mail/telefono de contacto"} />
                   </div>
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                     <div className={usc(styles, ["clock"])}>

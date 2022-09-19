@@ -71,23 +71,8 @@
         padding: 5px 20px;
         color: #fff;
         background-color: $darkishBlue;
-        border-radius:211px ;
+        border-radius: 211px;
         text-transform: uppercase;
-      }
-    }
-  }
-
-  &.botContent-reverse {
-    .boatData {
-      .boatNumber {
-        margin-right: 0px;
-        margin-left: -16px;
-      }
-      .boatText {
-        padding: 5px 20px;
-        color: #fff;
-        background-color: $darkishBlue;
-        border-radius: 211px 0px 0px 211px;
       }
     }
   }
@@ -158,10 +143,9 @@
         padding: 5px 20px;
         color: #fff;
         background-color: $darkishBlue;
-        border-radius: 211px ;
+        border-radius: 211px;
         text-transform: uppercase;
       }
-      
     }
   }
 
@@ -178,7 +162,7 @@
         padding: 5px 20px;
         color: #fff;
         background-color: $darkishBlue;
-        border-radius: 211px ;
+        border-radius: 211px;
       }
     }
   }
