@@ -4,33 +4,108 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import { usb, usc, usw } from '../utils/helpers';
 import styles from '../styles/gallery.module.scss';
 import Glide from '@glidejs/glide'
+import Gallery from "react-photo-gallery";
 import Tittles from './Tittles';
+
+const photos = [
+  {
+    src: "/images/gallery/8.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/images/gallery/16.jpg",
+    width: 1,
+    height: 1
+  },
+  {
+    src: "/images/gallery/4.jpg",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "/images/gallery/6.jpg",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "images/gallery/1.jpg",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "/images/gallery/15.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/images/gallery/2.jpg",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "images/gallery/12.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/images/gallery/9.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/images/gallery/12.jpg",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "/images/gallery/7.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/images/gallery/3.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/images/gallery/11.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/images/gallery/10.jpg",
+    width: 4,
+    height: 3
+  }
+];
+
 
 const column1 = [
   "https://dummyimage.com/401x600/000/fff",// "./images/gallery/8.jpg",
-  "https://dummyimage.com/404x400/000/fff",// "./images/gallery/16.jpg",
-  "https://dummyimage.com/407x600/000/fff",// "./images/gallery/4.jpg",
-  "https://dummyimage.com/410x400/000/fff",// "./images/gallery/6.jpg",
-  "https://dummyimage.com/413x800/000/fff",// "./images/gallery/1.jpg",
+  "https://dummyimage.com/404x400/000/fff",// ".
+  "https://dummyimage.com/407x600/000/fff",// ".
+  "https://dummyimage.com/410x400/000/fff",// ".",
+  "https://dummyimage.com/413x800/000/fff",// "./",
 ]
 const column2 = [
-  "https://dummyimage.com/402x800/000/fff",// "./images/gallery/15.jpg",
-  "https://dummyimage.com/405x800/000/fff",// "./images/gallery/2.jpg",
-  "https://dummyimage.com/408x400/000/fff",// "./images/gallery/12.jpg",
-  "https://dummyimage.com/411x400/000/fff",// "./images/gallery/9.jpg",
-  "https://dummyimage.com/414x400/000/fff",// "./images/gallery/12.jpg",
+  "https://dummyimage.com/402x800/000/fff",// ".",
+  "https://dummyimage.com/405x800/000/fff",// ".",
+  "https://dummyimage.com/408x400/000/fff",// "./",
+  "https://dummyimage.com/411x400/000/fff",// ".",
+  "https://dummyimage.com/414x400/000/fff",// ".",
 
 ]
 const column3 = [
-  "https://dummyimage.com/403x400/000/fff",// "./images/gallery/7.jpg",
-  "https://dummyimage.com/406x400/000/fff",// "./images/gallery/7.jpg",
-  "https://dummyimage.com/409x600/000/fff",// "./images/gallery/3.jpg",
-  "https://dummyimage.com/412x800/000/fff",// "./images/gallery/11.jpg",
-  "https://dummyimage.com/415x600/000/fff",// "./images/gallery/10.jpg",
+  "https://dummyimage.com/403x400/000/fff",// ".",
+  "https://dummyimage.com/406x400/000/fff",// ".",
+  "https://dummyimage.com/409x600/000/fff",// ".",
+  "https://dummyimage.com/412x800/000/fff",// ".",
+  "https://dummyimage.com/415x600/000/fff",// ".",
 ]
 
 const items: string[] = [];
-const items2Col: string[] = [];
+
 for (let index = 0; index < column1.length; index++) {
   const element1 = column1[index];
   const element2 = column2[index];
@@ -41,36 +116,36 @@ for (let index = 0; index < column1.length; index++) {
 }
 
 console.log("items", items)
-const Gallery = () => {
+const GalleryFunction = () => {
   const [activeItem, setActiveItem] = React.useState(items[0]);
-  React.useEffect(() => {
-    const glide = new Glide('#gallery-image-mobile', {
-      type: "slider",
-      focusAt: 'center',
-      perView: 1.8,
-      startAt: 0,
-      peek: 0,
-      gap: 15,
-      breakpoints: {
-        475: {
-          perView: 1.5
-        },
-        375: {
-          perView: 1.3
-        },
-        320: {
-          perView: 1.2
-        }
-      }
-    })
-    glide.on('run', () => {
-      // USE STATE
-      // @ts-ignore
-      setActiveItem(items[glide.index]);
-    })
-    glide.mount();
+  // React.useEffect(() => {
+  //   const glide = new Glide('#gallery-image-mobile', {
+  //     type: "slider",
+  //     focusAt: 'center',
+  //     perView: 1.8,
+  //     startAt: 0,
+  //     peek: 0,
+  //     gap: 15,
+  //     breakpoints: {
+  //       475: {
+  //         perView: 1.5
+  //       },
+  //       375: {
+  //         perView: 1.3
+  //       },
+  //       320: {
+  //         perView: 1.2
+  //       }
+  //     }
+  //   })
+  //   glide.on('run', () => {
+  //     // USE STATE
+  //     // @ts-ignore
+  //     setActiveItem(items[glide.index]);
+  //   })
+  //   glide.mount();
 
-  }, [])
+  // }, [])
 
   React.useEffect(() => {
     console.log("CAMBGIO EL ACTIVE ITEM", activeItem)
@@ -79,7 +154,7 @@ const Gallery = () => {
   return (
     <>
       <div className={usw(styles, ["gallery"], ["container-fluid"])}>
-        <Tittles styling={{ paddingTop: "70px", paddingLeft:"25px" }} tittle='galeria' />
+        <Tittles styling={{ paddingTop: "70px", paddingLeft: "25px" }} tittle='galeria' />
         <div className={usb(["container-fluid", "p-0"])} >
           <div className={usc(styles, ["galleryContainerMobile"])}>
             <div className="glide" id="gallery-image-mobile">
@@ -108,13 +183,14 @@ const Gallery = () => {
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
               <div className={usc(styles, ["galleryContainer"])}>
-                <Masonry columnsCount={3}
+                {/* <Masonry columnsCount={3}
                   columnsCountBreakPoints={
                     { 990: 3 }
                   }
                   gutter={"10px"}>
                   {items.map((i) => (<img src={i} key={`image-${i}`} className={usc(styles, ["image"])} alt="pic goes here" />))}
-                </Masonry>
+                </Masonry> */}
+                <Gallery direction='row' photos={photos} />
               </div>
             </div>
           </div>
@@ -124,4 +200,4 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default GalleryFunction
