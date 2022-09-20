@@ -97,9 +97,7 @@ const Voucher = () => {
               <div className={usc(styles, ["icons"])}>
                 <a href="https://www.instagram.com/bairesnavega/" rel="noreferrer" target={"_blank"}>
                   <div className={usc(styles, ["linkBtn"])}>
-
                     <span className="icon-instagram" />
-
                     <p>
 
                       @bairesnavega
