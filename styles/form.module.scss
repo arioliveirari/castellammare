@@ -53,6 +53,18 @@
       align-items: center;
       margin-left: auto;
       margin-right: auto;
+      .invalidButton{
+        display: none;
+      }
+      .validButton{
+        display: flex;
+      }
+      .displayError{
+        display: flex;
+      }
+      .noError{
+        display: none;
+      }
     }
 
     .inputCounter {

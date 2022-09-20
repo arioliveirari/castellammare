@@ -23,9 +23,10 @@ const Form = ({ children }: any) => {
     { "people": people },
     { "total": total },
     { "contact": contact },
-    { "price": "" }
+    { "price": "" },
   ]
 
+  const [email, setEmail] = useState("")
   const plus = () => {
     if (people < max) {
       const newPeople = people + 1;
@@ -40,14 +41,23 @@ const Form = ({ children }: any) => {
       setTotal(newPeople * p)
     }
   }
+  const [isValid, setIsValid] = useState(false)
+
+  const emailError = "Este campo es obligatorio"
+  const includedCharacters = ["@", ".com"]
   const handleChange = () => {
     console.log((event?.target as HTMLInputElement).value)
+    setEmail((event?.target as HTMLInputElement).value)
+    if (email.includes("@")) {
+      setIsValid(true)
+    } else {
+      setIsValid(false)
+    }
   }
 
-  const [formValue,setFormValue] = useState()
-  const initialValue = {
-    mail: ""
-  }
+  // onSubmit={handleSubmit}
+
+
 
   return (
     <div className={usw(styles, ['formComponent'], ["p-0"])} >
@@ -57,7 +67,7 @@ const Form = ({ children }: any) => {
           <div className={usb(["col-lg-12", "m-auto"])}>
             {/*<div className={usc(styles, ["content"])}>*/}
             <div className={usc(styles, ["content"])}>
-              <div className={usc(styles, ["form"])}>
+              <form className={usc(styles, ["form"])}>
                 <div className={usc(styles, ["form-content", "padding-top-52"])}>
                   <div className={usc(styles, ["formText"])}>
                     <img src="/images/barco.svg" alt='' className={usc(styles, ["formPic"])} />
@@ -83,9 +93,11 @@ const Form = ({ children }: any) => {
                     </div>
                   </div>
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "contactContainer"])} >
+                    <label htmlFor={usc(styles, ["contact"])}></label>
                     <span className='icon-bubbles'></span>
-                    <input type="text" value={initialValue.mail} className={usc(styles, ["contactInput"])} onChange={handleChange} placeholder={"Mail/telefono de contacto"} />
+                    <input type="text" name={usc(styles, ["contact"])} value={email} className={usc(styles, ["contactInput"])} onChange={handleChange} placeholder={"Mail/telefono de contacto"} />
                   </div>
+                  <div className={usc(styles, [(isValid) ? "noError" : "displayError"])}>{emailError}</div>
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                     <div className={usc(styles, ["clock"])}>
                       <p>
@@ -96,11 +108,13 @@ const Form = ({ children }: any) => {
                   <div className={usc(styles, ["formCheck"])}>
                     <p>al reservar estas aceptando los <b>terminos y condiciones</b></p>
                   </div>
-                  <Button onClick={() => window.location.href = "https://mpago.la/2BxpUJA"} />
+                  <div className={usc(styles, [(isValid) ? "validButton" : "invalidButton"])}>
+                    <Button onClick={() => window.location.href = "https://mpago.la/2BxpUJA"} />
+                  </div>
                   <div className={usc(styles, ["formInput", "formPayment"])} >
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>

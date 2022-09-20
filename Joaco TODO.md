@@ -4,6 +4,7 @@ TODO 19/9/22
 3) cambios esteticos(pensar e implementar)
 <!-- 4) data boats en mobile mas grande -->
 5) whatsapp web
+
 TODO 16/9/22
 <!-- 1) centrar titulos
 2) re hacer gallery con otra dependencia -->
