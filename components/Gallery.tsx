@@ -104,7 +104,7 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        <div className={usw(styles, [], ["container"])}>
+        <div className={usw(styles, ["desktopContainer"], ["container"])}>
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
               <div className={usc(styles, ["galleryContainer"])}>
