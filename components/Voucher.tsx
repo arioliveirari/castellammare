@@ -106,13 +106,14 @@ const Voucher = () => {
                     </p>
                   </div>
                 </a>
-                <div className={usc(styles, ["linkBtn"])}>
-
-                  <span className="icon-wpp" />
-                  <p>
-                    1121863402
-                  </p>
-                </div>
+                <a href="https://wa.me/+5401121863402" rel="noreferrer" target={"_blank"}>
+                  <div className={usc(styles, ["linkBtn"])}>
+                    <span className="icon-wpp" />
+                    <p>
+                      1121863402
+                    </p>
+                  </div>
+                </a>
               </div>
               <div className={usc(styles, ["purchaseData"])}>
                 <div className={usb(["row"])} >
