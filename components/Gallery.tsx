@@ -92,34 +92,34 @@ for (let index = 0; index < column1.length; index++) {
 console.log("items", items)
 const GalleryFunction = () => {
   const [activeItem, setActiveItem] = React.useState(items[0]);
-  // React.useEffect(() => {
-  //   const glide = new Glide('#gallery-image-mobile', {
-  //     type: "slider",
-  //     focusAt: 'center',
-  //     perView: 1.8,
-  //     startAt: 0,
-  //     peek: 0,
-  //     gap: 15,
-  //     breakpoints: {
-  //       475: {
-  //         perView: 1.5
-  //       },
-  //       375: {
-  //         perView: 1.3
-  //       },
-  //       320: {
-  //         perView: 1.2
-  //       }
-  //     }
-  //   })
-  //   glide.on('run', () => {
-  //     // USE STATE
-  //     // @ts-ignore
-  //     setActiveItem(items[glide.index]);
-  //   })
-  //   glide.mount();
+  React.useEffect(() => {
+    const glide = new Glide('#gallery-image-mobile', {
+      type: "slider",
+      focusAt: 'center',
+      perView: 1.8,
+      startAt: 0,
+      peek: 0,
+      gap: 15,
+      breakpoints: {
+        475: {
+          perView: 1.5
+        },
+        375: {
+          perView: 1.3
+        },
+        320: {
+          perView: 1.2
+        }
+      }
+    })
+    glide.on('run', () => {
+      // USE STATE
+      // @ts-ignore
+      setActiveItem(items[glide.index]);
+    })
+    glide.mount();
 
-  // }, [])
+  }, [])
 
   React.useEffect(() => {
     console.log("CAMBGIO EL ACTIVE ITEM", activeItem)
@@ -130,13 +130,13 @@ const GalleryFunction = () => {
       <div className={usw(styles, ["gallery"], ["container-fluid"])}>
         <Tittles styling={{ paddingTop: "70px", paddingLeft: "25px" }} tittle='galeria' />
         <div className={usb(["container-fluid", "p-0"])} >
-          <div className={usc(styles, ["galleryContainerMobile"])}>
+        <div className={usc(styles, ["galleryContainerMobile"])}>
             <div className="glide" id="gallery-image-mobile">
               <div className="glide__track" data-glide-el="track">
                 <ul className="glide__slides">
-                  {items.map((i, index) => (
+                  {photos.map((i, index) => (
                     <div className="glide__slide" key={`image-${i}`}>
-                      <img src={i} className={usc(styles, ["sliderImage"])} height="100" alt="pic goes here" />
+                      <img src={i.src} className={usc(styles, ["sliderImage"])} height="100" alt="pic goes here" />
                     </div>
                   ))}
                 </ul>
