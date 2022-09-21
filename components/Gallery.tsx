@@ -10,7 +10,7 @@ import Tittles from './Tittles';
 const photos = [
   {
     src: "/images/gallery/8.jpg",
-    width: 4,
+    width: 3.5,
     height: 3
   },
   {
@@ -25,12 +25,12 @@ const photos = [
   },
   {
     src: "/images/gallery/6.jpg",
-    width: 3,
+    width: 3.5,
     height: 4
   },
   {
     src: "images/gallery/1.jpg",
-    width: 3,
+    width: 5,
     height: 4
   },
   {
@@ -75,7 +75,7 @@ const photos = [
   },
   {
     src: "/images/gallery/10.jpg",
-    width: 4,
+    width: 3,
     height: 3
   }
 ];
