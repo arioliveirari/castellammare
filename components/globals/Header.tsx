@@ -48,12 +48,16 @@ const Header = ({ children }: any) => {
               <Logo />
               <a href='#form' className={usc(styles, [(transparent) ? "reserva" : "noDisplay"])}><p>ADQUIRIR VOUCHER</p></a>
               <div className={usc(styles, ["icons"])}>
-                <div className={usc(styles, ["linkBtn"])}>
-                  <span className="icon-instagram" />
-                </div>
-                <div className={usc(styles, ["linkBtn"])}>
-                  <span className="icon-wpp" />
-                </div>
+                <a href="https://www.instagram.com/bairesnavega/?hl=es" target={"_blank"} rel="noreferrer" >
+                  <div className={usc(styles, ["linkBtn"])}>
+                    <span className="icon-instagram" />
+                  </div>
+                </a>
+                <a href="https://wa.me/+5401121863402" target={"_blank"} rel="noreferrer">
+                  <div className={usc(styles, ["linkBtn"])}>
+                    <span className="icon-wpp" />
+                  </div>
+                </a>
                 {/*
                 <div className={usc(styles, ["linkBtn"])}>
                   <span className="icon-mail" />
