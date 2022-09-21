@@ -9,8 +9,8 @@ import Tittles from './Tittles';
 
 const photos = [
   {
-    src: "/images/gallery/8.jpeg",
-    width: 4,
+    src: "/images/gallery/alternative.jpeg",
+    width: 5,
     height: 3
   },
 
@@ -49,7 +49,7 @@ const photos = [
   },
   {
     src: "/images/gallery/3.jpeg",
-    width: 4,
+    width: 5,
     height: 3
   },
 ];
