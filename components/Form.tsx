@@ -41,23 +41,35 @@ const Form = ({ children }: any) => {
       setTotal(newPeople * p)
     }
   }
-  const [isValid, setIsValid] = useState(false)
+  const [isValid, setIsValid] = useState(true)
+  const [gray, setGray] = useState(true)
 
   const emailError = "Este campo es obligatorio"
-  const includedCharacters = ["@", ".com"]
+
   const handleChange = () => {
-    console.log((event?.target as HTMLInputElement).value)
     setEmail((event?.target as HTMLInputElement).value)
-    if (email.includes("@")) {
-      setIsValid(true)
-    } else {
+    console.log(email)
+    if(email==""){
+      setGray(true)
+    }else{
+      setGray(false)
+    }
+  }
+
+  const handleClick = () => {
+    if (email == "") {
       setIsValid(false)
+      setGray(true)
+      console.log(isValid)
+    } else {
+      setIsValid(true)
+      window.location.href = "https://mpago.la/2BxpUJA"
     }
   }
 
   // onSubmit={handleSubmit}
 
-
+  //
 
   return (
     <div className={usw(styles, ['formComponent'], ["p-0"])} >
@@ -95,7 +107,7 @@ const Form = ({ children }: any) => {
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "contactContainer"])} >
                     <label htmlFor={usc(styles, ["contact"])}></label>
                     <span className='icon-bubbles'></span>
-                    <input type="text" name={usc(styles, ["contact"])} value={email} className={usc(styles, ["contactInput"])} onChange={handleChange} placeholder={"Mail/telefono de contacto"} />
+                    <input type="text" name={usc(styles, ["contact"])} onChange={handleChange} value={email} className={usc(styles, ["contactInput"])} placeholder={"Mail/telefono de contacto"} />
                   </div>
                   <div className={usc(styles, [(isValid) ? "noError" : "displayError"])}>{emailError}</div>
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
@@ -108,9 +120,10 @@ const Form = ({ children }: any) => {
                   <div className={usc(styles, ["formCheck"])}>
                     <p>al reservar estas aceptando los <b>terminos y condiciones</b></p>
                   </div>
-                  <div className={usc(styles, [(isValid) ? "validButton" : "invalidButton"])}>
-                    <Button onClick={() => window.location.href = "https://mpago.la/2BxpUJA"} />
+                  <div className={usc(styles, [(gray) ? "grayButtonContainer" : "buttonContainer"])} >
+                    <Button onClick={handleClick} />
                   </div>
+
                   <div className={usc(styles, ["formInput", "formPayment"])} >
                   </div>
                 </div>

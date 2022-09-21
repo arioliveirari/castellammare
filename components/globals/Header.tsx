@@ -46,7 +46,7 @@ const Header = ({ children }: any) => {
             {/*Header Mobile */}
             <div className={usc(styles, ["header-mobile"])}>
               <Logo />
-              <a href='#form' className={usc(styles, [(transparent)? "reserva" : "noDisplay"])}><p>ADQUIRIR VOUCHER</p></a>
+              <a href='#form' className={usc(styles, [(transparent) ? "reserva" : "noDisplay"])}><p>ADQUIRIR VOUCHER</p></a>
               <div className={usc(styles, ["icons"])}>
                 <div className={usc(styles, ["linkBtn"])}>
                   <span className="icon-instagram" />
@@ -76,24 +76,27 @@ const Header = ({ children }: any) => {
 
 export default Header;
 
+
 const Links = () => {
   const contactRef = React.useRef<HTMLAnchorElement>(null)
   return (
     <>
       <div className={usc(styles, ["links"])} >
         <a href="#" className={usc(styles, ["reserva"])} >Adquierir Voucher</a>
-       
-        <a href="#" className={usc(styles, ["headerLink"])}>Servicios</a>
         <div className={usc(styles, ["icons"])}>
-          <div className={usc(styles, ["linkBtn"])}>
-            <span  ref={contactRef} className="icon-instagram" />
-          </div>
-          <div className={usc(styles, ["linkBtn"])}>
-            <span className="icon-wpp" />
-          </div>
+          <a href="https://www.instagram.com/bairesnavega/?hl=es" target={"_blank"} rel="noreferrer" >
+            <div className={usc(styles, ["linkBtn"])}>
+              <span ref={contactRef} className="icon-instagram" />
+            </div>
+          </a>
+          <a href="https://wa.me/+5401121863402" target={"_blank"} rel="noreferrer">
+            <div className={usc(styles, ["linkBtn"])}>
+              <span className="icon-wpp" />
+            </div>
+          </a>
         </div>
       </div>
-      <ToolTip topValue={50} leftValue={2} divRef={contactRef}><p className={usc(styles,["tootlTipText"])}>contactanos para consultar <br/> disponibilidad</p></ToolTip>
+      <ToolTip topValue={50} leftValue={2} divRef={contactRef}><p className={usc(styles, ["tootlTipText"])}>contactanos para consultar <br /> disponibilidad</p></ToolTip>
     </>
   )
 }

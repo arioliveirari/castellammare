@@ -19,7 +19,6 @@
 @media screen and (max-width: 992px) {
     .title {
         p {
-           
             align-items: center;
             font-weight: bold;
             min-width: 40%;
@@ -30,7 +29,6 @@
         }
     }
 }
-
 
 .faqComponent {
     background-color: $beige;
@@ -88,8 +86,8 @@
             align-items: center;
             transition: all ease 0.2s;
             background-color: #eadec5;
-
-            border-bottom: 0.5px solid $darkBlue;
+            padding-top: 10px;
+            border-bottom: 0.5px solid #c9bda4;
         }
     }
 }
@@ -116,7 +114,6 @@
                 font-size: 40pt;
                 font-weight: 600;
                 position: relative;
-                
             }
         }
     }

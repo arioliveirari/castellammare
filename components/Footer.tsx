@@ -11,11 +11,7 @@ const Footer = () => {
                         <div className={usc(styles, ["desktopContent"])} >
                             <div className={usc(styles, ["logoContainer"])}>
                                 <Logo />
-                                <ul>
-                                 
-                                    <a href="#"><li>servicios</li></a>
-                                    <a href="#"><li>reservar</li></a>
-                                </ul>
+                                <a href='#form' className={usc(styles, [ "reserva" ])}><p>ADQUIRIR VOUCHER</p></a>
                             </div>
                             <div className={usc(styles, ["iconContainer"])}>
                                 <Icons />

@@ -61,9 +61,17 @@
       }
       .displayError{
         display: flex;
+        padding-top: 8px;
+       
       }
       .noError{
         display: none;
+      }
+      .grayButtonContainer{
+        filter: grayscale(1);
+      }
+      .buttonContainer{
+        filter: grayscale(0);
       }
     }
 

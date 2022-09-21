@@ -13,14 +13,17 @@
     align-items: center;
 }
 .p{
+    
     margin: 0%;
 }
 
 .tittle{
     font-family: 'roboto';
     font-weight:700 ;
+    line-height: 28px;
     font-size: 30px;
     color: $darkBlue;
+    padding-top: 10px;
 }
 .paragraph{
     font-family: 'roboto';
