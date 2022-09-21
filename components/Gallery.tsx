@@ -9,80 +9,54 @@ import Tittles from './Tittles';
 
 const photos = [
   {
-    src: "/images/gallery/8.jpg",
-    width: 3.5,
+    src: "/images/gallery/8.jpeg",
+    width: 4,
     height: 3
   },
+
   {
-    src: "/images/gallery/16.jpg",
-    width: 1,
-    height: 1
-  },
-  {
-    src: "/images/gallery/4.jpg",
-    width: 3,
+    src: "/images/gallery/4.jpeg",
+    width: 4,
     height: 4
   },
   {
-    src: "/images/gallery/6.jpg",
-    width: 3.5,
+    src: "/images/gallery/6.jpeg",
+    width: 4.5,
     height: 4
   },
   {
-    src: "images/gallery/1.jpg",
+    src: "images/gallery/1.jpeg",
+    width: 5.5,
+    height: 4
+  },
+
+  {
+    src: "/images/gallery/2.jpeg",
     width: 5,
     height: 4
   },
+
   {
-    src: "/images/gallery/15.jpg",
+    src: "/images/gallery/9.jpeg",
     width: 4,
     height: 3
   },
+
   {
-    src: "/images/gallery/2.jpg",
-    width: 3,
-    height: 4
+    src: "/images/gallery/7.jpeg",
+    width: 5,
+    height: 3
   },
   {
-    src: "images/gallery/12.jpg",
+    src: "/images/gallery/3.jpeg",
     width: 4,
     height: 3
   },
-  {
-    src: "/images/gallery/9.jpg",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "/images/gallery/12.jpg",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "/images/gallery/7.jpg",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "/images/gallery/3.jpg",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "/images/gallery/11.jpg",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "/images/gallery/10.jpg",
-    width: 3,
-    height: 3
-  }
 ];
 
 
 const column1 = [
-  "https://dummyimage.com/401x600/000/fff",// "./images/gallery/8.jpg",
+  "https://dummyimage.com/401x600/000/fff",// "./images/gallery/8.jpeg",
   "https://dummyimage.com/404x400/000/fff",// ".
   "https://dummyimage.com/407x600/000/fff",// ".
   "https://dummyimage.com/410x400/000/fff",// ".",
