@@ -405,3 +405,12 @@ transform: translatey(-35px);
   border: none;
   width: 40px;
 }
+
+.react-photo-gallery--gallery>div>img{
+  filter: grayscale(1);
+  transition: all ease 0.2s;
+}
+.react-photo-gallery--gallery>div>img:hover{
+  filter: grayscale(0);
+  transition: all ease 0.3s;
+}
