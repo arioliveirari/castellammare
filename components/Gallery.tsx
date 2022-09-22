@@ -10,13 +10,13 @@ import Tittles from './Tittles';
 const photos = [
   {
     src: "/images/gallery/alternative.jpeg",
-    width: 5,
+    width: 4.5,
     height: 3
   },
 
   {
     src: "/images/gallery/4.jpeg",
-    width: 4,
+    width: 3.5,
     height: 4
   },
   {
@@ -26,7 +26,7 @@ const photos = [
   },
   {
     src: "images/gallery/1.jpeg",
-    width: 5.5,
+    width: 3,
     height: 4
   },
 
@@ -49,9 +49,29 @@ const photos = [
   },
   {
     src: "/images/gallery/3.jpeg",
-    width: 5,
+    width: 4,
     height: 3
   },
+  {
+    src: "/images/gallery/14.jpg",
+    width: 4.5,
+    height: 3
+  },
+  {
+    src: "/images/gallery/16.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/images/gallery/17.jpg",
+    width: 3,
+    height: 3
+  },
+  {
+    src: "/images/gallery/12.jpg",
+    width: 3.5,
+    height: 3
+  }
 ];
 
 
