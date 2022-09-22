@@ -32,24 +32,24 @@ const photos = [
 
   {
     src: "/images/gallery/2.jpeg",
-    width: 5,
+    width: 4,
     height: 4
   },
 
   {
     src: "/images/gallery/9.jpeg",
-    width: 4,
+    width: 3.5,
     height: 3
   },
 
   {
     src: "/images/gallery/7.jpeg",
-    width: 5,
+    width: 3,
     height: 3
   },
   {
     src: "/images/gallery/3.jpeg",
-    width: 4,
+    width: 3,
     height: 3
   },
   {
@@ -59,12 +59,12 @@ const photos = [
   },
   {
     src: "/images/gallery/16.jpg",
-    width: 4,
+    width: 3.5,
     height: 3
   },
   {
     src: "/images/gallery/17.jpg",
-    width: 3,
+    width: 2.5,
     height: 3
   },
   {

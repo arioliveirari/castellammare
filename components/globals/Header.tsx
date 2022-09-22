@@ -32,7 +32,7 @@ const Header = ({ children }: any) => {
       <Head>
         <title>Baires navega!</title>
         <meta name="description" content="Baires navega" />
-        <link rel="icon" href="/logo.ico" />
+        <link rel="icon" href="/public/images/barco.ico" />
       </Head>
       <div className={usb(["container"])}>
         <div className={usb(["row"])}>
