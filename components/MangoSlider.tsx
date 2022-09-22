@@ -5,10 +5,10 @@ import Glide from '@glidejs/glide'
 
 const items = [
     "/images/barco_2_01.jpeg",
-    "/images/barco_2_02.jpeg",
+    "/images/barco_2_02(3).jpeg",
     "/images/barco_2_03.jpeg",
     "/images/barco_2_04.jpeg",
-    "/images/barco_2_05.jpeg"
+    "/images/barco_2_05(2).jpeg"
 ]
 const MangoSlider = () => {
     React.useEffect(() => {

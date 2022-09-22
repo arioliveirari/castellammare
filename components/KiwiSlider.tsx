@@ -4,11 +4,11 @@ import styles from '../styles/kiwiSlider.module.scss';
 import Glide from '@glidejs/glide'
 
 const items = [
-    { url: "/images/barco_1_01.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
+    { url: "/images/barco_1_01(3).jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
     { url: "/images/barco_1_02.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
     { url: "/images/barco_1_03.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
     { url: "/images/barco_1_04.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
-    { url: "/images/barco_1_05.jpeg", objectfit: "objectFit:cover", objectPosition: "center" }
+    { url: "/images/barco_1_05(2).jpeg", objectfit: "objectFit:cover", objectPosition: "center" }
 ]
 const KiwiSlider = () => {
     React.useEffect(() => {
