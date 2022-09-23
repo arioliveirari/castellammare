@@ -42,29 +42,22 @@ const Form = ({ children }: any) => {
     }
   }
   const [isValid, setIsValid] = useState(true)
-  const [gray, setGray] = useState(true)
+  const [isDisabled, setDisabled] = useState(true)
 
   const emailError = "Este campo es obligatorio"
-
-  const handleChange = () => {
-    setEmail((event?.target as HTMLInputElement).value)
-    console.log(email)
-    if(email==""){
-      setGray(true)
-    }else{
-      setGray(false)
-    }
+  
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const tempEmail = event.target.value;
+    setDisabled((tempEmail == ""))
+    setIsValid(!(tempEmail == ""));
+    setEmail(tempEmail)
   }
-useEffect(()=>{
-  handleChange
-},[])
+
   const handleClick = () => {
-    if (email == "") {
-      setIsValid(false)
-      setGray(true)
-      console.log(isValid)
+    if (isDisabled) {
+      setIsValid(false);
     } else {
-      setIsValid(true)
+      setIsValid(true);
       window.location.href = "https://mpago.la/2BxpUJA"
     }
   }
@@ -91,7 +84,6 @@ useEffect(()=>{
                     <div className={usc(styles, ["formTittle"])} >
                       Regalá una experiencia unica
                     </div>
-
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-40", "inputCounter"])} >
                     <div className={usc(styles, ["counter"])}>
@@ -122,7 +114,7 @@ useEffect(()=>{
                   <div className={usc(styles, ["formCheck"])}>
                     <p>al reservar estas aceptando los <b>terminos y condiciones</b></p>
                   </div>
-                  <div className={usc(styles, [(gray) ? "grayButtonContainer" : "buttonContainer"])} >
+                  <div className={usc(styles, [(isDisabled) ? "grayButtonContainer" : "buttonContainer"])} >
                     <Button onClick={handleClick} />
                   </div>
 

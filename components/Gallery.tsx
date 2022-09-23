@@ -1,6 +1,5 @@
 import React from 'react';
 //@ts-ignore
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import { usb, usc, usw } from '../utils/helpers';
 import styles from '../styles/gallery.module.scss';
 import Glide from '@glidejs/glide'
