@@ -10,18 +10,18 @@ import Tittles from './Tittles';
 const photos = [
   {
     src: "/images/gallery/alternative.jpeg",
-    width: 4.5,
+    width: 3,
     height: 3
   },
 
   {
     src: "/images/gallery/4.jpeg",
-    width: 3.5,
+    width: 3,
     height: 4
   },
   {
     src: "/images/gallery/6.jpeg",
-    width: 4.5,
+    width: 4,
     height: 4
   },
   {
@@ -38,7 +38,7 @@ const photos = [
 
   {
     src: "/images/gallery/9.jpeg",
-    width: 3.5,
+    width: 3,
     height: 3
   },
 
@@ -49,17 +49,17 @@ const photos = [
   },
   {
     src: "/images/gallery/3.jpeg",
-    width: 3,
+    width: 2.6,
     height: 3
   },
   {
     src: "/images/gallery/14.jpg",
-    width: 4.5,
+    width: 4,
     height: 3
   },
   {
     src: "/images/gallery/16.jpg",
-    width: 3.5,
+    width: 3.2,
     height: 3
   },
   {

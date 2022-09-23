@@ -61,11 +61,7 @@ const Icons = () => (
                     <span className="icon-wpp" />
                 </div>
             </a>
-            <a href="">
-                <div className={usc(styles, ["linkBtn"])}>
-                    <span className="icon-mail" />
-                </div>
-            </a>
+            
         </div>
 
     </div>

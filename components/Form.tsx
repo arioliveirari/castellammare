@@ -55,7 +55,9 @@ const Form = ({ children }: any) => {
       setGray(false)
     }
   }
-
+useEffect(()=>{
+  handleChange
+},[])
   const handleClick = () => {
     if (email == "") {
       setIsValid(false)

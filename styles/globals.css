@@ -420,5 +420,5 @@ transform: translatey(-35px);
 }
 .react-photo-gallery--gallery>div>img:hover{
   filter: grayscale(0);
-  transition: all ease 0.3s;
+  transition: all ease 0.2s;
 }
