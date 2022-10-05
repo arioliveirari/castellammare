@@ -23,12 +23,15 @@ const Index = (props: any) => {
       <OverTheFold />
       <Waves />
       <Boats />
-      
       <Coast />
+      {/*
       <Slider />
-      <FaqItem />
+      */}
       <Services />
+      <FaqItem />
+      {/*
       <Gallery />
+      */}
       <FooterWaves />
       <Footer />
     </div>

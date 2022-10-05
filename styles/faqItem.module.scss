@@ -1,135 +1,135 @@
 @import "variables.module.scss";
 
 .title {
-    background-color: $beige;
-    height: fit-content;
-    padding-top: 70px;
-    padding-bottom: 20px;
-    p {
-        line-height: 63px;
-        margin: auto;
-        justify-content: center;
-        text-align: center;
-        font-family: calson;
-        font-weight: 600;
-        font-size: 68px;
-        color: #002848;
-    }
+  background-color: $beige;
+  height: fit-content;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  p {
+    line-height: 63px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    font-family: calson;
+    font-weight: 600;
+    font-size: 68px;
+    color: #002848;
+  }
 }
 @media screen and (max-width: 992px) {
-    .title {
-        p {
-            align-items: center;
-            font-weight: bold;
-            min-width: 40%;
-            width: fit-content;
-            font-size: 40pt;
-            font-weight: 600;
-            position: relative;
-        }
+  .title {
+    p {
+      align-items: center;
+      font-weight: bold;
+      min-width: 40%;
+      width: fit-content;
+      font-size: 40pt;
+      font-weight: 600;
+      position: relative;
     }
+  }
 }
 
 .faqComponent {
-    background-color: $beige;
+  background-color: $beige;
+  text-align: left;
+  color: $darkBlue;
+  padding-bottom: 40px;
+  p {
+    margin: 0%;
+  }
+  span {
+    height: 40px;
+  }
+
+  .content {
+    align-items: center;
     text-align: left;
-    color: $darkBlue;
-    text-transform: capitalize;
-    p {
-        margin: 0%;
+    padding-bottom: 90px;
+    .answerRow {
+      justify-content: center;
     }
-    span {
-        height: 40px;
+    .question {
+      text-align: left;
+      margin-top: 30px;
+      text-transform: capitalize;
+      cursor: pointer;
+      .text {
+        font-family: roboto;
+        font-size: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
     }
+    .answer {
+      cursor: pointer;
+      opacity: 0%;
+      height: 0px;
+      justify-content: center;
 
-    .content {
-        align-items: center;
-        text-align: left;
-        padding-bottom: 90px;
-        .answerRow {
-            justify-content: center;
-        }
-        .question {
-            text-align: left;
-            margin-top: 30px;
-            text-transform: capitalize;
-            cursor: pointer;
-            .text {
-                font-family: roboto;
-                font-size: 30px;
-                display: flex;
-                text-align: center;
-                justify-content: center;
-            }
-        }
-        .answer {
-            cursor: pointer;
-            opacity: 0%;
-            height: 0px;
-            justify-content: center;
-
-            transition: all ease 0.4s;
-            margin-bottom: 5px;
-            p {
-                justify-content: center;
-                opacity: 0;
-                transition: all ease 0.1s;
-            }
-        }
-        .isDown {
-            cursor: pointer;
-            font-size: 24px;
-            height: fit-content;
-            font-weight: 300;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            transition: all ease 0.2s;
-            background-color: #eadec5;
-            padding-top: 10px;
-            border-bottom: 0.5px solid #c9bda4;
-        }
+      transition: all ease 0.4s;
+      margin-bottom: 5px;
+      p {
+        justify-content: center;
+        opacity: 0;
+        transition: all ease 0.1s;
+      }
     }
+    .isDown {
+      cursor: pointer;
+      font-size: 24px;
+      height: fit-content;
+      font-weight: 300;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      transition: all ease 0.2s;
+      background-color: #eadec5;
+      padding-top: 10px;
+      border-bottom: 0.5px solid #c9bda4;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
-    .faqComponent {
-        text-align: center;
-        .content {
-            .question {
-                .text {
-                    font-size: 25px;
-                }
-            }
-            .isDown {
-                font-size: 14px;
-            }
+  .faqComponent {
+    text-align: center;
+    .content {
+      .question {
+        .text {
+          font-size: 25px;
         }
-        .title {
-            p {
-                text-align: center;
-                align-items: center;
-                font-weight: bold;
-                min-width: 30%;
-                width: fit-content;
-                font-size: 40pt;
-                font-weight: 600;
-                position: relative;
-            }
-        }
+      }
+      .isDown {
+        font-size: 14px;
+      }
     }
+    .title {
+      p {
+        text-align: center;
+        align-items: center;
+        font-weight: bold;
+        min-width: 30%;
+        width: fit-content;
+        font-size: 40pt;
+        font-weight: 600;
+        position: relative;
+      }
+    }
+  }
 }
 @media screen and (max-width: 475px) {
-    .faqComponent {
-        .content {
-            .question {
-                .text {
-                    font-size: 25px;
-                    padding-right: 30px;
-                }
-            }
-            .isDown {
-                font-size: 20px;
-            }
+  .faqComponent {
+    .content {
+      .question {
+        .text {
+          font-size: 25px;
+          padding-right: 30px;
         }
+      }
+      .isDown {
+        font-size: 20px;
+      }
     }
+  }
 }

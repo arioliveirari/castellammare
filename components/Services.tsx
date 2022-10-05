@@ -13,10 +13,9 @@ const serviceData = [
 const Services = () => {
   return (
     <>
-
-      <Tittles styling={{ backgroundColor: "#fff", paddingTop:"70px", paddingBottom:"25px" }} tittle='servicios' />
+      <Tittles styling={{ backgroundColor: "#F3DDB4", paddingTop: "70px", paddingBottom: "25px" }} tittle='servicios' />
       <div className={usw(styles, ["servicios"], ["container-fluid"])}>
-        {serviceData.map((i,index)=>(
+        {serviceData.map((i, index) => (
           <Service key={index} tittle={i.title} paragraph={i.paragraph} pic={i.pic} inverted={i.inverted}></Service>
         ))}
       </div>

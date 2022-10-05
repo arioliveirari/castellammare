@@ -20,7 +20,7 @@ const OverTheFold = ({ children }: any) => (
                 </h1>
                 <div className={usc(styles, ["paragraphOver"])} >
                   <h2>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  has been the industry standard dummy text ever  since the 1500s, when an unknown printer took
+                    Experiencias en velero. <br />Viví un viaje único en el Rio de la Plata
                   </h2>
                 </div>
                 <a href='#form' className={usc(styles, ["arrowButton"])}>
