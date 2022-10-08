@@ -20,8 +20,17 @@ const OverTheFold = ({ children }: any) => (
                 </h1>
                 <div className={usc(styles, ["paragraphOver"])} >
                   <h2>
-                    Experiencias en velero. <br />Viví un viaje único en el Rio de la Plata
+                    Te proponemos conectarte con el Rio de la Plata de la manera mas linda: 
+                    <b>&nbsp;Navegando a vela</b>
+                    <br />
+                    <br />
+                    Con nuestros Gift Vouchers regalá un paseo en velero por el Rio de la Plata para dos, tres o cuatro personas con comida y bebida a bordo.
+                    <br />
+                    Son con fecha abierta y el agasajado tiene un año para coordinar el paseo.
                   </h2>
+                  <p>
+                    
+                  </p>
                 </div>
                 <a href='#form' className={usc(styles, ["arrowButton"])}>
                   <span className='icon-arrow-right'></span>
