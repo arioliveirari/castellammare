@@ -60,9 +60,9 @@ const Form = ({ children }: any) => {
       localStorage.setItem("baries-people", people.toString());
       localStorage.setItem("baries-sendForm", "true");
 
-      if (people == 2) window.location.href = "https://mpago.la/2hjrLJj" // 2
-      else if (people == 3) window.location.href = "https://mpago.la/2uE1PyK" // 3
-      else if (people == 4) window.location.href = "https://mpago.la/1X8YTn7" // 4
+      if (people == 2) window.location.href = "https://mpago.la/1jcHtU7" // 2
+      else if (people == 3) window.location.href = "https://mpago.la/2gFCBW6" // 3
+      else if (people == 4) window.location.href = "https://mpago.la/22uz4Po" // 4
 
       //window.location.href = "https://mpago.la/1QuSW4D"
     }

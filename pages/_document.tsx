@@ -9,9 +9,10 @@ import Document, {
 } from 'next/document';
 // application
 
+
 class MyDocument extends Document {
   render() {
-    const googleCode = "-";
+    const googleCode = "GTM-TWQ67XR";
     return (
       <Html lang={"ES"}>
         <Head>
