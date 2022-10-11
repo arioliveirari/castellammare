@@ -12,7 +12,6 @@ const parseDate = (input: Date) => {
   return `${input.getDate()}-${input.getMonth() + 1}-${input.getFullYear() + 1}`; // Note: months are 0-based
 }
 
-
 interface voucher {
   id: string,
   total?: string,
