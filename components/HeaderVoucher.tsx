@@ -30,8 +30,8 @@ const HeaderVoucher = ({ children }: any) => {
   return (
     <div className={(transparent) ? usw(styles, ["Header", "active"], ["container-fluid"]) : usw(styles, ["Header"], ["container-fluid"])} >
       <Head>
-        <title>Baires navega!</title>
-        <meta name="description" content="Baires navega" />
+        <title>Baires navega</title>
+        <meta name="description" content="Conectate con el Río de la Plata de la manera más linda: Navegando a vela." />
         <link rel="icon" href="/logo.ico" />
       </Head>
       <div className={usb(["container"])}>
