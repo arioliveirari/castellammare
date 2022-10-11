@@ -56,15 +56,15 @@ const Form = ({ children }: any) => {
     } else {
       setIsValid(true);
       localStorage.setItem("baries-contact", contact);
-      localStorage.setItem("baries-price", prices[people-2]);
+      localStorage.setItem("baries-price", prices[people - 2]);
       localStorage.setItem("baries-people", people.toString());
       localStorage.setItem("baries-sendForm", "true");
-      /*
-      if(people == 2) window.location.href = "https://mpago.la/1AJvpdB" // 2
-      if(people == 3) window.location.href = "https://mpago.la/1qqzxbg" // 3
-      if(people == 4) window.location.href = "https://mpago.la/2TKtCcS" // 4
-      */
-      window.location.href = "https://mpago.la/1QuSW4D"
+
+      if (people == 2) window.location.href = "https://mpago.la/2hjrLJj" // 2
+      else if (people == 3) window.location.href = "https://mpago.la/2uE1PyK" // 3
+      else if (people == 4) window.location.href = "https://mpago.la/1X8YTn7" // 4
+
+      //window.location.href = "https://mpago.la/1QuSW4D"
     }
   }
 
@@ -108,7 +108,7 @@ const Form = ({ children }: any) => {
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                     <div className={usc(styles, ["clock"])}>
                       <p>
-                        <span className={usb(["mx-2"])}>$</span> {prices[people-2]}
+                        <span className={usb(["mx-2"])}>$</span> {prices[people - 2]}
                       </p>
                     </div>
                   </div>

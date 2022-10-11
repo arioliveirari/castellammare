@@ -136,13 +136,16 @@
   .rowContainer {
     flex-direction: column;
   }
+  .textOver {
+   
+  }
   .containerOver {
     padding-top: 50px;
     height: 50vh;
     min-height: unset;
     .textOver {
       text-align: center;
-
+      align-items: center !important;
       .tittleOver {
         font-weight: bold;
         text-align: center;
