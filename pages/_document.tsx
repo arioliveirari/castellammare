@@ -21,6 +21,7 @@ class MyDocument extends Document {
             async
             src={`https://www.googletagmanager.com/gtag/js?id=G-${googleCode}`}
           />
+          <script src="https://carrier.formcarry.com/js/v1.js"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `

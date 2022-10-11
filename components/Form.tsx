@@ -3,15 +3,17 @@ import { useState } from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
 import Button from './Button';
-const p = 2000;
+const prices = ["14.000", "18.000", "22.000"]
 const max = 4;
 const min = 2;
 
 
 const Form = ({ children }: any) => {
-  const [people, setPeople] = useState<number>(min)
-  const [total, setTotal] = useState<number>(min * p)
-  const [contact, setContact] = useState("")
+  const [people, setPeople] = useState<number>(min);
+  const [contact, setContact] = useState("");
+  const [isValid, setIsValid] = useState(true)
+  const [isDisabled, setDisabled] = useState(true)
+
   /*
   const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
   const [checkedMango, setCheckedMango] = useState<boolean>(false);
@@ -19,38 +21,33 @@ const Form = ({ children }: any) => {
   const [iconkiwi, setIconKiwi] = useState("icon-un-check")
   const [iconMango, setIconMango] = useState("icon-un-check")
   */
+
   const travelData = [
     { "people": people },
-    { "total": total },
     { "contact": contact },
     { "price": "" },
   ]
 
-  const [email, setEmail] = useState("")
   const plus = () => {
     if (people < max) {
       const newPeople = people + 1;
       setPeople(newPeople)
-      setTotal(newPeople * p)
     }
   }
   const minus = () => {
     if (people > min) {
       const newPeople = people - 1;
       setPeople(newPeople)
-      setTotal(newPeople * p)
     }
   }
-  const [isValid, setIsValid] = useState(true)
-  const [isDisabled, setDisabled] = useState(true)
 
   const emailError = "Este campo es obligatorio"
-  
+
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const tempEmail = event.target.value;
     setDisabled((tempEmail == ""))
     setIsValid(!(tempEmail == ""));
-    setEmail(tempEmail)
+    setContact(tempEmail)
   }
 
   const handleClick = () => {
@@ -58,17 +55,21 @@ const Form = ({ children }: any) => {
       setIsValid(false);
     } else {
       setIsValid(true);
-      window.location.href = "https://mpago.la/2BxpUJA"
+      localStorage.setItem("baries-contact", contact);
+      localStorage.setItem("baries-price", prices[people-2]);
+      localStorage.setItem("baries-people", people.toString());
+      localStorage.setItem("baries-sendForm", "true");
+      /*
+      if(people == 2) window.location.href = "https://mpago.la/1AJvpdB" // 2
+      if(people == 3) window.location.href = "https://mpago.la/1qqzxbg" // 3
+      if(people == 4) window.location.href = "https://mpago.la/2TKtCcS" // 4
+      */
+      window.location.href = "https://mpago.la/1QuSW4D"
     }
   }
 
-  // onSubmit={handleSubmit}
-
-  //
-
   return (
     <div className={usw(styles, ['formComponent'], ["p-0"])} >
-
       <div className={usb(['container', 'position-relative'])}>
         <div className={usb(["row"])}>
           <div className={usb(["col-lg-12", "m-auto"])}>
@@ -82,7 +83,7 @@ const Form = ({ children }: any) => {
                       Gift Voucher
                     </div>
                     <div className={usc(styles, ["formTittle"])} >
-                      Regalá una experiencia unica
+                      Regalá una experiencia inolvidable
                     </div>
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-40", "inputCounter"])} >
@@ -101,17 +102,17 @@ const Form = ({ children }: any) => {
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "contactContainer"])} >
                     <label htmlFor={usc(styles, ["contact"])}></label>
                     <span className='icon-bubbles'></span>
-                    <input type="text" name={usc(styles, ["contact"])} onChange={handleChange} value={email} className={usc(styles, ["contactInput"])} placeholder={"Mail/telefono de contacto"} />
+                    <input type="text" name={usc(styles, ["contact"])} onChange={handleChange} value={contact} className={usc(styles, ["contactInput"])} placeholder={"Mail/telefono de contacto"} />
                   </div>
                   <div className={usc(styles, [(isValid) ? "noError" : "displayError"])}>{emailError}</div>
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                     <div className={usc(styles, ["clock"])}>
                       <p>
-                        <span className={usb(["mx-2"])}>$</span> {total}
+                        <span className={usb(["mx-2"])}>$</span> {prices[people-2]}
                       </p>
                     </div>
                   </div>
-                  <div className={usc(styles, ["formCheck"])}>
+                  <div className={usw(styles, ["formCheck"], ["d-none"])}>
                     <p>al reservar estas aceptando los <b>terminos y condiciones</b></p>
                   </div>
                   <div className={usc(styles, [(isDisabled) ? "grayButtonContainer" : "buttonContainer"])} >

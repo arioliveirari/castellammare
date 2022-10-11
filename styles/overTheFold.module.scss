@@ -8,7 +8,7 @@
   height: 90vh;
   font-family: "Ubuntu", sans-serif;
   width: 100%;
- 
+
   .video {
     object-fit: cover;
     width: 100%;
@@ -21,7 +21,7 @@
     object-position: top;
   }
   .mask {
-  position: absolute;
+    position: absolute;
 
     background: #009938;
     background-color: rgba($color: #000, $alpha: 0.6);
@@ -34,7 +34,7 @@
     justify-content: center;
     align-items: center;
     &:hover {
-      background-color: rgba($color: #000, $alpha: 0.2);
+     //  background-color: rgba($color: #000, $alpha: 0.2);
     }
   }
 }
@@ -60,7 +60,7 @@
   min-height: 700px;
   justify-content: center;
   .textOver {
-    align-items: center;
+    align-items: self-start;
     max-width: 1024px;
     position: relative;
     display: flex;
@@ -70,10 +70,10 @@
     min-height: 700px;
   }
   .tittleOver {
+    font-weight: bold;
     max-width: 1024px;
-    font-size: 73px;
-    font-family: caslon;
-    font-weight: 100;
+    font-size: 60px;
+    font-family: calibri;
     line-height: 60px;
     margin-bottom: 20px;
   }
@@ -99,7 +99,7 @@
   display: none;
   width: 1px;
   margin: auto;
-margin-top: 0%;
+  margin-top: 0%;
   margin-bottom: 0%;
   text-decoration: none;
   color: #fff;
@@ -139,16 +139,16 @@ margin-top: 0%;
   .containerOver {
     padding-top: 50px;
     height: 50vh;
-min-height: unset;
+    min-height: unset;
     .textOver {
       text-align: center;
 
       .tittleOver {
+        font-weight: bold;
         text-align: center;
 
         margin-bottom: 10px;
-        font-weight: 700;
-        font-size: 50pt;
+        font-size: 32px;
       }
       .paragraphOver {
         h2 {
@@ -185,7 +185,6 @@ min-height: unset;
   .containerOver {
     .textOver {
       margin-top: 2vh;
-      
     }
   }
   .formContainer {
@@ -193,12 +192,11 @@ min-height: unset;
   }
 }
 
-@media screen and (max-height: 630px) and (max-width:768px) {
+@media screen and (max-height: 630px) and (max-width: 768px) {
   .formContainer {
     margin-top: -45vh;
   }
-  .containerOver{
+  .containerOver {
     margin-bottom: 90vh;
   }
 }
-

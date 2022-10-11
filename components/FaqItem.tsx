@@ -12,9 +12,9 @@ interface dropDownInfo {
 const dropDownArray: Array<dropDownInfo> = [
   { id: 1, isDown: false, question: "¿Tienen menú vegetariano? ¿Y vegano?", answer: "Si, ofrecemos opciones de comida vegetariana y vegana." },
   { id: 2, isDown: false, question: "¿En qué horarios son los paseos?", answer: "Salimos en todos los horarios, podés elegir el que quieras. Si está disponible, reservamos." },
-  { id: 3, isDown: false, question: "¿Pueden ir menores?", answer: "La actividad es solo para mayores de 18" },
-  { id: 4, isDown: false, question: "¿Con cuanta anticipacion debo reservar?", answer: "No hay un tiempo estipulado de anticipacion. Depende solamente de la disponibilidad" },
-  { id: 5, isDown: false, question: "¿Podemos llevar comida y/o bebida?", answer: "¡Claro que si!, pueden traer lo que quieran para comer, beber o lo que sea" }
+  { id: 3, isDown: false, question: "¿Pueden ir menores?", answer: "La actividad es solo para mayores de 18 años." },
+  { id: 4, isDown: false, question: "¿Con cuanta anticipacion debo reservar?", answer: "No hay un tiempo estipulado de anticipacion. Depende solamente de la disponibilidad." },
+  { id: 5, isDown: false, question: "¿Podemos llevar comida y/o bebida?", answer: "¡Claro que si!, pueden traer lo que quieran para comer, beber o lo que sea." }
 ]
 
 const FaqItem = () => {
