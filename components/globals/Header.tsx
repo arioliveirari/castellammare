@@ -86,7 +86,7 @@ const Links = () => {
   return (
     <>
       <div className={usc(styles, ["links"])} >
-        <a href="#" className={usc(styles, ["reserva"])} >Adquierir Voucher</a>
+        <a href="#" className={usc(styles, ["reserva"])} >Adquirir Voucher</a>
         <div className={usc(styles, ["icons"])}>
           <a href="https://www.instagram.com/bairesnavega/?hl=es" target={"_blank"} rel="noreferrer" >
             <div className={usc(styles, ["linkBtn"])}>
