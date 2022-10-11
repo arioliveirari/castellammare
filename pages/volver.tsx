@@ -1,6 +1,6 @@
 import React from "react";
 
-const voucherpage = () => {
+const Volver = (props: any) => {
   React.useEffect(() => {
     window.history.go(-2)
   }, []);
@@ -9,4 +9,4 @@ const voucherpage = () => {
     <></>
   )
 }
-export default voucherpage
+export default Volver
