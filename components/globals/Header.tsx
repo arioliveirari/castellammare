@@ -53,12 +53,12 @@ const Header = ({ children }: any) => {
                     <span className="icon-instagram" />
                   </div>
                 </a>
+                {/*
                 <a href="https://wa.me/+5401121863402" target={"_blank"} rel="noreferrer">
                   <div className={usc(styles, ["linkBtn"])}>
                     <span className="icon-wpp" />
                   </div>
                 </a>
-                {/*
                 <div className={usc(styles, ["linkBtn"])}>
                   <span className="icon-mail" />
                 </div>
@@ -93,11 +93,13 @@ const Links = () => {
               <span ref={contactRef} className="icon-instagram" />
             </div>
           </a>
+          {/*
           <a href="https://wa.me/+5401121863402" target={"_blank"} rel="noreferrer">
             <div className={usc(styles, ["linkBtn"])}>
               <span className="icon-wpp" />
             </div>
           </a>
+          */}
         </div>
       </div>
       <ToolTip topValue={50} leftValue={2} divRef={contactRef}><p className={usc(styles, ["tootlTipText"])}>contactanos para consultar <br /> disponibilidad</p></ToolTip>
