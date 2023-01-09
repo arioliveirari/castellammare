@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
 import Button from './Button';
-const prices = ["16.000", "21.000", "24.000", "30.000"]
+const prices = ["20.000", "25.000", "30.000", "35.000"]
 const max = 5;
 const min = 2;
 
@@ -60,10 +60,10 @@ const Form = ({ children }: any) => {
       localStorage.setItem("baries-people", people.toString());
       localStorage.setItem("baries-sendForm", "true");
 
-      if (people == 2) window.location.href = "https://mpago.la/1RCqjZy" // 2
-      else if (people == 3) window.location.href = "https://mpago.la/2EpUTTE" // 3
-      else if (people == 4) window.location.href = "https://mpago.la/23YM6xk" // 4
-      else if (people == 5) window.location.href = "https://mpago.la/2pXeKg9" // 5
+      if (people == 2) window.location.href = "https://mpago.la/1zoThhe" // 2
+      else if (people == 3) window.location.href = "https://mpago.la/2Hq4M26" // 3
+      else if (people == 4) window.location.href = "https://mpago.la/1Fv8uBc" // 4
+      else if (people == 5) window.location.href = "https://mpago.la/2v42SaS" // 5
       
 
       //window.location.href = "https://mpago.la/1QuSW4D"
