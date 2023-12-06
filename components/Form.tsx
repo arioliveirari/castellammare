@@ -3,10 +3,9 @@ import { useState } from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
 import Button from './Button';
-const prices = ["40.000", "60.000", "80.000", "100.000"]
+const prices = ["50.000", "75.000", "100.000", "125.000"]
 const max = 5;
 const min = 2;
-
 
 const Form = ({ children }: any) => {
   const [people, setPeople] = useState<number>(min);
