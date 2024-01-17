@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
 import Button from './Button';
-const prices = ["50.000", "75.000", "100.000", "125.000"]
-const max = 5;
+const prices = ["60.000", "90.000", "120.000", "150.000", "180.000"]
+const max = 6;
 const min = 2;
 
 const Form = ({ children }: any) => {
@@ -63,6 +63,7 @@ const Form = ({ children }: any) => {
       else if (people == 3) window.location.href = "https://mpago.la/2Hq4M26" // 3
       else if (people == 4) window.location.href = "https://mpago.la/1Fv8uBc" // 4
       else if (people == 5) window.location.href = "https://mpago.la/2v42SaS" // 5
+      else if (people == 6) window.location.href = "https://mpago.la/23X2f5A" // 6
       
 
       //window.location.href = "https://mpago.la/1QuSW4D"
