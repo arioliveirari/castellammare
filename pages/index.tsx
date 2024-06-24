@@ -14,9 +14,14 @@ import Coast from '../components/Coast';
 import FaqItem from '../components/FaqItem';
 import styles from '../styles/globals.module.scss';
 import BoatsMobile from '../components/BoatsMobile';
-// import MangoSlider from '../components/MangoSlider';
-const Index = (props: any) => {
+import { useTranslation } from "react-i18next";
 
+const Index = (props: any) => {
+  const { t, i18n } = useTranslation();
+
+  React.useEffect(() => {
+    console.log("ENTRO", i18n, t("About.numbers"))
+  }, [])
   return (
     <div className={usc(styles, ['main'])}>
       <Header />
@@ -39,5 +44,6 @@ const Index = (props: any) => {
 }
 
 export default Index;
+
 
 

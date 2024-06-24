@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/font.css'
+import '../i18n';
 
 import { wrapper } from "../redux/store";
 import React from 'react';
