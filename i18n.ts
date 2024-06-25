@@ -96,6 +96,15 @@ const resources = {
       Footer: {
         getExperience: "Comprá",
         copyrigth: '© Copyright 2024 by Bruno',
+      },
+      Voucher: {
+        title: "Felicitaciones!",
+        description: "Tenes a disposición un paseo en velero por el río de la plata!",
+        descriptionIg: "Coordiná la salida a través de nuestro instagram",
+        ig: "@bruno",
+        descriptionWtsp: "O por whatsapp al ",
+        wtsp: " 1121863402",
+        
       }
     }
   },
