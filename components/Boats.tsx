@@ -6,19 +6,34 @@ import BoatsMobile from '../components/BoatsMobile';
 import MangoSlider from './MangoSlider';
 import KiwiSlider from './KiwiSlider';
 import { RiveAnimation } from './RiveAnimation';
+import { useTranslation } from "react-i18next";
 
-const boatsData = [
-  { id: 1, years: 5, travels: 80, reversedDrop: true, passanger: 5, imageUrl: "/images/kiwi.jpg" },
-  { id: 2, years: 5, travels: 80, reversedDrop: false, passanger: 4, imageUrl: "coast /images/mango.jpg" }
-]
 
 
 const Boats = () => {
+  const { t, i18n } = useTranslation();
+  const boatsData = [
+    {
+      id: 1,
+      years: 5,
+      travels: 80,
+      reversedDrop: true,
+      passanger: 5,
+      imageUrl: "/images/kiwi.jpg"
+    },
+    {
+      id: 2,
+      years: 5,
+      travels: 80,
+      reversedDrop: false,
+      passanger: 4,
+      imageUrl: "coast /images/mango.jpg"
+    }
+  ]
   return (
     <>
-
       <div className={usc(styles, ["desktopTitle"])} >
-        <Tittles styling={{ paddingTop: "135px", backgroundColor: "#86bed5" }} tittle='Nuestros Veleros' />
+        <Tittles styling={{ paddingTop: "135px", backgroundColor: "#86bed5" }} tittle={t("Boats.title")} />
       </div>
       <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
         <div className={usc(styles, ["desktopAnimations"])} >
@@ -29,13 +44,13 @@ const Boats = () => {
         <div className={usc(styles, ["mobileAnimations"])} >
           <RiveAnimation bottom={0} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
           <RiveAnimation top={600} left={0} animationName="water_1" />
-          <RiveAnimation  top={550} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
+          <RiveAnimation top={550} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
         </div>
         <div className={usb(["container"])}>
           <div className={usw(styles, ["topContent"], ["row", "pb-5"])}>
             <div className={usb(["col-12", "p-0"])}>
               <p className={usw(styles, ["boatName"], ["m-0"])}>
-                kiwi
+                {t("Boats.first.name")}
               </p>
             </div>
 
@@ -50,19 +65,19 @@ const Boats = () => {
                 <div className={usb(["col-md-5", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
                     <div className={usc(styles, ["boatData", "firstData"])}>
-                      <p className={usc(styles, ["boatText"])}>Manga</p>
-                      <p className={usc(styles, ["boatNumber"])}>2,07</p>
+                      <p className={usc(styles, ["boatText"])}>{t("Boats.first.width")}</p>
+                      <p className={usc(styles, ["boatNumber"])}>{t("Boats.first.widthNumber")}</p>
                     </div>
                     <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatText"])}>Eslora</p>
-                      <p className={usc(styles, ["boatNumber"])}>5,47</p>
+                      <p className={usc(styles, ["boatText"])}>{t("Boats.first.length")}</p>
+                      <p className={usc(styles, ["boatNumber"])}>{t("Boats.first.lengthNumber")}</p>
                     </div>
                     <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatText"])}> Modelo Phantom 19</p>
+                      <p className={usc(styles, ["boatText"])}>{t("Boats.first.model")}</p>
                     </div>
                     <div className={usc(styles, ["text"])}>
                       <p>
-                        Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja.
+                      {t("Boats.first.description")}
                       </p>
                     </div>
                   </div>
@@ -83,26 +98,26 @@ const Boats = () => {
                 <div className={usb(["col-md-4", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
                     <div className={usc(styles, ["boatData", "firstData"])}>
-                      <p className={usc(styles, ["boatNumber"])}>2,58</p>
-                      <p className={usc(styles, ["boatText"])}>Manga</p>
+                      <p className={usc(styles, ["boatNumber"])}>{t("Boats.second.widthNumber")}</p>
+                      <p className={usc(styles, ["boatText"])}>{t("Boats.second.width")}</p>
                     </div>
                     <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatNumber"])}>7,20</p>
-                      <p className={usc(styles, ["boatText"])}>Eslora</p>
+                      <p className={usc(styles, ["boatNumber"])}>{t("Boats.second.lengthNumber")}</p>
+                      <p className={usc(styles, ["boatText"])}>{t("Boats.second.length")}</p>
                     </div>
                     <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatText"])}>Modelo D´angelo 24</p>
+                      <p className={usc(styles, ["boatText"])}>{t("Boats.second.model")}</p>
                     </div>
                     <div className={usc(styles, ["text"])}>
                       <p>
-                        Diseño del gran German Frers. Un 24 pies amplio, ágil, rápido y muy divertido para salir con amigos y amigas.
+                      {t("Boats.second.description")}
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className={usb(["col-md-7", "p-0", "col-12"])}>
                   <p className={usw(styles, ["boatName"], [" m-0"])}>
-                    mango
+                    {t("Boats.second.name")}
                   </p>
                   <div className={usc(styles, ["botPic"])}>
                   </div>

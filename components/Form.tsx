@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { usc, usb, usw } from '../utils/helpers';
 import styles from '../styles/form.module.scss';
 import Button from './Button';
-const prices = ["60.000", "90.000", "120.000", "150.000", "180.000"]
+import { useTranslation } from "react-i18next";
+const prices = ["60", "90", "120", "150", "180"]
 const max = 6;
 const min = 2;
 
@@ -12,7 +13,7 @@ const Form = ({ children }: any) => {
   const [contact, setContact] = useState("");
   const [isValid, setIsValid] = useState(true)
   const [isDisabled, setDisabled] = useState(true)
-
+  const { t, i18n } = useTranslation();
   /*
   const [checkedKiwi, setCheckedKiwi] = useState<boolean>(false);
   const [checkedMango, setCheckedMango] = useState<boolean>(false);
@@ -40,7 +41,7 @@ const Form = ({ children }: any) => {
     }
   }
 
-  const emailError = "Este campo es obligatorio"
+  const emailError = t("Form.emailError")
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const tempEmail = event.target.value;
@@ -82,10 +83,10 @@ const Form = ({ children }: any) => {
                   <div className={usc(styles, ["formText"])}>
                     <img src="/images/barco.svg" alt='' className={usc(styles, ["formPic"])} />
                     <div className={usc(styles, ["formParagraph"])} >
-                      Gift Voucher
+                      {t("Form.buy")}
                     </div>
                     <div className={usc(styles, ["formTittle"])} >
-                      Regalá una experiencia inolvidable
+                      {t("Form.description")}
                     </div>
                   </div>
                   <div className={usc(styles, ["formInput", "space-top-40", "inputCounter"])} >
@@ -104,18 +105,15 @@ const Form = ({ children }: any) => {
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20", "contactContainer"])} >
                     <label htmlFor={usc(styles, ["contact"])}></label>
                     <span className='icon-bubbles'></span>
-                    <input type="text" name={usc(styles, ["contact"])} onChange={handleChange} value={contact} className={usc(styles, ["contactInput"])} placeholder={"Mail/telefono de contacto"} />
+                    <input type="text" name={usc(styles, ["contact"])} onChange={handleChange} value={contact} className={usc(styles, ["contactInput"])} placeholder={t("Form.placeholder")} />
                   </div>
                   <div className={usc(styles, [(isValid) ? "noError" : "displayError"])}>{emailError}</div>
                   <div className={usc(styles, ["formInput", "timeInput", "space-top-20"])} >
                     <div className={usc(styles, ["clock"])}>
                       <p>
-                        <span className={usb(["mx-2"])}>$</span> {prices[people - 2]}
+                        <span className={usb(["mx-2"])}>€</span> {prices[people - 2]}
                       </p>
                     </div>
-                  </div>
-                  <div className={usw(styles, ["formCheck"], ["d-none"])}>
-                    <p>al reservar estas aceptando los <b>terminos y condiciones</b></p>
                   </div>
                   <div className={usc(styles, [(isDisabled) ? "grayButtonContainer" : "buttonContainer"])} >
                     <Button onClick={handleClick} />

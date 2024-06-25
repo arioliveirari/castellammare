@@ -4,9 +4,9 @@ import { useReactToPrint } from "react-to-print";
 import styles from '../styles/voucher.module.scss';
 import { usb, usc, usw } from "../utils/helpers";
 import { useRouter } from 'next/router'
+import { useTranslation } from "react-i18next";
 
 const parseDate = (input: Date) => {
-
   // new Date(year, month [, day [, hours[, minutes[, seconds[, ms]]]]])
   //@ts-ignore
   return `${input.getDate()}-${input.getMonth() + 1}-${input.getFullYear() + 1}`; // Note: months are 0-based
@@ -35,6 +35,7 @@ const _voucherInfo: voucher = {
 let alreadySend = 1;
 
 const Voucher = () => {
+  const { t, i18n } = useTranslation();
 
   const formRef = React.useRef<HTMLFormElement>(null);
 
@@ -96,12 +97,14 @@ const Voucher = () => {
       }, 2000)
     }
   }, [router.query])
+
   const drawClassForStatus = (status: string) => {
     if (status === "approved") return 'approved'
     if (status === "canceled") return 'canceled'
     if (status === "pending") return 'pending'
     return ''
   }
+
   return (
     <div ref={voucherRef} className={usw(styles, ["voucherContainer"], ["container-fluid"])}>
       <div className={usb(["container", "position-relative"])}>
@@ -121,93 +124,76 @@ const Voucher = () => {
                     <small>O por whatsapp al <span className="icon-wpp" /> 1121863402</small>
                   </p>
                 </div>
-              </div>
-              {/*
-              <div className={usc(styles, ["icons"])}>
-                <a href="https://www.instagram.com/bairesnavega/" rel="noreferrer" target={"_blank"}>
-                  <div className={usc(styles, ["linkBtn"])}>
-                    <span className="icon-instagram" />
-                    <p>
-                      @bairesnavega
-                    </p>
-                  </div>
-                </a>
-                <a href="https://wa.me/+5401121863402" rel="noreferrer" target={"_blank"}>
-                  <div className={usc(styles, ["linkBtn"])}>
-                    <span className="icon-wpp" />
-                    <p>
-                      1121863402
-                    </p>
-                  </div>
-                </a>
-              </div>
-              */}
-              <div className={usc(styles, ["purchaseData"])}>
-                <div className={usb(["row"])} >
-                  <div className={usb(["col-md-8", "col-12", "m-auto"])} >
-                    <div key={voucherInfo.id} className={usc(styles, ["purchaseContent"])}>
-                      <div className={usb(["row"])} >
-                        <div className={usw(styles, ["dataContent"], ["col-12 mt-3"])} >
-                          <form onSubmit={() => alert(2)} action="https://formcarry.com/s/TqGCh0Wyk" method="POST" acceptCharset="UTF-8" ref={formRef}>
-                            <input value={voucherInfo.id} type="hidden" name="pagoId" />
-                            <div key={voucherInfo.id}>
-                              <div className={usc(styles, ["data"])}>
-                                <p className={usc(styles, ["left"])} >Estado:</p>
-                                <p className={usc(styles, [drawClassForStatus(voucherInfo.state)])} >{voucherInfo.state}</p>
-                              </div>
-                              {voucherInfo.contact && (
+
+                <div className={usc(styles, ["purchaseData"])}>
+                  <div className={usb(["row"])} >
+                    <div className={usb(["col-md-8", "col-12", "m-auto"])} >
+                      <div key={voucherInfo.id} className={usc(styles, ["purchaseContent"])}>
+                        <div className={usb(["row"])} >
+                          <div className={usw(styles, ["dataContent"], ["col-12 mt-3"])} >
+                            <form onSubmit={() => alert(2)} action="https://formcarry.com/s/TqGCh0Wyk" method="POST" acceptCharset="UTF-8" ref={formRef}>
+                              <input value={voucherInfo.id} type="hidden" name="pagoId" />
+                              <div key={voucherInfo.id}>
                                 <div className={usc(styles, ["data"])}>
-                                  <p className={usc(styles, ["left"])} >Info de contact:</p>
-                                  <p>{voucherInfo.contact}</p>
-                                  <input value={voucherInfo.contact} type="hidden" name="contacto" />
+                                  <p className={usc(styles, ["left"])} >Estado:</p>
+                                  <p className={usc(styles, [drawClassForStatus(voucherInfo.state)])} >{voucherInfo.state}</p>
+                                </div>
+                                {voucherInfo.contact && (
+                                  <div className={usc(styles, ["data"])}>
+                                    <p className={usc(styles, ["left"])} >Info de contact:</p>
+                                    <p>{voucherInfo.contact}</p>
+                                    <input value={voucherInfo.contact} type="hidden" name="contacto" />
+
+                                  </div>
+                                )}
+                                {voucherInfo.people && (
+                                  <div className={usc(styles, ["data"])}>
+                                    <p className={usc(styles, ["left"])} >Cantidad de personas:</p>
+                                    <p>{voucherInfo.people}</p>
+                                    <input value={voucherInfo.people} type="hidden" name="personas" />
+
+                                  </div>
+                                )}
+                                {voucherInfo.total && (
+                                  <div className={usc(styles, ["data"])}>
+                                    <p className={usc(styles, ["left"])} >Total:</p>
+                                    <p>{voucherInfo.total}</p>
+                                    <input value={voucherInfo.total} type="hidden" name="total" />
+
+                                  </div>
+                                )}
+                                <div className={usc(styles, ["data"])}>
+                                  <p className={usc(styles, ["left"])} >Codigo de verificación:</p>
+                                  <p>{voucherInfo.code}</p>
+                                  <input value={voucherInfo.code} type="hidden" name="codigo" />
 
                                 </div>
-                              )}
-                              {voucherInfo.people && (
                                 <div className={usc(styles, ["data"])}>
-                                  <p className={usc(styles, ["left"])} >Cantidad de personas:</p>
-                                  <p>{voucherInfo.people}</p>
-                                  <input value={voucherInfo.people} type="hidden" name="personas" />
-
+                                  <p className={usc(styles, ["left"])} >Valido hasta:</p>
+                                  <p>{voucherInfo.validTill}</p>
+                                  <input value={voucherInfo.validTill} type="hidden" name="validoHasta" />
+                                  <input type="hidden" name="_gotcha" />
                                 </div>
-                              )}
-                              {voucherInfo.total && (
-                                <div className={usc(styles, ["data"])}>
-                                  <p className={usc(styles, ["left"])} >Total:</p>
-                                  <p>{voucherInfo.total}</p>
-                                  <input value={voucherInfo.total} type="hidden" name="total" />
-
-                                </div>
-                              )}
-                              <div className={usc(styles, ["data"])}>
-                                <p className={usc(styles, ["left"])} >Codigo de verificación:</p>
-                                <p>{voucherInfo.code}</p>
-                                <input value={voucherInfo.code} type="hidden" name="codigo" />
-
                               </div>
-                              <div className={usc(styles, ["data"])}>
-                                <p className={usc(styles, ["left"])} >Valido hasta:</p>
-                                <p>{voucherInfo.validTill}</p>
-                                <input value={voucherInfo.validTill} type="hidden" name="validoHasta" />
-                                <input type="hidden" name="_gotcha" />
-                              </div>
-                            </div>
-                          </form>
+                            </form>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className={usc(styles, ["buttonRow"])}>
-                <button onClick={handlePrint} > imprimir </button>
+                <div className={usc(styles, ["buttonRow"])}>
+                  <button onClick={handlePrint} > imprimir </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   )
 }
+
 export default Voucher

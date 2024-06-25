@@ -5,19 +5,20 @@ import { RiveAnimation } from './RiveAnimation';
 import MobileKiwiSlider from './MobileKiwiSlider';
 import MobileMangoSlider from './MobileMangoSlider';
 import Tittles from './Tittles';
-
+import { useTranslation } from "react-i18next";
 
 
 
 const BoatsMobile = () => {
+    const { t, i18n } = useTranslation();
     return (
         <>
-           
+
             <div className={usw(styles, ["boatsMobileModule"], ["container-fluid"])} >
-                <Tittles  tittle='Nuestros Veleros' />
+                <Tittles tittle={t("Boats.title")} />
                 <div className={usb(["col-12"])}>
                     <p className={usw(styles, ["boatName"], [""])}>
-                        kiwi
+                    {t("Boats.first.name")}
                     </p>
                 </div>
                 <div className={usb(["row"])}>
@@ -28,17 +29,17 @@ const BoatsMobile = () => {
                                 <div className={usb(["col-12"])}>
                                     <div className={usc(styles, ["topData"])}>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataNumber"])}>2,07</div>
-                                            <div className={usc(styles, ["dataText"])}>Manga</div>
+                                            <div className={usc(styles, ["dataNumber"])}>{t("Boats.first.widthNumber")}</div>
+                                            <div className={usc(styles, ["dataText"])}>{t("Boats.first.width")}</div>
                                         </div>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataNumber"])}>5,47</div>
-                                            <div className={usc(styles, ["dataText"])}>Eslora</div>
+                                            <div className={usc(styles, ["dataNumber"])}>{t("Boats.first.lengthNumber")}</div>
+                                            <div className={usc(styles, ["dataText"])}>{t("Boats.first.length")}</div>
                                         </div>
                                     </div>
                                     <div className={usc(styles, ["botData"])}>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataModel"])}>Modelo Phantom 19</div>
+                                            <div className={usc(styles, ["dataModel"])}>{t("Boats.first.model")}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -47,7 +48,7 @@ const BoatsMobile = () => {
                                 <div className={usb(["col-12", "m-auto"])}>
                                     <div className={usc(styles, ["text"])}>
                                         <p>
-                                            Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja.
+                                        {t("Boats.first.description")}
                                         </p>
                                     </div>
                                 </div>
@@ -57,7 +58,7 @@ const BoatsMobile = () => {
                 </div>
                 <div className={usb(["col-12", "p-0"])}>
                     <p className={usw(styles, ["boatName"], [""])}>
-                        Mango
+                    {t("Boats.second.name")}
                     </p>
                 </div>
                 <div className={usb(["row"])}>
@@ -68,17 +69,17 @@ const BoatsMobile = () => {
                                 <div className={usb(["col-12"])}>
                                     <div className={usc(styles, ["topData"])}>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataNumber"])}>2,58</div>
-                                            <div className={usc(styles, ["dataText"])}>Manga</div>
+                                            <div className={usc(styles, ["dataNumber"])}>{t("Boats.second.widthNumber")}</div>
+                                            <div className={usc(styles, ["dataText"])}>{t("Boats.second.width")}</div>
                                         </div>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataNumber"])}>7,20</div>
-                                            <div className={usc(styles, ["dataText"])}>Eslora</div>
+                                            <div className={usc(styles, ["dataNumber"])}>{t("Boats.second.lengthNumber")}</div>
+                                            <div className={usc(styles, ["dataText"])}>{t("Boats.second.length")}</div>
                                         </div>
                                     </div>
                                     <div className={usc(styles, ["botData"])}>
                                         <div className={usc(styles, ["data"])}>
-                                            <div className={usc(styles, ["dataModel"])}>Modelo D´angelo 24</div>
+                                            <div className={usc(styles, ["dataModel"])}>{t("Boats.second.model")}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -88,7 +89,7 @@ const BoatsMobile = () => {
                                 <div className={usb(["col-12", "m-auto"])}>
                                     <div className={usc(styles, ["text", "botText"])}>
                                         <p>
-                                            Diseño del gran German Frers. Un 24 pies amplio, ágil, rápido y muy divertido para salir con amigos y amigas.
+                                        {t("Boats.second.description")}
                                         </p>
                                     </div>
                                 </div>

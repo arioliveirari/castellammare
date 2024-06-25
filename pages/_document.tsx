@@ -12,26 +12,13 @@ import Document, {
 
 class MyDocument extends Document {
   render() {
-    const googleCode = "GTM-TWQ67XR";
+    
     return (
       <Html lang={"ES"}>
         <Head>
           <link rel="shortcut icon" href={'/images/barco.ico'} />
           {/* fonts */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-${googleCode}`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-${googleCode}', { page_path: window.location.pathname });
-            `,
-            }}
-          />
+         
         </Head>
         <body>
           { /* analytics HERE */}

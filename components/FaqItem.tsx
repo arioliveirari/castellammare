@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/faqItem.module.scss';
 import Tittles from './Tittles';
+import { useTranslation } from "react-i18next";
 
 interface dropDownInfo {
   question: string,
@@ -9,16 +10,9 @@ interface dropDownInfo {
   id: number
   isDown: boolean
 }
-const dropDownArray: Array<dropDownInfo> = [
-  { id: 1, isDown: false, question: "¿Tienen menú vegetariano? ¿Y vegano?", answer: "Si, ofrecemos opciones de comida vegetariana y vegana." },
-  { id: 2, isDown: false, question: "¿En qué horarios son los paseos?", answer: "Salimos en todos los horarios, podés elegir el que quieras. Si está disponible, reservamos." },
-  { id: 3, isDown: false, question: "¿Pueden ir menores?", answer: "La actividad es solo para mayores de 18 años." },
-  { id: 4, isDown: false, question: "¿Con cuanta anticipacion debo reservar?", answer: "No hay un tiempo estipulado de anticipacion. Depende solamente de la disponibilidad." },
-  { id: 5, isDown: false, question: "¿Podemos llevar comida y/o bebida?", answer: "¡Claro que si!, pueden traer lo que quieran para comer, beber o lo que sea." }
-]
 
 const FaqItem = () => {
-  const [items, setItems] = useState(dropDownArray)
+  const { t, i18n } = useTranslation();
 
   const handleClick = (index: number) => {
     const newItems = [...items];
@@ -26,13 +20,46 @@ const FaqItem = () => {
     setItems(newItems)
   }
 
+  const dropDownArray: Array<dropDownInfo> = [
+    {
+      id: 1,
+      isDown: false,
+      question: t("FaqItem.items.first.question"),
+      answer: t("FaqItem.items.first.answer"),
+    },
+    {
+      id: 2,
+      isDown: false,
+      question: t("FaqItem.items.second.question"),
+      answer: t("FaqItem.items.second.answer"),
+    },
+    {
+      id: 3,
+      isDown: false,
+      question: t("FaqItem.items.third.question"),
+      answer: t("FaqItem.items.third.answer"),
+    },
+    {
+      id: 4,
+      isDown: false,
+      question: t("FaqItem.items.fourth.question"),
+      answer: t("FaqItem.items.fourth.answer"),
+    },
+    {
+      id: 5,
+      isDown: false,
+      question: t("FaqItem.items.fifth.question"),
+      answer: t("FaqItem.items.fifth.answer"),
+    }
+  ]
+  const [items, setItems] = useState(dropDownArray)
 
   return (
     <>
       {/* <Tittles styling={{ paddingTop: "70px", backgroundColor: "#f1e6d0" }} tittle='Preguntas Frecuentes' /> */}
       <div className={usc(styles, ["title"])} >
         <p>
-          Preguntas Frecuentes
+          {t("FaqItem.title")}
         </p>
       </div>
       <div className={usw(styles, ["faqComponent"], ["container-fluid"])}>

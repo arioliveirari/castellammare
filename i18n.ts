@@ -7,109 +7,101 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   es: {
     translation: {
-      Navbar:{
-        home: 'Home',
-        about: 'Acerca de Nosotros',
-        how: 'Cómo Trabajamos',
-        services: 'Servicios',
-        our: 'Nuestro Trabajo',
-        talk: "Conversemos",
+      Header: {
+        company: 'Home',
+        description: "Coneasdctate con el Río de la Plata de la manera más linda: Navegando a vela.",
+        buyService: 'Comprá la experiencia',
+        contactUsText: "contactanos para consultar disponibilidad"
       },
-      Home: {
-        button: "Conversemos"
+      OverTheFold: {
+        company: "Bruno's company name",
+        first: "Conectate con el Río de la Plata de la manera más linda:",
+        second: "Navegando a vela",
+        third: "Con nuestros Gift Vouchers regalá un paseo en velero por el Río de la Plata para dos, tres o cuatro personas con comida y bebida a bordo.",
+        fourth: " Son con fecha abierta y el agasajado tiene un año para coordinar el paseo.",
+
       },
-      About: {
-        title: "Acerca de",
-        description: 'Somos Minimalart, una empresa formada por un equipo de profesionales con más de  20 años de experiencia. Diseñamos y desarrollamos plataformas digitales utilizando las mejores herramientas y estrategias disponibles. ¡Nos emociona convertir problemas tecnológicos complejos en soluciones simples y elegantes! Tenemos experiencia y habilidades desarrollando aplicaciones web y móviles, diseñando excelentes experiencias de usuario, dando soporte a servicios de infraestructura en la nube, analizando, optimizando y controlando calidad de software. Nuestros proyectos ágiles generan la expansión de su negocio en internet.' ,
-        numbers: 'Nuestros números',
-        numbersTitles: {
-          first: 'Proyectos realizados',
-          second: 'Clientes',
-          third: 'Profesionales',
-          fourth: 'Paises'
-        },
-        button: 'Conversemos'
-      },
-      How: {
-        title: "Cómo trabajamos",
-        description: 'Combinamos nuestra experiencia técnica con un marcado enfoque empresarial. Así nos aseguramos de que los productos digitales que creamos sean eficientes, efectivos y siempre estén alineados con los objetivos comerciales de nuestros clientes. Nuestra prioridad es generar soluciones a medida que garanticen resultados para su negocio. Trabajamos considerando sus necesidades actuales y las posibilidades futuras.' ,
-        button: 'Conversemos'
+      Form: {
+        buy: "Comprá",
+        description: "Regalá una experiencia inolvidable",
+        placeholder: "Ingreśa tu mail",
+        emailError: "Este campo es obligatorio"
       },
       Services: {
+        title: "Nuestros paseos",
+        first: {
+          title: "Una experiencia inolvidable",
+          description: "bla bla bla 1",
+          photo: "service3"
+        },
+        second: {
+          title: "Una experiencia inolvidable2",
+          description: "bla bla bla 2",
+          photo: "service2"
+        },
+        third: {
+          title: "Una experiencia inolvidable3",
+          description: "bla bla bla 3",
+          photo: "service1"
+        },
+      },
+      Boats: {
+        title: "Nuestros veleros",
+        first: {
+          name: "Kiwi",
+          width: "Manga",
+          widthNumber: "2,07",
+          length: "Eslora",
+          lengthNumber: "5,47",
+          model: "Modelo Phantom 19",
+          description: "Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja."
+        },
+        second: {
+          name: "Mango",
+          width: "Manga",
+          widthNumber: "2,58",
+          length: "Eslora",
+          lengthNumber: "7,47",
+          model: "Modelo D´angelo 24",
+          description: "Diseño del gran German Frers. Un 24 pies amplio, ágil, rápido y muy divertido para salir con amigos y amigas."
+        },
+      },
+      FaqItem: {
         title: "Servicios",
         description: 'Agilidad, creatividad & soluciones a medida.',
-        segments: {
+        items: {
           first: {
-            title: 'Dev & Design',
-            description: 'Diseño de websites, desarrollo de plataformas E-commerce, websites y aplicaciones móviles',
+            question: "¿Tienen menú vegetariano? ¿Y vegano?",
+            answer: "Si, ofrecemos opciones de comida vegetariana y vegana."
           },
           second: {
-            title: 'Consultoría tecnológica',
-            description: 'Evaluación y presupuesto de proyectos, Provisión y revisión tecnológica, Soporte en  Bidding Process',
+            question: "¿En qué horarios son los paseos?",
+            answer: "Salimos en todos los horarios, podés elegir el que quieras. Si está disponible, reservamos."
           },
           third: {
-            title: 'Project & Operational Management',
-            description: 'Servicio de Project Management Outsourcing, Operativo,  Atención al cliente, entrenamiento y reporte',
+            question: "¿Pueden ir menores?",
+            answer: "La actividad es solo para mayores de 18 años."
           },
           fourth: {
-            title: 'Infraestructura',
-            description: 'Provisión de Cloud, Monitoreo de Performance y Uptime, Control de sistemas de seguridad, Implementación CI',
+            question: "¿Con cuanta anticipacion debo reservar?",
+            answer: "No hay un tiempo estipulado de anticipacion. Depende solamente de la disponibilidad."
           },
           fifth: {
-            title: 'Testing & QA',
-            description: 'Test Design unitario y de punta a punta, Testing Manual, QA Automation, Pruebas de Stress',
+            question: "¿Podemos llevar comida y/o bebida?",
+            answer: "¡Claro que si!, pueden traer lo que quieran para comer, beber o lo que sea."
           },
         },
         button: 'Conversemos'
-      },
-      OurWork: {
-        title: "Nuestro trabajo",
-        description: 'Nuestra misión es ayudar a otras compañías a explotar su potencial a través de soluciones tecnológicas efectivas y a medida.',
-        projects: 'Proyectos recientes',
-        button: 'Conversemos'
-      },
-      Talk: {
-        title: "Conversemos",
-        description: 'Escribinos y volveremos a la brevedad con vos para charlar sobre tu asombrosa idea.',
-        form: {
-          name: "Nombre completo",
-          email: "Email",
-          company: "Organización",
-          website: "URL de Website",
-          country: "País",
-          budget: "Presupuesto",
-          checkbox: {
-            title: "¿En qué podemos ayudarte?",
-            first: "eCommerce",
-            second: "App",
-            third: "Website",
-            fourth: "No lo tengo claro",
-          },
-          tellUs: {
-            title: "Contanos sobre tu proyecto",
-            subtitle: "Incluí todos los detalles que creas necesarios",
-          }
-        },
-        button: 'Enviar',
-        messages: {
-          success: {
-            title: 'Gracias por contactarte!',
-            subtitle: 'Recibimos tu correo y nos contactaremos en la brevedad.'
-          },
-          errors: {
-            mandatory: 'Todos los campos son obligatorios',
-            email: 'Por favor ingrese un email válido'
-          }
-        }
       },
       Footer: {
-        linkedin: "Visitá nuestro LinkedIn: "
+        getExperience: "Comprá",
+        copyrigth: '© Copyright 2024 by Bruno',
       }
     }
   },
   en: {
     translation: {
-      Navbar:{
+      Navbar: {
         home: 'Home',
         about: 'About Us',
         how: 'How We Work',
@@ -122,7 +114,7 @@ const resources = {
       },
       About: {
         title: "About us",
-        description: 'Founded in 2015, Minimalart is a team of professionals with over 20 years of experience in internet projects. We design and develop digital platforms using the best available tools and strategies. Turning complex business and technological problems into simple and elegant solutions thrills us! We are experienced and skilled in web and mobile application development, design, cloud infrastructure services, analysis, optimization, and software quality control. Our agile projects allow companies to scale up their business on the internet' ,
+        description: 'Founded in 2015, Minimalart is a team of professionals with over 20 years of experience in internet projects. We design and develop digital platforms using the best available tools and strategies. Turning complex business and technological problems into simple and elegant solutions thrills us! We are experienced and skilled in web and mobile application development, design, cloud infrastructure services, analysis, optimization, and software quality control. Our agile projects allow companies to scale up their business on the internet',
         numbers: 'Our numbers',
         numbersTitles: {
           first: 'Projects Executed',
@@ -134,7 +126,7 @@ const resources = {
       },
       How: {
         title: "How we work",
-        description: 'We combine our technical expertise with a strong business focus to ensure that digital platforms are developed efficiently and effectively and aligned with business and management goals. Our priority is to deliver tailored solutions that guarantee strong and prominent results for your business over your investment in technology. We work on your current needs while considering future possibilities.' ,
+        description: 'We combine our technical expertise with a strong business focus to ensure that digital platforms are developed efficiently and effectively and aligned with business and management goals. Our priority is to deliver tailored solutions that guarantee strong and prominent results for your business over your investment in technology. We work on your current needs while considering future possibilities.',
         button: "Let's talk!"
       },
       Services: {
@@ -226,4 +218,4 @@ i18n
     }
   });
 
-  export default i18n;
+export default i18n;
