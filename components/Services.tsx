@@ -30,18 +30,24 @@ const Services = () => {
       pic: t("Services.third.photo"),
     }
   ]
+
+  const onSeeMore = () => {
+    console.log("ari entro")
+  }
+
   return (
     <div className={usw(styles, ["servicios"], ["container-fluid"])}>
-      <ServiceItem img={"boat"} title={'Horarios a tu gusto'} icon={'calendar'}/>
-      <ServiceItem img={"food"} title={'Una experiencia inolvidable'} icon={"foodIcon"}/>
-      <ServiceItem img={"friends"} title={'Un barco para vos y tus amigos'}  icon={"people"}/>
+      <ServiceItem img={"boat"} title={'Horarios a tu gusto'} icon={'calendar'} onClick={[onSeeMore]}/>
+      <ServiceItem img={"food"} title={'Una experiencia inolvidable'} icon={"foodIcon"} onClick={[onSeeMore]}/>
+      <ServiceItem img={"friends"} title={'Un barco para vos y tus amigos'}  icon={"people"} onClick={[onSeeMore]}/>
     </div>
   )
 }
 
 export default Services
 
-const ServiceItem = ({ img, title, icon }: { img: string, title: string, icon: string }) => {
+const ServiceItem = ({ img, title, icon, onClick }: { img: string, title: string, icon: string, onClick: Function[] }) => {
+  
   return (
     <div className={usc(styles, ["parent"])}>
       <div className={usc(styles, ["servicio", img])}>
@@ -50,7 +56,7 @@ const ServiceItem = ({ img, title, icon }: { img: string, title: string, icon: s
       <div className={usc(styles, ["title", "titleService"])}>
         <div>{title}</div>
       </div>
-      <div className={usc(styles, ["title", "vermas"])}></div>
+      <div onClick={()=>onClick[0]()} className={usc(styles, ["title", "vermas"])}></div>
     </div>
   )
 }

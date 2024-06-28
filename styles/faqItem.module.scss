@@ -1,5 +1,12 @@
 @import "variables.module.scss";
 
+
+.formCarry{
+  height: 400px;
+  width: 80%;
+  background-color: red;
+}
+
 .title {
   background-color: $beige;
   height: fit-content;
@@ -35,6 +42,7 @@
   text-align: left;
   color: $darkBlue;
   padding-bottom: 40px;
+  
   p {
     margin: 0%;
   }
@@ -67,12 +75,12 @@
       height: 0px;
       justify-content: center;
 
-      transition: all ease 0.4s;
+      transition: all ease 0.2s;
       margin-bottom: 5px;
       p {
         justify-content: center;
         opacity: 0;
-        transition: all ease 0.1s;
+        transition: all ease 0.2s;
       }
     }
     .isDown {

@@ -10,10 +10,10 @@
 
   @media screen and (max-width:425px) {
     flex-direction: column;
-
+    height: calc(300vh - 180px);
     .parent {
       width: 100%;
-      height: 100vh;
+      height: calc(100vh - 60px);
     }
   }
 }
@@ -23,7 +23,13 @@
   width: 33.33333333%;
   height: 100%;
   position: relative;
+  &:hover {
+    .servicio{
 
+      filter: brightness(.80);
+      transition: all 0.2s ease;
+    }
+  }
   .servicio {
     padding: 0;
     width: 100%;
@@ -32,10 +38,7 @@
     background-size: cover;
     filter: brightness(0.5);
 
-    &:hover {
-      filter: brightness(.80);
-      transition: all 0.2s ease;
-    }
+
 
     &.boat {
       background-image: url(../public/bruno/barco.jpg);
@@ -51,7 +54,7 @@
   }
 
   .title {
-    pointer-events: none;
+    // pointer-events: none;
     height: 100px;
     width: 100%;
     position: absolute;

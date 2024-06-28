@@ -3,6 +3,7 @@ import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/faqItem.module.scss';
 import Tittles from './Tittles';
 import { useTranslation } from "react-i18next";
+import FormCarry from './FormCarry';
 
 interface dropDownInfo {
   question: string,
@@ -56,16 +57,15 @@ const FaqItem = () => {
 
   return (
     <>
-      {/* <Tittles styling={{ paddingTop: "70px", backgroundColor: "#f1e6d0" }} tittle='Preguntas Frecuentes' /> */}
-      <div className={usc(styles, ["title"])} >
-        <p>
-          {t("FaqItem.title")}
-        </p>
-      </div>
       <div className={usw(styles, ["faqComponent"], ["container-fluid"])}>
         <div className={usb(["container"])}>
           <div className={usb(["row"])}>
-            <div className={usb(["col-12"])}>
+            <div className={usb(["col-md-7 col-12"])}>
+              <div className={usc(styles, ["title"])} >
+                <p>
+                  {t("FaqItem.title")}
+                </p>
+              </div>
               <div className={usc(styles, ["content"])} >
                 {items.map((i, index) => (
                   <div className={usc(styles, ["dropdownItem"])} onClick={() => handleClick(index)} key={i.id}>
@@ -79,7 +79,7 @@ const FaqItem = () => {
                       </div>
                     </div>
                     <div className={usw(styles, ["answerRow"], ["row"])}>
-                      <div className={usb(["col-md-10"])}>
+                      <div className={usb(["col-10"])}>
                         <div className={usc(styles, [(i.isDown) ? "isDown" : "answer"])}>
                           <p className={usc(styles, ["text"])}>
                             {i.answer}
@@ -91,6 +91,11 @@ const FaqItem = () => {
                 ))}
               </div>
             </div>
+          <div className={usb(["col-md-5 col-12 d-flex justify-content-center align-items-center"])}>
+                <div className={usc(styles, ["formCarry"])}>
+                  <FormCarry/>
+                </div>
+          </div>
           </div>
         </div>
       </div >

@@ -67,7 +67,7 @@ const resources = {
         },
       },
       FaqItem: {
-        title: "Servicios",
+        title: "Preguntas frecuentes",
         description: 'Agilidad, creatividad & soluciones a medida.',
         items: {
           first: {
