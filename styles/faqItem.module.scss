@@ -1,10 +1,64 @@
 @import "variables.module.scss";
 
 
-.formCarry{
-  height: 400px;
-  width: 80%;
-  background-color: red;
+.formCarry {
+  height: fit-content;
+  padding: 20px 20px;
+  width: 100%;
+  background-color: $orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  .parentHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .parent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      .formcarry-block{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        input, textarea{
+          width: 100%;
+          border-radius: 5px;
+          border: none;
+          background-color: $ligthBlue;
+          color: $darkBlue
+        }
+        textarea{
+          height: 80px;
+          max-height: 120px;
+          min-height: 80px;
+        }
+        button{
+          border: none;
+          margin: auto;
+          width: 75%;
+          height: 40px;
+          border-radius: 10px;
+          background-color: $ligthBlue;
+          color: $darkBlue;
+          &:hover{
+            background-color: #888785;
+            color: white;
+          }
+        }
+      }
+      
+    }
+  }
 }
 
 .title {
@@ -12,6 +66,7 @@
   height: fit-content;
   padding-top: 70px;
   padding-bottom: 20px;
+
   p {
     line-height: 63px;
     margin: auto;
@@ -23,6 +78,7 @@
     color: #002848;
   }
 }
+
 @media screen and (max-width: 992px) {
   .title {
     p {
@@ -42,10 +98,11 @@
   text-align: left;
   color: $darkBlue;
   padding-bottom: 40px;
-  
+
   p {
     margin: 0%;
   }
+
   span {
     height: 40px;
   }
@@ -54,13 +111,16 @@
     align-items: center;
     text-align: left;
     padding-bottom: 90px;
+
     .answerRow {
       justify-content: center;
     }
+
     .question {
       text-align: left;
       margin-top: 30px;
       cursor: pointer;
+
       .text {
         font-family: calibri;
         font-size: 30px;
@@ -69,6 +129,7 @@
         justify-content: center;
       }
     }
+
     .answer {
       cursor: pointer;
       opacity: 0%;
@@ -77,12 +138,14 @@
 
       transition: all ease 0.2s;
       margin-bottom: 5px;
+
       p {
         justify-content: center;
         opacity: 0;
         transition: all ease 0.2s;
       }
     }
+
     .isDown {
       cursor: pointer;
       font-size: 24px;
@@ -98,19 +161,23 @@
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .faqComponent {
     text-align: center;
+
     .content {
       .question {
         .text {
           font-size: 25px;
         }
       }
+
       .isDown {
         font-size: 14px;
       }
     }
+
     .title {
       p {
         text-align: center;
@@ -125,6 +192,7 @@
     }
   }
 }
+
 @media screen and (max-width: 475px) {
   .faqComponent {
     .content {
@@ -134,6 +202,7 @@
           padding-right: 30px;
         }
       }
+
       .isDown {
         font-size: 20px;
       }
