@@ -18,8 +18,6 @@ const KiwiSlider = () => {
             perView: 1,
             startAt: 0,
             gap: 0,
-
-
         }).mount();
     }, [])
 

@@ -1,10 +1,113 @@
 @import "variables.module.scss";
+
 .servicios {
-  background: #F3DDB4;
+  background: transparent;
+  height: 100vh;
   width: 100%;
-  padding-bottom: 100px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width:425px) {
+    flex-direction: column;
+
+    .parent {
+      width: 100%;
+      height: 100vh;
+    }
+  }
 }
 
-.space-top-50 {
-  margin-top: 50px;
+.parent {
+  height: calc(100vh - 60px);
+  width: 33.33333333%;
+  height: 100%;
+  position: relative;
+
+  .servicio {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5);
+
+    &:hover {
+      filter: brightness(.80);
+      transition: all 0.2s ease;
+    }
+
+    &.boat {
+      background-image: url(../public/bruno/barco.jpg);
+    }
+
+    &.food {
+      background-image: url(../public/bruno/amigos.jpg);
+    }
+
+    &.friends {
+      background-image: url(../public/bruno/fiesta.jpg);
+    }
+  }
+
+  .title {
+    pointer-events: none;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+
+    &.icon {
+      bottom: 300px;
+      width: 75px;
+      height: 75px;
+
+      background-position: center;
+      background-size: cover;
+      right: 0;
+      left: 0;
+
+      &.calendar {
+        background-image: url(../public/bruno/calendarIcon.png);
+      }
+
+      &.foodIcon {
+        background-image: url(../public/bruno/foodIcon.png);
+      }
+
+      &.people {
+        background-image: url(../public/bruno/peopleIcon.png);
+      }
+    }
+
+    &.titleService {
+      vertical-align: center;
+      line-height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &.vermas {
+      top: 300px;
+      width: 40px;
+      height: 40px;
+      right: 0;
+      left: 0;
+      background-image: url(../public/bruno/Capa_1.png);
+      background-position: center;
+      background-size: cover;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
 }

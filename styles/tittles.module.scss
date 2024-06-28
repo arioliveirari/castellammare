@@ -1,3 +1,5 @@
+@import "variables.module.scss";
+
 
 .tittleContainer {
     padding-bottom: 20px;
@@ -8,7 +10,7 @@
     height: fit-content;
     display: flex;
     position: relative;
-    color: #002848;
+    color: $darkBlue;
     line-height: 63px;
     background-color: transparent;
     font-size: 68px;

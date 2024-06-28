@@ -2,8 +2,8 @@
 .boatsModule {
   background-color: $ligthBlue;
   position: relative;
-  margin-bottom: -300px;
   overflow: hidden;
+  padding-bottom: 30px;
 }
 .topContent {
   display: flex;
@@ -33,7 +33,7 @@
       margin-left: -30px;
     }
     .text {
-      color: #fff;
+      color: $darkBlue;
       position: relative;
     }
     .boatData {
@@ -51,8 +51,8 @@
       .boatNumber {
         display: flex;
         border-radius: 100%;
-        background-color: #64a5bf;
-        color: #fff;
+        background-color: $brown;
+        color: $darkBlue;
         font-size: 17px;
         font-weight: 700;
         margin-right: -16px;
@@ -69,8 +69,8 @@
       }
       .boatText {
         padding: 5px 20px;
-        color: #fff;
-        background-color: $darkishBlue;
+        color: $darkBlue;
+        background-color: $brownDarkish;
         border-radius: 211px;
         text-transform: uppercase;
       }
@@ -106,7 +106,7 @@
       margin-right: -50px;
     }
     .text {
-      color: #fff;
+      color: $darkBlue;
       position: relative;
     }
     .boatData {
@@ -123,8 +123,8 @@
       .boatNumber {
         display: flex;
         border-radius: 100%;
-        background-color: #64a5bf;
-        color: #fff;
+        background-color: $brown;
+        color: $darkBlue;
         font-size: 17px;
         font-weight: 700;
         margin-right: -16px;
@@ -141,8 +141,8 @@
       }
       .boatText {
         padding: 5px 20px;
-        color: #fff;
-        background-color: $darkishBlue;
+        color: $darkBlue;
+        background-color: $brownDarkish;
         border-radius: 211px;
         text-transform: uppercase;
       }
@@ -160,8 +160,8 @@
       }
       .boatText {
         padding: 5px 20px;
-        color: #fff;
-        background-color: $darkishBlue;
+        color: $darkBlue;
+        background-color: $brownDark;
         border-radius: 211px;
       }
     }

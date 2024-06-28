@@ -77,7 +77,6 @@ const Links = () => {
         </div>
       </div>
       <ToolTip topValue={50} leftValue={2} divRef={contactRef}><p className={usc(styles, ["tootlTipText"])}>{t("Header.contactUsText")}</p></ToolTip>
-      {/* <ToolTip topValue={50} leftValue={2} divRef={contactRef}><p className={usc(styles, ["tootlTipText"])}>contactanos para consultar <br /> disponibilidad</p></ToolTip> */}
     </>
   )
 }

@@ -31,15 +31,33 @@ const Services = () => {
     }
   ]
   return (
-    <>
-      <Tittles styling={{ backgroundColor: "#F3DDB4", paddingTop: "70px", paddingBottom: "25px" }} tittle={t("Services.title")} />
-      <div className={usw(styles, ["servicios"], ["container-fluid"])}>
-        {serviceData.map((i, index) => (
-          <Service key={index} tittle={i.title} paragraph={i.paragraph} pic={i.pic} inverted={i.inverted}></Service>
-        ))}
-      </div>
-    </>
+    <div className={usw(styles, ["servicios"], ["container-fluid"])}>
+      <ServiceItem img={"boat"} title={'Horarios a tu gusto'} icon={'calendar'}/>
+      <ServiceItem img={"food"} title={'Una experiencia inolvidable'} icon={"foodIcon"}/>
+      <ServiceItem img={"friends"} title={'Un barco para vos y tus amigos'}  icon={"people"}/>
+    </div>
   )
 }
 
 export default Services
+
+const ServiceItem = ({ img, title, icon }: { img: string, title: string, icon: string }) => {
+  return (
+    <div className={usc(styles, ["parent"])}>
+      <div className={usc(styles, ["servicio", img])}>
+      </div>
+      <div className={usc(styles, ["title", "icon", icon])}></div>
+      <div className={usc(styles, ["title", "titleService"])}>
+        <div>{title}</div>
+      </div>
+      <div className={usc(styles, ["title", "vermas"])}></div>
+    </div>
+  )
+}
+
+{/* <Tittles styling={{ backgroundColor: "#F3DDB4", paddingTop: "70px", paddingBottom: "25px" }} tittle={t("Services.title")} />
+<div className={usw(styles, ["servicios"], ["container-fluid"])}>
+  {serviceData.map((i, index) => (
+    <Service key={index} tittle={i.title} paragraph={i.paragraph} pic={i.pic} inverted={i.inverted}></Service>
+  ))}
+</div> */}

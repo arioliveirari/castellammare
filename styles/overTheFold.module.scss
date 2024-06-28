@@ -5,7 +5,7 @@
   min-height: 700px;
   padding: 0%;
   box-sizing: border-box;
-  height: 90vh;
+  height: 100vh;
   font-family: "Ubuntu", sans-serif;
   width: 100%;
 
@@ -22,7 +22,6 @@
   }
   .mask {
     position: absolute;
-
     background: #009938;
     background-color: rgba($color: #000, $alpha: 0.6);
     width: 100%;
@@ -33,6 +32,9 @@
     transition: all ease-in-out 0.2s;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
     &:hover {
      //  background-color: rgba($color: #000, $alpha: 0.2);
     }
@@ -140,7 +142,7 @@
    
   }
   .containerOver {
-    padding-top: 50px;
+    // padding-top: 50px;
     height: 50vh;
     min-height: unset;
     .textOver {
@@ -175,7 +177,7 @@
 
 @media screen and (min-width: 768px) {
   .formContainer {
-    margin-top: 10vh;
+    // margin-top: 10vh;
   }
 }
 @media screen and (max-width: 768px) and (min-width: 768px) and (min-height: 1024px) and (min-height: 1024px) {
@@ -187,7 +189,7 @@
 @media screen and (max-width: 768px) {
   .containerOver {
     .textOver {
-      margin-top: 2vh;
+      margin-top: 8vh;
     }
   }
   .formContainer {

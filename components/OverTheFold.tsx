@@ -3,6 +3,7 @@ import { usc, usb, usw } from '../utils/helpers';
 import Form from './Form';
 import styles from '../styles/overTheFold.module.scss';
 import { useTranslation } from "react-i18next";
+import ButtonHeader from './ButtonBuyHeader';
 
 
 const OverTheFold = ({ children }: any) => {
@@ -16,7 +17,7 @@ const OverTheFold = ({ children }: any) => {
       <div className={usc(styles, ["mask"])}>
         <div className={usb(['container', 'm-auto'])}>
           <div className={usw(styles, ["rowContainer"], ["row"])}>
-            <div className={usb(["col-md-5", "p-0", "col-12"])}>
+            <div className={usb(["col-md-8", "p-0", "col-12"])}>
               <div className={usc(styles, ['containerOver'])}>
                 <div className={usc(styles, ["textOver"])}>
                   <h1 className={usc(styles, ["tittleOver"])}>
@@ -36,14 +37,16 @@ const OverTheFold = ({ children }: any) => {
 
                     </p>
                   </div>
-                  <a href='#form' className={usc(styles, ["arrowButton"])}>
+                  {/* <a href='#form' className={usc(styles, ["arrowButton"])}>
                     <span className='icon-arrow-right'></span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
-            <div id='form' className={usw(styles, ["formContainer"], ["col-md-7"])} >
-              <Form />
+
+            <div id='form' className={usw(styles, ["formContainer"], ["col-md-4 col-12"])} >
+              <ButtonHeader />
+              {/* <Form /> */}
             </div>
           </div>
         </div>

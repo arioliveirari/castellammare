@@ -1,3 +1,5 @@
+
+
 html,
 body {
   padding: 0;
@@ -157,14 +159,14 @@ transform: translatey(-35px);
 
 #mobileMango-slider .glide__track {
   height: 450px;
-  border-radius: 211px 0px 211px 211px;
+  border-radius: 211px 211px 211px 211px;
   padding: 0%;
 }
 
 #mobileKiwi-slider .glide__track {
   height: 450px;
   padding: 0%;
-  border-radius: 0px 211px 211px 211px;
+  border-radius: 211px 211px 211px 211px;
 }
 
 #mobileKiwi-slider .glide__slides,
@@ -182,12 +184,12 @@ transform: translatey(-35px);
 
 #mango-slider .glide__track {
   height: 480px;
-  border-radius: 211px 0px 211px 211px;
+  border-radius: 211px 211px 211px 211px;
 }
 
 #kiwi-slider .glide__track {
   height: 480px;
-  border-radius: 0px 211px 211px 211px;
+  border-radius: 211px 211px 211px 211px;
 }
 
 #mango-slider .glide__track,
@@ -214,7 +216,7 @@ transform: translatey(-35px);
   padding: 0%;
   width: 10px;
   height: 10px;
-  background-color: #86BED5;
+  background-color: #f0f0f0;
   align-items: center;
   border-radius: 100%;
   margin: 15px 10px;
@@ -306,7 +308,7 @@ transform: translatey(-35px);
   padding: 0%;
   width: 10px;
   height: 10px;
-  background-color: #86BED5;
+  background-color: #f0f0f0;
   align-items: center;
   border-radius: 100%;
   margin: 15px 10px;

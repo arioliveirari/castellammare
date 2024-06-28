@@ -33,7 +33,7 @@ const Boats = () => {
   return (
     <>
       <div className={usc(styles, ["desktopTitle"])} >
-        <Tittles styling={{ paddingTop: "135px", backgroundColor: "#86bed5" }} tittle={t("Boats.title")} />
+        <Tittles styling={{ paddingTop: "135px", backgroundColor: "#f0f0f0" }} tittle={t("Boats.title")} />
       </div>
       <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
         <div className={usc(styles, ["desktopAnimations"])} >
