@@ -138,21 +138,21 @@
                 height: 100%;
                 color: $ligthBlue;
                 background-color: red;
-                .icon{
-                    width: 40px;
-                    height: 40px;
-                    background-position: center;
-                    background-size: cover;
-                    &.wtsp{
-                        background-image: url(../public/bruno/wtsp.png);
-                    }
-                    &.ig{
-                        background-image: url(../public/bruno/ig.png);
-                    }
-                    &.maps{
-                        background-image: url(../public/bruno/googlemaps.png);
-                    }
-                }
+                // .icon{
+                //     width: 40px;
+                //     height: 40px;
+                //     background-position: center;
+                //     background-size: cover;
+                //     &.wtsp{
+                //         background-image: url(../public/bruno/wtsp.png);
+                //     }
+                //     &.ig{
+                //         background-image: url(../public/bruno/ig.png);
+                //     }
+                //     &.maps{
+                //         background-image: url(../public/bruno/googlemaps.png);
+                //     }
+                // }
             }
         }
     }
