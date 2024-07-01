@@ -59,8 +59,8 @@ const FaqItem = () => {
     <>
       <div className={usw(styles, ["faqComponent"], ["container-fluid"])}>
         <div className={usb(["container"])}>
-          <div className={usb(["row"])}>
-            <div className={usb(["col-md-7 col-12"])}>
+          <div className={usb(["row "])}>
+            <div className={usb(["col-12"])}>
               <div className={usc(styles, ["title"])} >
                 <p>
                   {t("FaqItem.title")}
@@ -91,11 +91,7 @@ const FaqItem = () => {
                 ))}
               </div>
             </div>
-          <div className={usb(["col-md-5 col-12 d-flex justify-content-center align-items-center"])}>
-                <div className={usc(styles, ["formCarry"])}>
-                  <FormCarry/>
-                </div>
-          </div>
+            
           </div>
         </div>
       </div >

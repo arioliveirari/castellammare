@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
-import styles from '../styles/faqItem.module.scss';
+import styles from '../styles/Footer.module.scss';
 
 export default function BasicForm() {
     const [name, setName] = useState('')
@@ -48,33 +48,32 @@ export default function BasicForm() {
 
         <form onSubmit={(e) => onSubmit(e)} className={usc(styles, ["parentHolder"])}>
             <div className={usc(styles, ["parent"])}>
-                <div>CONTACTANOS!</div>
                 <div className={usc(styles, ["formcarry-block"])}>
-                    <label htmlFor="name">Full Name</label>
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} id="name" placeholder="Your first and last name" />
+                    <label htmlFor="name">Name</label>
+                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} id="name" placeholder="" />
                 </div>
 
                 <div className={usc(styles, ["formcarry-block"])}>
-                    <label htmlFor="amount">Amount of people</label>
-                    <input type="text" value={amount} onChange={(e) => setAmount(e.target.value)} id="amount" placeholder="How many people" />
+                    <label htmlFor="amount">People</label>
+                    <input type="text" value={amount} onChange={(e) => setAmount(e.target.value)} id="amount" placeholder="" />
                 </div>
 
                 <div className={usc(styles, ["formcarry-block"])}>
                     <label htmlFor="date">Date</label>
-                    <input type="date" value={date} onChange={(e) => setDate(e.target.value)} id="date" placeholder="When do you want the experience" />
+                    <input type="date" value={date} onChange={(e) => setDate(e.target.value)} id="date" placeholder="" />
                 </div>
 
                 <div className={usc(styles, ["formcarry-block"])}>
-                    <label htmlFor="email">Your Email Address</label>
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} id="email" placeholder="john@doe.com" />
+                    <label htmlFor="email">Email</label>
+                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} id="email" placeholder="" />
                 </div>
 
                 <div className={usc(styles, ["formcarry-block"])}>
-                    <label htmlFor="message">Your message</label>
-                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} id="message" placeholder="Enter your message..."></textarea>
+                    <label htmlFor="message">Message</label>
+                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} id="message" placeholder=""></textarea>
                 </div>
 
-                <div className={usc(styles, ["formcarry-block"])}>
+                <div className={usc(styles, ["formcarry-block","buttonSend"])}>
                     <button type="submit">Send</button>
                 </div>
             </div>

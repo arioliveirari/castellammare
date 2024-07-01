@@ -1,65 +1,7 @@
 @import "variables.module.scss";
 
 
-.formCarry {
-  height: fit-content;
-  padding: 20px 20px;
-  width: 100%;
-  background-color: $orange;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  .parentHolder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    .parent {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      width: 100%;
-      .formcarry-block{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: left;
-        input, textarea{
-          width: 100%;
-          border-radius: 5px;
-          border: none;
-          background-color: $ligthBlue;
-          color: $darkBlue
-        }
-        textarea{
-          height: 80px;
-          max-height: 120px;
-          min-height: 80px;
-        }
-        button{
-          border: none;
-          margin: auto;
-          width: 75%;
-          height: 40px;
-          border-radius: 10px;
-          background-color: $ligthBlue;
-          color: $darkBlue;
-          &:hover{
-            background-color: #888785;
-            color: white;
-          }
-        }
-      }
-      
-    }
-  }
-}
+
 
 .title {
   background-color: $beige;
@@ -98,6 +40,10 @@
   text-align: left;
   color: $darkBlue;
   padding-bottom: 40px;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   p {
     margin: 0%;
