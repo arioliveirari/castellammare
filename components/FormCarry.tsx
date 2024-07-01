@@ -55,7 +55,7 @@ export default function BasicForm() {
 
                 <div className={usc(styles, ["formcarry-block"])}>
                     <label htmlFor="amount">People</label>
-                    <input type="text" value={amount} onChange={(e) => setAmount(e.target.value)} id="amount" placeholder="" />
+                    <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} id="amount" placeholder="" />
                 </div>
 
                 <div className={usc(styles, ["formcarry-block"])}>

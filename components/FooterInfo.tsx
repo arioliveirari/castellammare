@@ -8,13 +8,19 @@ export default function BasicForm() {
     return (
         <div className={usw(styles, ["info"], ["container-fluid"])} >
             <div className={usw(styles, ["parentInfo"], ["row"])} >
-                <div className={usw(styles, ["texts"], ["col-7"])} >
-                    <div className={usw(styles, ["text"], [""])} >NOMBRE EMPRESA</div>
-                    <div className={usw(styles, ["text"], [""])} >DIRECCIÖN</div>
-                    <div className={usw(styles, ["text"], [""])} >NOMBRE EMPRESA</div>
-                    <div className={usw(styles, ["text"], [""])} >NOMBRE EMPRESA</div>
+                <div className={usw(styles, ["texts"], ["col-md-3 col-12"])} >
+                    <div className={usw(styles, ["text"], [""])} >Brunos company</div>
+                    <div className={usw(styles, ["text"], [""])} >Castellammare del golfo, Italy</div>
+                    <div className={usw(styles, ["text"], [""])} >Via Gazzeti 76</div>
+                    <div className={usw(styles, ["text"], [""])} >All rights reserved  @ 2024</div>
                 </div>
-                <div className={usw(styles, ["icons"], ["col-5"])} >
+                <div className={usw(styles, ["texts"], ["col-md-3 col-12"])} >
+                    <div className={usw(styles, ["text"], [""])} >Brunos company</div>
+                    <div className={usw(styles, ["text"], [""])} >Castellammare del golfo, Italy</div>
+                    <div className={usw(styles, ["text"], [""])} >Via Gazzeti 76</div>
+                    <div className={usw(styles, ["text"], [""])} >All rights reserved  @ 2024</div>
+                </div>
+                <div className={usw(styles, ["icons"], ["col-md-6 col-12"])} >
                     <div className={usw(styles, ["icon", "wtsp"], [""])} ></div>
                     <div className={usw(styles, ["icon", "ig"], [""])} ></div>
                     <div className={usw(styles, ["icon", "maps"], [""])} ></div>
@@ -22,4 +28,4 @@ export default function BasicForm() {
             </div>
         </div>
     )
-}
+} 

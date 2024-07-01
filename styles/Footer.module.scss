@@ -10,7 +10,9 @@
     background-position: -50px;
     background-size: 120vw 100vh;
     overflow-x: hidden;
-
+    @media screen and (max-width: 768px) {
+        height: auto;
+      }
     .formCarry {
         width: 40%;
         max-width: 600px;
@@ -25,7 +27,21 @@
         right: 80px;
         margin: auto;
         z-index: 999;
-
+        @media screen and (max-width: 768px) {
+          position: relative;
+          width: 100%;
+          right: 0;
+          left: 0;
+          top: 20px;
+          bottom: 0;
+          height: 500px;
+          .parent{
+            gap: 10px;
+          }
+          button{
+            position: relative;
+          }
+        }
         .parentHolder {
             display: flex;
             position: relative;
@@ -57,9 +73,20 @@
                         border-radius: 5px;
                         border: none;
                         background-color: $ligthBlue;
-                        color: $darkBlue
+                        color: $darkBlue;
+                        padding-left: 20px;
+                        &:focus {
+                            border: none;
+                            outline-style: none;
+                          }
+                        &:-internal-autofill-selected {
+                            appearance: none;
+                            background-image: none !important;
+                            background-color: transparent !important;
+                            color: fieldtext !important;
+                        }
                     }
-
+                   
                     textarea {
                         height: 80px;
                         max-height: 120px;
@@ -100,6 +127,12 @@
         left: 0;
         bottom: 0;
         z-index: 99;
+        @media screen and (max-width: 768px) {
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color: transparent;
+          }
     }
 
     .info {
@@ -112,7 +145,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
+            margin: 0;
             .texts {
                 display: flex;
                 flex-direction: column;
@@ -122,7 +155,8 @@
                 text-align: start;
                 gap: 30px;
                 color: $ligthBlue;
-                background-color: red;
+                background-color: transparent;
+                
                 .text{
                     width: 300px;
                     text-align: start;
@@ -138,38 +172,37 @@
                 height: 100%;
                 color: $ligthBlue;
                 background-color: red;
-                // .icon{
-                //     width: 40px;
-                //     height: 40px;
-                //     background-position: center;
-                //     background-size: cover;
-                //     &.wtsp{
-                //         background-image: url(../public/bruno/wtsp.png);
-                //     }
-                //     &.ig{
-                //         background-image: url(../public/bruno/ig.png);
-                //     }
-                //     &.maps{
-                //         background-image: url(../public/bruno/googlemaps.png);
-                //     }
-                // }
+                @media screen and (max-width: 768px) {
+                    height: 60px;
+                    margin: auto;
+                  }
+                .icon{
+                    width: 40px;
+                    height: 40px;
+                    background-position: center;
+                    background-size: cover;
+                    &.wtsp{
+                        background-image: url(../public/bruno/wtsp.png);
+                    }
+                    &.ig{
+                        background-image: url(../public/bruno/ig.png);
+                    }
+                    &.maps{
+                        background-image: url(../public/bruno/googlemaps.png);
+                    }
+                }
             }
+            @media screen and (max-width: 768px) {
+                flex-direction: row;
+                justify-content: center;
+                .texts{
+                    text-align: center;
+                    .text{
+                        text-align: center;
+                    }
+                }
+              }
         }
     }
 }
 
-
-
-@media screen and (max-width: 768px) {
-    .footer {
-        .footerContainer {
-            .desktopContent {
-                display: none;
-            }
-
-            .mobileContent {
-                display: flex;
-            }
-        }
-    }
-}
