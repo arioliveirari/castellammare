@@ -21,7 +21,7 @@ const OverTheFold = ({ children }: any) => {
               <div className={usc(styles, ['containerOver'])}>
                 <div className={usc(styles, ["textOver"])}>
                   <h1 className={usc(styles, ["tittleOver"])}>
-                    NINO'S
+                    NINO
                   </h1>
                   <h1 className={usc(styles, ["tittleOver", "stroked"])}>
                     COMPANY
