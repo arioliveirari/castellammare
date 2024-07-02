@@ -72,12 +72,10 @@
       bottom: 300px;
       width: 75px;
       height: 75px;
-
       background-position: center;
       background-size: cover;
       right: 0;
       left: 0;
-
       &.calendar {
         background-image: url(../public/bruno/calendarIcon.png);
       }
@@ -98,9 +96,27 @@
       justify-content: center;
       align-items: center;
     }
-
+    &.text{
+      top: 300px;
+      height: 40px;
+      right: 0;
+      left: 0;
+    }
     &.vermas {
       top: 300px;
+      width: 40px;
+      height: 40px;
+      right: 0;
+      left: 0;
+      background-image: url(../public/bruno/Capa_1.png);
+      background-position: center;
+      background-size: cover;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    &.vermas {
+      top: 400px;
       width: 40px;
       height: 40px;
       right: 0;

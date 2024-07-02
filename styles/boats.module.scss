@@ -1,40 +1,29 @@
 @import "variables.module.scss";
+
+.boatsSection{
+  height: auto;
+  background-color: $boatsBackground;
+  color: $ligthBlue;
 .boatsModule {
-  background-color: $ligthBlue;
   position: relative;
   overflow: hidden;
   padding-bottom: 30px;
 }
 .topContent {
   display: flex;
-  flex-direction: row-reverse;
-
-  .boatName {
-    font-family: calibri;
-    font-weight: 700;
-    font-size: 39px;
-    color: $darkBlue;
-    text-transform: capitalize;
-    text-align: center;
-    justify-content: center;
-    position: relative;
-    margin-top: 40px;
-    width: fit-content;
-    height: fit-content;
-  }
+  justify-content: center;
+  align-items: center;
   .dataContainer {
-    align-items: start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 450px;
     width: 100%;
-    .firstData {
-      margin-left: -30px;
-    }
     .text {
-      color: $darkBlue;
       position: relative;
+      text-align: center;
+
     }
     .boatData {
       display: flex;
@@ -52,7 +41,6 @@
         display: flex;
         border-radius: 100%;
         background-color: $brown;
-        color: $darkBlue;
         font-size: 17px;
         font-weight: 700;
         margin-right: -16px;
@@ -69,7 +57,6 @@
       }
       .boatText {
         padding: 5px 20px;
-        color: $darkBlue;
         background-color: $brownDarkish;
         border-radius: 211px;
         text-transform: uppercase;
@@ -80,22 +67,9 @@
 
 .botContent {
   display: flex;
-  flex-direction: row-reverse;
 
-  .boatName {
-    font-family: calibri;
-    font-weight: 700;
-    font-size: 39px;
-    color: $darkBlue;
-    text-transform: capitalize;
-    text-align: end;
-    justify-content: center;
-    position: relative;
-    padding-right: 5px;
-    height: fit-content;
-  }
   .dataContainer {
-    align-items: flex-end;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,8 +80,9 @@
       margin-right: -50px;
     }
     .text {
-      color: $darkBlue;
       position: relative;
+      text-align: center;
+
     }
     .boatData {
       display: flex;
@@ -124,7 +99,6 @@
         display: flex;
         border-radius: 100%;
         background-color: $brown;
-        color: $darkBlue;
         font-size: 17px;
         font-weight: 700;
         margin-right: -16px;
@@ -141,10 +115,11 @@
       }
       .boatText {
         padding: 5px 20px;
-        color: $darkBlue;
         background-color: $brownDarkish;
         border-radius: 211px;
         text-transform: uppercase;
+        text-align: center;
+
       }
     }
   }
@@ -160,9 +135,9 @@
       }
       .boatText {
         padding: 5px 20px;
-        color: $darkBlue;
         background-color: $brownDark;
         border-radius: 211px;
+        text-align: center;
       }
     }
   }
@@ -209,4 +184,5 @@
   .desktopAnimations {
     display: none;
   }
+}
 }

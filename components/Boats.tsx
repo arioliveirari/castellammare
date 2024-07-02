@@ -31,29 +31,14 @@ const Boats = () => {
     }
   ]
   return (
-    <>
+    <div className={usc(styles, ["boatsSection"])} >
       <div className={usc(styles, ["desktopTitle"])} >
-        <Tittles styling={{ paddingTop: "135px", backgroundColor: "#f0f0f0" }} tittle={t("Boats.title")} />
+        <Tittles styling={{ paddingTop: "50px" }} tittle={t("Boats.title")} />
       </div>
       <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
-        <div className={usc(styles, ["desktopAnimations"])} >
-          <RiveAnimation bottom={400} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
-          <RiveAnimation top={0} left={0} animationName="water_1" />
-          <RiveAnimation top={450} bottom={0} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
-        </div>
-        <div className={usc(styles, ["mobileAnimations"])} >
-          <RiveAnimation bottom={0} right={0} animationName="water_2" extraClassName="rotationAnimation water2" />
-          <RiveAnimation top={600} left={0} animationName="water_1" />
-          <RiveAnimation top={550} left={0} right={0} animationName="sail_final" className="sailing" extraClassName="sailingAnimation" />
-        </div>
         <div className={usb(["container"])}>
-          <div className={usw(styles, ["topContent"], ["row", "pb-5"])}>
-            <div className={usb(["col-12", "p-0"])}>
-              <p className={usw(styles, ["boatName"], ["m-0"])}>
-                {t("Boats.first.name")}
-              </p>
-            </div>
 
+          <div className={usw(styles, ["topContent"], ["row", "pb-5", "m-auto"])}>
             <div className={usb(["col-12", "p-0"])}>
               <div className={usb(["row"])}>
                 <div className={usb(["col-md-7", "p-0", "col-12"])}>
@@ -64,7 +49,9 @@ const Boats = () => {
                 </div>
                 <div className={usb(["col-md-5", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
+                      <div>BOTE 1</div>
                     <div className={usc(styles, ["boatData", "firstData"])}>
+
                       <p className={usc(styles, ["boatText"])}>{t("Boats.first.width")}</p>
                       <p className={usc(styles, ["boatNumber"])}>{t("Boats.first.widthNumber")}</p>
                     </div>
@@ -77,7 +64,7 @@ const Boats = () => {
                     </div>
                     <div className={usc(styles, ["text"])}>
                       <p>
-                      {t("Boats.first.description")}
+                        {t("Boats.first.description")}
                       </p>
                     </div>
                   </div>
@@ -88,15 +75,12 @@ const Boats = () => {
           </div>
 
           <div className={usw(styles, ["botContent", "botContent-reverse"], ["row"])}>
-
-            <div className={usb(["col-md-12"])}>
-
-            </div>
-
             <div className={usb(["col-12"])}>
-              <div className={usb(["row"])}>
-                <div className={usb(["col-md-4", "col-12"])}>
+              <div className={usb(["row", "mr-0"])}>
+
+                <div className={usb(["col-md-5", "col-12"])}>
                   <div className={usc(styles, ["dataContainer"])}>
+                      <div>BOTE 1</div>
                     <div className={usc(styles, ["boatData", "firstData"])}>
                       <p className={usc(styles, ["boatNumber"])}>{t("Boats.second.widthNumber")}</p>
                       <p className={usc(styles, ["boatText"])}>{t("Boats.second.width")}</p>
@@ -110,15 +94,12 @@ const Boats = () => {
                     </div>
                     <div className={usc(styles, ["text"])}>
                       <p>
-                      {t("Boats.second.description")}
+                        {t("Boats.second.description")}
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className={usb(["col-md-7", "p-0", "col-12"])}>
-                  <p className={usw(styles, ["boatName"], [" m-0"])}>
-                    {t("Boats.second.name")}
-                  </p>
                   <div className={usc(styles, ["botPic"])}>
                   </div>
                   <MangoSlider />
@@ -127,12 +108,13 @@ const Boats = () => {
             </div>
           </div>
         </div>
+
         <div className={usc(styles, ["mobile"])}>
           <BoatsMobile />
         </div>
       </div>
 
-    </>
+    </div>
   )
 }
 export default Boats

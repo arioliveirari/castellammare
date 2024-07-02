@@ -159,14 +159,12 @@ transform: translatey(-35px);
 
 #mobileMango-slider .glide__track {
   height: 450px;
-  border-radius: 211px 211px 211px 211px;
   padding: 0%;
 }
 
 #mobileKiwi-slider .glide__track {
   height: 450px;
   padding: 0%;
-  border-radius: 211px 211px 211px 211px;
 }
 
 #mobileKiwi-slider .glide__slides,
@@ -183,13 +181,11 @@ transform: translatey(-35px);
 
 
 #mango-slider .glide__track {
-  height: 480px;
-  border-radius: 211px 211px 211px 211px;
+  height: calc(50vh - 30px);
 }
 
 #kiwi-slider .glide__track {
-  height: 480px;
-  border-radius: 211px 211px 211px 211px;
+  height: calc(50vh - 30px);
 }
 
 #mango-slider .glide__track,

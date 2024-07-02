@@ -1,27 +1,38 @@
 @import "variables.module.scss";
 
 
-.tittleContainer {
-    padding-bottom: 20px;
-    // padding-right: 25px;
-    text-transform: capitalize;
-    min-width: 40%;
+
+
+.rowContainer {
     width: 100%;
-    height: fit-content;
     display: flex;
-    position: relative;
-    color: $darkBlue;
-    line-height: 63px;
-    background-color: transparent;
-    font-size: 68px;
-    font-family: calibri;
-    font-weight: 600;
-    z-index: 10;
-    text-align: left;
-    p {
-        margin: 0%;
+    align-items: center;
+    justify-content: center;
+
+    .tittleContainer {
+        padding-bottom: 20px;
+        // padding-right: 25px;
+        text-transform: capitalize;
+        min-width: 40%;
+        height: fit-content;
+        display: flex;
+        position: relative;
+        color: $ligthBlue;
+        line-height: 63px;
+        background-color: transparent;
+        font-size: 68px;
+        font-family: calibri;
+        font-weight: 600;
+        z-index: 10;
+        text-align: center;
+
+        p {
+            margin: 0%;
+        }
     }
 }
+
+
 
 @media screen and (max-width: 768px) {
     .tittleContainer {
@@ -29,49 +40,3 @@
         justify-content: center;
     }
 }
-// @media screen and (max-width: 992px) {
-//     .exterior {
-//      justify-content: center;
-//         padding: 0%;
-//     }
-//     .tittleContainer {
-
-//         font-weight: bold;
-//         min-width: 40%;
-//         width: fit-content;
-//         font-size: 35pt;
-//         font-weight: 600;
-//         position: relative;
-//     }
-// }
-// @media screen and (max-width: 768px) {
-//     .exterior {
-//         padding: 0%;
-//     }
-//     .tittleContainer {
-//         font-size: 40pt;
-//         text-align: center;
-//         align-items: center;
-//         font-weight: bold;
-//         min-width: 30%;
-//         width: fit-content;
-//         font-weight: 600;
-//         position: relative;
-//     }
-// }
-
-// @media screen and (max-height: 630px) {
-//     .exterior {
-//         padding: 0%;
-//     }
-//     .tittleContainer {
-//         font-size: 35pt;
-//         text-align: center;
-//         align-items: center;
-//         font-weight: bold;
-//         min-width: 30%;
-//         width: fit-content;
-//         font-weight: 600;
-//         position: relative;
-//     }
-// }
