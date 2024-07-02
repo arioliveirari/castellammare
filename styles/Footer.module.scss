@@ -6,9 +6,11 @@
     width: 100%;
     height: calc(100vh - 60px);
     position: relative;
-    background-image: url(../public/bruno/map.jpg);
+    background-image: url(../public/bruno/castella.png);
     background-position: -50px;
-    background-size: 120vw 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-size: 120vw 100vh;
     overflow-x: hidden;
     @media screen and (max-width: 768px) {
         height: auto;

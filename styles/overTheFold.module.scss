@@ -67,17 +67,22 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 20vh;
+    margin-top: 15vh;
     height: 80vh;
     min-height: 700px;
   }
   .tittleOver {
     font-weight: bold;
     max-width: 1024px;
-    font-size: 60px;
+    font-size: 118px;
     font-family: calibri;
-    line-height: 60px;
+    line-height: 120px;
     margin-bottom: 20px;
+    
+    &.stroked{
+      -webkit-text-stroke: 2px white;
+      color: transparent;
+    }
   }
   .paragraphOver {
     justify-content: center;
@@ -85,7 +90,7 @@
       font-family: calibri;
       font-weight: 400;
       font-size: 18px;
-      max-width: 425px;
+      // max-width: 425px;
       word-break: keep-all;
       white-space: normal;
       word-spacing: 1px;

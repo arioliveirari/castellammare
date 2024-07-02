@@ -143,11 +143,11 @@ const GalleryFunction = () => {
   React.useEffect(() => {
     console.log("CAMBGIO EL ACTIVE ITEM", activeItem)
   }, [activeItem])
-
+ // styling={{ paddingTop: "70px", paddingLeft: "25px" }} // en tittles
   return (
     <>
       <div className={usw(styles, ["gallery"], ["container-fluid"])}>
-        <Tittles styling={{ paddingTop: "70px", paddingLeft: "25px" }} tittle='galeria' />
+        <Tittles tittle='galeria' />
         <div className={usb(["container-fluid"])} >
         <div className={usc(styles, ["galleryContainerMobile"])}>
             <div className="glide" id="gallery-image-mobile">

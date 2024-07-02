@@ -17,11 +17,14 @@ const OverTheFold = ({ children }: any) => {
       <div className={usc(styles, ["mask"])}>
         <div className={usb(['container', 'm-auto'])}>
           <div className={usw(styles, ["rowContainer"], ["row"])}>
-            <div className={usb(["col-md-8", "p-0", "col-12"])}>
+            <div className={usb(["col-md-12", "p-0", "col-12"])}>
               <div className={usc(styles, ['containerOver'])}>
                 <div className={usc(styles, ["textOver"])}>
                   <h1 className={usc(styles, ["tittleOver"])}>
-                    {t("OverTheFold.company")}
+                    NINO'S
+                  </h1>
+                  <h1 className={usc(styles, ["tittleOver", "stroked"])}>
+                    COMPANY
                   </h1>
                   <div className={usc(styles, ["paragraphOver"])} >
                     <h2>
@@ -44,9 +47,17 @@ const OverTheFold = ({ children }: any) => {
               </div>
             </div>
 
-            <div id='form' className={usw(styles, ["formContainer"], ["col-md-4 col-12"])} >
-              <ButtonHeader />
-              {/* <Form /> */}
+          </div>
+          <div className={usb(['container', 'm-auto', "p-0"])}>
+            <div className={usw(styles, [""], ["row"])}>
+              <div className={usb(["col-md-12", "p-0", "col-12"])}>
+                <div className={usc(styles, [''])}>
+
+                  <ButtonHeader />
+                  {/* <Form /> */}
+                </div>
+
+              </div>
             </div>
           </div>
         </div>

@@ -57,7 +57,7 @@ a {
 .glide__track {
   padding-top: 36px;
   padding-bottom: 36px;
-  border-radius: 160px 0px 160px 0px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 
@@ -136,7 +136,7 @@ transform: translatey(-35px);
   padding: 0%;
   width: 12px;
   height: 12px;
-  background-color: #E8A93F;
+  background-color: white;
   align-items: center;
   border-radius: 100%;
 }
