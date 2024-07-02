@@ -30,7 +30,7 @@ const BoatsSlider = () => {
 
   return (
     <div className={usw(styles, ["sliderModule"], ["container-fluid"])}>
-      <div className={usb(["container"])}>
+      <div className={usb(["container-fluid"])}>
         <div className={usb(["row"])}>
           <div className={usb(["col-12"])}>
             <div className="glide" id="boatSlider">

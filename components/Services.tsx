@@ -55,10 +55,12 @@ const ServiceItem = ({ img, title, icon }: { img: string, title: string, icon: s
         <div>{title}</div>
       </div>
       {!showMore ? <div onClick={() => setShowMore(true)} className={usc(styles, ["title", "vermas"])}></div> :
-          <div onClick={() => setShowMore(false)} className={usc(styles, ["title","text"])}>BLA BLA BLA BLA</div>
-     
+      <>
+          <div className={usc(styles, ["title","text"])}>BLA BLA BLA BLA</div>
+          <div onClick={() => setShowMore(false)} className={usc(styles, ["title", "vermas"])}></div> 
+      </>
       }
-      {!showMore && <div onClick={() => setShowMore(true)} className={usc(styles, ["title", "vermenos"])}></div> }
+     
     </div>
   )
 }

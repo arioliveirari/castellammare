@@ -171,10 +171,10 @@
                 align-items: center;
                 height: 100%;
                 color: $ligthBlue;
-                background-color: red;
+                background-color: $darkBlue;
                 @media screen and (max-width: 768px) {
                     height: 60px;
-                    margin: auto;
+                    width: 600px;
                   }
                 .icon{
                     width: 40px;

@@ -14,7 +14,7 @@ const resources = {
         contactUsText: "contactanos para consultar disponibilidad"
       },
       OverTheFold: {
-        company: "Bruno's company name",
+        company: "Nino's company name",
         first: "Conectate con el Río de la Plata de la manera más linda:",
         second: "Navegando a vela",
         third: "Con nuestros Gift Vouchers regalá un paseo en velero por el Río de la Plata para dos, tres o cuatro personas con comida y bebida a bordo.",
@@ -95,13 +95,13 @@ const resources = {
       },
       Footer: {
         getExperience: "Comprá",
-        copyrigth: '© Copyright 2024 by Bruno',
+        copyrigth: '© Copyright 2024 by Nino',
       },
       Voucher: {
         title: "Felicitaciones!",
         description: "Tenes a disposición un paseo en velero por el río de la plata!",
         descriptionIg: "Coordiná la salida a través de nuestro instagram",
-        ig: "@bruno",
+        ig: "@Nino",
         descriptionWtsp: "O por whatsapp al ",
         wtsp: " 1121863402",
         

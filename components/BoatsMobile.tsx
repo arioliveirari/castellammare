@@ -14,13 +14,9 @@ const BoatsMobile = () => {
     return (
         <>
 
-            <div className={usw(styles, ["boatsMobileModule"], ["container-fluid"])} >
+            <div className={usw(styles, ["boatsMobileModule"], ["container-fluid", "p-0", "m-0"])} >
                 <Tittles tittle={t("Boats.title")} />
-                <div className={usb(["col-12"])}>
-                    <p className={usw(styles, ["boatName"], [""])}>
-                    {t("Boats.first.name")}
-                    </p>
-                </div>
+               
                 <div className={usb(["row"])}>
                     <div className={usb(["col-12"])}>
                         <MobileKiwiSlider />
@@ -56,7 +52,7 @@ const BoatsMobile = () => {
                         </div>
                     </div>
                 </div>
-                <div className={usb(["col-12", "p-0"])}>
+                {/* <div className={usb(["col-12", "p-0"])}>
                     <p className={usw(styles, ["boatName"], [""])}>
                     {t("Boats.second.name")}
                     </p>
@@ -96,7 +92,7 @@ const BoatsMobile = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </>

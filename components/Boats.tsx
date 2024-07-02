@@ -44,7 +44,6 @@ const Boats = () => {
                 <div className={usb(["col-md-7", "p-0", "col-12"])}>
                   <div className={usc(styles, ["botPic"])}>
                   </div>
-
                   <KiwiSlider />
                 </div>
                 <div className={usb(["col-md-5", "col-12"])}>
@@ -74,7 +73,7 @@ const Boats = () => {
 
           </div>
 
-          <div className={usw(styles, ["botContent", "botContent-reverse"], ["row"])}>
+          {/* <div className={usw(styles, ["botContent", "botContent-reverse"], ["row"])}>
             <div className={usb(["col-12"])}>
               <div className={usb(["row", "mr-0"])}>
 
@@ -106,7 +105,7 @@ const Boats = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className={usc(styles, ["mobile"])}>
