@@ -64,7 +64,7 @@ const Boats = () => {
               <div className={usc(styles, ["tags"])}>
                 {
                   tags.map((tag: TagType, index: number)=>{
-                    return <Sign text={tag.text} icon={tag.icon} index={index}/>
+                    return <Sign text={tag.text} icon={tag.icon} key={index}/>
                   })
                 }
               </div>
@@ -86,9 +86,9 @@ const Boats = () => {
 }
 export default Boats
 
-const Sign = ({text, icon, index}:{text: string, icon?: string, index?: number}) => {
+const Sign = ({text, icon}:{text: string, icon?: string}) => {
   return (
-    <div className={usc(styles, ["sign"])} id={index as unknown as string}>
+    <div className={usc(styles, ["sign"])}>
       <div className={usc(styles, ["icon"])}></div>
       <div className={usc(styles, ["text"])}>{text}</div>
     </div>
