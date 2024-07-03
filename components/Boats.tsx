@@ -14,19 +14,19 @@ const Boats = () => {
   const { t, i18n } = useTranslation();
   const tags = [
     {
-      icon: "",
+      icon: "pesca",
       text: "Pesca con red en altamar"
     },
     {
-      icon: "",
+      icon: "cueva",
       text: "Visita a cuevas"
     },
     {
-      icon: "",
+      icon: "playa",
       text: "Paradas en playas paradisíacas"
     },
     {
-      icon: "",
+      icon: "snorkel",
       text: "Nado con snorkel"
     },
   ]
@@ -86,10 +86,10 @@ const Boats = () => {
 }
 export default Boats
 
-const Sign = ({text, icon}:{text: string, icon?: string}) => {
+const Sign = ({text, icon}:{text: string, icon: string}) => {
   return (
     <div className={usc(styles, ["sign"])}>
-      <div className={usc(styles, ["icon"])}></div>
+      <div className={usc(styles, ["icon", icon])}></div>
       <div className={usc(styles, ["text"])}>{text}</div>
     </div>
   )

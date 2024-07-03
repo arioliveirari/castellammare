@@ -59,12 +59,36 @@
     align-items: center;
     justify-content: center;
     height: 50px;
-    .text{
 
-    }
+    .text {}
+
     .icon {
-      height: 40px;
-      width: 40px;
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+      &.pesca {
+        background-image: url(../public/bruno/pesca.png);
+        background-position: center;
+        background-size: cover;
+      }
+
+      &.cueva {
+        background-image: url(../public/bruno/cueva.png);
+        background-position: center;
+        background-size: cover;
+      }
+
+      &.playa {
+        background-image: url(../public/bruno/playa.png);
+        background-position: center;
+        background-size: cover;
+      }
+
+      &.snorkel {
+        background-image: url(../public/bruno/snorkel.png);
+        background-position: center;
+        background-size: cover;
+      }
     }
   }
 }

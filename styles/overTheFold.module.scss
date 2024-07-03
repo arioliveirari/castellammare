@@ -9,11 +9,11 @@
   font-family: "Ubuntu", sans-serif;
   width: 100%;
   // background-image: url(../public/bruno/backgroundOver.jpg);
-  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(../public/bruno/backgroundOver.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
+  // background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(../public/bruno/backgroundOver.jpg);
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-blend-mode: darken;
   .video {
     object-fit: cover;
     width: 100%;
@@ -21,9 +21,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.7;
-    background: #0057e3;
+    opacity: 1;
+    background: #0d4399;
     object-position: top;
+    filter: brightness(0.8);
   }
 
   .mask {
