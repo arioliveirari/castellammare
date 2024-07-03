@@ -4,63 +4,49 @@ import Tittles from './Tittles';
 import Service from './Service';
 import styles from '../styles/services.module.scss';
 import { useTranslation } from "react-i18next";
+import ButtonHeader from './ButtonBuyHeader';
 
 
 
 
 const Services = () => {
   const { t, i18n } = useTranslation();
-  const serviceData = [
-    {
-      inverted: false,
-      title: t("Services.first.title"),
-      paragraph: t("Services.first.description"),
-      pic: t("Services.first.photo"),
-    },
-    {
-      inverted: true,
-      title: t("Services.second.title"),
-      paragraph: t("Services.second.description"),
-      pic: t("Services.second.photo"),
-    },
-    {
-      inverted: false,
-      title: t("Services.third.title"),
-      paragraph: t("Services.third.description"),
-      pic: t("Services.third.photo"),
-    }
-  ]
+  const serviceData =
+  {
+    text1: "Salimos todos los días. Podés elegir entre dos turnos de 9:30 a 14 o de 14:30 a 19 ¡Consultanos disponibilidad para reservar!",
+    text2: "Partimos del puerto de Castellammare, visitamos las cuevas y nos adentramos a 3km de la costa para pescar durante 40min. Luego recorremos la costa en bote parando para nadar y relajarnos en las playas de Cala Bianca, Riserva dello Zingaro y Tornare di Scopello, durante 40min en cada una. Volvemos al puerto para terminar el recorrido de 25km por la costa.",
+    text3: "Todos nuestros paseos son privados y ofrecemos máscara snorkel, fruta y agua fresca para todo el grupo."
+  }
+
+
 
 
 
   return (
-    <div className={usw(styles, ["servicios"], ["container-fluid"])}>
-      <ServiceItem img={"boat"} title={'Horarios a tu gusto'} icon={'calendar'} />
-      <ServiceItem img={"food"} title={'Una experiencia inolvidable'} icon={"foodIcon"} />
-      <ServiceItem img={"friends"} title={'Un barco para vos y tus amigos'} icon={"people"} />
+    <div id='TOUR' className={usw(styles, ["servicios"], ["container-fluid"])}>
+      <ServiceItem img={"boat"} title={'Horarios a tu gusto'} icon={'calendar'} text={serviceData.text1} />
+      <ServiceItem img={"food"} title={'Una experiencia inolvidable'} icon={"foodIcon"} text={serviceData.text2} />
+      <ServiceItem img={"friends"} title={'Un barco para vos y tus amigos'} icon={"people"} text={serviceData.text3} />
     </div>
   )
 }
 
 export default Services
 
-const ServiceItem = ({ img, title, icon }: { img: string, title: string, icon: string }) => {
+const ServiceItem = ({ img, title, icon, text }: { img: string, title: string, icon: string, text: string }) => {
   const [showMore, setShowMore] = React.useState(false)
   return (
-    <div className={usc(styles, ["parent"])}>
+    <div className={showMore ? usc(styles, ["parent", "active"]) : usc(styles, ["parent", ""])}>
       <div className={usc(styles, ["servicio", img])}>
       </div>
       <div className={usc(styles, ["title", "icon", icon])}></div>
       <div className={usc(styles, ["title", "titleService"])}>
         <div>{title}</div>
       </div>
-      {!showMore ? <div onClick={() => setShowMore(true)} className={usc(styles, ["title", "vermas"])}></div> :
-      <>
-          <div className={usc(styles, ["title","text"])}>BLA BLA BLA BLA</div>
-          <div onClick={() => setShowMore(false)} className={usc(styles, ["title", "vermas"])}></div> 
-      </>
-      }
-     
+
+      <div className={usc(styles, ["title", "text"])}>{text}</div>
+      <div onClick={() => setShowMore(!showMore)} className={usc(styles, ["title", "vermas"])}></div>
+      <ButtonHeader  extraClassName={`${!showMore ? "serviceButton" : "serviceButtonActive"}`} />
     </div>
   )
 }

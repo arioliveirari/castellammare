@@ -2,118 +2,95 @@ import React, { useEffect, useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/boats.module.scss';
 import Tittles from './Tittles';
-import BoatsMobile from '../components/BoatsMobile';
-import MangoSlider from './MangoSlider';
 import KiwiSlider from './KiwiSlider';
-import { RiveAnimation } from './RiveAnimation';
 import { useTranslation } from "react-i18next";
 
-
+export type TagType = {
+  icon: string,
+  text: string
+}
 
 const Boats = () => {
   const { t, i18n } = useTranslation();
-  const boatsData = [
+  const tags = [
     {
-      id: 1,
-      years: 5,
-      travels: 80,
-      reversedDrop: true,
-      passanger: 5,
-      imageUrl: "/images/kiwi.jpg"
+      icon: "",
+      text: "Pesca con red en altamar"
     },
     {
-      id: 2,
-      years: 5,
-      travels: 80,
-      reversedDrop: false,
-      passanger: 4,
-      imageUrl: "coast /images/mango.jpg"
-    }
+      icon: "",
+      text: "Visita a cuevas"
+    },
+    {
+      icon: "",
+      text: "Paradas en playas paradisíacas"
+    },
+    {
+      icon: "",
+      text: "Nado con snorkel"
+    },
   ]
+
   return (
-    <div className={usc(styles, ["boatsSection"])} >
-      <div className={usc(styles, ["desktopTitle"])} >
-        <Tittles styling={{ paddingTop: "50px" }} tittle={t("Boats.title")} />
-      </div>
-      <div className={usw(styles, ["boatsModule"], ["container-fluid "])}>
+    <div id='ABOUT' className={usc(styles, ["boatsSection"])} >
+
+      <div className={usw(styles, ["textContainer"], ["container-fluid"])}>
+
         <div className={usb(["container"])}>
 
-          <div className={usw(styles, ["topContent"], ["row", "pb-5", "m-auto"])}>
-            <div className={usb(["col-12", "p-0"])}>
-              <div className={usb(["row"])}>
-                <div className={usb(["col-md-7", "p-0", "col-12"])}>
-                  <div className={usc(styles, ["botPic"])}>
-                  </div>
-                  <KiwiSlider />
-                </div>
-                <div className={usb(["col-md-5", "col-12"])}>
-                  <div className={usc(styles, ["dataContainer"])}>
-                      <div>BOTE 1</div>
-                    <div className={usc(styles, ["boatData", "firstData"])}>
-
-                      <p className={usc(styles, ["boatText"])}>{t("Boats.first.width")}</p>
-                      <p className={usc(styles, ["boatNumber"])}>{t("Boats.first.widthNumber")}</p>
-                    </div>
-                    <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatText"])}>{t("Boats.first.length")}</p>
-                      <p className={usc(styles, ["boatNumber"])}>{t("Boats.first.lengthNumber")}</p>
-                    </div>
-                    <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatText"])}>{t("Boats.first.model")}</p>
-                    </div>
-                    <div className={usc(styles, ["text"])}>
-                      <p>
-                        {t("Boats.first.description")}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className={usb(["row"])}>
+            <div className={usb(["col-12"])}>
+              <div className={usc(styles, ["company"])}>SANTA LUCIA TOUR</div>
             </div>
-
           </div>
 
-          {/* <div className={usw(styles, ["botContent", "botContent-reverse"], ["row"])}>
+          <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
-              <div className={usb(["row", "mr-0"])}>
-
-                <div className={usb(["col-md-5", "col-12"])}>
-                  <div className={usc(styles, ["dataContainer"])}>
-                      <div>BOTE 1</div>
-                    <div className={usc(styles, ["boatData", "firstData"])}>
-                      <p className={usc(styles, ["boatNumber"])}>{t("Boats.second.widthNumber")}</p>
-                      <p className={usc(styles, ["boatText"])}>{t("Boats.second.width")}</p>
-                    </div>
-                    <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatNumber"])}>{t("Boats.second.lengthNumber")}</p>
-                      <p className={usc(styles, ["boatText"])}>{t("Boats.second.length")}</p>
-                    </div>
-                    <div className={usc(styles, ["boatData"])}>
-                      <p className={usc(styles, ["boatText"])}>{t("Boats.second.model")}</p>
-                    </div>
-                    <div className={usc(styles, ["text"])}>
-                      <p>
-                        {t("Boats.second.description")}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className={usb(["col-md-7", "p-0", "col-12"])}>
-                  <div className={usc(styles, ["botPic"])}>
-                  </div>
-                  <MangoSlider />
-                </div>
+              <div className={usc(styles, ["title"])} >
+                <div>{t("Boats.title")}</div>
               </div>
             </div>
-          </div> */}
-        </div>
+          </div>
 
-        <div className={usc(styles, ["mobile"])}>
-          <BoatsMobile />
+          <div className={usb(["row"])}>
+            <div className={usb(["col-12"])}>
+              <div className={usc(styles, ["description"])}>Disfruta una experiencia única a bordo del Santa Lucia, un tradicional bote peschereccio. Comenzamos nuestra aventura en el puerto de Castellammare, visitamos cuevas y luego pescamos con red en alta mar. Continúa el viaje recorriendo la costa, con paradas en Cala Bianca, la Reserva dello Zingaro y Tonnara di Scopello para nadar y disfrutar del paisaje paradisíaco. Te ofrecemos fruta fresca, agua y equipo de snorkel para que tu experiencia sea inolvidable.</div>
+            </div>
+          </div>
+
+
+          <div className={usb(["row"])}>
+            <div className={usb(["col-12"])}>
+              <div className={usc(styles, ["tags"])}>
+                {
+                  tags.map((tag: TagType, index: number)=>{
+                    return <Sign text={tag.text} icon={tag.icon} index={index}/>
+                  })
+                }
+              </div>
+            </div>
+          </div>
+
+          <div className={usb(["row"])}>
+            <div className={usb(["col-12"])}>
+              <div className={usc(styles, ["slider"])}>
+                     {/* <KiwiSlider /> */}
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-
     </div>
   )
 }
 export default Boats
+
+const Sign = ({text, icon, index}:{text: string, icon?: string, index?: number}) => {
+  return (
+    <div className={usc(styles, ["sign"])} id={index as unknown as string}>
+      <div className={usc(styles, ["icon"])}></div>
+      <div className={usc(styles, ["text"])}>{text}</div>
+    </div>
+  )
+}

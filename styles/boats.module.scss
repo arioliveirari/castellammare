@@ -2,215 +2,69 @@
 
 .boatsSection {
   height: calc(100vh - 60px);
-  background-color: $boatsBackground;
+  background: $boatsBackground;
+  background-image: url(../public/bruno/boatsBkg.png);
+  background-position: center;
+  background-size: cover;
   color: $darkBlue;
-  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  @media screen and (max-width:425px) {
-    height: fit-content;
-  }
-  .boatsModule {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 30px;
-  }
+  align-items: center;
+  text-align: left;
+  color: $orange;
 
-  .topContent {
+  .textContainer {
+    .company {
+      font-size: 20px;
+      margin-top: 80px;
+      margin-bottom: 0px;
+      font-weight: 500;
+      padding: 0;
+    }
+
+    .title {
+      color: black;
+      font-size: 80px;
+      line-height: 82px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .description {
+      font-weight: 500;
+      text-align: justify;
+      font-size: 20px;
+      line-height: 30px;
+
+    }
+  }
+}
+
+.tags {
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  .sign {
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 10px;
+    border: 2px solid $orange;
+    border-radius: 15px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 50px;
+    .text{
 
-    .dataContainer {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 450px;
-      width: 100%;
-
-      .text {
-        position: relative;
-        text-align: center;
-
-      }
-
-      .boatData {
-        display: flex;
-        flex-direction: row-reverse;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px;
-        position: relative;
-
-        p {
-          margin: 0%;
-        }
-
-        .boatNumber {
-          display: flex;
-          border-radius: 100%;
-          background-color: $brown;
-          font-size: 17px;
-          font-weight: 700;
-          margin-right: -16px;
-          font-family: calibri;
-          height: 55px;
-          width: 55px;
-          position: relative;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-        }
-
-        .darkishBlue {
-          background-color: $darkishBlue;
-        }
-
-        .boatText {
-          padding: 5px 20px;
-          background-color: $brownDarkish;
-          border-radius: 211px;
-          text-transform: uppercase;
-        }
-      }
     }
-  }
-
-  .botContent {
-    display: flex;
-
-    .dataContainer {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: end;
-      height: 550px;
-      width: 100%;
-
-      .firstData {
-        margin-right: -50px;
-      }
-
-      .text {
-        position: relative;
-        text-align: center;
-
-      }
-
-      .boatData {
-        display: flex;
-        flex-direction: row-reverse;
-        text-align: end;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px;
-        position: relative;
-
-        p {
-          margin: 0%;
-        }
-
-        .boatNumber {
-          display: flex;
-          border-radius: 100%;
-          background-color: $brown;
-          font-size: 17px;
-          font-weight: 700;
-          margin-right: -16px;
-          font-family: calibri;
-          height: 55px;
-          width: 55px;
-          position: relative;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-        }
-
-        .darkishBlue {
-          background-color: $darkishBlue;
-        }
-
-        .boatText {
-          padding: 5px 20px;
-          background-color: $brownDarkish;
-          border-radius: 211px;
-          text-transform: uppercase;
-          text-align: center;
-
-        }
-      }
-    }
-
-    &.botContent-reverse {
-      margin-bottom: 0%;
-      padding-bottom: 0%;
-
-      .boatData {
-        .boatNumber {
-          margin-right: 0px;
-          margin-left: -17px;
-        }
-
-        .boatText {
-          padding: 5px 20px;
-          background-color: $brownDark;
-          border-radius: 211px;
-          text-align: center;
-        }
-      }
-    }
-  }
-
-  .mobileAnimations {
-    display: none;
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  .mobileTitle {
-    display: none;
-  }
-
-  .desktopTitle {
-    display: unset;
-
-    p {
-      padding: 0%;
-    }
-  }
-
-  @media screen and (max-width: 992px) {}
-
-  @media screen and (max-width: 768px) {
-    .mobileTitle {
-      display: unset;
-    }
-
-    .desktopTitle {
-      display: none;
-    }
-
-    .topContent,
-    .botContent {
-      display: none;
-    }
-
-    .mobile {
-      display: unset;
-    }
-
-    .mobileAnimations {
-      display: unset;
-    }
-
-    .desktopAnimations {
-      display: none;
+    .icon {
+      height: 40px;
+      width: 40px;
     }
   }
 }

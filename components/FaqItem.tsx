@@ -57,7 +57,7 @@ const FaqItem = () => {
 
   return (
     <>
-      <div className={usw(styles, ["faqComponent"], ["container-fluid"])}>
+      <div id='FAQ' className={usw(styles, ["faqComponent"], ["container-fluid"])}>
         <div className={usb(["container"])}>
           <div className={usb(["row "])}>
             <div className={usb(["col-12"])}>

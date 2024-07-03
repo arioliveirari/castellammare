@@ -11,6 +11,7 @@
   @media screen and (max-width:425px) {
     flex-direction: column;
     height: calc(300vh - 180px);
+
     .parent {
       width: 100%;
       height: calc(100vh - 60px);
@@ -23,13 +24,15 @@
   width: 33.33333333%;
   height: 100%;
   position: relative;
-  &:hover {
-    .servicio{
+  transition: all 1s ease;
 
+  &:hover {
+    .servicio {
       filter: brightness(.80);
       transition: all 0.2s ease;
     }
   }
+
   .servicio {
     padding: 0;
     width: 100%;
@@ -37,8 +40,6 @@
     background-position: center;
     background-size: cover;
     filter: brightness(0.5);
-
-
 
     &.boat {
       background-image: url(../public/bruno/barco.jpg);
@@ -54,7 +55,6 @@
   }
 
   .title {
-    // pointer-events: none;
     height: 100px;
     width: 100%;
     position: absolute;
@@ -69,6 +69,8 @@
     text-align: center;
 
     &.icon {
+      transition: all 1s ease;
+
       bottom: 300px;
       width: 75px;
       height: 75px;
@@ -76,6 +78,7 @@
       background-size: cover;
       right: 0;
       left: 0;
+
       &.calendar {
         background-image: url(../public/bruno/calendarIcon.png);
       }
@@ -90,19 +93,28 @@
     }
 
     &.titleService {
+      transition: all 1s ease;
       vertical-align: center;
       line-height: 25px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    &.text{
-      top: 300px;
+
+    &.text {
+      transition: all 1s ease;      top: 0px;
+      bottom: 0px;
       height: 40px;
       right: 0;
       left: 0;
+      opacity: 0;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 0px 30px;
     }
+
     &.vermas {
+      transition: all 1s ease;
       top: 300px;
       width: 40px;
       height: 40px;
@@ -111,22 +123,35 @@
       background-image: url(../public/bruno/Capa_1.png);
       background-position: center;
       background-size: cover;
-      &:hover{
+
+      &:hover {
         cursor: pointer;
       }
     }
-    &.vermas {
-      top: 400px;
-      width: 40px;
-      height: 40px;
-      right: 0;
-      left: 0;
-      background-image: url(../public/bruno/Capa_1.png);
-      background-position: center;
-      background-size: cover;
-      &:hover{
-        cursor: pointer;
-      }
+
+  }
+
+  &.active {
+
+    .titleService {
+      bottom: 250px;
+
     }
+
+    .icon {
+      bottom: 500px;
+    }
+
+    .text {
+      opacity: 1;
+    }
+
+    .vermas {
+      top: 600px;
+      // cambiar por un menos
+      // background-image: url(../public/bruno/Capa_1.png);
+
+    }
+
   }
 }

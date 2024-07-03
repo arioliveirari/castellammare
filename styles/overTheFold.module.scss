@@ -8,7 +8,12 @@
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
   width: 100%;
-
+  // background-image: url(../public/bruno/backgroundOver.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(../public/bruno/backgroundOver.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
   .video {
     object-fit: cover;
     width: 100%;
@@ -20,10 +25,12 @@
     background: #0057e3;
     object-position: top;
   }
+
   .mask {
     position: absolute;
     background: #009938;
-    background-color: rgba($color: #000, $alpha: 0.6);
+    background-color: rgba($color: #000, $alpha: 0);
+    // background-color: rgba($color: #000, $alpha: 0.6);
     width: 100%;
     height: 100%;
 
@@ -32,181 +39,101 @@
     transition: all ease-in-out 0.2s;
     justify-content: center;
     align-items: center;
+
     @media screen and (min-width: 768px) {
       display: flex;
     }
+
     &:hover {
-     //  background-color: rgba($color: #000, $alpha: 0.2);
+      //  background-color: rgba($color: #000, $alpha: 0.2);
     }
   }
 }
+
 .rowContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.formContainer {
-  align-items: center;
-  justify-content: center;
-
-  z-index: 99;
-}
-.row {
-  width: 100%;
-}
-.containerOver {
-  height: 70vh;
-  color: $beige;
-  display: flex;
-  min-height: 700px;
-  justify-content: center;
-  .textOver {
-    align-items: self-start;
-    max-width: 1024px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15vh;
-    height: 80vh;
-    min-height: 700px;
-  }
-  .tittleOver {
-    font-weight: bold;
-    max-width: 1024px;
-    font-size: 118px;
+  color: $ligthBlue;
+  text-align: left;
+  text-shadow: 0px 4px 4px #00000040;
+  
+  .city {
+    font-weight: 400;
+    font-size: 20px;
     font-family: calibri;
-    line-height: 120px;
+    line-height: 22px;
     margin-bottom: 20px;
-    
-    &.stroked{
-      -webkit-text-stroke: 2px white;
-      color: transparent;
+  }
+
+  .company {
+
+    .tittleOver {
+      font-weight: bold;
+      font-size: 120px;
+      font-family: calibri;
+      line-height: 122px;
+      margin-bottom: 20px;
+
+      &.stroked {
+        -webkit-text-stroke: 2px $ligthBlue;
+        color: transparent;
+      }
     }
   }
-  .paragraphOver {
+
+  .description {
+    font-weight: 400;
+    font-size: 40px;
+    font-family: calibri;
+    line-height: 42px;
+    margin-bottom: 70px;
+    max-width: 700px;
+  }
+}
+
+.parentConteiner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0;
+
+  .containerButton {
+    width: 200px;
+    height: 50px;
+    background-color: $orange;
+    display: flex;
     justify-content: center;
-    h2 {
-      font-family: calibri;
-      font-weight: 400;
-      font-size: 18px;
-      // max-width: 425px;
-      word-break: keep-all;
-      white-space: normal;
-      word-spacing: 1px;
-      margin-bottom: 20vh;
+    align-items: center;
+    border-radius: 15px;
+
+    .buttonHeader {
+      color: $ligthBlue;
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+  &.serviceButton{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s ease;
+    &.active{
+      opacity: 1;
     }
   }
 }
 
-.arrowButton {
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  display: none;
-  width: 1px;
-  margin: auto;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  text-decoration: none;
-  color: #fff;
-  font-size: 30px;
-  transform: rotate(90deg);
-  height: auto;
-  aspect-ratio: 1/1;
-  &:active {
-    color: #fff;
-  }
-}
-.buttonOver {
-  width: fit-content;
-  height: auto;
-  padding: 15px 20px;
-  text-align: center;
-  background-color: $orange;
-  text-decoration: none;
-  color: $beige;
-  font-size: 25px;
-  border-radius: 8px;
-  font-family: calibri;
-  font-weight: 700;
-  transition: all ease-in-out 0.2s;
-  color: #fff;
-  text-transform: uppercase;
-  &:hover {
-    color: #fff;
-    background-color: #e6a029;
-  }
-}
+
+
 
 @media screen and (max-width: 768px) {
   .rowContainer {
     flex-direction: column;
   }
-  .textOver {
-   
-  }
-  .containerOver {
-    // padding-top: 50px;
-    height: 50vh;
-    min-height: unset;
-    .textOver {
-      text-align: center;
-      align-items: center !important;
-      .tittleOver {
-        font-weight: bold;
-        text-align: center;
 
-        margin-bottom: 10px;
-        font-size: 32px;
-      }
-      .paragraphOver {
-        h2 {
-          text-align: center;
-        }
-        font-size: 15pt;
-        text-align: center;
-        padding: 0px 15px;
-      }
-    }
-  }
-  .buttonOver {
-    font-size: 20px;
-    padding: 10px 15px;
-    display: none;
-  }
-  .arrowButton {
-    display: unset;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .formContainer {
-    // margin-top: 10vh;
-  }
-}
-@media screen and (max-width: 768px) and (min-width: 768px) and (min-height: 1024px) and (min-height: 1024px) {
-  .formContainer {
-    margin-top: 8vh;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .containerOver {
-    .textOver {
-      margin-top: 8vh;
-    }
-  }
-  .formContainer {
-    margin-top: 8vh;
-  }
-}
-
-@media screen and (max-height: 630px) and (max-width: 768px) {
-  .formContainer {
-    margin-top: -45vh;
-  }
-  .containerOver {
-    margin-bottom: 90vh;
-  }
 }
