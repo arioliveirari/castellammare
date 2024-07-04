@@ -5,7 +5,8 @@
 
 
 .faqComponent {
-  min-height: calc(100vh - 60px);
+  // min-height: calc(100vh - 60px);
+  min-height: 100vh;
   height: fit-content;
   background: $boatsBackground;
   background-image: url(../public/bruno/FAQBkg.png);

@@ -16,7 +16,8 @@
     @media screen and (max-width: 768px) {
         height: auto;
     }
-    .rights{
+
+    .rights {
         position: absolute;
         bottom: 20px;
         right: 40px;
@@ -25,6 +26,7 @@
         line-height: 20px;
         font-weight: 500;
     }
+
     .formCarry {
         width: 40%;
         max-width: 600px;
@@ -82,6 +84,36 @@
                     align-items: left;
                     justify-content: left;
                     border-bottom: 1px solid $darkBlue;
+
+                    &.lang {
+                        border: none;
+
+                        .lenguages {
+                            width: 100%;
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            display: flex;
+                            justify-content: space-around;
+                            margin: auto;
+                            .holder{
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                width: auto;
+                                .selector {
+                                    width: 30px;
+                                    height: 30px;
+                                    border: 1px $darkBlue solid;
+                                    border-radius: 5px;
+                                    
+                                    &.active {
+                                        background-color: $darkBlue;
+                                    }
+                                }
+                            }
+                        }
+                    }
 
                     input,
                     textarea {
@@ -178,6 +210,7 @@
                 color: $ligthBlue;
                 background-color: transparent;
                 margin-left: 30px;
+
                 .text {
                     width: 300px;
                     text-align: start;
@@ -244,6 +277,7 @@
     align-items: start;
     justify-content: start;
     height: auto;
+
     .text {
         text-align: left;
 
