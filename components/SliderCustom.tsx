@@ -22,8 +22,8 @@ const SliderCustom = () => {
             // autoplay: 1500,
             hoverpause: true,
             breakpoints: {
-                768: {
-
+                1000: {
+                    perView: 2,
                 },
                 576: {
                     perView: 1,

@@ -67,7 +67,7 @@ const Header = ({ children }: any) => {
                 <div onClick={() => changeLanguage("it")} className={(language === "it") ? usc(styles, ["it"]) : usc(styles, [""])}>IT</div>
               </div>
 
-                <a href='https://wa.me/541136582427' target='_blank'>
+                <a href='https://wa.me/541136582427' rel="noopener noreferrer" target='_blank'>
               <div className={usc(styles, ["wtsp"])}>
               </div>
                 </a>
