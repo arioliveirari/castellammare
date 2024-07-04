@@ -12,9 +12,19 @@
     background-size: cover;
     // background-size: 120vw 100vh;
     overflow-x: hidden;
+
     @media screen and (max-width: 768px) {
         height: auto;
-      }
+    }
+    .rights{
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        color: $ligthBlue;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 500;
+    }
     .formCarry {
         width: 40%;
         max-width: 600px;
@@ -29,21 +39,25 @@
         right: 80px;
         margin: auto;
         z-index: 999;
+
         @media screen and (max-width: 768px) {
-          position: relative;
-          width: 100%;
-          right: 0;
-          left: 0;
-          top: 20px;
-          bottom: 0;
-          height: 500px;
-          .parent{
-            gap: 10px;
-          }
-          button{
             position: relative;
-          }
+            width: 100%;
+            right: 0;
+            left: 0;
+            top: 20px;
+            bottom: 0;
+            height: 500px;
+
+            .parent {
+                gap: 10px;
+            }
+
+            button {
+                position: relative;
+            }
         }
+
         .parentHolder {
             display: flex;
             position: relative;
@@ -77,10 +91,12 @@
                         background-color: $ligthBlue;
                         color: $darkBlue;
                         padding-left: 20px;
+
                         &:focus {
                             border: none;
                             outline-style: none;
-                          }
+                        }
+
                         &:-internal-autofill-selected {
                             appearance: none;
                             background-image: none !important;
@@ -88,7 +104,7 @@
                             color: fieldtext !important;
                         }
                     }
-                   
+
                     textarea {
                         height: 80px;
                         max-height: 120px;
@@ -129,12 +145,13 @@
         left: 0;
         bottom: 0;
         z-index: 99;
+
         @media screen and (max-width: 768px) {
             position: relative;
             width: 100%;
             height: auto;
             background-color: transparent;
-          }
+        }
     }
 
     .info {
@@ -148,6 +165,7 @@
             flex-direction: column;
             justify-content: space-between;
             margin: 0;
+
             .texts {
                 display: flex;
                 flex-direction: column;
@@ -158,8 +176,8 @@
                 gap: 30px;
                 color: $ligthBlue;
                 background-color: transparent;
-                
-                .text{
+                margin-left: 30px;
+                .text {
                     width: 300px;
                     text-align: start;
                 }
@@ -174,37 +192,90 @@
                 height: 100%;
                 color: $ligthBlue;
                 background-color: $darkBlue;
+
                 @media screen and (max-width: 768px) {
                     height: 60px;
                     width: 600px;
-                  }
-                .icon{
+                }
+
+                .icon {
                     width: 40px;
                     height: 40px;
                     background-position: center;
                     background-size: cover;
-                    &.wtsp{
+
+                    &.wtsp {
                         background-image: url(../public/bruno/wtsp.png);
                     }
-                    &.ig{
+
+                    &.ig {
                         background-image: url(../public/bruno/ig.png);
                     }
-                    &.maps{
+
+                    &.maps {
                         background-image: url(../public/bruno/googlemaps.png);
                     }
                 }
             }
+
             @media screen and (max-width: 768px) {
                 flex-direction: row;
                 justify-content: center;
-                .texts{
+
+                .texts {
                     text-align: center;
-                    .text{
+
+                    .text {
                         text-align: center;
                     }
                 }
-              }
+            }
         }
     }
 }
 
+.sign {
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 40px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: auto;
+    .text {
+        text-align: left;
+
+    }
+
+    .icon {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+
+        &.wtsp {
+            background-image: url(../public/bruno/pesca.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        &.ig {
+            background-image: url(../public/bruno/cueva.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        &.location {
+            background-image: url(../public/bruno/playa.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        &.mail {
+            background-image: url(../public/bruno/snorkel.png);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
