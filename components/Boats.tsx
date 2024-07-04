@@ -4,6 +4,7 @@ import styles from '../styles/boats.module.scss';
 import Tittles from './Tittles';
 import KiwiSlider from './KiwiSlider';
 import { useTranslation } from "react-i18next";
+import SliderCustom from './SliderCustom';
 
 export type TagType = {
   icon: string,
@@ -71,15 +72,20 @@ const Boats = () => {
             </div>
           </div>
 
-          <div className={usb(["row"])}>
+          
+
+        </div>
+
+        <div className={usb(["container-fluid"])}>
+        <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
               <div className={usc(styles, ["slider"])}>
-                     {/* <KiwiSlider /> */}
+                     <SliderCustom />
               </div>
             </div>
           </div>
-
         </div>
+
       </div>
     </div>
   )

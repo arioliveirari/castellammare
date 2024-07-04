@@ -1,7 +1,8 @@
 @import "variables.module.scss";
 
 .boatsSection {
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
+  height: auto;
   background: $boatsBackground;
   background-image: url(../public/bruno/boatsBkg.png);
   background-position: center;
@@ -42,12 +43,11 @@
 }
 
 .tags {
-  max-width: 90%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 30px;
-
+  flex-wrap: wrap;
   .sign {
     width: fit-content;
     font-size: 20px;
@@ -59,7 +59,8 @@
     align-items: center;
     justify-content: center;
     height: 50px;
-
+    margin-top: 10px;
+    
     .text {}
 
     .icon {

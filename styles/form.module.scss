@@ -47,7 +47,7 @@
     .form-content {
       width: 80%;
       display: flex;
-      font-family: calibri;
+      font-family: "Montserrat", sans-serif;
       flex-direction: column;
       justify-content: center;
       text-align: center;
@@ -91,7 +91,7 @@
       border: none;
       width: 100%;
       &::placeholder {
-        font-family: calibri;
+        font-family: "Montserrat", sans-serif;
         font-size: 15px;
         color: $darkBlue;
       }
@@ -199,7 +199,7 @@
     margin-top: 15px;
     span {
       display: inline-block;
-      font-family: calibri;
+      font-family: "Montserrat", sans-serif;
     }
     p {
       font-size: 15px;
@@ -209,7 +209,7 @@
   .formText {
     text-align: center;
     justify-content: center;
-    font-family: calibri;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     width: 100%;
     .formPic {

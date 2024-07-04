@@ -47,6 +47,8 @@ export default function BasicForm() {
                     <div className={usw(styles, ["icon", "wtsp"], [""])} ></div>
                     <div className={usw(styles, ["icon", "ig"], [""])} ></div>
                     <div className={usw(styles, ["icon", "maps"], [""])} ></div>
+                    <div className={usw(styles, ["icon", "ig"], [""])} ></div>
+                    <div className={usw(styles, ["icon", "maps"], [""])} ></div>
                 </div>
 
             </div>

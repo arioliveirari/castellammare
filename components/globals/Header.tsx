@@ -5,6 +5,7 @@ import styles from '../../styles/headers.module.scss';
 import ToolTip from '../ToolTip';
 import { useTranslation } from 'react-i18next';
 import { ScrollTo } from '../ScrollTo';
+import { redirect } from 'next/dist/server/api-utils';
 
 
 const Header = ({ children }: any) => {
@@ -65,6 +66,12 @@ const Header = ({ children }: any) => {
                 <div onClick={() => changeLanguage("en")} className={(language === "en") ? usc(styles, ["en"]) : usc(styles, [""])}>EN</div>
                 <div onClick={() => changeLanguage("it")} className={(language === "it") ? usc(styles, ["it"]) : usc(styles, [""])}>IT</div>
               </div>
+
+                <a href='https://wa.me/541136582427' target='_blank'>
+              <div className={usc(styles, ["wtsp"])}>
+              </div>
+                </a>
+              
 
             </div>
           </div>
