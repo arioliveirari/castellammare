@@ -4,6 +4,8 @@ import styles from '../styles/Footer.module.scss'
 import { useTranslation } from "react-i18next";
 import FormCarry from "./FormCarry";
 import FooterInfo from "./FooterInfo";
+
+
 const Footer = () => {
     const { t, i18n } = useTranslation();
     return (

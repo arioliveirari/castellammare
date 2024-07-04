@@ -22,7 +22,7 @@ const OverTheFold = ({ children }: any) => {
           <div className={usw(styles, ["rowContainer"], ["row"])}>
             <div className={usb(["col-12"])}>
               <div className={usc(styles, ["city"])}>
-                <div>CASTELLAMMARE DEL GOLFO</div>
+                <div>{t("OverTheFold.city")}</div>
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@ const OverTheFold = ({ children }: any) => {
             <div className={usb(["col-12"])}>
               <div className={usc(styles, ["company"])}>
                 <h1 className={usc(styles, ["tittleOver"])}>
-                  {t("OverTheFold.titleFirst")}
+                  {t("OverTheFold.titleFrist")}
                 </h1>
                 <h1 className={usc(styles, ["tittleOver", "stroked"])}>
                   {t("OverTheFold.titleSecond")}

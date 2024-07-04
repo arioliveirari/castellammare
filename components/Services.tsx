@@ -13,9 +13,9 @@ const Services = () => {
   const { t, i18n } = useTranslation();
   const serviceData =
   {
-    text1: "Salimos todos los días. Podés elegir entre dos turnos de 9:30 a 14 o de 14:30 a 19 ¡Consultanos disponibilidad para reservar!",
-    text2: "Partimos del puerto de Castellammare, visitamos las cuevas y nos adentramos a 3km de la costa para pescar durante 40min. Luego recorremos la costa en bote parando para nadar y relajarnos en las playas de Cala Bianca, Riserva dello Zingaro y Tornare di Scopello, durante 40min en cada una. Volvemos al puerto para terminar el recorrido de 25km por la costa.",
-    text3: "Todos nuestros paseos son privados y ofrecemos máscara snorkel, fruta y agua fresca para todo el grupo."
+    text1: t("Services.first.description"),
+    text2: t("Services.second.description"),
+    text3: t("Services.third.description"),
   }
 
 
@@ -24,9 +24,9 @@ const Services = () => {
 
   return (
     <div id='TOUR' className={usw(styles, ["servicios"], ["container-fluid"])}>
-      <ServiceItem img={"boat"} title={'Horarios a tu gusto'} icon={'calendar'} text={serviceData.text1} />
-      <ServiceItem img={"food"} title={'Una experiencia inolvidable'} icon={"foodIcon"} text={serviceData.text2} />
-      <ServiceItem img={"friends"} title={'Un barco para vos y tus amigos'} icon={"people"} text={serviceData.text3} />
+      <ServiceItem img={"boat"} title={t("Services.first.title")} icon={'calendar'} text={serviceData.text1} />
+      <ServiceItem img={"food"} title={t("Services.second.title")} icon={"foodIcon"} text={serviceData.text2} />
+      <ServiceItem img={"friends"} title={t("Services.third.title")} icon={"people"} text={serviceData.text3} />
     </div>
   )
 }
@@ -50,10 +50,3 @@ const ServiceItem = ({ img, title, icon, text }: { img: string, title: string, i
     </div>
   )
 }
-
-{/* <Tittles styling={{ backgroundColor: "#F3DDB4", paddingTop: "70px", paddingBottom: "25px" }} tittle={t("Services.title")} />
-<div className={usw(styles, ["servicios"], ["container-fluid"])}>
-  {serviceData.map((i, index) => (
-    <Service key={index} tittle={i.title} paragraph={i.paragraph} pic={i.pic} inverted={i.inverted}></Service>
-  ))}
-</div> */}

@@ -16,19 +16,19 @@ const Boats = () => {
   const tags = [
     {
       icon: "pesca",
-      text: "Pesca con red en altamar"
+      text: t("Boats.signs.fishing")
     },
     {
       icon: "cueva",
-      text: "Visita a cuevas"
+      text: t("Boats.signs.cueva")
     },
     {
       icon: "playa",
-      text: "Paradas en playas paradisíacas"
+      text: t("Boats.signs.playa")
     },
     {
       icon: "snorkel",
-      text: "Nado con snorkel"
+      text: t("Boats.signs.snorkel")
     },
   ]
 
@@ -41,7 +41,7 @@ const Boats = () => {
 
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
-              <div className={usc(styles, ["company"])}>SANTA LUCIA TOUR</div>
+              <div className={usc(styles, ["company"])}>{t("Boats.company")}</div>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ const Boats = () => {
 
           <div className={usb(["row"])}>
             <div className={usb(["col-12"])}>
-              <div className={usc(styles, ["description"])}>Disfruta una experiencia única a bordo del Santa Lucia, un tradicional bote peschereccio. Comenzamos nuestra aventura en el puerto de Castellammare, visitamos cuevas y luego pescamos con red en alta mar. Continúa el viaje recorriendo la costa, con paradas en Cala Bianca, la Reserva dello Zingaro y Tonnara di Scopello para nadar y disfrutar del paisaje paradisíaco. Te ofrecemos fruta fresca, agua y equipo de snorkel para que tu experiencia sea inolvidable.</div>
+              <div className={usc(styles, ["description"])}>{t("Boats.description")}</div>
             </div>
           </div>
 

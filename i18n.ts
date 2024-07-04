@@ -11,73 +11,56 @@ const resources = {
         company: 'SANTA LUCIA TOUR',
         titleFrist: 'SANTA LUCIA',
         titleSecond: 'TOUR',
-        description: "Coneasdctate con el Río de la Plata de la manera más linda: Navegando a vela.",
-        buyService: 'Comprá la experiencia',
-        contactUsText: "contactanos para consultar disponibilidad"
+        home: "Inicio",
+        about: "Nosotros",
+        tour: "Excursión",
+        faq: "Preguntas",
+        contact: "Contacto"
+      },
+      ButtonContact: {
+        contact: "CONTACTO"
       },
       OverTheFold: {
         city: "CASTELLAMMARE DEL GOLFO",
         titleFrist: 'SANTA LUCIA',
         titleSecond: 'TOUR',
         description: "Vive una experiencia única: pesca en bote y descubre playas paradisíacas"
-        
-      },
-      Form: {
-        buy: "Comprá",
-        description: "Regalá una experiencia inolvidable",
-        placeholder: "Ingreśa tu mail",
-        emailError: "Este campo es obligatorio"
-      },
-      Services: {
-        title: "Nuestros paseos",
-        first: {
-          title: "Una experiencia inolvidable",
-          description: "bla bla bla 1",
-          photo: "service3"
-        },
-        second: {
-          title: "Una experiencia inolvidable2",
-          description: "bla bla bla 2",
-          photo: "service2"
-        },
-        third: {
-          title: "Una experiencia inolvidable3",
-          description: "bla bla bla 3",
-          photo: "service1"
-        },
       },
       Boats: {
+        company: "SANTA LUCIA TOUR",
         title: "Una experiencia única",
+        description: "Disfruta una experiencia única a bordo del Santa Lucia, un tradicional bote peschereccio. Comenzamos nuestra aventura en el puerto de Castellammare, visitamos cuevas y luego pescamos con red en alta mar. Continúa el viaje recorriendo la costa, con paradas en Cala Bianca, la Reserva dello Zingaro y Tonnara di Scopello para nadar y disfrutar del paisaje paradisíaco. Te ofrecemos fruta fresca, agua y equipo de snorkel para que tu experiencia sea inolvidable.",
+        signs: {
+          fishing: "Pesca con red en altamar",
+          cueva: "Visita a cuevas",
+          playa: "Paradas en playas paradisíacas",
+          snorkel: "Nado con snorkel"
+        }
+      },
+      Services: {
         first: {
-          name: "Kiwi",
-          width: "Manga",
-          widthNumber: "2,07",
-          length: "Eslora",
-          lengthNumber: "5,47",
-          model: "Modelo Phantom 19",
-          description: "Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja."
+          title: "Horarios a tu gusto",
+          description: "Salimos todos los días. Podés elegir entre dos turnos de 9:30 a 14 o de 14:30 a 19 ¡Consultanos disponibilidad para reservar!",
         },
         second: {
-          name: "Mango",
-          width: "Manga",
-          widthNumber: "2,58",
-          length: "Eslora",
-          lengthNumber: "7,47",
-          model: "Modelo D´angelo 24",
-          description: "Diseño del gran German Frers. Un 24 pies amplio, ágil, rápido y muy divertido para salir con amigos y amigas."
+          title: "Una experiencia inolvidable",
+          description: "Partimos del puerto de Castellammare, visitamos las cuevas y nos adentramos a 3km de la costa para pescar durante 40min. Luego recorremos la costa en bote parando para nadar y relajarnos en las playas de Cala Bianca, Riserva dello Zingaro y Tornare di Scopello, durante 40min en cada una. Volvemos al puerto para terminar el recorrido de 25km por la costa.",
+        },
+        third: {
+          title: "Un barco para vos y tus amigos",
+          description: "Todos nuestros paseos son privados y ofrecemos máscara snorkel, fruta y agua fresca para todo el grupo.",
         },
       },
       FaqItem: {
         title: "Preguntas frecuentes",
-        description: 'Agilidad, creatividad & soluciones a medida.',
         items: {
           first: {
-            question: "¿Tienen menú vegetariano? ¿Y vegano?",
-            answer: "Si, ofrecemos opciones de comida vegetariana y vegana."
+            question: "¿Los niños tienen descuento?",
+            answer: "Si, ofrecemos descuento para niños."
           },
           second: {
             question: "¿En qué horarios son los paseos?",
-            answer: "Salimos en todos los horarios, podés elegir el que quieras. Si está disponible, reservamos."
+            answer: "Hay dos horarios, de 9.30 a 14 y de 14.30 a 19."
           },
           third: {
             question: "¿Pueden ir menores?",
@@ -89,236 +72,183 @@ const resources = {
           },
           fifth: {
             question: "¿Podemos llevar comida y/o bebida?",
-            answer: "¡Claro que si!, pueden traer lo que quieran para comer, beber o lo que sea."
+            answer: "¡Claro que si!, pueden traer lo que quieran para comer, beber!"
           },
         },
-        button: 'Conversemos'
       },
       Footer: {
-        getExperience: "Comprá",
-        copyrigth: '© Copyright 2024 by Nino',
+        form: {
+          name: "Nombre",
+          people: "Cantidad de gente",
+          data: "Fecha",
+          mail: "Email",
+          message: "Mensaje"
+        }
       },
-      Voucher: {
-        title: "Felicitaciones!",
-        description: "Tenes a disposición un paseo en velero por el río de la plata!",
-        descriptionIg: "Coordiná la salida a través de nuestro instagram",
-        ig: "@Nino",
-        descriptionWtsp: "O por whatsapp al ",
-        wtsp: " 1121863402",
-        
-      }
     }
   },
   en: {
     translation: {
-      Header: {
-        titleFrist: 'SANTA LUCIA',
-        titleSecond: 'TOUR',
-        description: "Coneasdctate con el Río de la Plata de la manera más linda: Navegando a vela.",
-        buyService: 'Comprá la experiencia',
-        contactUsText: "contactanos para consultar disponibilidad"
-      },
-      OverTheFold: {
-        titleFirst: 'SANTA LUCIA',
-        titleSecond: 'TOUR',
-        first: "Conectate con el Río de la Plata de la manera más linda:",
-        second: "Navegando a vela",
-        third: "Con nuestros Gift Vouchers regalá un paseo en velero por el Río de la Plata para dos, tres o cuatro personas con comida y bebida a bordo.",
-        fourth: " Son con fecha abierta y el agasajado tiene un año para coordinar el paseo.",
-
-      },
-      Form: {
-        buy: "Comprá",
-        description: "Regalá una experiencia inolvidable",
-        placeholder: "Ingreśa tu mail",
-        emailError: "Este campo es obligatorio"
-      },
-      Services: {
-        title: "Nuestros paseos",
-        first: {
-          title: "Una experiencia inolvidable",
-          description: "bla bla bla 1",
-          photo: "service3"
+        Header: {
+            company: "SANTA LUCIA TOUR",
+            home: "Home",
+            about: "About Us",
+            tour: "Tour",
+            faq: "FAQ",
+            contact: "Contact"
         },
-        second: {
-          title: "Una experiencia inolvidable2",
-          description: "bla bla bla 2",
-          photo: "service2"
+        ButtonContact: {
+            contact: "CONTACT"
         },
-        third: {
-          title: "Una experiencia inolvidable3",
-          description: "bla bla bla 3",
-          photo: "service1"
+        OverTheFold: {
+            city: "CASTELLAMMARE DEL GOLFO",
+            titleFrist: "SANTA LUCIA",
+            titleSecond: "TOUR",
+            description: "Live a unique experience: boat fishing and discover paradise beaches"
         },
-      },
-      Boats: {
-        title: "Nuestros veleros",
-        first: {
-          name: "Kiwi",
-          width: "Manga",
-          widthNumber: "2,07",
-          length: "Eslora",
-          lengthNumber: "5,47",
-          model: "Modelo Phantom 19",
-          description: "Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja."
+        Boats: {
+            company: "SANTA LUCIA TOUR",
+            title: "A unique experience",
+            description: "Enjoy a unique experience aboard the Santa Lucia, a traditional fishing boat. We start our adventure at the port of Castellammare, visit caves, and then fish with nets in the open sea. Continue the journey along the coast, stopping at Cala Bianca, the Zingaro Reserve, and Tonnara di Scopello to swim and enjoy the paradisiacal scenery. We offer fresh fruit, water, and snorkel equipment to make your experience unforgettable.",
+            signs: {
+                fishing: "Open sea net fishing",
+                cueva: "Cave visits",
+                playa: "Stops at paradise beaches",
+                snorkel: "Snorkeling"
+            }
         },
-        second: {
-          name: "Mango",
-          width: "Manga",
-          widthNumber: "2,58",
-          length: "Eslora",
-          lengthNumber: "7,47",
-          model: "Modelo D´angelo 24",
-          description: "Diseño del gran German Frers. Un 24 pies amplio, ágil, rápido y muy divertido para salir con amigos y amigas."
+        Services: {
+            first: {
+                title: "Schedules at your convenience",
+                description: "We go out every day. You can choose between two shifts from 9:30 to 14:00 or from 14:30 to 19:00. Check availability with us to book!"
+            },
+            second: {
+                title: "An unforgettable experience",
+                description: "We depart from the port of Castellammare, visit the caves, and venture 3km from the coast to fish for 40 minutes. Then we cruise along the coast, stopping to swim and relax on the beaches of Cala Bianca, Riserva dello Zingaro, and Tonnara di Scopello, for 40 minutes each. We return to the port to complete the 25km coastal journey."
+            },
+            third: {
+                title: "A boat for you and your friends",
+                description: "All our tours are private, and we offer snorkel masks, fruit, and fresh water for the entire group."
+            }
         },
-      },
-      FaqItem: {
-        title: "Preguntas frecuentes",
-        description: 'Agilidad, creatividad & soluciones a medida.',
-        items: {
-          first: {
-            question: "¿Tienen menú vegetariano? ¿Y vegano?",
-            answer: "Si, ofrecemos opciones de comida vegetariana y vegana."
-          },
-          second: {
-            question: "¿En qué horarios son los paseos?",
-            answer: "Salimos en todos los horarios, podés elegir el que quieras. Si está disponible, reservamos."
-          },
-          third: {
-            question: "¿Pueden ir menores?",
-            answer: "La actividad es solo para mayores de 18 años."
-          },
-          fourth: {
-            question: "¿Con cuanta anticipacion debo reservar?",
-            answer: "No hay un tiempo estipulado de anticipacion. Depende solamente de la disponibilidad."
-          },
-          fifth: {
-            question: "¿Podemos llevar comida y/o bebida?",
-            answer: "¡Claro que si!, pueden traer lo que quieran para comer, beber o lo que sea."
-          },
+        FaqItem: {
+            title: "Frequently Asked Questions",
+            items: {
+                first: {
+                    question: "Do children get a discount?",
+                    answer: "Yes, we offer a discount for children."
+                },
+                second: {
+                    question: "What are the tour times?",
+                    answer: "There are two time slots, from 9:30 to 14:00 and from 14:30 to 19:00."
+                },
+                third: {
+                    question: "Can minors go?",
+                    answer: "The activity is only for those over 18 years old."
+                },
+                fourth: {
+                    question: "How far in advance should I book?",
+                    answer: "There is no stipulated advance time. It only depends on availability."
+                },
+                fifth: {
+                    question: "Can we bring food and/or drinks?",
+                    answer: "Of course! You can bring whatever you want to eat and drink!"
+                }
+            }
         },
-        button: 'Conversemos'
-      },
-      Footer: {
-        getExperience: "Comprá",
-        copyrigth: '© Copyright 2024 by Nino',
-      },
-      Voucher: {
-        title: "Felicitaciones!",
-        description: "Tenes a disposición un paseo en velero por el río de la plata!",
-        descriptionIg: "Coordiná la salida a través de nuestro instagram",
-        ig: "@Nino",
-        descriptionWtsp: "O por whatsapp al ",
-        wtsp: " 1121863402",
-        
-      }
+        Footer: {
+            form: {
+                name: "Name",
+                people: "Number of people",
+                data: "Date",
+                mail: "Email",
+                message: "Message"
+            }
+        }
     }
-  },
+},
   it: {
     translation: {
-      Header: {
-        titleFrist: 'SANTA LUCIA',
-        titleSecond: 'TOUR',
-        description: "Coneasdctate con el Río de la Plata de la manera más linda: Navegando a vela.",
-        buyService: 'Comprá la experiencia',
-        contactUsText: "contactanos para consultar disponibilidad"
-      },
-      OverTheFold: {
-        titleFirst: 'SANTA LUCIA',
-        titleSecond: 'TOUR',
-        first: "Conectate con el Río de la Plata de la manera más linda:",
-        second: "Navegando a vela",
-        third: "Con nuestros Gift Vouchers regalá un paseo en velero por el Río de la Plata para dos, tres o cuatro personas con comida y bebida a bordo.",
-        fourth: " Son con fecha abierta y el agasajado tiene un año para coordinar el paseo.",
-
-      },
-      Form: {
-        buy: "Comprá",
-        description: "Regalá una experiencia inolvidable",
-        placeholder: "Ingreśa tu mail",
-        emailError: "Este campo es obligatorio"
-      },
-      Services: {
-        title: "Nuestros paseos",
-        first: {
-          title: "Una experiencia inolvidable",
-          description: "bla bla bla 1",
-          photo: "service3"
+        Header: {
+            company: "SANTA LUCIA TOUR",
+            titleFrist: "SANTA LUCIA",
+            titleSecond: "TOUR",
+            home: "Home",
+            about: "Chi Siamo",
+            tour: "Tour",
+            faq: "FAQ",
+            contact: "Contatto"
         },
-        second: {
-          title: "Una experiencia inolvidable2",
-          description: "bla bla bla 2",
-          photo: "service2"
+        ButtonContact: {
+            contact: "CONTATTO"
         },
-        third: {
-          title: "Una experiencia inolvidable3",
-          description: "bla bla bla 3",
-          photo: "service1"
+        OverTheFold: {
+            city: "CASTELLAMMARE DEL GOLFO",
+            titleFrist: "SANTA LUCIA",
+            titleSecond: "TOUR",
+            description: "Vivi un'esperienza unica: pesca in barca e scopri spiagge paradisiache"
         },
-      },
-      Boats: {
-        title: "Nuestros veleros",
-        first: {
-          name: "Kiwi",
-          width: "Manga",
-          widthNumber: "2,07",
-          length: "Eslora",
-          lengthNumber: "5,47",
-          model: "Modelo Phantom 19",
-          description: "Velero de 19 pies diseñado por Domato y construido en astillero Marco. Cómodo, acogedor, ideal para salidas en pareja."
+        Boats: {
+            company: "SANTA LUCIA TOUR",
+            title: "Un'esperienza unica",
+            description: "Goditi un'esperienza unica a bordo del Santa Lucia, una tradizionale barca da pesca. Iniziamo la nostra avventura al porto di Castellammare, visitiamo le grotte e poi peschiamo con le reti in mare aperto. Continua il viaggio lungo la costa, fermandoti a Cala Bianca, nella Riserva dello Zingaro e a Tonnara di Scopello per nuotare e goderti il paesaggio paradisiaco. Offriamo frutta fresca, acqua ed equipaggiamento per lo snorkeling per rendere la tua esperienza indimenticabile.",
+            signs: {
+                fishing: "Pesca con reti in mare aperto",
+                cueva: "Visita alle grotte",
+                playa: "Fermate nelle spiagge paradisiache",
+                snorkel: "Snorkeling"
+            }
         },
-        second: {
-          name: "Mango",
-          width: "Manga",
-          widthNumber: "2,58",
-          length: "Eslora",
-          lengthNumber: "7,47",
-          model: "Modelo D´angelo 24",
-          description: "Diseño del gran German Frers. Un 24 pies amplio, ágil, rápido y muy divertido para salir con amigos y amigas."
+        Services: {
+            first: {
+                title: "Orari a tua scelta",
+                description: "Usciamo tutti i giorni. Puoi scegliere tra due turni dalle 9:30 alle 14:00 o dalle 14:30 alle 19:00. Controlla la disponibilità con noi per prenotare!"
+            },
+            second: {
+                title: "Un'esperienza indimenticabile",
+                description: "Partiamo dal porto di Castellammare, visitiamo le grotte e ci avventuriamo a 3 km dalla costa per pescare per 40 minuti. Poi navighiamo lungo la costa, fermandoci per nuotare e rilassarci sulle spiagge di Cala Bianca, Riserva dello Zingaro e Tonnara di Scopello, per 40 minuti ciascuna. Torniamo al porto per completare il viaggio costiero di 25 km."
+            },
+            third: {
+                title: "Una barca per te e i tuoi amici",
+                description: "Tutti i nostri tour sono privati e offriamo maschere per lo snorkeling, frutta e acqua fresca per tutto il gruppo."
+            }
         },
-      },
-      FaqItem: {
-        title: "Preguntas frecuentes",
-        description: 'Agilidad, creatividad & soluciones a medida.',
-        items: {
-          first: {
-            question: "¿Tienen menú vegetariano? ¿Y vegano?",
-            answer: "Si, ofrecemos opciones de comida vegetariana y vegana."
-          },
-          second: {
-            question: "¿En qué horarios son los paseos?",
-            answer: "Salimos en todos los horarios, podés elegir el que quieras. Si está disponible, reservamos."
-          },
-          third: {
-            question: "¿Pueden ir menores?",
-            answer: "La actividad es solo para mayores de 18 años."
-          },
-          fourth: {
-            question: "¿Con cuanta anticipacion debo reservar?",
-            answer: "No hay un tiempo estipulado de anticipacion. Depende solamente de la disponibilidad."
-          },
-          fifth: {
-            question: "¿Podemos llevar comida y/o bebida?",
-            answer: "¡Claro que si!, pueden traer lo que quieran para comer, beber o lo que sea."
-          },
+        FaqItem: {
+            title: "Domande Frequenti",
+            items: {
+                first: {
+                    question: "I bambini hanno uno sconto?",
+                    answer: "Sì, offriamo uno sconto per i bambini."
+                },
+                second: {
+                    question: "Quali sono gli orari dei tour?",
+                    answer: "Ci sono due fasce orarie, dalle 9:30 alle 14:00 e dalle 14:30 alle 19:00."
+                },
+                third: {
+                    question: "I minorenni possono partecipare?",
+                    answer: "L'attività è riservata ai maggiori di 18 anni."
+                },
+                fourth: {
+                    question: "Con quanto anticipo devo prenotare?",
+                    answer: "Non c'è un tempo prestabilito. Dipende solo dalla disponibilità."
+                },
+                fifth: {
+                    question: "Possiamo portare cibo e/o bevande?",
+                    answer: "Certo! Puoi portare quello che vuoi da mangiare e bere!"
+                }
+            }
         },
-        button: 'Conversemos'
-      },
-      Footer: {
-        getExperience: "Comprá",
-        copyrigth: '© Copyright 2024 by Nino',
-      },
-      Voucher: {
-        title: "Felicitaciones!",
-        description: "Tenes a disposición un paseo en velero por el río de la plata!",
-        descriptionIg: "Coordiná la salida a través de nuestro instagram",
-        ig: "@Nino",
-        descriptionWtsp: "O por whatsapp al ",
-        wtsp: " 1121863402",
-        
-      }
+        Footer: {
+            form: {
+                name: "Nome",
+                people: "Numero di persone",
+                data: "Data",
+                mail: "Email",
+                message: "Messaggio"
+            }
+        }
     }
-  },
+},
 };
 
 i18n

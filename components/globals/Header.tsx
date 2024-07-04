@@ -50,15 +50,15 @@ const Header = ({ children }: any) => {
             <div className={usc(styles, ["headerContainer"])}>
 
               <div className={usc(styles, ["company"])}>
-                <p>SANTA LUCIA TOUR</p>
+                <p>{t("Header.company")}</p>
               </div>
 
               <div className={usc(styles, ["sections"])}>
-                <div onClick={() => goToSection("HOME", 1)} className={(sectionActive === 1) ? usc(styles, ["active"]) : usc(styles, [""])}>Home</div>
-                <div onClick={() => goToSection("ABOUT", 2)} className={(sectionActive === 2) ? usc(styles, ["active"]) : usc(styles, [""])}>About Us</div>
-                <div onClick={() => goToSection("TOUR", 3)} className={(sectionActive === 3) ? usc(styles, ["active"]) : usc(styles, [""])}>Tour</div>
-                <div onClick={() => goToSection("FAQ", 4)} className={(sectionActive === 4) ? usc(styles, ["active"]) : usc(styles, [""])}>FAQs</div>
-                <div onClick={() => goToSection("CONTACT", 5)} className={(sectionActive === 5) ? usc(styles, ["active"]) : usc(styles, [""])}>Contact Us</div>
+                <div onClick={() => goToSection("HOME", 1)} className={(sectionActive === 1) ? usc(styles, ["active"]) : usc(styles, [""])}>{t("Header.home")}</div>
+                <div onClick={() => goToSection("ABOUT", 2)} className={(sectionActive === 2) ? usc(styles, ["active"]) : usc(styles, [""])}>{t("Header.about")}</div>
+                <div onClick={() => goToSection("TOUR", 3)} className={(sectionActive === 3) ? usc(styles, ["active"]) : usc(styles, [""])}>{t("Header.tour")}</div>
+                <div onClick={() => goToSection("FAQ", 4)} className={(sectionActive === 4) ? usc(styles, ["active"]) : usc(styles, [""])}>{t("Header.faq")}</div>
+                <div onClick={() => goToSection("CONTACT", 5)} className={(sectionActive === 5) ? usc(styles, ["active"]) : usc(styles, [""])}>{t("Header.contact")}</div>
               </div>
 
               <div className={usc(styles, ["languageSelector"])}>

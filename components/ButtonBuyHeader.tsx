@@ -24,7 +24,7 @@ const ButtonHeader = ({ extraClassName }: { extraClassName?: string }) => {
                 <div className={caso === 3 ? usc(styles, ["parentConteiner"]) : caso === 2 ? usc(styles, ["parentConteiner", "serviceButton", "active"]) : usc(styles, ["parentConteiner", "serviceButton"])}>
                     <div className={usc(styles, ["containerButton", "col-12"])}>
                         <div onClick={goToForm} className={usc(styles, ["buttonHeader"])}>
-                            CONTACTO
+                            {t("ButtonContact.contact")}
                         </div>
                     </div>
                 </div>

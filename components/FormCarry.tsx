@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/Footer.module.scss';
-
+import { useTranslation } from "react-i18next";
 export default function BasicForm() {
     const [name, setName] = useState('')
     const [amount, setAmount] = useState('')
     const [date, setDate] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
-
+    const { t, i18n } = useTranslation();
     const [error, setError] = useState('')
 
     function onSubmit(e: any) {
@@ -49,27 +49,27 @@ export default function BasicForm() {
         <form onSubmit={(e) => onSubmit(e)} className={usc(styles, ["parentHolder"])}>
             <div className={usc(styles, ["parent"])}>
                 <div className={usc(styles, ["formcarry-block"])}>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">{t("Footer.form.name")}</label>
                     <input type="text" value={name} onChange={(e) => setName(e.target.value)} id="name" placeholder="" />
                 </div>
 
                 <div className={usc(styles, ["formcarry-block"])}>
-                    <label htmlFor="amount">People</label>
+                    <label htmlFor="amount">{t("Footer.form.people")}</label>
                     <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} id="amount" placeholder="" min="0" max="12"/>
                 </div>
 
                 <div className={usc(styles, ["formcarry-block"])}>
-                    <label htmlFor="date">Date</label>
+                    <label htmlFor="date">{t("Footer.form.data")}</label>
                     <input type="date" value={date} onChange={(e) => setDate(e.target.value)} id="date" placeholder="" />
                 </div>
 
                 <div className={usc(styles, ["formcarry-block"])}>
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">{t("Footer.form.mail")}</label>
                     <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} id="email" placeholder="" />
                 </div>
 
                 <div className={usc(styles, ["formcarry-block"])}>
-                    <label htmlFor="message">Message</label>
+                    <label htmlFor="message">{t("Footer.form.message")}</label>
                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} id="message" placeholder=""></textarea>
                 </div>
 

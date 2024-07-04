@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/Footer.module.scss';
-
+import { useTranslation } from "react-i18next";
 
 export default function BasicForm() {
-
+    const { t, i18n } = useTranslation();
     const information = {
         cellphones: {
             texts: ["389 047 5539 - Antonino", "389 292 6143 - Bruno"],
