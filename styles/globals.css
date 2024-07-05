@@ -189,6 +189,8 @@ a {
   margin: 15px 10px;
   border: none;
   cursor: pointer;
+  border: 1px solid #529AB7;
+
 }
 
 #kiwi-slider .glide__bullet--active {
@@ -252,6 +254,8 @@ a {
   margin: 15px 10px;
   border: none;
   cursor: pointer;
+  border: 1px solid #529AB7;
+
 }
 
 #kiwi-slider .glide__arrows {
@@ -327,7 +331,7 @@ a {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   #options-type-2 .glide__slide--active {
     transform: translate(0px);
   }
@@ -338,7 +342,7 @@ a {
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:770px) {
   .icon-instagram {
     margin-left: 0%;
   }

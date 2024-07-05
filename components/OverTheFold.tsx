@@ -32,7 +32,7 @@ const OverTheFold = ({ children }: any) => {
                 <h1 className={usc(styles, ["tittleOver"])}>
                   {t("OverTheFold.titleFrist")}
                 </h1>
-                <h1 className={usc(styles, ["tittleOver", "stroked"])}>
+                <h1 className={usc(styles, ["tittleOver"])}>
                   {t("OverTheFold.titleSecond")}
                 </h1>
               </div>

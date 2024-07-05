@@ -23,7 +23,7 @@ const SliderCustom = () => {
             hoverpause: true,
             breakpoints: {
                 1000: {
-                    perView: 2,
+                    perView: 1,
                 },
                 550: {
                     perView: 1,

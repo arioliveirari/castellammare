@@ -13,8 +13,24 @@
     // background-size: 120vw 100vh;
     overflow-x: hidden;
 
-    @media screen and (max-width: 768px) {
-        height: auto;
+    @media screen and (max-width: 770px) {
+        height: auto !important;
+        .formContainer{
+            margin: auto !important;
+            height: 100% !important;
+            width: 100% !important;
+            align-items: center !important;
+            justify-content: center !important;
+            .formCarry{
+                height: 100%;
+                width: 100%;
+                max-width: 100% !important;
+            }
+
+        }
+        .parentInfo{
+            padding-top: 30px;
+        }
     }
 
 
@@ -42,14 +58,10 @@
             z-index: 99;
             position: relative;
             margin-right:0 ;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 770px) {
                 position: relative;
                 width: 100%;
-                right: 0;
-                left: 0;
-                top: 20px;
-                bottom: 0;
-                height: 500px;
+               
 
                 .parent {
                     gap: 10px;
@@ -181,13 +193,30 @@
         left: 0;
         bottom: 0;
         z-index: 9;
-
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 770px) {
             position: relative;
             width: 100%;
-            height: auto;
-            background-color: transparent;
+            height: fit-content;
+            padding-top: 30px;
+            height: fit-content !important;
+            .texts{
+                margin: 0 !important;
+                font-size: 14px !important;
+                line-height: 24px !important;
+            }
+            .icons{
+                padding: 0 !important;
+                padding-bottom: 10px !important;
+                .rights{
+                    height: auto;
+                    padding: 0 !important;
+                    width: 100%;
+                    font-size: 15px !important;
+                    text-align: center;
+                }
+            }
         }
+
     }
 
     .info {
@@ -247,7 +276,7 @@
                     padding-bottom: 20px;
                 }
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 770px) {
                     height: 60px;
                     width: 600px;
                 }
@@ -276,7 +305,7 @@
                 }
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 770px) {
                 flex-direction: row;
                 justify-content: center;
 

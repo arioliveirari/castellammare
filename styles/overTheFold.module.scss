@@ -8,6 +8,9 @@
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   // background-image: url(../public/bruno/backgroundOver.jpg);
   // background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(../public/bruno/backgroundOver.jpg);
   // background-position: center;
@@ -34,14 +37,16 @@
     // background-color: rgba($color: #000, $alpha: 0.6);
     width: 100%;
     height: 100%;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-position: center;
     background-size: cover;
     transition: all ease-in-out 0.2s;
     justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 770px) {
       display: flex;
     }
 
@@ -52,6 +57,7 @@
 }
 
 .rowContainer {
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,14 +74,13 @@
   }
 
   .company {
-
     .tittleOver {
       font-weight: bold;
       font-size: 120px;
       font-family: "Montserrat", sans-serif;
       line-height: 122px;
       margin-bottom: 0px;
-
+     
       // &.stroked {
       //   -webkit-text-stroke: 2px $ligthBlue;
       //   color: transparent;
@@ -133,9 +138,26 @@
 }
 
 
+@media screen and (max-width: 770px) {
+  .city{
+    font-size: 20px !important;
+    line-height: 22px !important;
+  }
+  .company{
 
+    .tittleOver{
+      font-size: 50px !important;
+      line-height: 52px !important;
+    }
+  }
+  .description{
+    font-size: 30px !important;
+    line-height: 32px !important;
+  }
 
-@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 770px) {
   .rowContainer {
     flex-direction: column;
   }

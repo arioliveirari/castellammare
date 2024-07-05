@@ -12,7 +12,11 @@
   justify-content: space-between;
   transition: all ease-in-out 0.3s;
   z-index: 111;
-
+  @media screen and (max-width: 770px) {
+    .sections{
+      display: none !important;
+    }
+  }
   .wtsp {
     position: absolute;
     right: 60px;
@@ -22,8 +26,8 @@
     background-image: url(../public/bruno/wtspNavbar.png);
     background-size: cover;
     background-position: no-repeat;
-    z-index: 999 ;
-    
+    z-index: 999;
+
   }
 
 
@@ -91,98 +95,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .header-desktop {
-    display: none;
-    cursor: pointer;
-  }
-
-  .Header {
-    .header-mobile {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      flex-direction: column;
-
-      .icons {
-        width: 16px;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header-desktop {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .header-mobile {
-    display: none;
-  }
-}
+@media screen and (max-width: 770px) {}
 
 
-@media screen and (max-width: 768px) {
-  .Header {
-    .header-mobile {
-      .logo {
-        .logoPic {
-          width: 97px;
-          height: auto;
-          aspect-ratio: 1/1;
-          order: 1;
-          float: left;
-        }
-
-        .logoText {
-          order: 2;
-          font-family: "Montserrat", sans-serif;
-          font-weight: 400;
-          font-size: 10px;
-          justify-content: center;
-          text-align: left;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .header-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .Header {
-    .header-mobile {
-      reserva {
-        padding: 0px;
-      }
-    }
-  }
-}
-
-@media screen and(max-width:992px) {
-  .Header {
-    .header-desktop {
-      text-align: center;
-      align-items: center;
-
-      .links {
-        text-transform: capitalize;
-        font-size: 17px;
-        width: 50%;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: space-between;
-      }
-    }
-  }
-}

@@ -19,7 +19,12 @@
   align-items: center;
   text-align: left;
   color: $orange;
-
+  @media screen and (max-width: 770px) {
+    .title{
+      font-size: 40px !important;
+      line-height: 42px !important;
+    }
+  }
   .textContainer {
     .title {
       color: $darkBlue;
@@ -38,7 +43,6 @@
 
       .dropdownItem {
         background-color: $boatsBackground;
-        height: 50px;
         width: fit-content;
         font-size: 20px;
         font-weight: 500;
@@ -51,7 +55,6 @@
         justify-content: space-evenly;
         margin-top: 20px;
         transition: all 0.4s ease;
-
         .question {
           text-align: left;
           cursor: pointer;
@@ -73,7 +76,8 @@
             background-position: center;
             background-size: cover;
             transition: all 0.4s ease;
-
+            width: fit-content;
+            aspect-ratio: 1 ;
           }
 
           p {
@@ -107,7 +111,7 @@
         }
 
         &.isDown {
-          height: 120px;
+          height: fit-content;
           .question{
             .icon{
               transform: rotate(90deg);
@@ -117,7 +121,7 @@
                  pointer-events:fill;
 
                 opacity: 1;
-                height: 25px;
+                height: auto;
                 width: fit-content;
                 justify-content: center;
                 margin-bottom: 5px;

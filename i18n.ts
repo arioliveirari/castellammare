@@ -33,7 +33,7 @@ const resources = {
         signs: {
           fishing: "Pesca con red en altamar",
           cueva: "Visita a cuevas",
-          playa: "Paradas en playas paradisíacas",
+          playa: "Playas paradisíacas",
           snorkel: "Nado con snorkel"
         }
       },
@@ -195,7 +195,7 @@ const resources = {
         signs: {
           fishing: "Pesca con reti in mare aperto",
           cueva: "Visita alle grotte",
-          playa: "Fermate nelle spiagge paradisiache",
+          playa: "Spiagge paradisiache",
           snorkel: "Snorkeling"
         }
       },
