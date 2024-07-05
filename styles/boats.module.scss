@@ -25,10 +25,10 @@
     }
 
     .title {
-      color: black;
+      color: $darkBlue;
       font-size: 80px;
       line-height: 82px;
-      font-weight: 600;
+      font-weight: 800;
       margin-top: 20px;
       margin-bottom: 30px;
     }
@@ -49,6 +49,7 @@
   justify-content: space-around;
   margin-top: 30px;
   flex-wrap: wrap;
+
   .sign {
     width: fit-content;
     font-size: 20px;
@@ -61,13 +62,15 @@
     justify-content: center;
     height: 50px;
     margin-top: 10px;
-    
+    background-color: $boatsBackground;
+
     .text {}
 
     .icon {
       height: 30px;
       width: 30px;
       margin-right: 10px;
+
       &.pesca {
         background-image: url(../public/bruno/pesca.png);
         background-position: center;

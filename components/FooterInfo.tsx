@@ -8,22 +8,34 @@ export default function BasicForm() {
     const information = {
         cellphones: {
             texts: ["389 047 5539 - Antonino", "389 292 6143 - Bruno"],
-            icon: "wtsp"
+            icon: "wtsp",
+            callBack: ()=>{
+                window.open('https://wa.me/541136582427', '_blank')
+            }
         },
         ig: {
             texts: ["@s.luciapescaturismo"],
-            icon: "ig"
+            icon: "ig",
+            callBack: ()=>{
+                window.open('https://www.instagram.com/s._lucia_pescaturismo?igsh=MWc0NWxmMGpvcjVsbQ==', '_blank')
+            }
         },
         location: {
             texts: ["Porto di Castellammare, fronte all Restaurante Luxor"],
-            icon: "location"
+            icon: "location",
+            callBack: ()=>{
+                window.open('https://google.com', '_blank')
+            }
         },
         mail: {
             texts: ["s.luciapescatursmo@gmail.com"],
-            icon: "mail"
+            icon: "mail",
+            callBack: ()=>{
+                window.open('mailto:oliveiraariel96@gmail.com', '_blank')
+            }
         },
         rights: {
-            texts: "All rights reserved @ 2024 - SANTA LUCIA TOUR"
+            texts: "All rights reserved @ 2024 - SANTA LUCIA TOUR",
         }
     }
 
@@ -31,41 +43,42 @@ export default function BasicForm() {
         <div className={usw(styles, ["info"], ["container-fluid", "p-0"])} >
             <div className={usw(styles, ["parentInfo"], ["row", "p-0"])} >
 
-                <div className={usw(styles, ["texts"], ["col-md-3 col-12"])} >
-                    <DataItem texts={information.cellphones.texts} icon={information.cellphones.icon} />
-                    <DataItem texts={information.ig.texts} icon={information.ig.icon} />
-
+                <div className={usw(styles, ["texts"], ["col-md-6 col-12"])} >
+                    <DataItem texts={information.cellphones.texts} icon={information.cellphones.icon} callBack={information.cellphones.callBack}/>
+                    <DataItem texts={information.ig.texts} icon={information.ig.icon} callBack={information.ig.callBack}/>
+                    <DataItem texts={information.location.texts} icon={information.location.icon} callBack={information.location.callBack}/>
+                    <DataItem texts={information.mail.texts} icon={information.mail.icon} callBack={information.mail.callBack}/>
                 </div>
-
-                <div className={usw(styles, ["texts"], ["col-md-3 col-12"])} >
-                    <DataItem texts={information.location.texts} icon={information.location.icon} />
-                    <DataItem texts={information.mail.texts} icon={information.mail.icon} />
-
-                </div>
+                {/* 
+                <div className={usw(styles, ["texts", "right"], ["col-md-3 col-12"])} >
+                    
+                </div> */}
 
                 <div className={usw(styles, ["icons"], ["col-md-6 col-12"])} >
-                    <div className={usw(styles, ["icon", "wtsp"], [""])} ></div>
+                    <div className={usw(styles, ["rights"], [""])} >
+                        {information.rights.texts}
+                    </div>
+
+                    {/* <div className={usw(styles, ["icon", "wtsp"], [""])} ></div>
                     <div className={usw(styles, ["icon", "ig"], [""])} ></div>
                     <div className={usw(styles, ["icon", "maps"], [""])} ></div>
-                    <div className={usw(styles, ["icon", "ig"], [""])} ></div>
-                    <div className={usw(styles, ["icon", "maps"], [""])} ></div>
+                    <div className={usw(styles, ["icon", "mail"], [""])} ></div> */}
                 </div>
 
             </div>
-            <div className={usw(styles, ["rights"], ["row", "p-0"])} >
+            {/* <div className={usw(styles, ["rights"], ["row", "p-0"])} >
                 <div className={usw(styles, [""], ["col-12"])} >
-                    {information.rights.texts}
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )
 }
 
 
-const DataItem = ({ texts, icon }: { texts: string[], icon: string }) => {
+const DataItem = ({ texts, icon, callBack }: { texts: string[], icon: string, callBack?: Function }) => {
     return (
-        <div className={usc(styles, ["sign"])}>
+        <div className={usc(styles, ["sign"])} onClick={callBack ? () => callBack() : () => { }}>
             <div className={usc(styles, ["icon", icon])}></div>
             <div>
                 {texts.map((text: string, index: number) => {

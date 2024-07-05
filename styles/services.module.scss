@@ -25,22 +25,29 @@
   height: 100%;
   position: relative;
   transition: all 1s ease;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
   &:hover {
     .servicio {
       filter: brightness(.80);
       transition: all 0.2s ease;
     }
   }
-
+  
   .servicio {
     padding: 0;
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
+    z-index: -1;
     filter: brightness(0.5);
-
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 0;
     &.boat {
       background-image: url(../public/bruno/barco.jpg);
     }
@@ -55,14 +62,14 @@
   }
 
   .title {
-    height: 100px;
+    height: auto;
     width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    margin: auto;
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
+    // top: 0;
+    // left: 0;
+    // margin: auto;
     color: white;
     font-size: 23px;
     font-weight: bold;
@@ -71,13 +78,13 @@
     &.icon {
       transition: all 1s ease;
 
-      bottom: 300px;
       width: 75px;
       height: 75px;
       background-position: center;
       background-size: cover;
-      right: 0;
-      left: 0;
+      // right: 0;
+      // bottom: 300px;
+      // left: 0;
 
       &.calendar {
         background-image: url(../public/bruno/calendarIcon.png);
@@ -99,27 +106,31 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      pointer-events: none;
     }
 
     &.text {
       transition: all 1s ease;      top: 0px;
-      bottom: 0px;
-      height: 40px;
-      right: 0;
-      left: 0;
+      // bottom: 0px;
+      // height: 40px;
+      // right: 0;
+      // left: 0;
+      // pointer-events: hover;
+
       opacity: 0;
-      font-size: 20px;
+      height: 0;
+      font-size: 2px;
       font-weight: 400;
       padding: 0px 30px;
     }
 
     &.vermas {
       transition: all 1s ease;
-      top: 300px;
+      // top: 300px;
       width: 40px;
       height: 40px;
-      right: 0;
-      left: 0;
+      // right: 0;
+      // left: 0;
       background-image: url(../public/bruno/Capa_1.png);
       background-position: center;
       background-size: cover;
@@ -132,22 +143,37 @@
   }
 
   &.active {
+   
+    .servicio{
+      filter: brightness(.5);
+      transition: all 0.2s ease;
+      position: absolute;
+      top: 0;
+
+    }
 
     .titleService {
-      bottom: 250px;
+
+      position: relative;
 
     }
 
     .icon {
-      bottom: 500px;
+      // bottom: 500px;
+      position: relative;
     }
 
     .text {
       opacity: 1;
+      position: relative;
+      height: 200px;
+      font-size: 20px;
+
     }
 
     .vermas {
-      top: 600px;
+      // top: 600px;
+      position: relative;
       // cambiar por un menos
       // background-image: url(../public/bruno/Capa_1.png);
 

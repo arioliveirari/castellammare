@@ -22,10 +22,10 @@
 
   .textContainer {
     .title {
-      color: black;
+      color: $darkBlue;
       font-size: 80px;
       line-height: 82px;
-      font-weight: 600;
+      font-weight: 800;
       margin-top: 120px;
       margin-bottom: 30px;
     }
@@ -37,6 +37,7 @@
       flex-direction: column;
 
       .dropdownItem {
+        background-color: $boatsBackground;
         height: 50px;
         width: fit-content;
         font-size: 20px;
@@ -71,7 +72,7 @@
             background-image: url(../public/bruno/arrowFAQ.png);
             background-position: center;
             background-size: cover;
-        transition: all 0.4s ease;
+            transition: all 0.4s ease;
 
           }
 

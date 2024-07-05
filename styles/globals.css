@@ -51,20 +51,30 @@ a {
 
 .controls {
   width: 100%;
+  height: 100%;
   justify-content: center;
-  text-align: center;
+  align-items: end;
+  text-align: end;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .glide__track {
   padding-top: 36px;
-  padding-bottom: 36px;
+  padding-bottom: 0;
   border-radius: 0px 0px 0px 0px;
+  max-width: 80%;
+  margin: auto;
 }
 
 
 .glide__slide {
   transition: all 0.4s ease;
   width: 50%;
+  position: relative;
 }
 
 
@@ -148,25 +158,12 @@ a {
 
 
 
-#mobileKiwi-slider .controls {
-  display: flex;
-  transform: translateY(-55px);
-}
-
-
-
-#mobileKiwi-slider .glide__track {
-  height: 450px;
-  padding: 0%;
-}
-
-#mobileKiwi-slider .glide__slides{
-  padding: 0%;
-}
-
 
 #kiwi-slider .controls {
   display: flex;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
   transform: translateY(-60px);
 }
 
@@ -176,13 +173,11 @@ a {
   height: calc(50vh - 30px);
 }
 
-#mango-slider .glide__track,
 #kiwi-slider .glide__track {
   padding: 0%;
   padding-right: 15px;
 }
 
-#mango-slider .glide__bullet,
 #kiwi-slider .glide__bullet {
   padding: 0%;
   width: 10px;
@@ -195,7 +190,6 @@ a {
   cursor: pointer;
 }
 
-#mango-slider .glide__bullet--active,
 #kiwi-slider .glide__bullet--active {
   padding: 0%;
   width: 10px;
@@ -206,25 +200,20 @@ a {
   margin: 15px 10px;
 }
 
-#mango-slider .glide__slides,
 #kiwi-slider .glide__slides {
   padding: 0% !important;
   object-fit: contain !important;
 }
 
-#mango-slider .glide__arrows,
 #kiwi-slider .glide__arrows {
   cursor: pointer;
 }
 
-#mango-slider.glide.glide--ltr.glide--slider.glide--swipeable,
 #kiwi-slider.glide.glide--ltr.glide--slider.glide--swipeable {
   padding-top: 30px;
 }
 
 
-#mango-slider .controlButton .icon-chevron_left,
-#mango-slider .controlButton .icon-chevron_right,
 #kiwi-slider .controlButton .icon-chevron_left,
 #kiwi-slider .controlButton .icon-chevron_right,
 #options-type-2 .controlButton .icon-chevron_left,
@@ -232,22 +221,6 @@ a {
   color: #1d1919;
   cursor: pointer;
 }
-
-#mobileMango-slider .controlButton .icon-chevron_left,
-#mobileMango-slider .controlButton .icon-chevron_right,
-#mobileKiwi-slider .controlButton .icon-chevron_left,
-#mobileKiwi-slider .controlButton .icon-chevron_right {
-  color: #1d1919;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
 
 
 #gallery-image-mobile .icon-chevron_right {

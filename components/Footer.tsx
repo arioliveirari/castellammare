@@ -11,11 +11,18 @@ const Footer = () => {
     return (
         <div id="CONTACT" className={usw(styles, ["footer"], ["container-fluid "])} >
             <div className={usb(["container", "m-auto ", "p-0"])}>
-                <div className={usw(styles, ["footerContainer"], ["row ", "p-0"])}>
-                    <div className={usb(["col-11", "p-0"])}>
+                <div className={usw(styles, ["formContainer"], ["row ", "p-0"])}>
+                    <div className={usb(["col-12", "p-0"])}>
                         <div className={usc(styles, ["formCarry", "m-3"])}>
                             <FormCarry />
                         </div>
+                    </div>
+                </div>
+                <div className={usw(styles, ["footerContainer"], ["row ", "p-0"])}>
+                    <div className={usb(["col-12", "p-0"])}>
+                        {/* <div className={usc(styles, ["formCarry", "m-3"])}>
+                            <FormCarry />
+                        </div> */}
                         <div className={usc(styles, ["footerContent"])}>
                             <FooterInfo />
                         </div>

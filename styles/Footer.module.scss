@@ -17,161 +17,165 @@
         height: auto;
     }
 
-    .rights {
-        position: absolute;
-        bottom: 20px;
-        right: 40px;
-        color: $ligthBlue;
-        font-size: 18px;
-        line-height: 20px;
-        font-weight: 500;
-    }
 
-    .formCarry {
-        width: 40%;
-        max-width: 600px;
-        height: 600px;
-        background-color: $ligthBlue;
+    .formContainer {
+        width: 100%;
+        height: 70%;
+        z-index: 999;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 0px;
-        right: 80px;
-        margin: auto;
-        z-index: 99;
+        align-items: end;
+        justify-content: end;
 
-        @media screen and (max-width: 768px) {
-            position: relative;
-            width: 100%;
-            right: 0;
-            left: 0;
-            top: 20px;
-            bottom: 0;
-            height: 500px;
-
-            .parent {
-                gap: 10px;
-            }
-
-            button {
-                position: relative;
-            }
-        }
-
-        .parentHolder {
+        .formCarry {
+            width: 50%;
+            max-width: 600px;
+            height: 600px;
+            background-color: $ligthBlue;
             display: flex;
-            position: relative;
             flex-direction: column;
             align-items: center;
-            justify-content: start;
-            width: 100%;
+            justify-content: center;
+            // position: absolute;
+            // top: 0px;
+            // right: 80px;
+            margin: auto;
+            z-index: 99;
+            position: relative;
+            margin-right:0 ;
+            @media screen and (max-width: 768px) {
+                position: relative;
+                width: 100%;
+                right: 0;
+                left: 0;
+                top: 20px;
+                bottom: 0;
+                height: 500px;
 
-            .parent {
+                .parent {
+                    gap: 10px;
+                }
+
+                button {
+                    position: relative;
+                }
+            }
+
+            .parentHolder {
                 display: flex;
+                position: relative;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-between;
-                gap: 20px;
+                justify-content: start;
                 width: 100%;
-                gap: 30px;
 
-                .formcarry-block {
-                    width: 80%;
+                .parent {
                     display: flex;
-                    flex-direction: row;
-                    align-items: left;
-                    justify-content: left;
-                    border-bottom: 1px solid $darkBlue;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 20px;
+                    width: 100%;
+                    gap: 30px;
 
-                    &.lang {
-                        border: none;
+                    .formcarry-block {
+                        width: 80%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: left;
+                        justify-content: left;
+                        border-bottom: 1px solid $darkBlue;
 
-                        .lenguages {
-                            width: 100%;
-                            display: flex;
-                            gap: 10px;
-                            align-items: center;
-                            display: flex;
-                            justify-content: space-around;
-                            margin: auto;
-                            .holder{
+                        &.lang {
+                            border: none;
+
+                            .lenguages {
+                                width: 100%;
                                 display: flex;
                                 gap: 10px;
                                 align-items: center;
-                                width: auto;
-                                .selector {
-                                    width: 30px;
-                                    height: 30px;
-                                    border: 1px $darkBlue solid;
-                                    border-radius: 5px;
-                                    
-                                    &.active {
-                                        background-color: $darkBlue;
+                                display: flex;
+                                justify-content: space-around;
+                                margin: auto;
+
+                                .holder {
+                                    display: flex;
+                                    gap: 10px;
+                                    align-items: center;
+                                    width: auto;
+
+                                    .selector {
+                                        width: 30px;
+                                        height: 30px;
+                                        border: 1px $darkBlue solid;
+                                        border-radius: 5px;
+
+                                        &.active {
+                                            background-color: $darkBlue;
+                                        }
                                     }
+                                }
+                            }
+                        }
+
+                        input,
+                        textarea {
+                            width: 100%;
+                            border-radius: 5px;
+                            border: none;
+                            background-color: $ligthBlue;
+                            color: $darkBlue;
+                            padding-left: 20px;
+
+                            &:focus {
+                                border: none;
+                                outline-style: none;
+                            }
+
+                            &:-internal-autofill-selected {
+                                appearance: none;
+                                background-image: none !important;
+                                background-color: transparent !important;
+                                color: fieldtext !important;
+                            }
+                        }
+
+                        textarea {
+                            height: 80px;
+                            max-height: 120px;
+                            min-height: 80px;
+                        }
+
+                        &.buttonSend {
+                            position: relative;
+                            border: none;
+                            width: 100%;
+
+                            button {
+                                position: absolute;
+                                right: 0;
+                                border: none;
+                                width: 60%;
+                                height: 60px;
+                                background-color: $darkBlue;
+                                color: $ligthBlue;
+
+                                &:hover {
+                                    background-color: #888785;
+                                    color: white;
                                 }
                             }
                         }
                     }
 
-                    input,
-                    textarea {
-                        width: 100%;
-                        border-radius: 5px;
-                        border: none;
-                        background-color: $ligthBlue;
-                        color: $darkBlue;
-                        padding-left: 20px;
-
-                        &:focus {
-                            border: none;
-                            outline-style: none;
-                        }
-
-                        &:-internal-autofill-selected {
-                            appearance: none;
-                            background-image: none !important;
-                            background-color: transparent !important;
-                            color: fieldtext !important;
-                        }
-                    }
-
-                    textarea {
-                        height: 80px;
-                        max-height: 120px;
-                        min-height: 80px;
-                    }
-
-                    &.buttonSend {
-                        position: relative;
-                        border: none;
-                        width: 100%;
-
-                        button {
-                            position: absolute;
-                            right: 0;
-                            border: none;
-                            width: 60%;
-                            height: 60px;
-                            background-color: $darkBlue;
-                            color: $ligthBlue;
-
-                            &:hover {
-                                background-color: #888785;
-                                color: white;
-                            }
-                        }
-                    }
                 }
-
             }
         }
+
     }
 
     .footerContent {
-        width: 100vw;
-        height: 35vh;
+        width: 100%;
+        height: 35%;
         background-color: $darkBlue;
         position: absolute;
         left: 0;
@@ -196,7 +200,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             margin: 0;
 
             .texts {
@@ -210,6 +214,9 @@
                 color: $ligthBlue;
                 background-color: transparent;
                 margin-left: 30px;
+                padding: 0 30px;
+                font-size: 16px;
+                line-height: 24px;
 
                 .text {
                     width: 300px;
@@ -221,11 +228,24 @@
                 display: flex;
                 gap: 50px;
                 flex-direction: row;
-                justify-content: center;
-                align-items: center;
+                justify-content: end;
+                align-items: end;
                 height: 100%;
                 color: $ligthBlue;
                 background-color: $darkBlue;
+                padding: 0 30px;
+
+                .rights {
+                    // position: absolute;
+                    // bottom: 20px;
+                    // right: 40px;
+                    color: $ligthBlue;
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    padding-right: 100px;
+                    padding-bottom: 20px;
+                }
 
                 @media screen and (max-width: 768px) {
                     height: 60px;
@@ -233,22 +253,26 @@
                 }
 
                 .icon {
-                    width: 40px;
-                    height: 40px;
-                    background-position: center;
-                    background-size: cover;
 
-                    &.wtsp {
-                        background-image: url(../public/bruno/wtsp.png);
-                    }
+                    // width: 40px;
+                    // height: 40px;
+                    // background-position: center;
+                    // background-size: cover;
 
-                    &.ig {
-                        background-image: url(../public/bruno/ig.png);
-                    }
+                    // &.wtsp {
+                    //     background-image: url(../public/bruno/whatsappIcon.png);
+                    // }
 
-                    &.maps {
-                        background-image: url(../public/bruno/googlemaps.png);
-                    }
+                    // &.ig {
+                    //     background-image: url(../public/bruno/instagram.png);
+                    // }
+
+                    // &.maps {
+                    //     background-image: url(../public/bruno/mapsIcon.png);
+                    // }
+                    // &.mail {
+                    //     background-image: url(../public/bruno/emailIcon.png);
+                    // }
                 }
             }
 
@@ -277,7 +301,7 @@
     align-items: start;
     justify-content: start;
     height: auto;
-
+    cursor: pointer;
     .text {
         text-align: left;
 
@@ -290,25 +314,25 @@
         border-radius: 50%;
 
         &.wtsp {
-            background-image: url(../public/bruno/pesca.png);
+            background-image: url(../public/bruno/whatsappIcon.png);
             background-position: center;
             background-size: cover;
         }
 
         &.ig {
-            background-image: url(../public/bruno/cueva.png);
+            background-image: url(../public/bruno/instagram.png);
             background-position: center;
             background-size: cover;
         }
 
         &.location {
-            background-image: url(../public/bruno/playa.png);
+            background-image: url(../public/bruno/mapsIcon.png);
             background-position: center;
             background-size: cover;
         }
 
         &.mail {
-            background-image: url(../public/bruno/snorkel.png);
+            background-image: url(../public/bruno/emailIcon.png);
             background-position: center;
             background-size: cover;
         }
