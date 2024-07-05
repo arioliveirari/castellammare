@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { usb, usw, usc } from '../utils/helpers';
 import styles from '../styles/kiwiSlider.module.scss';
-import Glide from '@glidejs/glide'
+import Glide from '@glidejs/glide';
+
 
 const items = [
     { url: "/bruno/slider/testimage.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
@@ -22,13 +23,13 @@ const SliderCustom = () => {
             // autoplay: 1500,
             hoverpause: true,
             breakpoints: {
-                1000: {
+                1200: {
                     perView: 1,
                 },
                 550: {
                     perView: 1,
                 }
-            }
+            },
         }).mount();
     }, [])
 
