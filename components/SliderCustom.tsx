@@ -25,7 +25,7 @@ const SliderCustom = () => {
                 1000: {
                     perView: 2,
                 },
-                576: {
+                550: {
                     perView: 1,
                 }
             }

@@ -7,14 +7,9 @@
 
 
 .glide__arrows {
-    position: absolute;
-    bottom: 90px;
-    &.left{
-        left: 100px;
-    }
-    &.right{
-        right: 100px;
-    }
+    width: 60px;
+    height: 60px;
+  
 }
 
 .image{
