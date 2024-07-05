@@ -9,7 +9,7 @@ import FooterInfo from "./FooterInfo";
 const Footer = () => {
     const { t, i18n } = useTranslation();
     return (
-        <div id="CONTACT" className={usw(styles, ["footer"], ["container-fluid ", "p-0", "m-0"])} >
+        <div id="CONTACT" className={usw(styles, ["footer"], ["container-fluid ", "", "m-0"])} >
             <div className={usb(["container-fluid", "m-0 ", "p-0"])}>
                 <div className={usw(styles, ["formContainer"], ["row ", "p-0"])}>
                     <div className={usb(["col-12", "p-0"])}>

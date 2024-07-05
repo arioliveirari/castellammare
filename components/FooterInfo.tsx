@@ -43,7 +43,7 @@ export default function BasicForm() {
         <div className={usw(styles, ["info"], ["container-fluid", "p-0"])} >
             <div className={usw(styles, ["parentInfo"], ["row", "p-0"])} >
 
-                <div className={usw(styles, ["texts"], ["col-md-6 col-12"])} >
+                <div className={usw(styles, ["texts"], ["col-md-6", "col-12"])} >
                     <DataItem texts={information.cellphones.texts} icon={information.cellphones.icon} callBack={information.cellphones.callBack}/>
                     <DataItem texts={information.ig.texts} icon={information.ig.icon} callBack={information.ig.callBack}/>
                     <DataItem texts={information.location.texts} icon={information.location.icon} callBack={information.location.callBack}/>
@@ -54,8 +54,8 @@ export default function BasicForm() {
                     
                 </div> */}
 
-                <div className={usw(styles, ["icons"], ["col-md-6 col-12"])} >
-                    <div className={usw(styles, ["rights"], [""])} >
+                <div className={usw(styles, ["icons"], ["col-md-6", "col-12"])} >
+                    <div className={usw(styles, ["rights"], ["col-12"])} >
                         {information.rights.texts}
                     </div>
 
