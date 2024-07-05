@@ -1,7 +1,5 @@
 import React from 'react';
 import { usc, usb, usw } from '../utils/helpers';
-import Tittles from './Tittles';
-import Service from './Service';
 import styles from '../styles/services.module.scss';
 import { useTranslation } from "react-i18next";
 import ButtonHeader from './ButtonBuyHeader';
