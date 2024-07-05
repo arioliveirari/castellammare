@@ -241,8 +241,7 @@
                 gap: 30px;
                 color: $ligthBlue;
                 background-color: transparent;
-                margin-left: 30px;
-                padding: 0 30px;
+                padding: 0 0px;
                 font-size: 16px;
                 line-height: 24px;
 
@@ -273,11 +272,22 @@
                     font-weight: 500;
                     padding-right: 100px;
                     padding-bottom: 20px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    text-align: right;
                 }
 
                 @media screen and (max-width: 770px) {
                     height: 60px;
                     width: 600px;
+                    .rights{
+
+                        position: relative;
+                        right: 0;
+                        bottom: 0;
+                        text-align: center;
+                    }
                 }
 
                 .icon {
