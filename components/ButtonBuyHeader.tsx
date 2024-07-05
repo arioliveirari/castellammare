@@ -1,6 +1,5 @@
 import React from 'react';
 import { usc, usb, usw } from '../utils/helpers';
-import Form from './Form';
 import styles from '../styles/overTheFold.module.scss';
 import { useTranslation } from "react-i18next";
 import { ScrollTo } from './ScrollTo';

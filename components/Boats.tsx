@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { usb, usc, usw } from "../utils/helpers";
 import styles from '../styles/boats.module.scss';
 import Tittles from './Tittles';
-import KiwiSlider from './KiwiSlider';
 import { useTranslation } from "react-i18next";
 import SliderCustom from './SliderCustom';
 
