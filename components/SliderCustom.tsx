@@ -20,7 +20,7 @@ const SliderCustom = () => {
             perView: 3,
             gap: 30,
             focusAt: 0,
-            autoplay: 3000,
+            // autoplay: 3000,
             breakpoints: {
                 1200: {
                     perView: 2,
