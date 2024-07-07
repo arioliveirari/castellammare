@@ -64,7 +64,7 @@ const resources = {
           },
           third: {
             question: "¿Pueden ir menores?",
-            answer: "Si, la actividad es apta para todas las edades"
+            answer: "Si, la actividad es apta para todas las edades."
           },
           fourth: {
             question: "¿Con cuanta anticipacion debo reservar?",
