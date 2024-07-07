@@ -47,7 +47,7 @@ a {
 }
 
 .controls {
-  width: 80%;
+  width: 100%;
   margin: auto;
   height: 100%;
   display: flex;
@@ -59,7 +59,7 @@ a {
   left: 0;
   right: 0;
 
-  @media screen and (max-width:550px) {
+  @media screen and (max-width:800px) {
 
     display: none;
   }
@@ -74,6 +74,10 @@ a {
   margin: auto;
   position: relative;
   z-index: 9999999999;
+  @media screen and (max-width:550px) {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 

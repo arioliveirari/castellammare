@@ -31,7 +31,6 @@ const Header = ({ children }: any) => {
   }
 
   const goToSection = (sectionId: string, sectionNumber: number) => {
-    console.log("entró aca")
     ScrollTo(sectionId)
     setSectionActive(sectionNumber)
   }

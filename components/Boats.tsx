@@ -75,9 +75,9 @@ const Boats = () => {
 
         </div>
 
-        <div className={usb(["container-fluid"])}>
-        <div className={usb(["row"])}>
-            <div className={usb(["col-12"])}>
+        <div className={usb(["container-fluid", "m-0", "p-0"])}>
+        <div className={usb(["row", "m-0", "p-0"])}>
+            <div className={usb(["col-12", "p-0", "m-0"])}>
               <div className={usc(styles, ["slider"])}>
                      <SliderCustom />
               </div>

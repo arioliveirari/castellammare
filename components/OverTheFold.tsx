@@ -10,7 +10,7 @@ const OverTheFold = ({ children }: any) => {
 
   return (
     <div id='HOME' className={usw(styles, ['OverTheFold'], ["container-fluid"])}>
-      <video className={usc(styles, ["video"])} height="100%" width="100%" autoPlay muted loop >
+      <video autoPlay muted loop={true} className={usc(styles, ["video"])} height="100%" width="100%"  >
         <source src="/video/bg.mp4" type="video/mp4" />
       </video>
       

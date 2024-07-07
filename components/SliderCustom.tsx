@@ -35,7 +35,7 @@ const SliderCustom = () => {
 
 
     return (
-        <div className={usw(styles, ["customSlider"], ["container-fluid"])}>
+        <div className={usw(styles, ["customSlider"], ["container-fluid", "m-0", "p-0"])}>
             <div>
                 <div className="glide" id="kiwi-slider">
                     <div className="glide__track" data-glide-el="track">
