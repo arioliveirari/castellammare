@@ -42,7 +42,7 @@ const ServiceItem = ({ img, title, icon, text }: { img: string, title: string, i
         <div>{title}</div>
       </div>
 
-      <div className={usc(styles, ["title", "text"])}>{text}</div>
+      <div className={img === "food" ? usc(styles, ["title", "text", "middle"]) : usc(styles, ["title", "text"])}>{text}</div>
       <div onClick={() => setShowMore(!showMore)} className={usc(styles, ["title", "vermas"])}></div>
       <ButtonHeader extraClassName={`${!showMore ? "serviceButton" : "serviceButtonActive"}`} />
     </div>

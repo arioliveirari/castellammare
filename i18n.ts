@@ -64,7 +64,7 @@ const resources = {
           },
           third: {
             question: "¿Pueden ir menores?",
-            answer: "La actividad es solo para mayores de 18 años."
+            answer: "Si, la actividad es apta para todas las edades"
           },
           fourth: {
             question: "¿Con cuanta anticipacion debo reservar?",
@@ -144,7 +144,7 @@ const resources = {
           },
           third: {
             question: "Can minors go?",
-            answer: "The activity is only for those over 18 years old."
+            answer: "Yes, the activity is suitable for all ages."
           },
           fourth: {
             question: "How far in advance should I book?",
@@ -228,7 +228,7 @@ const resources = {
           },
           third: {
             question: "I minorenni possono partecipare?",
-            answer: "L'attività è riservata ai maggiori di 18 anni."
+            answer: "Sì, l'attività è adatta a tutte le età."
           },
           fourth: {
             question: "Con quanto anticipo devo prenotare?",

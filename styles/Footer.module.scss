@@ -14,6 +14,7 @@
     height: 100vh;
     @media screen and (max-width: 770px) {
         height: auto !important;
+        padding: 0;
         .formContainer{
             margin: auto !important;
             height: 100% !important;
@@ -238,7 +239,7 @@
                 align-items: center;
                 height: 100%;
                 text-align: start;
-                gap: 30px;
+                gap: 20px;
                 color: $ligthBlue;
                 background-color: transparent;
                 padding: 0 0px;

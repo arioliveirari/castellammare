@@ -24,7 +24,7 @@ export default function BasicForm() {
             texts: ["Porto di Castellammare, fronte all Restaurante Luxor"],
             icon: "location",
             callBack: ()=>{
-                window.open('https://google.com', '_blank')
+                window.open('https://www.google.com/maps/place/S.Lucia+Pescaturismo/@38.0304622,12.8811713,20.39z/data=!4m6!3m5!1s0x131983ff1d90a561:0x2e482072b1fed751!8m2!3d38.0301991!4d12.8812804!16s%2Fg%2F11vwx3y151?entry=ttu', '_blank')
             }
         },
         mail: {

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { usb, usc, usw } from '../../utils/helpers';
 import styles from '../../styles/headers.module.scss';
 import { useTranslation } from 'react-i18next';
-import { ScrollTo } from '../ScrollTo';
+import { ScrollTo, detectSectionVisible } from '../ScrollTo';
 import { redirect } from 'next/dist/server/api-utils';
 
 
@@ -16,13 +16,18 @@ const Header = ({ children }: any) => {
 
   if (typeof window !== 'undefined') {
     const changeColor = () => {
-      if (window.scrollY > 1) {
+      if (window.scrollY > 1 ) {
         setTransparent(true)
       } else {
         setTransparent(false)
       }
     }
-    window.addEventListener("scroll", changeColor)
+    window.addEventListener("scroll", () => {
+      changeColor()
+      const sectionActiveNow = detectSectionVisible()
+      const sections = ["HOME", "ABOUT", "TOUR", "FAQ", "CONTACT"]
+      setSectionActive(sections.indexOf(sectionActiveNow) + 1)
+  })
   }
 
   const goToSection = (sectionId: string, sectionNumber: number) => {
@@ -36,6 +41,7 @@ const Header = ({ children }: any) => {
     setLanguage(lang)
   }
 
+ 
   return (
     <div className={(transparent) ? usw(styles, ["Header", "active"], ["container-fluid", "p-0"]) : usw(styles, ["Header"], ["container-fluid"])} >
       <Head>

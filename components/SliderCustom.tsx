@@ -20,16 +20,16 @@ const SliderCustom = () => {
             perView: 3,
             gap: 30,
             focusAt: 0,
-            // autoplay: 1500,
-            hoverpause: true,
+            autoplay: 3000,
             breakpoints: {
                 1200: {
-                    perView: 1,
+                    perView: 2,
                 },
                 550: {
                     perView: 1,
                 }
             },
+            swipeThreshold: 80,
         }).mount();
     }, [])
 
