@@ -74,7 +74,7 @@ export default function BasicForm() {
 
 
                 <div className={usc(styles, ["formcarry-block", "lang"])}>
-
+                    <p>{t("Footer.form.lang")}</p>
                     <div className={usc(styles, ["lenguages"])}>
 
                         <div className={usc(styles, ["holder"])}>

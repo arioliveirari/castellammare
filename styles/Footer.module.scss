@@ -98,7 +98,8 @@
 
                         &.lang {
                             border: none;
-
+                            display: flex;
+                            flex-direction: column;
                             .lenguages {
                                 width: 100%;
                                 display: flex;

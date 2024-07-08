@@ -82,7 +82,8 @@ const resources = {
           people: "Cantidad de gente",
           data: "Fecha",
           mail: "Email",
-          message: "Mensaje"
+          message: "Mensaje",
+          lang: "Seleccioná tu idioma"
         }
       },
     }
@@ -162,7 +163,9 @@ const resources = {
           people: "Number of people",
           data: "Date",
           mail: "Email",
-          message: "Message"
+          message: "Message",
+          lang: "Select your language"
+
         }
       }
     }
@@ -246,7 +249,8 @@ const resources = {
           people: "Numero di persone",
           data: "Data",
           mail: "Email",
-          message: "Messaggio"
+          message: "Messaggio",
+          lang: "Seleziona la tua lingua"
         }
       }
     }

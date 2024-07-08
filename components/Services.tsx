@@ -34,7 +34,7 @@ export default Services
 const ServiceItem = ({ img, title, icon, text }: { img: string, title: string, icon: string, text: string }) => {
   const [showMore, setShowMore] = React.useState(false)
   return (
-    <div className={showMore ? usc(styles, ["parent", "active"]) : usc(styles, ["parent", ""])}>
+    <div onClick={() => setShowMore(!showMore)} className={showMore ? usc(styles, ["parent", "active"]) : usc(styles, ["parent", ""])}>
       <div className={usc(styles, ["servicio", img])}>
       </div>
       <div className={usc(styles, ["title", "icon", icon])}></div>
