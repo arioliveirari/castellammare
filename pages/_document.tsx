@@ -16,7 +16,7 @@ class MyDocument extends Document {
     return (
       <Html lang={"ES"}>
         <Head>
-          <link rel="shortcut icon" href={'/images/barco.ico'} />
+          <link rel="shortcut icon" href={'/bruno/logo.png'} />
           {/* fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />

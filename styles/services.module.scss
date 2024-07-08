@@ -65,27 +65,18 @@
   .title {
     height: auto;
     width: 100%;
-    // position: absolute;
-    // left: 0;
-    // bottom: 0;
-    // top: 0;
-    // left: 0;
-    // margin: auto;
-    color: white;
+
+    color: $ligthBlue;
     font-size: 23px;
     font-weight: bold;
     text-align: center;
 
     &.icon {
       transition: all 1s ease;
-
       width: 75px;
       height: 75px;
       background-position: center;
       background-size: cover;
-      // right: 0;
-      // bottom: 300px;
-      // left: 0;
 
       &.calendar {
         background-image: url(../public/bruno/calendarIcon.png);

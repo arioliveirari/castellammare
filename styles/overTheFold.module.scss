@@ -60,6 +60,8 @@
   justify-content: center;
   color: $ligthBlue;
   text-align: left;
+  padding: 0 20px;
+
   text-shadow: 0px 4px 4px #00000040;
   
   .city {
@@ -100,7 +102,9 @@
   justify-content: start;
   align-items: center;
   padding: 0;
-  
+  padding: 0 20px;
+
+  cursor: pointer;
   .containerButton {
     box-shadow: 0px 4px 4px #00000040;
     width: 200px;

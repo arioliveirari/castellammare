@@ -23,7 +23,7 @@
   .textContainer{
     padding: 0;
     margin: 0;
-    
+
   }
 }
   .textContainer {
@@ -33,6 +33,8 @@
       margin-bottom: 0px;
       font-weight: 500;
       padding: 0;
+      padding: 0px 20px;
+
     }
 
     .title {
@@ -42,6 +44,8 @@
       font-weight: 800;
       margin-top: 20px;
       margin-bottom: 30px;
+      padding: 0px 20px;
+
     }
 
     .description {
@@ -49,6 +53,7 @@
       text-align: justify;
       font-size: 20px;
       line-height: 30px;
+      padding: 0px 20px;
 
     }
   }

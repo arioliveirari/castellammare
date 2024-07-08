@@ -48,7 +48,7 @@ const resources = {
         },
         third: {
           title: "Un barco para vos y tus amigos",
-          description: "Todos nuestros paseos son privados y ofrecemos máscara snorkel, fruta y agua fresca para todo el grupo.",
+          description: "Disfrutá de las mejores playas de Trapani con tus amigos, paseamos y ofrecemos máscara snorkel, fruta y agua fresca para todo el grupo.",
         },
       },
       FaqItem: {
@@ -67,12 +67,12 @@ const resources = {
             answer: "Si, la actividad es apta para todas las edades."
           },
           fourth: {
-            question: "¿Con cuanta anticipacion debo reservar?",
-            answer: "No hay un tiempo estipulado de anticipacion. Depende solamente de la disponibilidad."
+            question: "¿Con cuanta anticipación debo reservar?",
+            answer: "No hay un tiempo estipulado de anticipación. Depende solamente de la disponibilidad."
           },
           fifth: {
             question: "¿Podemos llevar comida y/o bebida?",
-            answer: "¡Claro que si!, pueden traer lo que quieran para comer, beber!"
+            answer: "¡Claro que si! ¡Pueden traer lo que quieran para comer, beber!"
           },
         },
       },
@@ -129,7 +129,7 @@ const resources = {
         },
         third: {
           title: "A boat for you and your friends",
-          description: "All our tours are private, and we offer snorkel masks, fruit, and fresh water for the entire group."
+          description: "Enjoy the best beaches of Trapani with your friends. We take walks and offer snorkeling masks, fruit, and fresh water for the whole group."
         }
       },
       FaqItem: {
@@ -138,7 +138,7 @@ const resources = {
           first: {
             question: "How long is the excursion? And the stops?",
             answer: "The excursion lasts 4 and a half hours. It includes 40 minutes of fishing and 3 stops of 40 minutes to go into the sea."
-          },          
+          },
           second: {
             question: "What are the tour times?",
             answer: "There are two time slots, from 9:30 to 14:00 and from 14:30 to 19:00."
@@ -214,7 +214,7 @@ const resources = {
         ,
         third: {
           title: "Una barca per te e i tuoi amici",
-          description: "Tutti i nostri tour sono privati e offriamo maschere per lo snorkeling, frutta e acqua fresca per tutto il gruppo."
+          description: "Goditi le migliori spiagge di Trapani con i tuoi amici. Facciamo passeggiate e offriamo maschere da snorkeling, frutta e acqua fresca per tutto il gruppo."
         }
       },
       FaqItem: {
