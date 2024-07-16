@@ -58,6 +58,8 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  color: #092227;
+  font-weight: 500;
 
   @media screen and (max-width:800px) {
 
