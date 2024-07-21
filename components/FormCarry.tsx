@@ -7,6 +7,8 @@ export default function BasicForm() {
     const [amount, setAmount] = useState('')
     const [date, setDate] = useState('')
     const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [errorMessageActive, setErrorMessageActive] = useState(false)
     const [message, setMessage] = useState('')
     const [lang, setLang] = useState({
         es: false,
@@ -21,11 +23,19 @@ export default function BasicForm() {
         e.stopPropagation();
         let idiomas = Object.values(lang)
         let idiomasKeys = Object.keys(lang)
-        let parlan = ""
-        
+        let Lingua = ""
+        let Nome = name
+        let Messaggio = message
+        let Quantita = amount
+        let Email = email
+        let Data = date
+        let Telefono = phone
         for (let i = 0; i < 3 ; i++){
-            if (idiomas[i]) parlan = parlan + " " + idiomasKeys[i]
+            if (idiomas[i]) Lingua = Lingua + " " + idiomasKeys[i]
         }
+        
+        const validation = validateForm()
+        if (validation){
 
         fetch("https://formcarry.com/s/W1j24bgBsux", {
             method: 'POST',
@@ -33,7 +43,7 @@ export default function BasicForm() {
                 "Accept": "application/json",
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ name, email, message, amount, date,  parlan})
+            body: JSON.stringify({ Nome, Email, Messaggio, Quantita, Data,  Lingua, Telefono})
         })
             .then(response => response.json())
             .then(response => {
@@ -54,6 +64,8 @@ export default function BasicForm() {
                 // request related error.
                 setError(error.message ? error.message : error);
             });
+        }
+
     }
 
     const lenguages = ["ES", "EN", "IT"];
@@ -66,6 +78,24 @@ export default function BasicForm() {
     React.useEffect(() => {
         setLang(active)
     }, [active])
+
+    React.useEffect(() => {
+        setTimeout(()=>{
+            setErrorMessageActive(false)
+        }, 3000)
+    }, [errorMessageActive])
+
+    const validateForm = ()=>{
+        if (name !== "" &&
+            email !== "" &&
+            phone !== ""){
+                setErrorMessageActive(false)
+                return true
+            } else {
+                setErrorMessageActive(true)
+                return false
+            }
+    }
 
     return (
 
@@ -122,11 +152,17 @@ export default function BasicForm() {
                 </div>
 
                 <div className={usc(styles, ["formcarry-block"])}>
+                    <label htmlFor="number">{t("Footer.form.phone")}</label>
+                    <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} id="phone" placeholder="" />
+                </div>
+
+                <div className={usc(styles, ["formcarry-block"])}>
                     <label htmlFor="message">{t("Footer.form.message")}</label>
                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} id="message" placeholder=""></textarea>
                 </div>
 
                 <div className={usc(styles, ["formcarry-block", "buttonSend"])}>
+                    <div className={errorMessageActive ? usc(styles, ["errorMessage", "active"]) : usc(styles, ["errorMessage"])}>{t("Footer.form.errorMessage")}</div>
                     <button type="submit">Send</button>
                 </div>
             </div>

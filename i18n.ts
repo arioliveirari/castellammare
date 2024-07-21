@@ -83,7 +83,9 @@ const resources = {
           data: "Fecha",
           mail: "Email",
           message: "Mensaje",
-          lang: "Seleccioná tu idioma"
+          lang: "Seleccioná tu idioma",
+          phone: "Teléfono",
+          errorMessage: "Nombre, email y teléfono son obligatorios"
         }
       },
     }
@@ -164,7 +166,9 @@ const resources = {
           data: "Date",
           mail: "Email",
           message: "Message",
-          lang: "Select your language"
+          lang: "Select your language",
+          phone: "Phone number",
+          errorMessage: "Name, email and phone are mandatory"
 
         }
       }
@@ -250,7 +254,9 @@ const resources = {
           data: "Data",
           mail: "Email",
           message: "Messaggio",
-          lang: "Seleziona la tua lingua"
+          lang: "Seleziona la tua lingua",
+          phone: "Numero di telefono",
+          errorMessage: "Sono richiesti nome, email e telefono"
         }
       }
     }
