@@ -37,7 +37,7 @@ export default function BasicForm() {
         const validation = validateForm()
         if (validation){
 
-        fetch("https://formcarry.com/s/W1j24bgBsux", {
+        fetch("https://formcarry.com/s/0APAe0Ciky8", {
             method: 'POST',
             headers: {
                 "Accept": "application/json",

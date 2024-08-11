@@ -5,95 +5,12 @@ import { initReactI18next } from "react-i18next";
 // (tip move them in a JSON file and import them,
 // or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
 const resources = {
-  es: {
-    translation: {
-      Header: {
-        company: 'SANTA LUCIA TOUR',
-        titleFrist: 'SANTA LUCIA',
-        titleSecond: 'TOUR',
-        home: "Inicio",
-        about: "Nosotros",
-        tour: "Excursión",
-        faq: "Preguntas",
-        contact: "Contacto"
-      },
-      ButtonContact: {
-        contact: "CONTACTO"
-      },
-      OverTheFold: {
-        city: "CASTELLAMMARE DEL GOLFO",
-        titleFrist: 'SANTA LUCIA',
-        titleSecond: 'TOUR',
-        description: "Vive una experiencia única: pesca en bote y descubre playas paradisíacas"
-      },
-      Boats: {
-        company: "SANTA LUCIA TOUR",
-        title: "Una experiencia única",
-        description: "Disfruta una experiencia única a bordo del Santa Lucia, un tradicional bote peschereccio. Comenzamos nuestra aventura en el puerto de Castellammare, visitamos cuevas y luego pescamos con red en alta mar. Continúa el viaje recorriendo la costa, con paradas en Cala Bianca, la Reserva dello Zingaro y Tonnara di Scopello para nadar y disfrutar del paisaje paradisíaco. Te ofrecemos fruta fresca, agua y equipo de snorkel para que tu experiencia sea inolvidable.",
-        signs: {
-          fishing: "Pesca con red en altamar",
-          cueva: "Visita a cuevas",
-          playa: "Playas paradisíacas",
-          snorkel: "Nado con snorkel"
-        }
-      },
-      Services: {
-        first: {
-          title: "Horarios a tu gusto",
-          description: "Salimos todos los días. Podés elegir entre dos turnos de 9:30 a 14 o de 14:30 a 19 ¡Consultanos disponibilidad para reservar!",
-        },
-        second: {
-          title: "Itinerario",
-          description: `Partimos del puerto de Castellammare. Visitamos cuevas, pescamos con red a 3km de la costa y luego hacemos distintas paradas en hermosas playas sicilianas. Volvemos al puerto para terminar el recorrido de 25km por la costa. \n Duración total: 4h 30min`,
-        },
-        third: {
-          title: "Un barco para vos y tus amigos",
-          description: "Disfrutá de las mejores playas de Trapani con tus amigos, paseamos y ofrecemos máscara snorkel, fruta y agua fresca para todo el grupo.",
-        },
-      },
-      FaqItem: {
-        title: "Preguntas frecuentes",
-        items: {
-          first: {
-            question: "¿Cuánto dura la excursión? ¿Y las paradas?",
-            answer: "La excursión dura 4 horas y media. Cuenta con 40 minutos de pesca y 3 paradas de 40 minutos para meterse al mar."
-          },
-          second: {
-            question: "¿En qué horarios son los paseos?",
-            answer: "Hay dos horarios, de 9.30 a 14 y de 14.30 a 19."
-          },
-          third: {
-            question: "¿Pueden ir menores?",
-            answer: "Si, la actividad es apta para todas las edades."
-          },
-          fourth: {
-            question: "¿Con cuanta anticipación debo reservar?",
-            answer: "No hay un tiempo estipulado de anticipación. Depende solamente de la disponibilidad."
-          },
-          fifth: {
-            question: "¿Podemos llevar comida y/o bebida?",
-            answer: "¡Claro que si! ¡Pueden traer lo que quieran para comer, beber!"
-          },
-        },
-      },
-      Footer: {
-        form: {
-          name: "Nombre",
-          people: "Cantidad de gente",
-          data: "Fecha",
-          mail: "Email",
-          message: "Mensaje",
-          lang: "Seleccioná tu idioma",
-          phone: "Teléfono",
-          errorMessage: "Nombre, email y teléfono son obligatorios"
-        }
-      },
-    }
-  },
   en: {
     translation: {
       Header: {
         company: "SANTA LUCIA TOUR",
+        titleFrist: "SANTA LUCIA",
+        titleSecond: "TOUR",
         home: "Home",
         about: "About Us",
         tour: "Tour",
@@ -112,26 +29,27 @@ const resources = {
       Boats: {
         company: "SANTA LUCIA TOUR",
         title: "A unique experience",
-        description: "Enjoy a unique experience aboard the Santa Lucia, a traditional fishing boat. We start our adventure at the port of Castellammare, visit caves, and then fish with nets in the open sea. Continue the journey along the coast, stopping at Cala Bianca, the Zingaro Reserve, and Tonnara di Scopello to swim and enjoy the paradisiacal scenery. We offer fresh fruit, water, and snorkel equipment to make your experience unforgettable.",
+        description: "Enjoy a unique experience aboard the Santa Lucia, a traditional fishing boat. We start our adventure at the port of Castellammare and visit the caves. Continue the journey along the coast, stopping at Cala Bianca, in the Zingaro Reserve and at Tonnara di Scopello to swim and enjoy the paradisiacal landscape. We offer fresh fruit, water, and snorkeling equipment to make your experience unforgettable.",
         signs: {
-          fishing: "Open sea net fishing",
-          cueva: "Cave visits",
-          playa: "Stops at paradise beaches",
+          fishing: "Fishing with nets in open sea",
+          cueva: "Cave visit",
+          playa: "Paradise beaches",
           snorkel: "Snorkeling"
         }
       },
       Services: {
         first: {
-          title: "Schedules at your convenience",
-          description: "We go out every day. You can choose between two shifts from 9:30 to 14:00 or from 14:30 to 19:00. Check availability with us to book!"
+          title: "Flexible Schedules",
+          description: "We go out every day. You can choose between two shifts, from 9:30 AM to 2:00 PM or from 2:30 PM to 7:00 PM. Check availability with us to book!"
         },
         second: {
           title: "Itinerary",
-          description: `We depart from the port of Castellammare. We visit caves, fish with a net 3km from the coast, and then make various stops at beautiful Sicilian beaches. We return to the port to complete the 25km journey along the coast. \n Total duration: 4h 30min`,
-        },
+          description: `We depart from the port of Castellammare. Along the way, we will visit some beautiful caves, make 3 stops at stunning beaches along our coast, between the Scopello stacks and the Zingaro reserve. We return to the port to complete the 25 km journey along the coast. \n Total duration: 4h 30min`,
+        }
+        ,
         third: {
           title: "A boat for you and your friends",
-          description: "Enjoy the best beaches of Trapani with your friends. We take walks and offer snorkeling masks, fruit, and fresh water for the whole group."
+          description: "Enjoy the best beaches of Castellammare del Golfo with your friends. We organize boat events on request, tours, and offer snorkeling masks, fresh fruit, and water for the entire group."
         }
       },
       FaqItem: {
@@ -139,19 +57,20 @@ const resources = {
         items: {
           first: {
             question: "How long is the excursion? And the stops?",
-            answer: "The excursion lasts 4 and a half hours. It includes 40 minutes of fishing and 3 stops of 40 minutes to go into the sea."
-          },
+            answer: "The excursion lasts 4 and a half hours. It includes 3 stops of 40 minutes for swimming."
+          }
+          ,
           second: {
             question: "What are the tour times?",
-            answer: "There are two time slots, from 9:30 to 14:00 and from 14:30 to 19:00."
+            answer: "There are two time slots, from 9:30 AM to 2:00 PM and from 2:30 PM to 7:00 PM."
           },
           third: {
-            question: "Can minors go?",
+            question: "Can minors participate?",
             answer: "Yes, the activity is suitable for all ages."
           },
           fourth: {
             question: "How far in advance should I book?",
-            answer: "There is no stipulated advance time. It only depends on availability."
+            answer: "There is no set time. It just depends on availability."
           },
           fifth: {
             question: "Can we bring food and/or drinks?",
@@ -168,8 +87,94 @@ const resources = {
           message: "Message",
           lang: "Select your language",
           phone: "Phone number",
-          errorMessage: "Name, email and phone are mandatory"
-
+          errorMessage: "Name, email, and phone are required"
+        }
+      }
+    }
+  },
+  es: {
+    translation: {
+      Header: {
+        company: "SANTA LUCIA TOUR",
+        titleFrist: "SANTA LUCIA",
+        titleSecond: "TOUR",
+        home: "Inicio",
+        about: "Somos",
+        tour: "Tour",
+        faq: "Preguntas",
+        contact: "Contacto"
+      },
+      ButtonContact: {
+        contact: "CONTACTO"
+      },
+      OverTheFold: {
+        city: "CASTELLAMMARE DEL GOLFO",
+        titleFrist: "SANTA LUCIA",
+        titleSecond: "TOUR",
+        description: "Vive una experiencia única: pesca en barco y descubre playas paradisíacas"
+      },
+      Boats: {
+        company: "SANTA LUCIA TOUR",
+        title: "Una experiencia única",
+        description: "Disfruta de una experiencia única a bordo del Santa Lucia, un barco de pesca tradicional. Comenzamos nuestra aventura en el puerto de Castellammare, visitamos las cuevas. Continuamos el viaje a lo largo de la costa, deteniéndonos en Cala Bianca, en la Reserva dello Zingaro y en Tonnara di Scopello para nadar y disfrutar del paisaje paradisíaco. Ofrecemos fruta fresca, agua y equipo de snorkel para hacer que tu experiencia sea inolvidable.",
+        signs: {
+          fishing: "Pesca con redes en mar abierto",
+          cueva: "Visita a las cuevas",
+          playa: "Playas paradisíacas",
+          snorkel: "Snorkel"
+        }
+      },
+      Services: {
+        first: {
+          title: "Horarios a tu elección",
+          description: "Salimos todos los días. Puedes elegir entre dos turnos, de 9:30 a 14:00 o de 14:30 a 19:00. ¡Verifica la disponibilidad con nosotros para reservar!"
+        },
+        second: {
+          title: "Itinerario",
+          description: `Partimos del puerto de Castellammare. En el camino visitaremos algunas cuevas hermosas, haremos 3 paradas en playas impresionantes de nuestra costa, entre los farallones de Scopello y la reserva dello Zingaro. Regresamos al puerto para completar el recorrido de 25 km a lo largo de la costa. \n Duración total: 4h 30min`,
+        }
+        ,
+        third: {
+          title: "Un barco para ti y tus amigos",
+          description: "Disfruta de las mejores playas de Castellammare del Golfo con tus amigos. Organizamos eventos en barco a pedido, hacemos paseos y ofrecemos máscaras de snorkel, fruta y agua fresca para todo el grupo."
+        }
+      },
+      FaqItem: {
+        title: "Preguntas Frecuentes",
+        items: {
+          first: {
+            question: "¿Cuánto dura la excursión? ¿Y las paradas?",
+            answer: "La excursión dura 4 horas y media. Incluye 3 paradas de 40 minutos para bañarse."
+          }
+          ,
+          second: {
+            question: "¿Cuáles son los horarios de los tours?",
+            answer: "Hay dos franjas horarias, de 9:30 a 14:00 y de 14:30 a 19:00."
+          },
+          third: {
+            question: "¿Pueden participar menores de edad?",
+            answer: "Sí, la actividad es apta para todas las edades."
+          },
+          fourth: {
+            question: "¿Con cuánto tiempo de antelación debo reservar?",
+            answer: "No hay un tiempo establecido. Depende solo de la disponibilidad."
+          },
+          fifth: {
+            question: "¿Podemos llevar comida y/o bebidas?",
+            answer: "¡Claro! Puedes llevar lo que quieras para comer y beber."
+          }
+        }
+      },
+      Footer: {
+        form: {
+          name: "Nombre",
+          people: "Número de personas",
+          data: "Fecha",
+          mail: "Correo electrónico",
+          message: "Mensaje",
+          lang: "Selecciona tu idioma",
+          phone: "Número de teléfono",
+          errorMessage: "Se requieren nombre, correo electrónico y teléfono"
         }
       }
     }
@@ -198,7 +203,7 @@ const resources = {
       Boats: {
         company: "SANTA LUCIA TOUR",
         title: "Un'esperienza unica",
-        description: "Goditi un'esperienza unica a bordo del Santa Lucia, una tradizionale barca da pesca. Iniziamo la nostra avventura al porto di Castellammare, visitiamo le grotte e poi peschiamo con le reti in mare aperto. Continua il viaggio lungo la costa, fermandoti a Cala Bianca, nella Riserva dello Zingaro e a Tonnara di Scopello per nuotare e goderti il paesaggio paradisiaco. Offriamo frutta fresca, acqua ed equipaggiamento per lo snorkeling per rendere la tua esperienza indimenticabile.",
+        description: "Goditi un'esperienza unica a bordo del Santa Lucia, una tradizionale barca da pesca. Iniziamo la nostra avventura al porto di Castellammare, visitiamo le grotte. Continua il viaggio lungo la costa, fermandoti a Cala Bianca, nella Riserva dello Zingaro e a Tonnara di Scopello per nuotare e goderti il paesaggio paradisiaco. Offriamo frutta fresca, acqua ed equipaggiamento per lo snorkeling per rendere la tua esperienza indimenticabile.",
         signs: {
           fishing: "Pesca con reti in mare aperto",
           cueva: "Visita alle grotte",
@@ -213,12 +218,12 @@ const resources = {
         },
         second: {
           title: "Itinerario",
-          description: `Partiamo dal porto di Castellammare. Visitiamo grotte, peschiamo con la rete a 3km dalla costa e poi facciamo varie soste in splendide spiagge siciliane. Torniamo al porto per completare il percorso di 25km lungo la costa. \n Durata totale: 4h 30min`,
+          description: `Partiamo dal porto di Castellammare. per strada visiteremo delle bellissme grotte, faremo 3 soste in splendide spiagge della nostra costatra i faraglioni di scopello e la riserva dello zingaro. Torniamo al porto per completare il percorso di 25 km lungo la costa. \n Durata totale: 4h 30min`,
         }
         ,
         third: {
           title: "Una barca per te e i tuoi amici",
-          description: "Goditi le migliori spiagge di Trapani con i tuoi amici. Facciamo passeggiate e offriamo maschere da snorkeling, frutta e acqua fresca per tutto il gruppo."
+          description: "Goditi le migliori spiagge di Castellammare del Golfo con i tuoi amici. Organizziamo eventi in barca su richiesta, facciamo passeggiate e offriamo maschere da snorkeling, frutta e acqua fresca per tutto il gruppo."
         }
       },
       FaqItem: {
@@ -226,7 +231,7 @@ const resources = {
         items: {
           first: {
             question: "Quanto dura l'escursione? E le fermate?",
-            answer: "L'escursione dura 4 ore e mezza. Include 40 minuti di pesca e 3 fermate di 40 minuti per entrare in mare."
+            answer: "L'escursione dura 4 ore e mezza. Include 3 fermate di 40 minuti per fare il bagno."
           }
           ,
           second: {

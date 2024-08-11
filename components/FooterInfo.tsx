@@ -51,7 +51,7 @@ export default function BasicForm() {
                     <DataItem texts={information.cellphones.texts} icon={information.cellphones.icon} callBack={information.cellphones.callBack} />
                     <DataItem texts={information.ig.texts} icon={information.ig.icon} callBack={information.ig.callBack} />
                     <DataItem texts={information.location.texts} icon={information.location.icon} callBack={information.location.callBack} />
-                    <DataItem texts={information.mail.texts} icon={information.mail.icon} callBack={information.mail.callBack} />
+                    {/* <DataItem texts={information.mail.texts} icon={information.mail.icon} callBack={information.mail.callBack} /> */}
                 </div>
                 {/* 
                 <div className={usw(styles, ["texts", "right"], ["col-md-3 col-12"])} >

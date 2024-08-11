@@ -8,10 +8,7 @@ const items = [
     { url: "/bruno/image1.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
     { url: "/bruno/image2.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
     { url: "/bruno/image3.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
-    // { url: "/bruno/image3.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
-    // { url: "/bruno/image3.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
-    // { url: "/bruno/slider/testimage.jpeg", objectfit: "objectFit:cover", objectPosition: "center" },
-    // { url: "/bruno/slider/testimage.jpeg", objectfit: "objectFit:cover", objectPosition: "center" }
+    
 ]
 const SliderCustom = () => {
 

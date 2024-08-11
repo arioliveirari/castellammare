@@ -25,10 +25,10 @@ const Boats = () => {
       icon: "playa",
       text: t("Boats.signs.playa")
     },
-    {
-      icon: "snorkel",
-      text: t("Boats.signs.snorkel")
-    },
+    // {
+    //   icon: "snorkel",
+    //   text: t("Boats.signs.snorkel")
+    // },
   ]
 
   return (
