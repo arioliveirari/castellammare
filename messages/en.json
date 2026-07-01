@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Santa Lucia Tour — Fishing tourism in Castellammare del Golfo",
+    "description": "Live a unique experience aboard the Santa Lucia: traditional fishing, sea caves and paradise beaches between Scopello and the Zingaro Reserve."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "tour": "The tour",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "book": "Book now"
+  },
+  "hero": {
+    "location": "Castellammare del Golfo · Sicily",
+    "title": "Santa Lucia",
+    "subtitle": "Fishing tourism",
+    "description": "Live a unique experience: fishing on a traditional boat and discover the paradise beaches of the Sicilian coast.",
+    "ctaBook": "Book via WhatsApp",
+    "ctaTour": "See the tour",
+    "scroll": "Discover more"
+  },
+  "about": {
+    "eyebrow": "Santa Lucia Tour",
+    "title": "A unique experience",
+    "description": "Enjoy a unique experience aboard the Santa Lucia, a traditional fishing boat. We start our adventure at the port of Castellammare and visit the caves. We continue along the coast, stopping at Cala Bianca, in the Zingaro Reserve and at the Tonnara di Scopello to swim and enjoy the landscape. We offer fresh fruit, water and snorkeling gear to make your experience unforgettable.",
+    "tags": {
+      "fishing": "Net fishing in open sea",
+      "cave": "Cave visit",
+      "beach": "Paradise beaches"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Moments on board",
+    "description": "A glimpse of what awaits you: crystal-clear sea, hidden coves and unforgettable days."
+  },
+  "tour": {
+    "eyebrow": "The tour",
+    "title": "What the journey is like",
+    "readMore": "Read more",
+    "readLess": "Read less",
+    "items": {
+      "schedule": {
+        "title": "Flexible schedules",
+        "description": "We go out every day. You can choose between two shifts: from 9:30 AM to 2:00 PM or from 2:30 PM to 7:00 PM. Check availability with us to book!"
+      },
+      "itinerary": {
+        "title": "Itinerary",
+        "description": "We depart from the port of Castellammare. Along the way we visit beautiful caves and make 3 stops at stunning beaches, between the Scopello stacks and the Zingaro Reserve. We return to the port completing a 25 km coastal route. Total duration: 4h 30min."
+      },
+      "group": {
+        "title": "A boat for you and your friends",
+        "description": "Enjoy the best beaches of Castellammare del Golfo with your friends. We organize boat events on request, run tours and offer snorkeling masks, fresh fruit and water for the whole group."
+      }
+    }
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "What our travelers say",
+    "note": "Sample reviews — replace with real ones from Google.",
+    "items": [
+      {
+        "name": "Giulia R.",
+        "origin": "Palermo, Italy",
+        "text": "A perfect day. Antonino and Bruno made us feel at home, the coves are dreamy and the fresh fruit on board was a lovely touch."
+      },
+      {
+        "name": "Marco B.",
+        "origin": "Milan, Italy",
+        "text": "The best way to discover the Zingaro coast. Crystal-clear water, swimming stops and traditional fishing make it unforgettable."
+      },
+      {
+        "name": "Sophie L.",
+        "origin": "Lyon, France",
+        "text": "An authentic and relaxed experience. They explained everything about the fishing and picked the most beautiful beaches. Highly recommended!"
+      },
+      {
+        "name": "Andrés M.",
+        "origin": "Buenos Aires, Argentina",
+        "text": "Incredible scenery and excellent service. Perfect for a group of friends. We would come back without a doubt."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Before you sail",
+    "items": [
+      {
+        "question": "How long is the excursion? And the stops?",
+        "answer": "The excursion lasts 4 and a half hours. It includes 3 stops of 40 minutes for swimming."
+      },
+      {
+        "question": "What are the tour times?",
+        "answer": "There are two time slots: from 9:30 AM to 2:00 PM and from 2:30 PM to 7:00 PM."
+      },
+      {
+        "question": "Can minors participate?",
+        "answer": "Yes, the activity is suitable for all ages."
+      },
+      {
+        "question": "How far in advance should I book?",
+        "answer": "There is no set time. It just depends on availability."
+      },
+      {
+        "question": "Can we bring food and/or drinks?",
+        "answer": "Of course! You can bring whatever you want to eat and drink."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Book your trip",
+    "description": "Tell us when and how many people want to sail. We'll get back to you by WhatsApp or email.",
+    "success": "Thank you! We received your message and will contact you soon.",
+    "error": "Oops, something went wrong. Message us on WhatsApp in the meantime.",
+    "info": {
+      "phonesTitle": "Phone / WhatsApp",
+      "locationTitle": "Meeting point",
+      "location": "Porto di Castellammare, in front of Ristorante Luxor",
+      "socialTitle": "Instagram"
+    },
+    "form": {
+      "name": "Name",
+      "people": "Number of people",
+      "date": "Date",
+      "email": "Email",
+      "phone": "Phone number",
+      "message": "Message",
+      "langLabel": "Preferred language",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "errors": {
+        "name": "Enter your name",
+        "email": "Enter a valid email",
+        "phone": "Enter a valid phone number"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Traditional fishing tourism in Castellammare del Golfo.",
+    "rights": "All rights reserved"
+  },
+  "whatsapp": {
+    "label": "Message us on WhatsApp"
+  }
+}

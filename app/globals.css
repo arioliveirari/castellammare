@@ -1,0 +1,169 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  Santa Lucia Tour — "Editorial mediterráneo"
+  Cream/sand base, deep sea ink, terracotta accent.
+*/
+:root {
+  --radius: 0.5rem;
+
+  --background: #f5efe3;
+  --foreground: #15323a;
+
+  --card: #fbf7ef;
+  --card-foreground: #15323a;
+
+  --popover: #fbf7ef;
+  --popover-foreground: #15323a;
+
+  --primary: #0e3a44;
+  --primary-foreground: #f6f0e4;
+
+  --secondary: #e8ddc9;
+  --secondary-foreground: #15323a;
+
+  --muted: #eae2d2;
+  --muted-foreground: #5c6a6a;
+
+  --accent: #c56a3e;
+  --accent-foreground: #fbf7ef;
+
+  --destructive: #b3261e;
+  --destructive-foreground: #f6f0e4;
+
+  --border: #ded3bf;
+  --input: #ded3bf;
+  --ring: #0e3a44;
+
+  /* brand tokens */
+  --sea: #0e3a44;
+  --deep: #0a262d;
+  --sand: #e8ddc9;
+  --cream: #f5efe3;
+  --terracotta: #c56a3e;
+  --terracotta-soft: #d98a5f;
+}
+
+.dark {
+  --background: #0a262d;
+  --foreground: #f0e9db;
+  --card: #103038;
+  --card-foreground: #f0e9db;
+  --popover: #103038;
+  --popover-foreground: #f0e9db;
+  --primary: #f0e9db;
+  --primary-foreground: #0a262d;
+  --secondary: #16414a;
+  --secondary-foreground: #f0e9db;
+  --muted: #16414a;
+  --muted-foreground: #a9b7b7;
+  --accent: #d98a5f;
+  --accent-foreground: #0a262d;
+  --destructive: #e5645c;
+  --destructive-foreground: #0a262d;
+  --border: rgba(240, 233, 219, 0.12);
+  --input: rgba(240, 233, 219, 0.16);
+  --ring: #d98a5f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-sea: var(--sea);
+  --color-deep: var(--deep);
+  --color-sand: var(--sand);
+  --color-cream: var(--cream);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-soft: var(--terracotta-soft);
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Anchors land the section's top edge at the very top of the viewport so
+       the fixed navbar overlaps the target section's top padding (py-24/py-32),
+       not the previous section. Do not add scroll-mt on sections. */
+    scroll-padding-top: 0;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  /* uppercase eyebrow used across sections */
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.25em] text-accent;
+  }
+
+  .container-editorial {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+  }
+
+  /* subtle film grain / paper texture feel via layered gradients */
+  .paper {
+    background-image:
+      radial-gradient(circle at 20% 15%, rgba(197, 106, 62, 0.05), transparent 45%),
+      radial-gradient(circle at 85% 80%, rgba(14, 58, 68, 0.05), transparent 40%);
+  }
+}

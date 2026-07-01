@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Santa Lucia Tour — Pescaturismo en Castellammare del Golfo",
+    "description": "Vive una experiencia única a bordo del Santa Lucia: pesca tradicional, cuevas y playas paradisíacas entre Scopello y la Reserva dello Zingaro."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "gallery": "Galería",
+    "tour": "El tour",
+    "reviews": "Reseñas",
+    "faq": "Preguntas",
+    "contact": "Contacto",
+    "book": "Reservar"
+  },
+  "hero": {
+    "location": "Castellammare del Golfo · Sicilia",
+    "title": "Santa Lucia",
+    "subtitle": "Pescaturismo",
+    "description": "Vive una experiencia única: pesca en barco tradicional y descubre las playas paradisíacas de la costa siciliana.",
+    "ctaBook": "Reservar por WhatsApp",
+    "ctaTour": "Ver el tour",
+    "scroll": "Descubre más"
+  },
+  "about": {
+    "eyebrow": "Santa Lucia Tour",
+    "title": "Una experiencia única",
+    "description": "Disfruta de una experiencia única a bordo del Santa Lucia, un barco de pesca tradicional. Comenzamos nuestra aventura en el puerto de Castellammare y visitamos las cuevas. Continuamos el viaje a lo largo de la costa, deteniéndonos en Cala Bianca, en la Reserva dello Zingaro y en la Tonnara di Scopello para nadar y disfrutar del paisaje. Ofrecemos fruta fresca, agua y equipo de snorkel para hacer tu experiencia inolvidable.",
+    "tags": {
+      "fishing": "Pesca con redes en mar abierto",
+      "cave": "Visita a las cuevas",
+      "beach": "Playas paradisíacas"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Galería",
+    "title": "Momentos a bordo",
+    "description": "Un vistazo a lo que vas a vivir: mar cristalino, calas escondidas y días inolvidables."
+  },
+  "tour": {
+    "eyebrow": "El tour",
+    "title": "Cómo es la travesía",
+    "readMore": "Ver más",
+    "readLess": "Ver menos",
+    "items": {
+      "schedule": {
+        "title": "Horarios a tu elección",
+        "description": "Salimos todos los días. Puedes elegir entre dos turnos: de 9:30 a 14:00 o de 14:30 a 19:00. ¡Verifica la disponibilidad con nosotros para reservar!"
+      },
+      "itinerary": {
+        "title": "Itinerario",
+        "description": "Partimos del puerto de Castellammare. En el camino visitaremos hermosas cuevas y haremos 3 paradas en playas impresionantes, entre los farallones de Scopello y la Reserva dello Zingaro. Regresamos al puerto completando 25 km de costa. Duración total: 4h 30min."
+      },
+      "group": {
+        "title": "Un barco para ti y tus amigos",
+        "description": "Disfruta de las mejores playas de Castellammare del Golfo con tus amigos. Organizamos eventos en barco a pedido, hacemos paseos y ofrecemos máscaras de snorkel, fruta y agua fresca para todo el grupo."
+      }
+    }
+  },
+  "reviews": {
+    "eyebrow": "Reseñas",
+    "title": "Lo que dicen nuestros viajeros",
+    "note": "Reseñas de ejemplo — reemplazar por las reales de Google.",
+    "items": [
+      {
+        "name": "Giulia R.",
+        "origin": "Palermo, Italia",
+        "text": "Un día perfecto. Antonino y Bruno nos hicieron sentir en casa, las calas son de ensueño y la fruta fresca a bordo fue un detalle hermoso."
+      },
+      {
+        "name": "Marco B.",
+        "origin": "Milán, Italia",
+        "text": "La mejor forma de conocer la costa del Zingaro. El agua cristalina, las paradas para nadar y la pesca tradicional lo hacen inolvidable."
+      },
+      {
+        "name": "Sophie L.",
+        "origin": "Lyon, Francia",
+        "text": "Experiencia auténtica y relajada. Nos explicaron todo sobre la pesca y elegimos las playas más lindas. ¡Súper recomendable!"
+      },
+      {
+        "name": "Andrés M.",
+        "origin": "Buenos Aires, Argentina",
+        "text": "Paisajes increíbles y un trato excelente. Ideal para ir en grupo de amigos. Volveríamos sin dudarlo."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Antes de embarcar",
+    "items": [
+      {
+        "question": "¿Cuánto dura la excursión? ¿Y las paradas?",
+        "answer": "La excursión dura 4 horas y media. Incluye 3 paradas de 40 minutos para bañarse."
+      },
+      {
+        "question": "¿Cuáles son los horarios de los tours?",
+        "answer": "Hay dos franjas horarias: de 9:30 a 14:00 y de 14:30 a 19:00."
+      },
+      {
+        "question": "¿Pueden participar menores de edad?",
+        "answer": "Sí, la actividad es apta para todas las edades."
+      },
+      {
+        "question": "¿Con cuánta antelación debo reservar?",
+        "answer": "No hay un tiempo establecido. Depende solo de la disponibilidad."
+      },
+      {
+        "question": "¿Podemos llevar comida y/o bebidas?",
+        "answer": "¡Claro! Puedes llevar lo que quieras para comer y beber."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Reserva tu paseo",
+    "description": "Cuéntanos cuándo y con cuántas personas quieres navegar. Te respondemos por WhatsApp o email.",
+    "success": "¡Gracias! Recibimos tu mensaje y te contactaremos pronto.",
+    "error": "Ups, algo salió mal. Escríbenos por WhatsApp mientras tanto.",
+    "info": {
+      "phonesTitle": "Teléfono / WhatsApp",
+      "locationTitle": "Punto de encuentro",
+      "location": "Porto di Castellammare, frente al Ristorante Luxor",
+      "socialTitle": "Instagram"
+    },
+    "form": {
+      "name": "Nombre",
+      "people": "Número de personas",
+      "date": "Fecha",
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "message": "Mensaje",
+      "langLabel": "Idioma preferido",
+      "submit": "Enviar solicitud",
+      "sending": "Enviando…",
+      "errors": {
+        "name": "Ingresa tu nombre",
+        "email": "Ingresa un email válido",
+        "phone": "Ingresa un teléfono válido"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Pescaturismo tradicional en Castellammare del Golfo.",
+    "rights": "Todos los derechos reservados"
+  },
+  "whatsapp": {
+    "label": "Escríbenos por WhatsApp"
+  }
+}

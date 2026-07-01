@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Santa Lucia Tour — Pescaturismo a Castellammare del Golfo",
+    "description": "Vivi un'esperienza unica a bordo del Santa Lucia: pesca tradizionale, grotte e spiagge paradisiache tra Scopello e la Riserva dello Zingaro."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "gallery": "Galleria",
+    "tour": "Il tour",
+    "reviews": "Recensioni",
+    "faq": "FAQ",
+    "contact": "Contatti",
+    "book": "Prenota"
+  },
+  "hero": {
+    "location": "Castellammare del Golfo · Sicilia",
+    "title": "Santa Lucia",
+    "subtitle": "Pescaturismo",
+    "description": "Vivi un'esperienza unica: pesca in barca tradizionale e scopri le spiagge paradisiache della costa siciliana.",
+    "ctaBook": "Prenota su WhatsApp",
+    "ctaTour": "Scopri il tour",
+    "scroll": "Scopri di più"
+  },
+  "about": {
+    "eyebrow": "Santa Lucia Tour",
+    "title": "Un'esperienza unica",
+    "description": "Goditi un'esperienza unica a bordo del Santa Lucia, una tradizionale barca da pesca. Iniziamo la nostra avventura al porto di Castellammare e visitiamo le grotte. Proseguiamo lungo la costa, fermandoci a Cala Bianca, nella Riserva dello Zingaro e alla Tonnara di Scopello per nuotare e goderci il paesaggio. Offriamo frutta fresca, acqua e attrezzatura per lo snorkeling per rendere la tua esperienza indimenticabile.",
+    "tags": {
+      "fishing": "Pesca con reti in mare aperto",
+      "cave": "Visita alle grotte",
+      "beach": "Spiagge paradisiache"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Galleria",
+    "title": "Momenti a bordo",
+    "description": "Uno sguardo a ciò che ti aspetta: mare cristallino, cale nascoste e giornate indimenticabili."
+  },
+  "tour": {
+    "eyebrow": "Il tour",
+    "title": "Com'è la traversata",
+    "readMore": "Leggi di più",
+    "readLess": "Leggi meno",
+    "items": {
+      "schedule": {
+        "title": "Orari a tua scelta",
+        "description": "Usciamo tutti i giorni. Puoi scegliere tra due turni: dalle 9:30 alle 14:00 o dalle 14:30 alle 19:00. Controlla la disponibilità con noi per prenotare!"
+      },
+      "itinerary": {
+        "title": "Itinerario",
+        "description": "Partiamo dal porto di Castellammare. Lungo il percorso visitiamo bellissime grotte e facciamo 3 soste in splendide spiagge, tra i faraglioni di Scopello e la Riserva dello Zingaro. Torniamo al porto completando 25 km di costa. Durata totale: 4h 30min."
+      },
+      "group": {
+        "title": "Una barca per te e i tuoi amici",
+        "description": "Goditi le migliori spiagge di Castellammare del Golfo con i tuoi amici. Organizziamo eventi in barca su richiesta, facciamo escursioni e offriamo maschere da snorkeling, frutta e acqua fresca per tutto il gruppo."
+      }
+    }
+  },
+  "reviews": {
+    "eyebrow": "Recensioni",
+    "title": "Cosa dicono i nostri viaggiatori",
+    "note": "Recensioni di esempio — sostituire con quelle reali di Google.",
+    "items": [
+      {
+        "name": "Giulia R.",
+        "origin": "Palermo, Italia",
+        "text": "Una giornata perfetta. Antonino e Bruno ci hanno fatto sentire a casa, le cale sono da sogno e la frutta fresca a bordo è stata un bel pensiero."
+      },
+      {
+        "name": "Marco B.",
+        "origin": "Milano, Italia",
+        "text": "Il modo migliore per scoprire la costa dello Zingaro. Acqua cristallina, soste per nuotare e pesca tradizionale la rendono indimenticabile."
+      },
+      {
+        "name": "Sophie L.",
+        "origin": "Lione, Francia",
+        "text": "Un'esperienza autentica e rilassante. Ci hanno spiegato tutto sulla pesca e scelto le spiagge più belle. Consigliatissimo!"
+      },
+      {
+        "name": "Andrés M.",
+        "origin": "Buenos Aires, Argentina",
+        "text": "Paesaggi incredibili e trattamento eccellente. Ideale per un gruppo di amici. Torneremmo senza dubbio."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Prima di salpare",
+    "items": [
+      {
+        "question": "Quanto dura l'escursione? E le fermate?",
+        "answer": "L'escursione dura 4 ore e mezza. Include 3 fermate di 40 minuti per fare il bagno."
+      },
+      {
+        "question": "Quali sono gli orari dei tour?",
+        "answer": "Ci sono due fasce orarie: dalle 9:30 alle 14:00 e dalle 14:30 alle 19:00."
+      },
+      {
+        "question": "I minorenni possono partecipare?",
+        "answer": "Sì, l'attività è adatta a tutte le età."
+      },
+      {
+        "question": "Con quanto anticipo devo prenotare?",
+        "answer": "Non c'è un tempo prestabilito. Dipende solo dalla disponibilità."
+      },
+      {
+        "question": "Possiamo portare cibo e/o bevande?",
+        "answer": "Certo! Puoi portare quello che vuoi da mangiare e bere."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contatti",
+    "title": "Prenota la tua gita",
+    "description": "Dicci quando e con quante persone vuoi navigare. Ti rispondiamo su WhatsApp o via email.",
+    "success": "Grazie! Abbiamo ricevuto il tuo messaggio e ti contatteremo presto.",
+    "error": "Ops, qualcosa è andato storto. Nel frattempo scrivici su WhatsApp.",
+    "info": {
+      "phonesTitle": "Telefono / WhatsApp",
+      "locationTitle": "Punto d'incontro",
+      "location": "Porto di Castellammare, di fronte al Ristorante Luxor",
+      "socialTitle": "Instagram"
+    },
+    "form": {
+      "name": "Nome",
+      "people": "Numero di persone",
+      "date": "Data",
+      "email": "Email",
+      "phone": "Numero di telefono",
+      "message": "Messaggio",
+      "langLabel": "Lingua preferita",
+      "submit": "Invia richiesta",
+      "sending": "Invio…",
+      "errors": {
+        "name": "Inserisci il tuo nome",
+        "email": "Inserisci un'email valida",
+        "phone": "Inserisci un numero di telefono valido"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Pescaturismo tradizionale a Castellammare del Golfo.",
+    "rights": "Tutti i diritti riservati"
+  },
+  "whatsapp": {
+    "label": "Scrivici su WhatsApp"
+  }
+}
